@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* groups [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -43,7 +46,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_JOIN_GROUP'			=> 'Et voi liittyä tähän ryhmään. Voit liittyä vain avoimiin ja vapaisiin ryhmiin.',
 	'CANNOT_RESIGN_GROUP'		=> 'Et voi erota tästä ryhmästä. Voit erota vain avoimista ja vapaista ryhmistä.',
 	'CHANGED_DEFAULT_GROUP'	=> 'Oletusryhmä on muutettu',
-	
+
 	'GROUP_AVATAR'						=> 'Ryhmän avatar', 
 	'GROUP_CHANGE_DEFAULT'				=> 'Haluatko varmasti vaihtaa oletusryhmäksesi ryhmän “%s”?',
 	'GROUP_CLOSED'						=> 'Suljettu',
@@ -53,11 +56,11 @@ $lang = array_merge($lang, array(
 	'GROUP_IS_CLOSED'					=> 'Tämä on suljettu ryhmä. Uudet käyttäjät voivat liittyä vain ryhmänjohtajan kutsusta.',
 	'GROUP_IS_FREE'						=> 'Tämä on avoin ryhmä, johon kaikki käyttäjät ovat tervetulleita.', 
 	'GROUP_IS_HIDDEN'					=> 'Tämä on piilotettu ryhmä, joka näkyy vain ryhmän jäsenille.',
-	'GROUP_IS_OPEN'						=> 'Tämä on avoin ryhmä, johon käyttäjät voivat liittyä vapaasti.',
+	'GROUP_IS_OPEN'						=> 'Tämä on avoin ryhmä, johon käyttäjät voivat pyytää liittyä.',
 	'GROUP_IS_SPECIAL'					=> 'Tämä on erityinen ryhmä. Tätä ryhmää hallitsevat keskustelufoorumin ylläpitäjät.', 
 	'GROUP_JOIN'						=> 'Liity ryhmään.',
 	'GROUP_JOIN_CONFIRM'				=> 'Haluatko varmasti liittyä valitsemaasi tyhmään?',
-	'GROUP_JOIN_PENDING'				=> 'Pyydä ryhmän jäsenyyttä',
+	'GROUP_JOIN_PENDING'				=> 'Pyyntö liittyä ryhmään',
 	'GROUP_JOIN_PENDING_CONFIRM'		=> 'Haluatko varmasti pyytää jäsenyyttä valitsemassasi ryhmässä?',
 	'GROUP_JOINED'						=> 'Ryhmään liittyminen onnistui',
 	'GROUP_JOINED_PENDING'				=> 'Olet pyytänyt pääsyä ryhmään. Ole hyvä ja odota, kunnes ryhmän valvoja on käsitellyt hakemuksesi.',
@@ -65,7 +68,7 @@ $lang = array_merge($lang, array(
 	'GROUP_MEMBERS'						=> 'Ryhmän jäsenet',
 	'GROUP_NAME'						=> 'Ryhmän nimi',
 	'GROUP_OPEN'						=> 'Avoin',
-	'GROUP_RANK'						=> 'Ryhmän arvonimi', 
+	'GROUP_RANK'						=> 'Ryhmän luokka', 
 	'GROUP_RESIGN_MEMBERSHIP'			=> 'Eroa ryhmästä',
 	'GROUP_RESIGN_MEMBERSHIP_CONFIRM'	=> 'Haluatko varmasti erota valitsemastasi ryhmästä?',
 	'GROUP_RESIGN_PENDING'				=> 'Peru ryhmän jäsenhakemus',
@@ -82,7 +85,7 @@ $lang = array_merge($lang, array(
 	'NOT_LEADER_OF_GROUP'			=> 'Pyytämääsi toimintoa ei voitu suorittaa, koska et ole valvojana tässä ryhmässä.',
 	'NOT_MEMBER_OF_GROUP'			=> 'Pyytämääsi toimintoa ei voitu suorittaa, koska et ole jäsenenä tässä ryhmässä.',
 	'NOT_RESIGN_FROM_DEFAULT_GROUP'	=> 'Et voi erota oletusryhmästäsi.',
-	
+
 	'PRIMARY_GROUP'		=> 'Pääryhmä',
 
 	'REMOVE_SELECTED'		=> 'Poista valitut',
@@ -92,5 +95,3 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Haluatko varmasti poistaa valvojan oikeutesi tästä ryhmästä?',
 	'USER_GROUP_DEMOTED'		=> 'valvojan oikeudet poistettu.',
 ));
-
-?>

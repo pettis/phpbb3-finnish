@@ -1,13 +1,16 @@
 <?php
-/** 
+/**
 *
-* help_faq [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
@@ -35,40 +38,36 @@ $help = array(
 		1 => 'Kirjautumisen ja rekisteröitymisen ongelmat'
 	),
 	array(
-		0 => 'Miksi en voi kirjautua sisään?',
-		1 => 'Tämä voi johtua monestakin syystä. Ensimmäiseksi, tarkista, että käyttäjätunnuksesi ja salasanasi ovat kirjoitettu oikein. Mikäli nämä ovat oikein, ota yhteyttä keskustelufoorumin ylläpitoon varmistaaksesi, että et ole porttikiellossa. On myös mahdollista, että nettisivun omistajalla on konfigurointivirhe heidän puolellaan, joka vaatii korjausta.'
-	),
-	array(
 		0 => 'Miksi minun täytyy rekisteröityä?',
 		1 => 'Sinun ei välttämättä tarvitse. Se on keskustelufoorumin ylläpitäjistä kiinni sallivatko he rekisteröitymättömien käyttäjien lähettää viestejä. Mutta kuitenkin. Rekisteröityminen antaa muitakin toimintoja käyttöösi, jotka eivät ole sallittuja vieraille, kuten avatar-kuvan määrittäminen, yksityisviestit, sähköpostin lähetys muille käyttäjille, käyttäjäryhmät, jne. Rekisteröityminen vie vain pienen hetken ja se on suositeltavaa.'
-	),
-	array(
-		0 => 'Miksi kirjaudun ulos automaattisesti?',
-		1 => 'Mikäli et valitse <em>Kirjaudu automaattisesti sisään jokaisella käynnillä</em> -rastia, keskustelufoorumi pitää käyttäjätunnuksesi kirjautuneena vain ennalta määritellyn ajan. Tällä estetään muita henkilöitä käyttämästä tunnuksiasi. Mikäli haluat pysyä kirjautuneena, laita rasti ruutuun kirjautuessassi sisään. Tätä ei kuitenkaan suositella käytettäväksi, jos käytät julkisessa käytössä olevaa tietokonetta. Kuten esimerkiksi kirjastossa, nettikahvilassa, koulussa, jne. Mikäli et näe tätä ruutua, se tarkoittaa, että keskustelufoorumin ylläpitäjä on ottanut tämän toiminnon pois käytöstä.'
-	),
-	array(
-		0 => 'Kuinka estän käyttäjänimeni näkymästä paikallaolijoiden listassa?',
-		1 => 'Omassa profiilissasi löytyy asetus <em>Piilota paikallaolo</em>. Mikäli laitat tämän asetuksen kohtaan <em>päällä</em>, näkymisesi rajoittuu vain ylläpitäjiin, valvojiin ja itsellesi. Sinut lasketaan tällöin piilotettujen käyttäjien lukumäärässä.'
-	),
-	array(
-		0 => 'Kadotin salasanani!',
-		1 => 'Älä hätäile! Vaikka salasanaasi ei voidakaan palauttaa, se voidaan asettaa uusiksi. Asettaaksesi salasanan uudelleen, mene kirjautumissivulle ja napsauta <em>Unohdin salasanan</em> -linkkiä. Seuraa ohjeita ja pääset pian kirjautumaan sisään.'
-	),
-	array(
-		0 => 'Olen rekisteröitynyt, mutta en voi kirjautua sisään!',
-		1 => 'Ihan ensimmäiseksi tarkista, että kirjoitat varmasti oikean käyttäjätunnuksen ja salasanan. Mikäli nämä ovat kunnossa on mahdollista, että jompikumpi kahdesta asiasta on tapahtunut. Mikäli COPPA-tuki on päällä ja <em>olet rekisteröitynyt alle kolmetoistavuotiaana</em>, sinun tulee noudattaa saamiasi ohjeita. Mikäli tämä ei auttanut: oletko varma, etteivät käyttäjätunnuksesi vaadi aktivointia? Useat keskustelufoorumit vaativat käyttäjätunnusten aktivoinnin uusilta käyttäjiltä joko itse suoritettuna tai ylläpidon toimesta ennen kuin voit kirjautua sisään. Kun rekisteröidyit, siellä oli ohjeet mukana aktivoinnista ja kuinka se tulee suorittaa. Mikäli sait sähköpostia, noudata siinä tulleita ohjeita. Mikäli et saanut sähköpostia: oletko varma, että annoit toimivan sähköpostiosoitteen? Yksi syy aktivoinnin vaatimiseen on vähentää <em>villejä</em> käyttäjiä käyttämästä anonyymisti hyväkseen keskustelufoorumia. Mikäli olet varma, että annoit toimivan sähköpostiosoitteen, olet tarkistanut, että laatikkosi ei ole täynnä ja myös roskapostikansion, ota yhteyttä keskustelufoorumin ylläpitäjiin.'
-	),
-	array(
-		0 => 'Olen rekisteröitynyt joskus, mutta en pääse enää kirjautumaan?!',
-		1 => 'Ylläpitäjä on saattanut sulkea tai poistaa käyttäjätunnuksesi. Jotkut keskustelufoorumit poistavat käyttämättömiä tunnuksia säästääkseen tietokannan kokoa. Koita rekisteröityä uudelleen ja ole mahdollisesti aktiivisempi keskusteluissa.'
 	),
 	array(
 		0 => 'Mikä on COPPA?',
 		1 => 'COPPA, tai "Child Online Privacy and Protection Act" vuodelta 1998 on Yhdysvaltojen laki nettisivuille, jotka keräävät henkilökohtaisia tietoja alle kolmetoistavuotiailta. Vaatimuksena on saada lapsen vanhemmilta tai huoltajalta kirjoitettu lupa tallentaa lapsensa henkilökohtaisia tietoja omaan järjestelmäänsä. Mikäli olet epävarma kuinka tämän kanssa tulee toimia, ota yhteyttä paikalliseen asianajajaan saadaksesi neuvoja. Huomaa, että phpBB-tiimi ei voi tarjota lakiapua tässä asiassa ja heihin ei tule ottaa yhteyttä muuten kuin tietyissä tapauksissa, joista on lisää alempana.',
 	),
 	array(
+		0 => 'Miksi en voi kirjautua sisään?',
+		1 => 'Tämä voi johtua monestakin syystä. Ensimmäiseksi, tarkista, että käyttäjätunnuksesi ja salasanasi ovat kirjoitettu oikein. Mikäli nämä ovat oikein, ota yhteyttä keskustelufoorumin ylläpitoon varmistaaksesi, että et ole porttikiellossa. On myös mahdollista, että nettisivun omistajalla on konfigurointivirhe heidän puolellaan, joka vaatii korjausta.'
+	),
+	array(
+		0 => 'Olen rekisteröitynyt, mutta en voi kirjautua sisään!',
+		1 => 'Ihan ensimmäiseksi tarkista, että kirjoitat varmasti oikean käyttäjätunnuksen ja salasanan. Mikäli nämä ovat kunnossa on mahdollista, että jompikumpi kahdesta asiasta on tapahtunut. Mikäli COPPA-tuki on päällä ja <em>olet rekisteröitynyt alle kolmetoistavuotiaana</em>, sinun tulee noudattaa saamiasi ohjeita. Mikäli tämä ei auttanut: oletko varma, etteivät käyttäjätunnuksesi vaadi aktivointia? Useat keskustelufoorumit vaativat käyttäjätunnusten aktivoinnin uusilta käyttäjiltä joko itse suoritettuna tai ylläpidon toimesta ennen kuin voit kirjautua sisään. Kun rekisteröidyit, siellä oli ohjeet mukana aktivoinnista ja kuinka se tulee suorittaa. Mikäli sait sähköpostia, noudata siinä tulleita ohjeita. Mikäli et saanut sähköpostia: oletko varma, että annoit toimivan sähköpostiosoitteen? Yksi syy aktivoinnin vaatimiseen on vähentää <em>villejä</em> käyttäjiä käyttämästä anonyymisti hyväkseen keskustelufoorumia. Mikäli olet varma, että annoit toimivan sähköpostiosoitteen, olet tarkistanut, että laatikkosi ei ole täynnä ja myös roskapostikansion, ota yhteyttä keskustelufoorumin ylläpitäjiin.'
+	),
+	array(
 		0 => 'Miksi en voi rekisteröityä?',
 		1 => 'Nettisivuston omistaja on voinut antaa porttikiellon IP-osoitteellesi tai estänyt tietyn nimen käyttämisen käyttäjätunnuksissa. Nettisivun omistaja on myös voinut ottaa rekisteröitymisen kokonaan pois käytöstä. Ota yhteys keskustelufoorumin ylläpitäjiin saadaksesi lisää tietoa.',
+	),
+	array(
+		0 => 'Olen rekisteröitynyt joskus, mutta en pääse enää kirjautumaan?!',
+		1 => 'Ylläpitäjä on saattanut sulkea tai poistaa käyttäjätunnuksesi. Jotkut keskustelufoorumit poistavat käyttämättömiä tunnuksia säästääkseen tietokannan kokoa. Koita rekisteröityä uudelleen ja ole mahdollisesti aktiivisempi keskusteluissa.'
+	),
+	array(
+		0 => 'Kadotin salasanani!',
+		1 => 'Älä hätäile! Vaikka salasanaasi ei voidakaan palauttaa, se voidaan asettaa uusiksi. Asettaaksesi salasanan uudelleen, mene kirjautumissivulle ja napsauta <em>Unohdin salasanan</em> -linkkiä. Seuraa ohjeita ja pääset pian kirjautumaan sisään.'
+	),
+	array(
+		0 => 'Miksi kirjaudun ulos automaattisesti?',
+		1 => 'Mikäli et valitse <em>Kirjaudu automaattisesti sisään jokaisella käynnillä</em> -rastia, keskustelufoorumi pitää käyttäjätunnuksesi kirjautuneena vain ennalta määritellyn ajan. Tällä estetään muita henkilöitä käyttämästä tunnuksiasi. Mikäli haluat pysyä kirjautuneena, laita rasti ruutuun kirjautuessassi sisään. Tätä ei kuitenkaan suositella käytettäväksi, jos käytät julkisessa käytössä olevaa tietokonetta. Kuten esimerkiksi kirjastossa, nettikahvilassa, koulussa, jne. Mikäli et näe tätä ruutua, se tarkoittaa, että keskustelufoorumin ylläpitäjä on ottanut tämän toiminnon pois käytöstä.'
 	),
 	array(
 		0 => 'Mitä “Poista evästeet” tekee?',
@@ -81,6 +80,10 @@ $help = array(
 	array(
 		0 => 'Kuinka vaihdan asetuksiani?',
 		1 => 'Kaikki asetuksesi (jos olet rekisteröitynyt) on tallennettu tietokantaan. Muuttaaksesi näitä tietoja napsauta <em>Omat asetukset</em> -linkkiä. (Näkyy yleensä sivun yläreunassa) Täällä voit muokata asetuksiasi.'
+	),
+	array(
+		0 => 'Kuinka estän käyttäjänimeni näkymästä paikallaolijoiden listassa?',
+		1 => 'Omassa profiilissasi löytyy asetus <em>Piilota paikallaolo</em>. Mikäli laitat tämän asetuksen kohtaan <em>päällä</em>, näkymisesi rajoittuu vain ylläpitäjiin, valvojiin ja itsellesi. Sinut lasketaan tällöin piilotettujen käyttäjien lukumäärässä.'
 	),
 	array(
 		0 => 'Kellonaika on väärin!',
@@ -97,6 +100,10 @@ $help = array(
 	array(
 		0 => 'Kuinka näytän kuvan käyttäjätunnukseni alapuolella?',
 		1 => 'Käyttäjätunnuksesi alapuolella voi olla kaksi kuvaa. Ensimmäinen liittyy arvoosi. Yleensä nämä ovat tähtiä tai joitain palikoita, jotka muuttuvat sitä muka, kuin kirjoitustesi määrää kasvaa tai minkä statuksen ylläpito on sinulle antanut. Alapuolella voi olla suurempi kuva, joka tunnetaan avatar-kuvana. Tämä kuva on yleensä uniikki ja käyttäjän henkilökohtainen kuva. Keskustelufoorumin ylläpitäjä määrää ovatko avatarit käytössä ja mitkä voivat olla käytössä. Mikäli et voi käyttää avataria, sinun kannattaa kysyä ylläpitäjiltä syy.'
+	),
+	array(
+		0 => 'Miten saan avatarin näkymään?',
+		1 => 'Käyttäjäpaneelissa, omien tietojesi kohdalla voit lisätä avatarin jollakin seuraavista tavoista: Gravatar, Gallery, Remote or Upload. Palstan ylläpitäjä sallii avatarit ja määrittelee niiden tyypit. Ota yhteys palstan ylläpitoon jos avatarin lisäys ei onnistu.',
 	),
 	array(
 		0 => 'Kuinka vaihdan arvoani?',
@@ -127,16 +134,16 @@ $help = array(
 		1 => 'Äänestyksen luominen on helppoa. Kun olet kirjoittamassa viestiä (tai muokkaat viestiketjun ensimmäistä viestiä), näet valikossa kohdan <em>Lisää äänestys</em>. (Mikäli tätä ei ole, oikeutesi eivät todennäköisesti riitä äänsetyksen luomiseen) Sinun tulee antaa äänestykselle otsikko ja vähintään kaksi vaihtoehtoa. Lisää kaikki vaihtoehdot omille riveillensä. Voit myös antaa aikarajan, jolloin äänestys päättyy. Änestys ei pääty koskaan, mikäli asetat ajaksi 0. Vaihtoehtojen määrä voi olla myös rajoitettu ja se riippuu keskustelufoorumin ylläpidosta.'
 	),
 	array(
+		0 => 'Miksi en voi lisätä äänestyksen vaihtoehtoja?',
+		1 => 'Ylläpitäjä asettaa äänestyksen vaihtoehdot. Jos tarvitset lisää vaihtoehtoja, ota yhteys palstan ylläpitoon.'
+	),
+	array(
 		0 => 'Kuinka muokkaan tai poistan äänestyksen?',
 		1 => 'Kuten viestejäkin, äänestystä voi muokata vain sen alkuperäinen luoja, valvoja tai ylläpitäjä. Muokataksesi äänestystä sinun täytyy muokata viestiketjun ensimmäistä viestiä. Äänestys on aina tämän viestin yhteydessä. Mikäli kukaan ei ole äänestänyt, voit muokata äänestystä vapaasti, mutta jos joku on jo äänestänyt, et voi muokata vaihtoehtoja. Tällöin vain valvojat ja ylläpitäjät voivat muokata tai poistaa sen. Tällä pyritään estämään äänestyksen peukaloiminen ja äänestystulosten väärentäminen, kun äänestys on vielä voimassa.'
 	),
 	array(
 		0 => 'Miksi en pääse tietyille alueille?',
 		1 => 'Jotkut alueet voivat olla rajoitettu tietyille käyttäjille tai käyttäjäryhmille. Jotta voisit nähdä, lukea, kirjoittaa, jne. tarvitset erityisoikeuksia. Vain valvojat ja ylläpitäjät voivat antaa näitä oikeuksia, joten ota yhteyttä heihin.'
-	),
-	array(
-		0 => 'Miksi en voi äänestää?',
-		1 => 'Äänestäminen on sallittu vain rekisteröityneille käyttäjille. (Estääksemme tulosten väärentämisen). Mikäli olet jo rekisteröitynyt, mutta et voi äänestää. Sinulla ei ole tarvitavia oikeuksia.'
 	),
 	array(
 		0 => 'Miksi en voi lähettää liitetiedostoa?',
@@ -308,6 +315,10 @@ $help = array(
 		1 => 'Alueen seuraaminen onnistuu napsauttamalla "seuraa aluetta" -linkkiä, joka löytyy jokaiselta alueelta. Voit asettaa viestiketjun seurantaan joko viestiä kirjoittaessasi tai valitsemalla viestiketjun seurantaan tarkoitetun linkin.'
 	),
 	array(
+		0 => 'Miten asetan viestiketjun seurantaan?',
+		1 => 'Alueen seuraaminen onnistuu napsauttamalla "seuraa aluetta" -linkkiä, kun kirjaudut forumille.',
+	),
+	array(
 		0 => 'Kuinka lopetan seuraamisen?',
 		1 => 'Seurannan voit poistaa omista asetuksistasi.'
 	),
@@ -325,7 +336,7 @@ $help = array(
 	),
 	array(
 		0 => '--',
-		1 => 'phpBB 3 -asiat'
+		1 => 'phpBB -asiat'
 	),
 	array(
 		0 => 'Kuka on kirjoittanut tämän ohjelmiston?',
@@ -338,7 +349,9 @@ $help = array(
 	array(
 		0 => 'Kehen otan yhteyttä tällä keskustelufoorumilla esiintyvistä loukkaavista ja/tai laittomista asioista?',
 		1 => 'Sinun tulee ottaa yhteyttä järjestelmän ylläpitoon. Jos et saa selville kuka tämä on, tulee sinun ottaa yhteyttä jonkin foorumin valvojaan ja kysyä häneltä kenen puoleen tulee kääntyä. Jos et vieläkään saa vastausta, sinun tulee ottaa yhteyttä web-osoitteen (domainin) omistajaan (tämä selviää whois-kyselyllä) tai jos kyseessä on vapaa järjestelmä (esim. Yahoo!, free.fr, f2s.com, jne.), ko. palvelun hallintoon tai turva- tms. osastoon. Pyydämme ottamaan huomioon ettei phpBB Group voi millään lailla kontrolloida, eikä sitä voida mitenkään pitää vastuullisena siitä kuinka, missä ja kuka tätä järjestelmää käyttää. On täysin turhaa ottaa yhteyttä phpBB Group:iin missään lakiasioissa (vastuu yms.), asioissa jotka eivät suoraan liity phpbb.com-verkkosivustoon tai itse phpBB-ohjelmaan sellaisenaan. Jos lähetät sähköpostia phpBB Group:lle mistään kolmannen osapuolen ohjelmiston käytöstä, voit odottaa lyhyttä vastausta tai jäädä ilman vastausta kokonaan.'
-	)
+	),
+	array(
+		0 => 'Miten otan yhteyden palstan ylläpitoon?',
+		1 => 'Kaikki palstan käyttäjät voivat käyttää "Yhteys" lomaketta, jos ylläpito on aktivoinut tämän toiminnan.<br />Palstan jäsenet voivat myös käyttää  “Jäsenet” linkkiä.',
+	),
 );
-
-?>

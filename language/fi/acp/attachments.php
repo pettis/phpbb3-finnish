@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_attachments [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio 
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -59,9 +62,10 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_FILESIZE'				=> 'Tiedoston enimmäiskoko',
 	'ATTACH_MAX_FILESIZE_EXPLAIN'		=> 'Tiedoston enimmäiskoko. Nolla tarkoittaa rajoittamatonta kokoa tässä ohjelmassa, mutta palvelimen PHP-asetukset asettavat silti omat rajoituksensa tiedoston koolle.',
 	'ATTACH_MAX_PM_FILESIZE'			=> 'Tiedoston enimmäiskoko yksityisviesteissä',
-    'ATTACH_MAX_PM_FILESIZE_EXPLAIN'   => 'Tiedoston enimmäiskoko yksityisviestissä. Nolla on rajoittamaton',
+	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'		=> 'Tiedoston enimmäiskoko yksityisviestissä. Nolla on rajoittamaton',
 	'ATTACH_ORPHAN_URL'					=> 'Orvot liitetiedostot',
 	'ATTACH_POST_ID'					=> 'Viestin ID',
+	'ATTACH_POST_TYPE'					=> 'Postin tyyppi',
 	'ATTACH_QUOTA'						=> 'Maksimi liitetiedostoille varattu levytila',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Maksimi levytila varattuna liitetiedostoille, 0 on rajoittamaton.',
 	'ATTACH_TO_POST'					=> 'Liitä tiedosto viestiin',
@@ -85,7 +89,7 @@ $lang = array_merge($lang, array(
 	'DISPLAY_INLINED_EXPLAIN'		=> 'Mikäli asetus ei ole käytössä. Kuvat näytetään linkkeinä.',
 	'DISPLAY_ORDER'					=> 'Liitetiedostojen näyttämisjärjestys',
 	'DISPLAY_ORDER_EXPLAIN'			=> 'Näytä liitetiedostot aikajärjestyksessä.',
-	
+
 	'EDIT_EXTENSION_GROUP'			=> 'Näytä tunnisteryhmä',
 	'EXCLUDE_ENTERED_IP'			=> 'Ota tämä käyttöön jättääksesi IP-osoitteen/isäntänimen huomioimatta.',
 	'EXCLUDE_FROM_ALLOWED_IP'		=> 'Jätä IP-osoite huomioimatta sallituissa IP-osoitteissa ja isäntänimissä',
@@ -96,15 +100,19 @@ $lang = array_merge($lang, array(
 	'EXTENSION_GROUPS'				=> 'Tunnisteryhmät',
 	'EXTENSION_GROUP_DELETED'		=> 'Tunnisteryhmä on poistettu',
 	'EXTENSION_GROUP_EXIST'			=> '%s tunnisteryhmä on jo olemassa',
-    'EXT_GROUP_ARCHIVES'         => 'Arkistot',
-    'EXT_GROUP_DOCUMENTS'         => 'Dokumentit',
-    'EXT_GROUP_DOWNLOADABLE_FILES'   => 'Ladattavat tiedostot',
-	'EXT_GROUP_FLASH_FILES'         => 'Flash-tiedostot',
-    'EXT_GROUP_IMAGES'            => 'Kuvat',
-    'EXT_GROUP_PLAIN_TEXT'         => 'Pelkkä teksti',
-    'EXT_GROUP_QUICKTIME_MEDIA'      => 'Quicktime Media',
-    'EXT_GROUP_REAL_MEDIA'         => 'Real Media',
-    'EXT_GROUP_WINDOWS_MEDIA'      => 'Windows Media',
+
+	'EXT_GROUP_ARCHIVES'		=> 'Arkistot',
+	'EXT_GROUP_DOCUMENTS'		=> 'Dokumentit',
+	'EXT_GROUP_DOWNLOADABLE_FILES'		=> 'Ladattavat tiedostot',
+	'EXT_GROUP_FLASH_FILES'		=> 'Flash-tiedostot',
+	'EXT_GROUP_IMAGES'		=> 'Kuvat',
+	'EXT_GROUP_PLAIN_TEXT'		=> 'Pelkkä teksti',
+	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Media',
+	'EXT_GROUP_REAL_MEDIA'		=> 'Real Media',
+	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
+
+	'FILES_GONE'			=> 'Kaikkia poistettavia liitetiedostoja ei löydy, ne on saatettu jo poistaa. Löytyneet liitetiedostot poistettu.',
+	'FILES_STATS_WRONG'		=> 'Tiedostojen kirjanpito liian epätarkka niiden synkronointiin. Tilanne nyt: liitetiedostoja = %1$d, niiden koko yhteensä = %2$s.<br />Valitse %3$shere%4$s ja synkronoi tiedostot.',
 
 	'GO_TO_EXTENSIONS'		=> 'Mene tunnisteiden hallintaan',
 	'GROUP_NAME'			=> 'Ryhmän nimi',
@@ -129,9 +137,10 @@ $lang = array_merge($lang, array(
 	'NOT_ALLOWED_IN_PM'			=> 'Sallittu vain viestiketjuissa',
 	'NOT_ALLOWED_IN_PM_POST'	=> 'Ei sallittu',
 	'NOT_ASSIGNED'				=> 'Ei määritelty',
+	'NO_ATTACHMENTS'			=> 'Ei löydy liitetiedostoja.',
 	'NO_EXT_GROUP'				=> 'Ei mitään',
 	'NO_EXT_GROUP_NAME'			=> 'Ryhmän nimeä ei ole annettu',
-	'NO_EXT_GROUP_SPECIFIED'	=> 'Tunnsiteryhmää ei ole määritelty',
+	'NO_EXT_GROUP_SPECIFIED'	=> 'Tunnisteryhmää ei ole määritelty',
 	'NO_FILE_CAT'				=> 'Ei mitään',
 	'NO_IMAGE'					=> 'Ei kuvaa',
 	'NO_THUMBNAIL_SUPPORT'		=> 'Kuvien pienennys ei ole käytössä, sillä tarvittavaa GD-kirjastoa ei ole saatavilla ja ImageMagick-sovellusta ei löytynyt.',
@@ -144,6 +153,7 @@ $lang = array_merge($lang, array(
 
 	'REMOVE_ALLOWED_IPS'		=> 'Poista tai ota huomioon IP/isäntänimi',
 	'REMOVE_DISALLOWED_IPS'		=> 'Poista tai ota huomioon kielletty IP/isäntänimi',
+	'RESYNC_FILES_STATS_CONFIRM'	=> 'Haluatko varmasti synkronoida tiedostojen tilatiedot?',
 
 	'SEARCH_IMAGICK'				=> 'Etsi ImageMagick-ohjelmaa',
 	'SECURE_ALLOW_DENY'				=> 'Sallittu/kielletty lista',
@@ -169,5 +179,3 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICON'					=> 'Liitetiedoston kuvake',
 	'UPLOAD_NOT_DIR'				=> 'Määrittämäsi liitetiedostojen hakemisto ei näytä olevan hakemisto.',
 ));
-
-?>

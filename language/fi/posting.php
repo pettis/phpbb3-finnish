@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* posting [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.comm
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -71,6 +74,14 @@ $lang = array_merge($lang, array(
 	'CANNOT_POST_ANNOUNCE'		=> 'Pahoittelut, mutta et voi lähettää tiedotetta.',
 	'CANNOT_POST_STICKY'		=> 'Pahoittelut, mutta et voi lähettää pysyviä viestejä.',
 	'CHANGE_TOPIC_TO'			=> 'Vaihda viestiketjun tyyppi',
+	'CHARS_POST_CONTAINS'		=> array(
+		1	=> 'Viestissäsi on %1$d merkkiä.',
+		2	=> 'Viestissäsi on %1$d merkkiä.',
+	),
+	'CHARS_SIG_CONTAINS'		=> array(
+		1	=> 'Allekirjoituksesi on %1$d merkkiä.',
+		2	=> 'Allekirjoituksesi on %1$d merkkiä.',
+	),
 	'CLOSE_TAGS'				=> 'Sulje tagit',
 	'CURRENT_TOPIC'				=> 'Nykyinen viestiketju',
 
@@ -78,8 +89,20 @@ $lang = array_merge($lang, array(
 	'DELETE_MESSAGE'			=> 'Poista viesti',
 	'DELETE_MESSAGE_CONFIRM'	=> 'Haluatko varmasti poistaa tämän viestin?',
 	'DELETE_OWN_POSTS'			=> 'Voit poistaa vain omat viestisi.',
+	'DELETE_PERMANENTLY'		=> 'Poista pysyvästi',
 	'DELETE_POST_CONFIRM'		=> 'Haluatko varmasti poistaa tämän viestin?',
+	'DELETE_POST_PERMANENTLY_CONFIRM'	=> 'Haluatko varmasti <strong>poistaa</strong> tämän viestin?',
+	'DELETE_POST_PERMANENTLY'	=> 'Poista tämä viesti pysyvästi',
+	'DELETE_POSTS_CONFIRM'		=> 'Haluatko varmasti poistaa nämä viestit?',
+	'DELETE_POSTS_PERMANENTLY_CONFIRM'	=> 'Haluatko varmasti <strong>poistaa</strong> nämä viestit?',
+	'DELETE_REASON'				=> 'Syy viesti poistamiseen',
+	'DELETE_REASON_EXPLAIN'		=> 'Syy viestin poistoon näkyy palstan ylläpidolle.',
 	'DELETE_POST_WARN'			=> 'Viesti poistetaan pysyvästi. Sitä ei voi palauttaa',
+	'DELETE_TOPIC_CONFIRM'		=> 'Haluatko varmasti poistaa tämän aiheen?',
+	'DELETE_TOPIC_PERMANENTLY'	=> 'Poista tämä aiheen pysyvästi',
+	'DELETE_TOPIC_PERMANENTLY_CONFIRM'	=> 'Haluatko varmasti <strong>poistaa</strong> tämän aiheen?',
+	'DELETE_TOPICS_CONFIRM'		=> 'Haluatko varmasti poistaa nämä aiheet?',
+	'DELETE_TOPICS_PERMANENTLY_CONFIRM'	=> 'Haluatko varmasti <strong>poistaa</strong> nämä aiheet?',
 	'DISABLE_BBCODE'			=> 'Älä salli BBCode:a',
 	'DISABLE_MAGIC_URL'			=> 'Älä käsittele linkkejä automaattisesti',
 	'DISABLE_SMILIES'			=> 'Älä salli hymiöitä',
@@ -123,14 +146,30 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_REPLY'		=> 'Sinun pitää kirjautua sisään vastataksesi viesteihin tällä alueella',
 
 	'MAX_FONT_SIZE_EXCEEDED'	=> 'Fontin enimmäiskoko on %1$d.',
-	'MAX_FLASH_HEIGHT_EXCEEDED'	=> 'Flash-tiedostot voivat olla vain %1$d kuvapistettä korkeat.',
-	'MAX_FLASH_WIDTH_EXCEEDED'	=> 'Flash-tiedostot voivat olla vain %1$d kuvapistettä leveät.',
-	'MAX_IMG_HEIGHT_EXCEEDED'	=> 'Kuvat voivat olla vain %1$d kuvapistettä korkeat.',
-	'MAX_IMG_WIDTH_EXCEEDED'	=> 'Kuvat voivat olla vain %1$d kuvapistettä leveät.',
+	'MAX_FLASH_HEIGHT_EXCEEDED'	=> array(
+		1	=> 'Flash tiedosto voi olla max. %d pikseliä korkea.',
+		2	=> 'Flash tiedostot voivat olla max. %d pikseliä korkeita.',
+	),
+	'MAX_FLASH_WIDTH_EXCEEDED'	=> array(
+		1	=> 'Flash tiedosto voi olla max. %d pikseliä leveä.',
+		2	=> 'Flash tiedostot voivat olla max. %d pikseliä leveitä.',
+	),
+	'MAX_IMG_HEIGHT_EXCEEDED'	=> array(
+		1	=> 'Kuva tiedosto voi olla max. %d pikseliä korkea.',
+		2	=> 'Kuva tiedostot voivat olla max. %d pikseliä korkeita.',
+	),
+	'MAX_IMG_WIDTH_EXCEEDED'	=> array(
+		1	=> 'Kuva tiedosto voi olla max. %d pikseliä leveä.',
+		2	=> 'Kuva tiedostot voivat olla max. %d pikseliä leveitä.',
+	),
 
-	'MESSAGE_BODY_EXPLAIN'		=> 'Kirjoita viestisi tähän. Viestissä voi olla maksimissaan <strong>%d</strong> merkkiä.',
+	'MESSAGE_BODY_EXPLAIN'		=> array(
+		0	=> '', // nolla tarkoittaa ei rajoitusta, ei viestiä.
+		1	=> 'Kirjoita viesti, siinä voi olla max. <strong>%d</strong> merkkiä.',
+		2	=> 'Kirjoita viesti, siinä voi olla max. <strong>%d</strong> merkkiä.',
+	),
 	'MESSAGE_DELETED'			=> 'Viestisi on poistettu',
-	'MORE_SMILIES'				=> 'Lisää hymiöitä',
+	'MORE_SMILIES'				=> 'Katso lisää hymiöitä',
 
 	'NOTIFY_REPLY'				=> 'Ilmoita vastauksesta sähköpostiini',
 	'NOT_UPLOADED'				=> 'Tiedoston siirto epäonnistui.',
@@ -150,8 +189,14 @@ $lang = array_merge($lang, array(
 	'POLL_MAX_OPTIONS'			=> 'Kuinka monta vaihtoehtoa käyttäjä voi valita',
 	'POLL_MAX_OPTIONS_EXPLAIN'	=> 'Äänestäjä voi valita tämän verran vaihtoehtoja.',
 	'POLL_OPTIONS'				=> 'Äänestyksen vaihtoehdot',
-	'POLL_OPTIONS_EXPLAIN'		=> 'Laita jokainen vaihtoehto uudelle riville. Voit laittaa maksimissaan <strong>%d</strong> vaihtoehtoa',
-	'POLL_OPTIONS_EDIT_EXPLAIN'	=> 'Laita jokainen vaihtoehto uudelle riville. Voit laittaa maksimissaan <strong>%d</strong> vaihtoehtoa. Mikäli poistat tai lisäät vaihtoehtoja, jo äänestetyt vaihtoehdot nollautuvat.',
+	'POLL_OPTIONS_EXPLAIN'		=> array(
+		1	=> 'Laita jokainen vaihtoehto omalle riville. Voit antaa <strong>%d</strong> vaihtoehtoa.',
+		2	=> 'Laita jokainen vaihtoehto omalle riville. Voit antaa <strong>%d</strong> vaihtoehtoa.',
+	),
+	'POLL_OPTIONS_EDIT_EXPLAIN'		=> array(
+		1	=> 'Laita jokainen vaihtoehto omalle riville. Voit antaa <strong>%d</strong> vaihtoehtoa. Jos muutat vastausta, aikaisemmat äänet nollautuvat.',
+		2	=> 'Laita jokainen vaihtoehto omalle riville. Voit antaa <strong>%d</strong> vaihtoehtoa. Jos muutat vastausta, aikaisemmat äänet nollautuvat.',
+	),
 	'POLL_QUESTION'				=> 'Äänestyksen kysymys',
 	'POLL_TITLE_TOO_LONG'		=> 'Äänestyksen otsikossa tulee olla alle 100 merkkiä',
 	'POLL_TITLE_COMP_TOO_LONG'	=> 'Äänestyksen käsitelty koko on liian suuri. Harkitse BBCoden ja hymiöiden poistamista.',
@@ -176,8 +221,13 @@ $lang = array_merge($lang, array(
 	'POST_TOPIC_AS'				=> 'Viestin tyyppi',
 	'PROGRESS_BAR'				=> 'Edistyminen',
 
-	'QUOTE_DEPTH_EXCEEDED'		=> 'Voit sisällyttää vain %1$d lainausta toisiinsa.',
+	'QUOTE_DEPTH_EXCEEDED'		=> array(
+		1	=> 'Voit käyttää max. %d sisäkkäistä lainausta.',
+		2	=> 'Voit käyttää max. %d sisäkkäistä lainausta.',
+	),
+	'QUOTE_NO_NESTING'			=> 'Et voi tehdä sisäkkäisiä lainauksia.',
 
+	'REMOTE_UPLOAD_TIMEOUT'		=> 'Tiedoston latauksen aikakatkaisu.',
 	'SAVE'						=> 'Tallenna',
 	'SAVE_DATE'					=> 'tallennuspäivä',
 	'SAVE_DRAFT'				=> 'Tallenna luonnos',
@@ -191,12 +241,16 @@ $lang = array_merge($lang, array(
 	'STYLES_TIP'				=> 'Vinkki: Muotoilun voi asettaa nopeasti valitsemalla halutun pätkän tekstistä',
 
 	'TOO_FEW_CHARS'				=> 'Viestissäsi on liian vähän merkkejä.',
-	'TOO_FEW_CHARS_LIMIT'		=> 'Viestissäsi on %1$d merkkiä. Viestissä tulee olla vähintään %2$d merkkiä.',
+	'TOO_FEW_CHARS_LIMIT'		=> array(
+		1	=> 'Viestissä pitää olla vähintään %1$d merkki.',
+		2	=> 'Viestissä pitää olla vähintään %1$d merkkiä.',
+	),
 	'TOO_FEW_POLL_OPTIONS'		=> 'äänestykselle täytyy antaa ainakin kaksi vaihtoehtoa',
 	'TOO_MANY_ATTACHMENTS'		=> 'En voi lisätä liitetiedostoa. Liitetiedostojen maksimimäärä on %d ',
 	'TOO_MANY_CHARS'			=> 'Viestissäsi on liian monta merkkiä.',
-	'TOO_MANY_CHARS_POST'		=> 'Viestissäsi on %1$d merkkiä. Maksimi sallittu määrä merkkejä on %2$d merkkiä.',
-	'TOO_MANY_CHARS_SIG'		=> 'Allekirjoituksessasi on %1$d merkkiä. Maksimi sallittu määrä merkkejä on %2$d merkkiä.',
+	'TOO_MANY_CHARS_LIMIT'		=> array(
+		2	=> 'Viestissä saa olla max. %1$d merkkiä.',
+	),
 	'TOO_MANY_POLL_OPTIONS'		=> 'Yritit lisätä liian monta äänestysvaihtoehtoa',
 	'TOO_MANY_SMILIES'			=> 'Viestissäsi on liian monta hymiötä. Hymiöiden maksimilukumäärä on %d kappaletta.',
 	'TOO_MANY_URLS'				=> 'Viestissä on liian monta linkkiä. Linkkien maksimilukumäärä on %d kappaletta.',
@@ -205,6 +259,8 @@ $lang = array_merge($lang, array(
 
 	'UNAUTHORISED_BBCODE'		=> 'Et voi käyttää kaikkia BBCode-tageja: %s.',
 	'UNGLOBALISE_EXPLAIN'		=> 'Olet muuttamassa yleistiedotetta normaaliksi viestiksi. Ole hyvä ja määrittele alue, jolle tämä viesti laitetaan.',
+	'UNSUPPORTED_CHARACTERS_MESSAGE'	=> 'Viestissäsi on kiellettyjä merkkejä:<br />%s',
+	'UNSUPPORTED_CHARACTERS_SUBJECT'	=> 'Viestissäsi on kiellettyjä merkkejä:<br />%s',
 	'UPDATE_COMMENT'			=> 'Päivitä kommentti',
 	'URL_INVALID'				=> 'Antamasi linkki ei ole toimiva.',
 	'URL_NOT_FOUND'				=> 'Hakemaasi tiedostoa ei löydy.',
@@ -222,5 +278,3 @@ $lang = array_merge($lang, array(
 	'WRONG_FILESIZE'			=> 'Liian suuri tiedosto. Enimmäiskoko on %1d %2s',
 	'WRONG_SIZE'				=> 'Kuvan täytyy olla vähintään %1$d kuvapistettä leveä, %2$d kuvapistettä korkea ja enintään %3$d kuvapistettä leveä %4$d kuvapistettä korkea. Lähettämäsi kuva on %5$d kuvapistettä leveä ja %6$d kuvapistettä korkea.',
 ));
-
-?>

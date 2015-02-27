@@ -1,13 +1,16 @@
 <?php
-/** 
+/**
 *
-* search_synonyms [English]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: search_synonyms.php,v 1.1 2006/05/28 19:06:21 naderman Exp $
-* @copyright (c) 2005 phpBB Group 
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.comm
 */
 
 if (!defined('IN_PHPBB'))
@@ -26,7 +29,7 @@ $synonyms = array(
 	'anemia'			=> 'anaemia',
 	'anemic'			=> 'anaemic',
 	'anesthesia'		=> 'anaesthesia',
-	'appologize'		=> 'appologise',
+	'apologize'			=> 'apologise',
 	'archean'			=> 'archaean',
 	'archeology'		=> 'archaeology',
 	'archeozoic'		=> 'archaeozoic',
@@ -77,7 +80,7 @@ $synonyms = array(
 	'foriegn'		=> 'foreign',
 	'fourty'		=> 'forty',
 
-	'gage'			=> 'guage',
+	'gage'			=> 'gauge',
 	'geneology'		=> 'genealogy',
 	'grammer'		=> 'grammar',
 	'gray'			=> 'grey',
@@ -98,7 +101,7 @@ $synonyms = array(
 	'irrevelant'	=> 'irrelevant',
 
 	'jeweler'	=> 'jeweller',
-	'judgement'	=> 'judgment',
+	'judgment'	=> 'judgement',
 
 	'labeled'	=> 'labelled',
 	'labor'		=> 'labour',
@@ -124,8 +127,8 @@ $synonyms = array(
 	'offense'	=> 'offence',
 	'ommision'	=> 'omission',
 	'ommission'	=> 'omission',
-	'optimize'	=> 'optimize',
-	'organise'	=> 'organize',
+	'optimize'	=> 'optimise',
+	'organize'	=> 'organise',
 
 	'pajamas'			=> 'pyjamas',
 	'paleography'		=> 'palaeography',
@@ -188,4 +191,3 @@ $synonyms = array(
 
 	'yeild'	=> 'yield',
 );
-?>

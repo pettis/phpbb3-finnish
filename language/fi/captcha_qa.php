@@ -1,13 +1,16 @@
 <?php
 /**
 *
-* captcha_qa [English]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: captcha_qa.php 9966 2009-08-12 15:12:03Z Kellanved $
-* @copyright (c) 2009 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio  
+*		harri1952@gmail.com
 */
 
 /**
@@ -36,9 +39,9 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-    'CAPTCHA_QA'            => 'Q&amp;A',
-    'CONFIRM_QUESTION_EXPLAIN'   => 'Tämän kysymyksen tarkoitus on estää roskapostitusta foorumille.',
-    'CONFIRM_QUESTION_WRONG'   => 'Olet antanut epäkelvon vastauksen kysymykseen.',
+	'CAPTCHA_QA'		=> 'Q&amp;A',
+	'CONFIRM_QUESTION_EXPLAIN'		=> 'Tämän kysymyksen tarkoitus on estää roskapostitusta foorumille.',
+	'CONFIRM_QUESTION_WRONG'		=> 'Olet antanut epäkelvon vastauksen kysymykseen.',
 
 	'QUESTION_ANSWERS'			=> 'Vastaukset',
 	'ANSWERS_EXPLAIN'			=> 'Laita tähän oikeat vastaukset. Yksi per rivi.',
@@ -47,7 +50,7 @@ $lang = array_merge($lang, array(
 	'ANSWER'					=> 'Vastaus',
 	'EDIT_QUESTION'				=> 'Muokkaa kysymystä',
 	'QUESTIONS'					=> 'Kysymyksiä',
-    'QUESTIONS_EXPLAIN'         => 'Käyttäjiltä kysytään tämä kysymys aina ennen lomakkeen lähettämistä, mikäli Q&amp;A-liitännäinen on asetettu käyttöön. Tämän liitännäisen käyttäminen vaatii ainakin yhden kysymyksen keskustelufoorumin oletuskielellä. Näiden kysymysten tulee olla tarpeeksi helppoja, jotta käyttäjäsi osaavat niihin vastata, mutta tarpeeksi vaikeita Google™-hakuja hyödyntäville roskapostiroboteille. Parhaimmat tulokset saavutetaan suurella määrällä muuttuvia kysymyksiä. Ota tarkka vastaus käyttöön, jos vastaus riippuu kirjasinkoosta tai muista erikoismerkeistä.',
+	'QUESTIONS_EXPLAIN'         => 'Käyttäjiltä kysytään tämä kysymys aina ennen lomakkeen lähettämistä, mikäli Q&amp;A-liitännäinen on asetettu käyttöön. Tämän liitännäisen käyttäminen vaatii ainakin yhden kysymyksen keskustelufoorumin oletuskielellä. Näiden kysymysten tulee olla tarpeeksi helppoja, jotta käyttäjäsi osaavat niihin vastata, mutta tarpeeksi vaikeita Google™-hakuja hyödyntäville roskapostiroboteille. Parhaimmat tulokset saavutetaan suurella määrällä muuttuvia kysymyksiä. Ota tarkka vastaus käyttöön, jos vastaus riippuu kirjasinkoosta tai muista erikoismerkeistä.',
 	'QUESTION_DELETED'			=> 'Kysymys poistettu',
 	'QUESTION_LANG'				=> 'Kieli',
 	'QUESTION_LANG_EXPLAIN'		=> 'Kieli, jolla tämä kysymys ja vastaus kirjoitetaan.',
@@ -59,6 +62,5 @@ $lang = array_merge($lang, array(
 
 	'QA_ERROR_MSG'				=> 'Ole hyvä ja täytä kaikki kentät ja anna ainakin yksi oikea vastaus.',
 	'QA_LAST_QUESTION'			=> 'Et voi poistaa kaikkia kysymyksiä tämän liitännäisen ollessa edelleen käytössä.',
-));
 
-?>
+));

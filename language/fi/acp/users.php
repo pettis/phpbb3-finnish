@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_users [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group modified by Martti Lokka in 2007
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpBB3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -41,8 +44,8 @@ $lang = array_merge($lang, array(
 
 	'BAN_ALREADY_ENTERED'	=> 'Tämä porttikielto on jo annettu. Porttikieltolistaa ei ole päivitetty.',
 	'BAN_SUCCESSFUL'		=> 'Porttikielto on annettu',
-    'CANNOT_BAN_ANONYMOUS'          => 'Et voi antaa porttikieltoa vierailijan tunnuksille. Vierailijoiden oikeuksia voidaan määritellä oikeuksien hallinnasta.',
-	
+
+	'CANNOT_BAN_ANONYMOUS'		=> 'Et voi antaa porttikieltoa vierailijan tunnuksille. Vierailijoiden oikeuksia voidaan määritellä oikeuksien hallinnasta.',
 	'CANNOT_BAN_FOUNDER'			=> 'Et voi antaa porttikieltoa perustajan tunnuksille.',
 	'CANNOT_BAN_YOURSELF'			=> 'Et voi asettaa itsesäsi porttikieltoon.',
 	'CANNOT_DEACTIVATE_BOT'			=> 'Et voi sulkea botin tunnuksia. Poista mieluummin botti käytöstä.',
@@ -52,11 +55,12 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Et voi pakottaa perustajaa varmistamaan tunnuksiansa.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Et voi pakottaa itseäsi aktivoimaan käyttäjätunnustasi uudelleen.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Et voi poistaa vierailijan käyttäjätunnusta.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'You are not allowed to remove founder accounts.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Et voi poistaa omia käyttäjätunnuksiasi.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Et voi korottaa huomioimattomia käyttäjiä perustajiksi.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Käyttäjätunnus täytyy aktivoida ennen kuin se voidaan korottaa perustajaksi. Vain aktiiviset tunnukset voidaan korottaa perustajaksi.',
 	'CONFIRM_EMAIL_EXPLAIN'			=> 'Tätä tarvitaan vain, jos vaihdat käyttäjän sähköpostiosoitetta.',
-	
+
 	'DELETE_POSTS'			=> 'Poista viestit',
 	'DELETE_USER'			=> 'Poista käyttäjä',
 	'DELETE_USER_EXPLAIN'	=> 'Huomaa, että käyttäjän poistamista ei voi peruuttaa. Käyttäjä poistuu pysyvästi. Käyttäjän lähettämät yksityisviestit, joita vastaanottaja ei ole lukenut, poistetaan.',
@@ -139,5 +143,3 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_LOG_DELETED'		=> 'Ei tietoa saatavilla. Lokitieto on mahdollisesti poistettu.',
 	'USER_TOOLS'					=> 'Perustyökalut',
 ));
-
-?>

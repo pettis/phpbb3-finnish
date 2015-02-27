@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_groups [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -37,6 +40,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE_EXPLAIN'		=> 'Tästä paneelista voita hallita kaikkia käyttäjäryhmiä. Voit poistaa, luoda tai muokata olemassa olevia ryhmiä. Voit valita valvojia, muuttaa avoimen/suljetun ryhmän tilaa ja muuttaa ryhmän nimeä ja kuvausta.',
+	'ADD_GROUP_CATEGORY'			=> 'Lisää ryhmä',
 	'ADD_USERS'						=> 'Lisää käyttäjiä',
 	'ADD_USERS_EXPLAIN'				=> 'Täällä voit lisätä uusia käyttäjiä ryhmään. Voit asettaa tämän ryhmän myös oletusryhmäksi valitsemillesi käyttäjille. Voit myös lisätä ryhmälle valvojia. Lisää jokainen käyttäjä uudelle riville.',
 
@@ -51,11 +55,14 @@ $lang = array_merge($lang, array(
 	'GROUP_APPROVED'				=> 'Hyväksytyt käyttäjät',
 	'GROUP_AVATAR'					=> 'Ryhmän avatar',
 	'GROUP_AVATAR_EXPLAIN'			=> 'Tämä kuva näytetään ryhmän hallintapaneelissa.',
+	'GROUP_CATEGORY_NAME'			=> 'Luokka',
 	'GROUP_CLOSED'					=> 'Suljettu',
 	'GROUP_COLOR'					=> 'Ryhmän väri',
 	'GROUP_COLOR_EXPLAIN'			=> 'Määrittää millä värillä käyttäjätunnus näkyy. Nimimerkki näytetään tällä värillä, jos ryhmä on käyttäjän oletusryhmä. Jätä tyhjäksi käyttääksesi oletusväriä.',
-	'GROUP_CONFIRM_ADD_USER'		=> 'Haluatko varmasti lisätä käyttäjän %1$s tähän ryhmään?',
-	'GROUP_CONFIRM_ADD_USERS'		=> 'Haluatko varmasti lisätä käyttäjät %1$s tähän ryhmään?',
+	'GROUP_CONFIRM_ADD_USERS'		=> array(
+		1	=> 'Haluatko varmasti lisätä käyttäjän %2$s ryhmään?',
+		2	=> 'Haluatko varmasti lisätä käyttäjät %2$s ryhmään?',
+	),
 	'GROUP_CREATED'					=> 'Ryhmä on luotu',
 	'GROUP_DEFAULT'					=> 'Oletus',
 	'GROUP_DEFS_UPDATED'			=> 'Oletusryhmä on asetettu kaikille valituille jäsenille',
@@ -86,8 +93,8 @@ $lang = array_merge($lang, array(
 	'GROUP_NAME_TAKEN'				=> 'Antamasi ryhmän nimi on jo käytössä. Ole hyvä ja valitse toinen nimi.',
 	'GROUP_OPEN'					=> 'Avoin',
 	'GROUP_PENDING'					=> 'Odottavat jäsenet',
-    'GROUP_MAX_RECIPIENTS'          => 'Yksityisviestien vastaanottajien enimmäismäärä',
-    'GROUP_MAX_RECIPIENTS_EXPLAIN'  => 'Kuinka monta vastaanottajaa yksityisviestillä voi olla. Nolla ottaa käyttöön foorumin oletusasetuksen.',
+	'GROUP_MAX_RECIPIENTS'          => 'Yksityisviestien vastaanottajien enimmäismäärä',
+	'GROUP_MAX_RECIPIENTS_EXPLAIN'  => 'Kuinka monta vastaanottajaa yksityisviestillä voi olla. Nolla ottaa käyttöön foorumin oletusasetuksen.',
 	'GROUP_OPTIONS_SAVE'			=> 'Ryhmänlaajuiset vaihtoehdot',
 	'GROUP_PROMOTE'					=> 'Ylennä',
 	'GROUP_RANK'					=> 'Ryhmän arvonimi',
@@ -95,29 +102,49 @@ $lang = array_merge($lang, array(
 	'GROUP_RECEIVE_PM_EXPLAIN'		=> 'Huomaa, että piilotetuille ryhmille ei voi lähettää viestejä, vaikka tämä asetus sen sallisikin.',
 	'GROUP_REQUEST'					=> 'Pyydä',
 	'GROUP_SETTINGS_SAVE'			=> 'Ryhmänlaajuiset asetukset',
+	'GROUP_SKIP_AUTH'				=> 'Poista ryhmän johtajan oikeudet',
+	'GROUP_SKIP_AUTH_EXPLAIN'		=> 'Jos asetettu, ryhmän johtaja ei enää peri oikeuksia ryhmältä.',
+	'GROUP_SPECIAL'					=> 'Esi-asetettu',
+	'GROUP_TEAMPAGE'				=> 'Näytä ryhmä tiimin sivulla',
 	'GROUP_TYPE'					=> 'Ryhmän tyyppi',
 	'GROUP_TYPE_EXPLAIN'			=> 'Tämä määrittelee, mitkä käyttäjät voivat nähdä ja liittyä tähän ryhmään.',
-	'GROUP_SKIP_AUTH'				=> 'Jätä ryhmän johtaja pois',
-	'GROUP_SKIP_AUTH_EXPLAIN'		=> 'Mikäli päällä, ryhmän johtaja ei peri tältä ryhmältä oikeuksia.',
 	'GROUP_UPDATED'					=> 'Ryhmän asetukset on päivitetty.',
 
 	'GROUP_USERS_ADDED'				=> 'Uudet käyttäjät ovat lisätty.',
 	'GROUP_USERS_EXIST'				=> 'Valitut käyttäjät ovat jo jäseniä.',
 	'GROUP_USERS_REMOVE'			=> 'Käyttäjät ovat poistettu ryhmästä ja oletukset on asetettu',
 
+	'LEGEND_EXPLAIN'				=> 'Nämä ryhmät näkyvät ryhmän luettelossa:',
+	'LEGEND_SETTINGS'				=> 'Luettelon asetukset',
+	'LEGEND_SORT_GROUPNAME'			=> 'lajittele luettelo nimen mukaan',
+	'LEGEND_SORT_GROUPNAME_EXPLAIN'	=> 'Allaoleva järjestys ei ole voimassa kun tämä asetus on päällä.',
+
+	'MANAGE_LEGEND'			=> 'Hallinnoi ryhmäluetteloa',
+	'MANAGE_TEAMPAGE'		=> 'Hallinnoi teampage',
 	'MAKE_DEFAULT_FOR_ALL'	=> 'Luo tästä ryhmästä käyttäjien oletusryhmä',
 	'MEMBERS'				=> 'Jäsenet',
 
 	'NO_GROUP'					=> 'Ryhmää ei ole määritelty',
+	'NO_GROUPS_ADDED'			=> 'Ei ryhmiä lisätty.',
 	'NO_GROUPS_CREATED'			=> 'Käyttäjäryhmiä ei ole vielä luotu.',
 	'NO_PERMISSIONS'			=> 'Älä kopioi oikeuksia',
 	'NO_USERS'					=> 'Et antanut yhtään käyttäjää.',
 	'NO_USERS_ADDED'			=> 'Yhtään käyttäjää ei lisätty ryhmään.',
 	'NO_VALID_USERS'			=> 'Et ole antanut yhtään soveliasta käyttäjää tälle toiminnolle.',
 
+	'SELECT_GROUP'				=> 'Valitse ryhmä',
 	'SPECIAL_GROUPS'			=> 'Alustavasti määritellyt ryhmät',
 	'SPECIAL_GROUPS_EXPLAIN'	=> 'Alustavasti määritellyt ryhmät ovat erityisiä ryhmiä, niitä ei voi poistaa tai muokata suoraan. Voit kuitenkin lisätä jäseniä ja muuttaa perusasetuksia. Valitsemalla "Oletus" voit asettaa ryhmän kaikkien jäsenien oletusryhmäksi.',
 
+	'TEAMPAGE'					=> 'Tiimi sivu',
+	'TEAMPAGE_DISP_ALL'			=> 'Kaikki jäsenet',
+	'TEAMPAGE_DISP_DEFAULT'		=> 'Käyttäjän oletus ryhmä',
+	'TEAMPAGE_DISP_FIRST'		=> 'Näytä ensimmäinen jäsen',
+	'TEAMPAGE_EXPLAIN'			=> 'Nämä ryhmät näytetään tiimisivuilla:',
+	'TEAMPAGE_FORUMS'			=> 'Näytä tukiryhmän forum',
+	'TEAMPAGE_FORUMS_EXPLAIN'	=> 'Kun ON, tukihenkilöt saavat listan kaikista forumeista missä tukihenkilön oikeudet. Isolla forumilla tämä tarvitsee paljon DB-resursseja.',
+	'TEAMPAGE_MEMBERSHIPS'		=> 'Näytä käyttäjän jäsenyydet',
+	'TEAMPAGE_SETTINGS'			=> 'Tiimi sivun asetukset',
 	'TOTAL_MEMBERS'				=> 'Jäsenet',
 
 	'USERS_APPROVED'				=> 'Käyttäjät on hyväksytty.',
@@ -128,5 +155,3 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEFAULT_EXPLAIN'	=> 'Jos vastaat kyllä, tämä ryhmä laitetaan jäseniensä oletusryhmäksi',
 	'USER_GROUP_LEADER'				=> 'Aseta ryhmän valvojaksi',
 ));
-
-?>

@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_profile [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpBB3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -38,8 +41,11 @@ if (empty($lang) || !is_array($lang))
 // Custom profile fields
 $lang = array_merge($lang, array(
 	'ADDED_PROFILE_FIELD'	=> 'Profiilikenttä on lisätty',
-	'ALPHA_ONLY'			=> 'Vain numerot',
-	'ALPHA_SPACERS'			=> 'Numerot ja välisteet',
+	'ALPHA_DOTS'			=> 'Kirjaimet, numerot ja ", ."',
+	'ALPHA_ONLY'			=> 'Kirjaimet ja numerot',
+	'ALPHA_SPACERS'			=> 'Kirjaimet, numerot ja " "',
+	'ALPHA_UNDERSCORE'		=> 'Kirjaimet, numerot ja "_"',
+	'ALPHA_PUNCTUATION'		=> 'Kirjaimet, numerot ", . _" ja "-" kun sana alkaa kirjaimella',
 	'ALWAYS_TODAY'			=> 'Aina nykyinen päivämäärä',
 
 	'BOOL_ENTRIES_EXPLAIN'	=> 'Lisää vaihtoehdot nyt',
@@ -66,6 +72,10 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Käyttäjä voi muuttaa tätä kenttää omissa asetuksissaan.',
 	'DISPLAY_AT_REGISTER'			=> 'Näytä rekisteröityessä',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Kenttä näytetään rekisteröityessä mikäli tämä vaihtoehto on valittuna.',
+	'DISPLAY_ON_MEMBERLIST'			=> 'Näytä jäsenlistassa',
+	'DISPLAY_ON_MEMBERLIST_EXPLAIN'	=> 'Kenttä näytetään jäsenlistassa mikäli tämä vaihtoehto on valittuna.',
+	'DISPLAY_ON_PM'					=> 'Näytä yksityisviesteissä',
+	'DISPLAY_ON_PM_EXPLAIN'			=> 'Kenttä näytetään yksityisviesteissä mikäli tämä vaihtoehto on valittuna.',
 	'DISPLAY_ON_VT'					=> 'Näytä viestisivulla',
 	'DISPLAY_ON_VT_EXPLAIN'			=> 'Mikäli käytössä, tämä näytetään viestisivulla pienen profiilin yhteydessä.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Näytä kenttä julkisesti profiilissa',
@@ -79,20 +89,26 @@ $lang = array_merge($lang, array(
 	'EVERYTHING_OK'					=> 'Kaikki OK',
 
 	'FIELD_BOOL'				=> 'Boolean (Kyllä/Ei)',
+	'FIELD_CONTACT_DESC'		=> 'Yhteyden kuvaus',
+	'FIELD_CONTACT_URL'			=> 'Yhteyslinkki',
 	'FIELD_DATE'				=> 'Päivämäärä',
 	'FIELD_DESCRIPTION'			=> 'Kentän kuvaus',
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'Käyttäjälle näytettävä selite kentästä',
 	'FIELD_DROPDOWN'			=> 'Alasveto-laatikko',
+	'FIELD_GOOGLEPLUS'			=> 'Google+',
 	'FIELD_IDENT'				=> 'Kentän tunniste',
 	'FIELD_IDENT_ALREADY_EXIST'	=> 'Tälle kentälle on jo olemassa tämän niminen tunniste. Ole hyvä ja valitse toinen nimi.',
 	'FIELD_IDENT_EXPLAIN'		=> 'Kentän tunniste on nimi, jolla kenttä löytyy tietokannasta ja mallineesta.',
 	'FIELD_INT'					=> 'Numerot',
+	'FIELD_IS_CONTACT'			=> 'Näytä kenttä yhteyskenttänä',
+	'FIELD_IS_CONTACT_EXPLAIN'	=> 'Yhteys kentät näytetään käyttäjäprofiilin yhteysosassa, mini profiilissa ja yksityisvieseissä. Käytä <samp>%s</samp> korvaamaan käyttäjän antama tieto.',
 	'FIELD_LENGTH'				=> 'Kirjoituslaatikon pituus',
 	'FIELD_NOT_FOUND'			=> 'Profiilikenttää ei löytnyt',
 	'FIELD_STRING'				=> 'Pelkkä tekstikenttä',
 	'FIELD_TEXT'				=> 'Tekstialue',
 	'FIELD_TYPE'				=> 'Kentän tyyppi',
 	'FIELD_TYPE_EXPLAIN'		=> 'Kentän tyyppiä ei voi muuttaa jälkikäteen.',
+	'FIELD_URL'					=> 'URL (linkki)',
 	'FIELD_VALIDATION'			=> 'Kentän hyväksyminen',
 	'FIRST_OPTION'				=> 'Ensimmäinen vaihtoehto',
 
@@ -104,6 +120,12 @@ $lang = array_merge($lang, array(
 	'ISO_LANGUAGE'				=> 'Kieli [%s]',
 
 	'LANG_SPECIFIC_OPTIONS'		=> 'Kielikohtaiset vaihtoehdot [<strong>%s</strong>]',
+
+	'LETTER_NUM_DOTS'			=> 'Kirjaimet, numerot, piste ja pilkku',
+	'LETTER_NUM_ONLY'			=> 'Kirjaimet ja numerot',
+	'LETTER_NUM_PUNCTUATION'	=> 'Kirjaimet, numerot, ", . _" ja "-" kun sana alkaa kirjaimella',
+	'LETTER_NUM_SPACERS'		=> 'Kirjaimet, numerot ja " "',
+	'LETTER_NUM_UNDERSCORE'		=> 'Kirjaimet, numerot ja "_"',
 
 	'MAX_FIELD_CHARS'		=> 'Kirjoitusmerkkien enimmäismäärä',
 	'MAX_FIELD_NUMBER'		=> 'Korkein sallittu numero',
@@ -154,5 +176,3 @@ $lang = array_merge($lang, array(
 
 	'VISIBILITY_OPTION'				=> 'Näkyvyyden asetukset.',
 ));
-
-?>

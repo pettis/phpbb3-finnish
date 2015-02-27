@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_email [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -52,19 +55,16 @@ $lang = array_merge($lang, array(
 	'SEND_TO_GROUP'			=> 'Lähetä ryhmälle',
 	'SEND_TO_USERS'			=> 'Lähetä käyttäjille',
 	'SEND_TO_USERS_EXPLAIN'	=> 'Tähän laitetut nimet ohittavat mahdolliset käyttäjäryhmien valinnat. Laita jokainen käyttäjätunnus omalle riville.',
-	
-    'MAIL_BANNED'           => 'Lähetä viesti porttikiellossa oleville käyttäjille',
-    'MAIL_BANNED_EXPLAIN'   => 'Voit valita ryhmäviestin lähetyksen yhteydessä saavatko myös porttikiellossa olevat käyttäjät postia.',
-	
+
+	'MAIL_BANNED'			=> 'Lähetä viesti porttikiellossa oleville käyttäjille',
+	'MAIL_BANNED_EXPLAIN'	=> 'Voit valita ryhmäviestin lähetyksen yhteydessä saavatko myös porttikiellossa olevat käyttäjät postia.',	
 	'MAIL_HIGH_PRIORITY'	=> 'Korkea',
 	'MAIL_LOW_PRIORITY'		=> 'Pieni',
 	'MAIL_NORMAL_PRIORITY'	=> 'Normaali',
 	'MAIL_PRIORITY'			=> 'Sähköpostin tärkeys',
 	'MASS_MESSAGE'			=> 'Viestisi',
 	'MASS_MESSAGE_EXPLAIN'	=> 'Huomaa, että voit lähettää vain tekstiä. Kaikki muotoilut poistetaan ennen lähetystä.',
-	
+
 	'NO_EMAIL_MESSAGE'		=> 'Kirjoita viesti.',
 	'NO_EMAIL_SUBJECT'		=> 'Anna viestille otsikko.',
 ));
-
-?>

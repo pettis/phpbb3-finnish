@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_language [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -39,22 +42,11 @@ $lang = array_merge($lang, array(
 	'ACP_FILES'						=> 'Ylläpidon kielitiedostot',
 	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Täällä voit hallita kielipaketteja. Oletuskieli on merkitty tähtimerkillä (*).',
 
-	'EMAIL_FILES'			=> 'Sähköpostin pohjat',
-
-	'FILE_CONTENTS'				=> 'Tiedoston sisältö',
-	'FILE_FROM_STORAGE'			=> 'Tiedosto storage-hakemistosta',
-
-	'HELP_FILES'				=> 'Ohjeita sisältävät tiedostot',
+	'DELETE_LANGUAGE_CONFIRM'		=> 'Haluatko varmasti poistaa “%s”?',
 
 	'INSTALLED_LANGUAGE_PACKS'	=> 'Asennetut kielipaketit',
-	'INVALID_LANGUAGE_PACK'		=> 'Antamasi kielipaketti on epäkelpo. varmista paketti ja tarvittaessa siirrä se uudelleen palvelimelle.',
-	'INVALID_UPLOAD_METHOD'		=> 'valittu siirtotapa on epäkelpo. Ole hyvä ja valitse toinen tapa.',
 
 	'LANGUAGE_DETAILS_UPDATED'			=> 'Kielen asetukset on päivitetty',
-	'LANGUAGE_ENTRIES'					=> 'Kielipaketin muuttujat',
-	'LANGUAGE_ENTRIES_EXPLAIN'			=> 'Täällä voit muokata kielipaketin tietoja, mikäli sitä ei ole jo käännetty.<br /><strong>Huomaa:</strong> Kun muokkaat kielitiedostoa. Muokkaukset tallennetaan eri hakemistoon odottamaan lataustasi. Tekemäsi muutokset tulevat käyttöön vasta sitten, kun olet siirtänyt kielitiedoston oikeaan paikkaan.',
-	'LANGUAGE_FILES'					=> 'Kielitiedostot',
-	'LANGUAGE_KEY'						=> 'Kielen avain',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Tämä kielipaketti on jo asennettu.',
 	'LANGUAGE_PACK_DELETED'				=> 'Kielipaketti <strong>%s</strong> on poistettu. Tätä pakettia käyttäneet käyttäjät on asetettu käyttämään keskustelufoorumin oletuskieltä.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Kielipaketin tiedot',
@@ -71,33 +63,16 @@ $lang = array_merge($lang, array(
 	'LANG_ISO_CODE'						=> 'ISO-koodi',
 	'LANG_LOCAL_NAME'					=> 'Paikallinen nimi',
 
-	'MISSING_LANGUAGE_FILE'		=> 'Kielipaketti puuttuu: <span style="color:red">%s</span>',
+	'MISSING_LANG_FILES'		=> 'Kielipaketti puuttuu: <span style="color:red">%s</span>',
 	'MISSING_LANG_VARIABLES'	=> 'Puuttuvat muuttujat',
-	'MODS_FILES'				=> 'Modien kielipaketit',
 
 	'NO_FILE_SELECTED'				=> 'Et ole määritellyt kielitiedostoa.',
 	'NO_LANG_ID'					=> 'Et ole määritellyt kielipakettia',
 	'NO_REMOVE_DEFAULT_LANG'		=> 'Et voi poistaa oletuskieltä.<br />Jos haluat poistaa tämän kielipaketin, vaihda oletuskieli ensin.',
 	'NO_UNINSTALLED_LANGUAGE_PACKS'	=> 'Ei poistettuja kielipaketteja',
 
-	'REMOVE_FROM_STORAGE_FOLDER'		=> 'Poista storage-hakemistosta',
-
-	'SELECT_DOWNLOAD_FORMAT'	=> 'Valitse ladattava muoto',
-	'SUBMIT_AND_DOWNLOAD'		=> 'Lähetä ja lataa tiedosto omalle koneellesi',
-	'SUBMIT_AND_UPLOAD'			=> 'Lähetä ja siirrä tiedosto palvelimelle',
-
 	'THOSE_MISSING_LANG_FILES'			=> 'Nämä kielipaketin tarvitsemat tiedostot puuttuvat kielen %s hakemistosta',
 	'THOSE_MISSING_LANG_VARIABLES'		=> 'Nämä kielitiedoston muuttujat puuttuvat <strong>%s</strong> kielipaketista',
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Poistetut kielipaketit',
-
-	'UNABLE_TO_WRITE_FILE'		=> 'En voinut kirjoittaa tiedostoon %s.',
-	'UPLOAD_COMPLETED'			=> 'Siirto on suoritettu',
-	'UPLOAD_FAILED'				=> 'Tiedoston siirtäminen epäonnistui tuntemattomasta syystä. Joudut siirtämään tiedoston käsin.',
-	'UPLOAD_METHOD'				=> 'Siirron tapa',
-	'UPLOAD_SETTINGS'			=> 'Siirron asetukset',
-
-	'WRONG_LANGUAGE_FILE'		=> 'Valittu kielipaketti on epäkelpo.',
 ));
-
-?>

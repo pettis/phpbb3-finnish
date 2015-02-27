@@ -14,7 +14,6 @@ Käyttäjätunnuksesi on tällä hetkellä suljettu. Et voi käyttää sitä enn
 
 {U_ACTIVATE}
 
-
 Kiitoksia rekisteröitymisestä.
 
 {EMAIL_SIG}

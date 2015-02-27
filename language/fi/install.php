@@ -1,13 +1,16 @@
 <?php
-/** 
+/**
 *
-* install.php [Finnish [FIN]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+**		phpbb3.1.x versio 
+*		harri1952@gmail.com
 */
 
 /**
@@ -73,7 +76,6 @@ $lang = array_merge($lang, array(
 	'CONFIG_FILE_WRITTEN'		=> 'Asetustiedosto on luotu ja voit siirtyä asennuksessa toiseen vaiheeseen',
 	'CONFIG_PHPBB_EMPTY'		=> 'phpBB3:n konfigurointimuuttuja arvolle “%s” on tyhjä.',
 	'CONFIG_RETRY'				=> 'Yritä uudelleen',
-	'CONTACT_EMAIL_CONFIRM'		=> 'Varmista sähköposti',
 	'CONTINUE_CONVERT'			=> 'Jatka muunnosta',
 	'CONTINUE_CONVERT_BODY'		=> 'Asennus on havainnut keskeytyneen muunnosyrityksen. Voit valita haluatko jatkaa edellistä muunnosta tai aloittaa alusta.',
 	'CONTINUE_LAST'				=> 'Jatka viimeisista lausekkeista',
@@ -142,7 +144,6 @@ $lang = array_merge($lang, array(
 	'DEV_NO_TEST_FILE'			=> 'Muuntajassa ei ole määritelty arvoa test_file-muuttujalle. Mikäli olet tämän muuntajan käyttäjä, sinun ei pitäisi nähdä tätä ilmoitusta. Ole hyvä ja raportoi tämä virhe muuntajan kehittäjälle. Mikäli olet kehittänyt tämän muuntajan, sinun tulee antaa lähdefoorumin tiedoston nimi, jotta voimme tarkistaa hakemiston polun.',
 	'DIRECTORIES_AND_FILES'		=> 'Hakemiston ja tiedostojen asetukset',
 	'DISABLE_KEYS'				=> 'Avaimien poisto käytöstä',
-	'DLL_FIREBIRD'				=> 'Firebird',
 	'DLL_FTP'					=> 'Etäisen FTP:n tuki [ Asennus ]',
 	'DLL_GD'					=> 'GD-grafiikan tuki [ Visuaalinen varmennus ]',
 	'DLL_MBSTRING'				=> 'Multi-byte character tuki',
@@ -153,7 +154,8 @@ $lang = array_merge($lang, array(
 	'DLL_MYSQLI'				=> 'MySQL, MySQLi-laajennuksen tuella',
 	'DLL_ORACLE'				=> 'Oracle',
 	'DLL_POSTGRES'				=> 'PostgreSQL',
-	'DLL_SQLITE'				=> 'SQLite',
+	'DLL_SQLITE'				=> 'SQLite 2',
+	'DLL_SQLITE3'				=> 'SQLite 3',
 	'DLL_XML'					=> 'XML-tuki [ Jabber ]',
 	'DLL_ZLIB'					=> 'zlib-pakkauksen tuki [ gz, .tar.gz, .zip ]',
 	'DL_CONFIG'					=> 'Lataa asetukset omalle koneellesi',
@@ -169,7 +171,7 @@ $lang = array_merge($lang, array(
 	'FILES_REQUIRED_EXPLAIN'	=> '<strong>Pakollinen</strong> - Toimiakseen oikein, phpBB:n täytyy voida kirjoittaa tiettyihin hakemistoihin tai tiedostoihin. Mikäli näet "Ei löytynyt" -ilmoituksen, sinun tulee luoda tämä tiedosto tai hakemisto. Jos näet "Ei voi kirjoittaa" -ilmoituksen, sinun tulee muuttaa tämän tiedoston tai hakemiston oikeuksia salliaksesi kirjoittamisen.',
 	'FILLING_TABLE'				=> 'Täytän taulua <strong>%s</strong>',
 	'FILLING_TABLES'			=> 'Täytän tauluja',
-	'FIREBIRD_DBMS_UPDATE_REQUIRED'		=> 'phpBB ei tue Firebird/Interbase-versioita, jotka ovat vanhempia kuin 2.1. Ole hyvä ja päivitä Firebird-asennuksesi versioon 2.1.0 ennen päivityksen jatkamista.',
+
 	'FINAL_STEP'				=> 'Asennuksen viimeinen vaihe',
 	'FORUM_ADDRESS'				=> 'Keskustelufoorumin osoite',
 	'FORUM_ADDRESS_EXPLAIN'		=> 'Tämä on vanhan foorumin URL, esimerkiksi <samp>http://www.example.com/phpBB2/</samp>. Mikäli tähän laitetaan osoite eikä tätä kenttää jätetä tyhjäksi, kaikki tämän osoitteen esiintymät foorumin viesteissä, yksityisviesteissä ja allekirjoituksissa korvataan uuden foorumisi osoitteella.',
@@ -210,14 +212,14 @@ $lang = array_merge($lang, array(
 	<p>phpBB3 tukee seuraavia tietokantoja:</p>
 	<ul>
 		<li>MySQL 3.23 tai uudempi (MySQLi tuettu)</li>
-		<li>PostgreSQL 7.3+</li>
+		<li>PostgreSQL 8.3+</li>
 		<li>SQLite 2.8.2+</li>
-		<li>Firebird 2.1+</li>
-		<li>MS SQL Server 2000 tai uudempi (suoraan, tai ODBC-yhteydellä)</li>
-        <li>MS SQL Server 2005 tai uudempi (natiivi)</li>
+		<li>SQLite 3.6.15+</li>
+		<li>MS SQL Server 2000 or above (directly or via ODBC)</li>
+		<li>MS SQL Server 2005 or above (native)</li>
 		<li>Oracle</li>
 	</ul>
-	
+
 	<p>Asennusohjelma näyttää palvelimella olevat tietokannat.',
 	'INSTALL_INTRO_NEXT'		=> 'Paina alapuolella olevaa nappulaa aloittaaksesi asennuksen.',
 	'INSTALL_LOGIN'				=> 'kirjaudu sisään',
@@ -235,9 +237,8 @@ $lang = array_merge($lang, array(
 	'INST_ERR_DB_NO_ERROR'		=> 'Ei virheilmoitusta',
 	'INST_ERR_DB_NO_MYSQLI'		=> 'Tällä koneella käytössä oleva MySQL-versio ei ole yhteensopiva valitsemasi "MySQL, MySQLi-laajennuksen tuella" -vaihtoehdon kanssa. Ole hyvä ja yritä "MySQL"-vaihtoehtoa.',
 	'INST_ERR_DB_NO_SQLITE'		=> 'Tällä koneella käytössä oleva SQLite-laajennusosa on liian vanha. Se tulee päivittää vähintään versioon 2.8.2.',
+	'INST_ERR_DB_NO_SQLITE3'	=> 'Tällä koneella käytössä oleva SQLite-laajennusosa on liian vanha. Se tulee päivittää vähintään versioon 3.6.15.',
 	'INST_ERR_DB_NO_ORACLE'		=> 'Tällä koneella käytössä oleva Oracle vaatii asettamaan <var>NLS_CHARACTERSET</var>-parametriksi <var>UTF8</var>. Päivitä asennuksesi joko versioon 9.2+ tai vaihda parametriä.',
-	'INST_ERR_DB_NO_FIREBIRD'	=> 'Firebird-asennus tällä koneella on vanhempi, kuin 2.1. Ole hyvä ja päivitä uudempaan versioon.',
-	'INST_ERR_DB_NO_FIREBIRD_PS'=> 'Valitsemasi tietokanta Firebird-vaihtoehdolle sisältää arvoa 8192 pienemmän sivukoon. Sivukoko tulee olla vähintään 8192.',
 	'INST_ERR_DB_NO_POSTGRES'	=> 'Valitsemaasi tietokantaa ei luotu <var>UNICODE</var>- tai <var>UTF8</var>-muotoon. Yritä asentaa tietokanta <var>UNICODE</var>- tai <var>UTF8</var>-muodossa',
 	'INST_ERR_DB_NO_NAME'		=> 'Tietokannan nimi puuttuu',
 	'INST_ERR_EMAIL_INVALID'	=> 'Antamasi sähköpostiosoite on epäkelpo',
@@ -258,7 +259,7 @@ $lang = array_merge($lang, array(
 	'INST_ERR_USER_TOO_SHORT'	=> 'Antamasi käyttäjätunnus on liian lyhyt. Vähimmäispituus on 3 merkkiä.',
 	'INVALID_PRIMARY_KEY'		=> 'Epäkelpo primary key : %s',
 
-	'LONG_SCRIPT_EXECUTION'		=> 'Huomaa, että tämä saattaa kestää jonkun aikaa... Ole hyvä äläkä pysäytä suorittamista kesken.',
+	'LONG_SCRIPT_EXECUTION'		=> 'Odota tämä saattaa kestää jonkun aikaa... Ole hyvä äläkä pysäytä suorittamista kesken.',
 
 	// mbstring
 	'MBSTRING_CHECK'						=> '<samp>mbstring</samp>-laajennuksen tarkistus',
@@ -274,7 +275,8 @@ $lang = array_merge($lang, array(
 
 	'MAKE_FOLDER_WRITABLE'		=> 'Varmista, että tämä hakemisto on olemassa palvelimella, ja että siihen voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
 	'MAKE_FOLDERS_WRITABLE'		=> 'Varmista, että nämä hakemistot ovat olemassa palvelimella, ja että niihin voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
-	'MYSQL_SCHEMA_UPDATE_REQUIRED'   => 'phpBB:n käyttämä MySQL-skeema on vanhentunut. phpBB löysi skeeman MySQL 3.x/4.x varten, mutta palvelin suorittaa MySQL %2$s -versiota.<br /><strong>Tämä tulee päivittää ennen jatkamista.</strong><br /><br />Ole hyvä ja katso <a href="https://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">Knowledge Base -artikkelia MySQL-skeeman päivitykseen.</a>. Mikäli kohtaat ongelmia, ota yhteys <a href="https://www.phpbb.com/community/viewforum.php?f=46">tukifoorumiin</a>.',
+
+	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Käyttämäsi MySQL tietokanta on liian vanha phpBB:lle. phpBB tunnisti version MySQL 3.x/4.x, mutta palvelimessa on MySQL %2$s.<br /><strong>Ennenkuin päivität versiota pitää sinun luoda tietokanta uudestaan.',
 
 	'NAMING_CONFLICT'			=> 'Nimeämisvirhe: %s ja %s ovat kummatkin aliaksia<br /><br />%s',
 	'NEXT_STEP'					=> 'Jatka seuraavaan vaiheeseen',
@@ -291,6 +293,8 @@ $lang = array_merge($lang, array(
 	'PCRE_UTF_SUPPORT_EXPLAIN'		=> 'phpBB <strong>ei toimi</strong> mikäli palvelimella oleva PHP ei ole käännetty PCRE-laajennusosan UTF-8 -tuen kanssa.',
 	'PHP_GETIMAGESIZE_SUPPORT'			=> 'PHP-funktio getimagesize() on saatavilla',
 	'PHP_GETIMAGESIZE_SUPPORT_EXPLAIN'	=> '<strong>Vaadittu</strong> - Jotta phpBB voisi toimia oikein, getimagesize-funktion tulee olla saatavilla.',
+	'PHP_JSON_SUPPORT'				=> 'PHP JSON tuki',
+	'PHP_JSON_SUPPORT_EXPLAIN'		=> '<strong>Tärkeä tieto</strong> - phpBB ei toimi oikein jos php JSON laajennus ei ole käytettävissä.',
 	'PHP_OPTIONAL_MODULE'			=> 'Valinnaiset moduulit',
 	'PHP_OPTIONAL_MODULE_EXPLAIN'	=> '<strong>Valinnainen</strong> - Nämä moduulit tai sovellukset ovat valinnaisia. Et tarvitse näitä käyttääksesi phpBB 3.0 -ohjelmistoa, mutta mikäli nämä ovat saatavilla, ne antavat enemmän toimintoja keskustelufoorumin käyttämiseen.',
 	'PHP_SUPPORTED_DB'				=> 'Tuetut tietokannat',
@@ -322,6 +326,7 @@ $lang = array_merge($lang, array(
 	'SERVER_CONFIG'				=> 'Palvelimen asetukset',
 	'SEARCH_INDEX_UNCONVERTED'	=> 'Haun sisällysluetteloa ei ole muunnettu',
 	'SEARCH_INDEX_UNCONVERTED_EXPLAIN'	=> 'Vanhaa sisällysluetteloasi ei ole muunnettu. Mikäli suoritat hakuja nyt, et saa tuloksia. Luodaksesi sisällysluettelon. Mene ylläpidon asetuksiin ja valitse huolto. valitse tämän jälkeen sisällysluettelo listasta.',
+	'SELECT_FORUM_GA'			=> 'Julkiset ilmoitukset on phpBB 3.1:ssä linkitetty johonkin forumiin. Valitse forum julkisille ilmoituksille (voi muuttaa myöhemmin):',
 	'SOFTWARE'					=> 'Keskustelufoorumin ohjelmisto',
 	'SPECIFY_OPTIONS'			=> 'Määrittele muunnoksen vaihtoehdot',
 	'STAGE_ADMINISTRATOR'		=> 'Ylläpitäjän tiedot',
@@ -370,7 +375,7 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat uusinta versiota. Nyt voisit <a href="../ucp.php?mode=login">kirjautua keskustelufoorumillesi</a> ja tarkistaa kaiken toimivan moitteetta. Muista poistaa, nimetä uudelleen tai siirtää install-niminen hakemisto! Lähetä meille tilastotietoa palvelimestasi napsauttamalla <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">lähetä tilastot</a> -moduulissa.',
+	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat uusinta versiota.',
 	'ARCHIVE_FILE'				=> 'Lähdetiedosto arkistotiedostosta',
 
  	'BACK'				=> 'Takaisin',
@@ -393,7 +398,10 @@ $lang = array_merge($lang, array(
 	'CURRENT_VERSION'				=> 'Tämänhetkinen versio',
 
 	'DATABASE_TYPE'						=> 'Tietokannan tyyppi',
+	'DATABASE_UPDATE_COMPLETE'			=> 'Tietokanna päivitys valmis!',
+	'DATABASE_UPDATE_CONTINUE'			=> 'Jatka tietokannan päivitystä',
 	'DATABASE_UPDATE_INFO_OLD'			=> 'install-hakemistossa oleva tietokannan päivitystiedosto ei ole ajantasalla. Varmista, että olet siirtänyt palvelimelle oikean version tuosta tiedostosta.',
+	'DATABASE_UPDATE_NOT_COMPLETED'		=> 'Tietokannan päivitys käynnissä.',
 	'DELETE_USER_REMOVE'				=> 'Poista käyttäjä ja viestit',
 	'DELETE_USER_RETAIN'				=> 'Poista käyttäjä, mutta säilytä viestit',
 	'DESTINATION'						=> 'Kohdetiedosto',
@@ -412,14 +420,17 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_UPDATE_METHOD'			=> 'Lataa muuttuneet tiedostot paketoituna',
 	'DOWNLOAD_UPDATE_METHOD_EXPLAIN'	=> 'Latauksen jälkeen sinun tulisi purkaa tiedosto. Tästä tiedostosta löydät muuttuneet tiedostot, jotka tulee siirtää phpBB:n juurihakemistoon. Ole hyvä ja siirrä tiedostot oikeisiin paikkoihin. Kun olet siirtänyt kaikki tiedostot palvelimelle. Ole hyvä ja tarkista tiedostot uudelleen valitsemalla toisen alhaalla olevista napeista.',
 
-	'ERROR'			=> 'Virhe',
 	'EDIT_USERNAME'	=> 'Muokkaa käyttäjätunnusta',
+	'ERROR'			=> 'Virhe',
+	'EVERYTHING_UP_TO_DATE'		=> 'Kaikki kunnossa viimeisimmän phpBB version kanssa. Kirjaudu <a href="%1$s">palstalle</a> ja tarkista että kaikki toimii hyvin. Muista poistaa tai nimetä uudelleen install kirjasto. Lähetä päivitetty tieto palstan ja palvelimen asetuksista <a href="%2$s">lähetä tila</a> painikkeesta ACP:ssä.',
 
 	'FILE_ALREADY_UP_TO_DATE'		=> 'Tiedosto on jo päivitetty',
 	'FILE_DIFF_NOT_ALLOWED'			=> 'Tiedoston vertailua ei ole sallittu',
 	'FILE_USED'						=> 'Käytin informaatiota',			// Single file
 	'FILES_CONFLICT'				=> 'Ristiriitaiset tiedostot',
 	'FILES_CONFLICT_EXPLAIN'		=> 'Seuraavat tiedostot ovat muokattuja ja ne eivät ole kelvollisia vertailutiedostoja alkuperäisille tiedostoille. phpBB on havainnut, että nämä tiedostot aiheuttavat konflikteja, jos niiden yhdistämistä yritetään. Tutki tiedostoja ja koita ratkaista konflikteja aiheuttavat kohdat tai valitse haluamasi yhdistämistapa. Mikäli ratkaisit konfliktit. Tarkista tiedostot uudelleen sen jälkeen, kun olet muokannut niitä. Voit valita haluamasi yhdistämismenetelmän jokaiselle tiedostolle erikseen. Ensimmäinen antaa tuloksena tiedoston, jossa konfliktin aiheuttavat rivit vanhoista tiedostoista ovat poistettu ja toinen vaihtoehto antaa tiedoston, jossa uuden tiedoston muutokset menetetään.',
+	'FILES_DELETED'					=> 'Poistetut tiedostot',
+	'FILES_DELETED_EXPLAIN'			=> 'Seuraavat tiedostot ovat tarpeettomia uudessa versiossa. Ne on poistettu asennuksen yhteydessä.',
 	'FILES_MODIFIED'				=> 'Muokatut tiedostot',
 	'FILES_MODIFIED_EXPLAIN'		=> 'Nämä tiedostot ovat muokattuja ja eivät ole kelvollisia vertailutiedostoja alkuperäiseen asenukseen. Päivitetty tiedosto on yhdistelmä vanhaa tiedostoa ja uusia tiedostoja.',
 	'FILES_NEW'						=> 'Uudet tiedostot',
@@ -482,6 +493,7 @@ $lang = array_merge($lang, array(
 	'PREVIOUS_VERSION'					=> 'Edellinen versio',
 	'PROGRESS'							=> 'Edistyminen',
 	
+	'RELEASE_ANNOUNCEMENT'		=> 'Ilmoitus',
 	'RESULT'					=> 'Tulos',
 	'RUN_DATABASE_SCRIPT'		=> 'Päivitä tietokanta',
 	
@@ -489,6 +501,7 @@ $lang = array_merge($lang, array(
 	'SELECT_DOWNLOAD_FORMAT'	=> 'Valitse ladattavan paketin formaatti',
 	'SELECT_FTP_SETTINGS'		=> 'Valitse FTP-asetukset',
 	'SHOW_DIFF_CONFLICT'		=> 'Näytä erot/konfliktit',
+	'SHOW_DIFF_DELETED'			=> 'Näytä tiedoston sisältö',
 	'SHOW_DIFF_FINAL'			=> 'Näytä lopullinen tiedosto',
 	'SHOW_DIFF_MODIFIED'		=> 'Näytä yhdistettyjen erot',
 	'SHOW_DIFF_NEW'				=> 'Näytä tiedostojen sisältö',
@@ -502,15 +515,17 @@ $lang = array_merge($lang, array(
 	'STAGE_UPDATE_FILES'		=> 'Päivitä tiedostot',
 	'STAGE_VERSION_CHECK'		=> 'Version tarkistus',
 	'STATUS_CONFLICT'			=> 'Muokattu tiedosto, joka aiheuttaa konflikteja',
+	'STATUS_DELETED'			=> 'Poistettu tiedosto',
 	'STATUS_MODIFIED'			=> 'Muokattu tiedosto',
 	'STATUS_NEW'				=> 'Uusi tiedosto',
 	'STATUS_NEW_CONFLICT'		=> 'Uusi tiedosto, joka aiheuttaa konfliktin',
 	'STATUS_NOT_MODIFIED'		=> 'Muokkaamaton tiedosto',
 	'STATUS_UP_TO_DATE'			=> 'Tämä tiedosto on jo päivitetty',
-	
+
 	'TOGGLE_DISPLAY'			=> 'Näytä/Piilota tiedostolista',
-    'TRY_DOWNLOAD_METHOD'       => 'Saatat haluata ladata muuttuneet tiedostot omalle koneellesi.<br />Tämä tapa toimii varmemmin ja on myös suositeltu tapa.',
-    'TRY_DOWNLOAD_METHOD_BUTTON'    => 'Yritä tätä tapaa',
+	'TRY_DOWNLOAD_METHOD'		=> 'Saatat haluata ladata muuttuneet tiedostot omalle koneellesi.<br />Tämä tapa toimii varmemmin ja on myös suositeltu tapa.',
+	'TRY_DOWNLOAD_METHOD_BUTTON'		=> 'Yritä tätä tapaa',
+
 	'UPDATE_COMPLETED'				=> 'Päivitys on suoritettu',
 	'UPDATE_DATABASE'				=> 'Päivitä tietokanta',
 	'UPDATE_DATABASE_EXPLAIN'		=> 'Seuraava vaihe päivittää tietokannan.',
@@ -543,12 +558,6 @@ $lang = array_merge($lang, array(
 		Sinut ohjataan päivityksen läpi ja saat tiedon, koska päivitys on suoritettu.
 		</p>
 	',
-	'UPDATE_INSTRUCTIONS_INCOMPLETE'	=> '
-
-		<h1>Keskeytynyt päivitys havaittu</h1>
-
-		<p>phpBB havaitsi epätäydellisen päivityksen. Ole hyvä ja varmista, että olet suorittanut kaikki automaattisen päivityksen tarvitsemat toimenpiteet. Löydät linkin alapuolelta, tai mene suoraan install-hakemistoon.</p>
-	',
 	'UPDATE_METHOD'					=> 'Päivitysmenetelmä',
 	'UPDATE_METHOD_EXPLAIN'			=> 'Voit valita haluamasi tavan. FTP:n avulla päivitettäessä ohjelma antaa lomakkeen ja kysyy FTP-tunnuksiasi palvelimelle. Tällä tavalla päivitettynä tiedostot siirretään automaattisesti oikeisiin paikkoihin ja varmuuskopioihin lisätään .bak tiedoston tunnisteeksi. Mikäli haluat ladata muuttuneet tiedostot omalle koneellesi, voit purkaa paketin ja siirtää tiedostot oikeisiin palvelimen hakemistoihin myöhemmin.',
 	'UPDATE_REQUIRES_FILE'			=> 'Päivitysohjelma tarvitsee tämän tiedoston: %s',
@@ -558,10 +567,10 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> 'päivitän dataa',
 	'UPDATING_TO_LATEST_STABLE'		=> 'Päivitän tietokantaa viimeisimpään vakaaseen versioon',
 	'UPDATED_VERSION'				=> 'Päivitetty versio',
-    'UPGRADE_INSTRUCTIONS'          => 'Uusi toimintoja sisältävä päivitys, <strong>%1$s</strong> on julkaistu. Ole hyvä ja lue <a href="%2$s" title="%2$s"><strong>julkaisutiedote</strong></a> saadaksesi lisätietoa uusista ominaisuuksista ja kuinka päivittäminen tapahtuu.',
 	'UPLOAD_METHOD'					=> 'Siirtotapa',
 
 	'UPDATE_DB_SUCCESS'				=> 'Tietokannan päivittäminen onnistui.',
+	'UPDATE_FILE_SUCCESS'			=> 'Tietojen päivitys onnistui.',
 	'USER_ACTIVE'					=> 'Aktiivinen käyttäjätunnus',
 	'USER_INACTIVE'					=> 'Suljettu käyttäjätunnus',
 
@@ -623,5 +632,3 @@ $lang = array_merge($lang, array(
 
 	'TOPICS_TOPIC_TITLE'			=> 'Tervetuloa käyttämään phpBB3-ohjelmaa',
 ));
-
-?>

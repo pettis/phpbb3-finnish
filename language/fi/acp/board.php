@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_board [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio 
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -38,20 +41,31 @@ if (empty($lang) || !is_array($lang))
 // Board Settings
 $lang = array_merge($lang, array(
 	'ACP_BOARD_SETTINGS_EXPLAIN'	=> 'Täällä voit määrittää keskustelufoorumisi perusasetukset sivuston nimestä rekisteröitymiseen ja yksityisviestien asetuksiin.',
+	'BOARD_INDEX_TEXT'				=> 'Palstan kuvaus',
+	'BOARD_INDEX_TEXT_EXPLAIN'		=> 'Tämä teksti näytetään palstan kuvauksessa. Jos sitä ei ole määritelty oletusarvo on “Board index”.',
+	'BOARD_STYLE'					=> 'Palstan tyyli',
 	'CUSTOM_DATEFORMAT'				=> 'Mukautettu...',
 	'DEFAULT_DATE_FORMAT'			=> 'Päivämäärän muoto',
 	'DEFAULT_DATE_FORMAT_EXPLAIN'	=> 'Päivämäärä on yhteneväinen PHP:n <code>date</code>-funktion kanssa.',
 	'DEFAULT_LANGUAGE'				=> 'Oletuskieli',
 	'DEFAULT_STYLE'					=> 'Oletustyyli',
+	'DEFAULT_STYLE_EXPLAIN'			=> 'Oletusarvo tyyli uusille käyttäjille.',
 	'DISABLE_BOARD'					=> 'Ota keskustelufoorumi pois käytöstä',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Tämä sulkee keskustelufoorumin käyttäjiltä. Voit antaa myös lyhyen (255 merkkiä) viestin näytettäväksi käyttäjille.',
+	'DISPLAY_LAST_SUBJECT'			=> 'Näytä viimeksi lisätyn viestin aihe',
+	'DISPLAY_LAST_SUBJECT_EXPLAIN'	=> 'Viimeksi lisätyn viestin aihe näkyy forumilla superlinkkinä viestin sisältöön. Suljettujen ja salasanalla suojattujen forumeiden viestit näkyvät vain lukuoikeutetuille.',
+	'GUEST_STYLE'					=> 'Vieraan tyyli',
+	'GUEST_STYLE_EXPLAIN'			=> 'Forumin tyyli vieraille.',
 	'OVERRIDE_STYLE'				=> 'Ohita käyttäjän asettama tyyli',
 	'OVERRIDE_STYLE_EXPLAIN'		=> 'Vaihtaa käyttäjän asettaman tyylin oletustylillä.',
 	'SITE_DESC'						=> 'Sivuston kuvaus',
+	'SITE_HOME_TEXT'				=> 'Etusivun kuvaus',
+	'SITE_HOME_TEXT_EXPLAIN'		=> 'Tämä teksti näytetään linkkinä sinun web-sivuillesi. Jos sitä ei ole määritelty, oletusarvo on  “Home”.',
+	'SITE_HOME_URL'					=> 'Etusivun osoite URL',
+	'SITE_HOME_URL_EXPLAIN'			=> 'Jos määritelty, linkki tähän osoitteeseen näkyy sinun sivullasi ja palstan logo linkittyy tähän osoitteeseen forumin etusivun sijasta. Tämä vaatii absoluuttisen osoitteen, esim. <samp>http://www.phpbb.com</samp>.',
 	'SITE_NAME'						=> 'Sivuston nimi',
-	'SYSTEM_DST'					=> 'Ota kesä-aika/<abbr title="Kesä-aika">DST</abbr> käyttöön',
-    'SYSTEM_TIMEZONE'               => 'Vierailijan aikavyöhyke',
-    'SYSTEM_TIMEZONE_EXPLAIN'       => 'Tämä aikavyöhyke on käytössä heille, jotka eivät ole kirjautuneet sisään. Sisäänkirjautuneet käyttäjät voivat muokata aikavyöhykettään omista asetuksistansa.',
+	'SYSTEM_TIMEZONE'		=> 'Vierailijan aikavyöhyke',
+	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Tämä aikavyöhyke on käytössä heille, jotka eivät ole kirjautuneet sisään. Sisäänkirjautuneet käyttäjät voivat muokata aikavyöhykettään omista asetuksistansa.',
 	'WARNINGS_EXPIRE'				=> 'Varoitusten kesto',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Kuinka monta päivää annettu varoitus pysyy voimassa ennen kuin se poistetaan käyttäjän tiedoista. Aseta tähän 0 pitääksesi varoitukset pysyvinä',
 ));
@@ -95,6 +109,7 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_AVATARS'					=> 'Salli avatarit',
 	'ALLOW_AVATARS_EXPLAIN'			=> 'Salli avatarien yleinen käyttäminen;<br />Mikäli poistat avatarit yleisestä käytöstä tai tietyssä tilassa, nämä käytöstä poistetut avatarit eivät ole näkyvissä. Käyttäjät voivat kuitenkin ladata omat avatarinsa omista asetuksistaan.',
+	'ALLOW_GRAVATAR'				=> 'Salli gravatar avatarit',
 	'ALLOW_LOCAL'					=> 'Ota avatar-galleria käyttöön',
 	'ALLOW_REMOTE'					=> 'Ota linkitetyt avatarit käyttöön',
 	'ALLOW_REMOTE_EXPLAIN'			=> 'Toiselta sivustolta linkitetyt avatarit',
@@ -209,6 +224,7 @@ $lang = array_merge($lang, array(
 
 	'ACC_ACTIVATION'			=> 'Käyttäjätunnusten aktivointi',
 	'ACC_ACTIVATION_EXPLAIN'	=> 'Tämä määrittelee. Pääseekö käyttäjä suoraan keskustelufoorumille vai tarvitseeko käyttäjätunnukset varmentaa ensin. Voit myös poistaa rekisteröitymisen kokonaan käytöstä. Sähköpostitoimintojen tulee olla käytössä, jos aktivoinnin suorittaa käyttäjä tai ylläpitäjä.',
+	'ACC_ACTIVATION_WARNING'	=> 'Huomaa että valittu aktivointi edellyttää sähköpostin käyttöä, muutoin rekisteröinti ei ole mahdollista. Käytä joko toisenlaista aktivointitapaa tai salli sähköposti.',
 	'NEW_MEMBER_POST_LIMIT'			=> 'Uuden jäsenen viestiraja',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Uudet käyttäjät ovat <em>Uudet jäsenet</em> -ryhmässä siihen asti, kunnes ovat lähettäneet tämän verran viestejä. Tätä ryhmää voi käyttää estämään yksityisviestien lähetys ja vaatia viestien hyväksynnän valvojan toimesta ennen julkaisemista keskustelufoorumilla. <strong>Nolla poistaa asetuksen käytöstä.</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Aseta uudet jäsenet -ryhmä oletukseksi',
@@ -255,7 +271,7 @@ $lang = array_merge($lang, array(
 	'ACP_FEED_POST_BASED'				=> 'Viestiin perustuvat asetukset',
 	'ACP_FEED_TOPIC_BASED'				=> 'Viestiketjuun perustuvat asetukset',
 	'ACP_FEED_SETTINGS_OTHER'			=> 'Muut syötteet ja asetukset',
-   
+
 	'ACP_FEED_ENABLE'               	=> 'Salli syötteet',
 	'ACP_FEED_ENABLE_EXPLAIN'       	=> 'Asettaa ATOM-syötteet käyttöön ja pois käytöstä keskustelufoorumilla.<br />Asetuksen ottaminen käytöstä poistaa syötteet kokonaan käytöstä, vaikka alapuolella olisikin jotain asetuksia.',
 	'ACP_FEED_LIMIT'               		=> 'Kohteiden lukumäärä',
@@ -275,9 +291,6 @@ $lang = array_merge($lang, array(
 	'ACP_FEED_NEWS'						=> 'Uutissyöte',
 	'ACP_FEED_NEWS_EXPLAIN'				=> 'Hae ensimmäinen viesti näiltä alueilta. Älä valitse yhtään aluetta poistaaksesi toiminnon käytöstä.<br />Voit valita useamman alueen pitämällä pohjassa <samp>CTRL</samp>-näppäintä ja napsauttamalla haluamiasi alueita.',
 
-	
-	'ACP_FEED_OVERALL_FORUMS'       	=> 'Näytä syöte kaikilta alueilta',
-	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'   => 'Tämä vaihtoehto näyttää uusimmat viestit kaikilta alueilta.',
 	'ACP_FEED_OVERALL_FORUMS'			=> 'Ota kaikkien alueiden syöte käyttöön',
 	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> 'Ottaa käyttöön “Kaikki alueet” -syötteen, joka näyttää listan alueista.',
 
@@ -292,6 +305,7 @@ $lang = array_merge($lang, array(
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
 	'ACP_VC_SETTINGS_EXPLAIN'		=> 'Täällä voit muokata visuaalisen varmistuksen oletusasetuksia, sekä <em>CAPTCHA</em>-asetuksia.',
+	'ACP_VC_EXT_GET_MORE'			=> 'Lisätietoa ja plugin ohjelmia, katso <a href="https://www.phpbb.com/go/anti-spam-ext"><strong>phpBB.com Extensions Database</strong></a>. Lisätietoa haittaohjelmien torjunnasta katso <a href="https://www.phpbb.com/go/anti-spam"><strong>phpBB.com Knowledge Base</strong></a>.',
 	'AVAILABLE_CAPTCHAS'					=> 'Käytössäsi olevat liitännäiset',
 	'CAPTCHA_UNAVAILABLE'					=> 'Tätä liitännäistä ei voi valita, koska sen vaatimukset eivät täyty.',
 	'CAPTCHA_GD'							=> 'GD-kuva',
@@ -346,40 +360,59 @@ $lang = array_merge($lang, array(
 	'SESSION_LENGTH_EXPLAIN'	=> 'Istunto kuoleentuu tämän ajan jälkeen (sekunteina)',
 ));
 
+// Contact Settings
+$lang = array_merge($lang, array(
+	'ACP_CONTACT_SETTINGS_EXPLAIN'	=> 'Täällä voit hallita kontakti sivun ominaisuuksia ja muuttaa siellä näkyvi tekstejä.',
+
+	'CONTACT_US_ENABLE'				=> 'Salli yhteydenotto sivu',
+	'CONTACT_US_ENABLE_EXPLAIN'		=> 'Tämä sivun avulla voi lähettää viestin palstan ylläpidolle',
+
+	'CONTACT_US_INFO'				=> 'Yhteys tiedot',
+	'CONTACT_US_INFO_EXPLAIN'		=> 'Tämä viesti näkyy yhteydenotto sivulla',
+	'CONTACT_US_INFO_PREVIEW'		=> 'Yhteydenotto esikatselu',
+	'CONTACT_US_INFO_UPDATED'		=> 'Yhteys sivun sisältö päivitetty.',
+));
+
 // Load Settings
 $lang = array_merge($lang, array(
-	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Täällä voit ottaa ja poistaa käytöstä tiettyjä toimintoja laskeaksesi kuormituksen määrää. Useimmilla palvelimilla ei ole tarvetta poistaa mitään käytöstä. Mutta joillain järjestelmillä tai jaetussa ympäristössä toimivilla keskustelufoorumeilla saattaa olla hyötyä poistaa joitakin toimintoja käytöstä. Voit myös määritellä raja-arvoja kuormitukselle, jonka jälkeen keskustelufoorumi sulkeutuu.',
+	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Tässä voit sallia ja estää palstan toimintoja joilla voi vähentää palvelimen kuormitusta. Useimmiten tämä ei ole tarpeellista, kuitenkin joissakin tilanteissa ja jaetussa palvelinkäytössä saattaa olla edullista estää tarpeettomat toiminnot. Voit myös määritellä palvelimen kuorman ja aktiivisten istuntojen määrän minkä jälkeen palsta menee offline tilaan.',
 
-	'CUSTOM_PROFILE_FIELDS'			=> 'Mukautetut profiilikentät',
-	'LIMIT_LOAD'					=> 'Rajoita järjestelmän kuormitusta',
-	'LIMIT_LOAD_EXPLAIN'			=> 'Keskustelufoorumi sulkeutuu automaattisesti, mikäli yhden minuutin aikana oleva kuormitus ylittää tämän arvon. 1.0 on yhtä kuin ~100% käyttö yhdellä suorittimella. Tämä toimii vain UNIX-palvelimilla.',
+	'ALLOW_CDN'						=> 'Salli kolmannen osapuolen verkkoyhteys',
+	'ALLOW_CDN_EXPLAIN'				=> 'Kun tämä asetus on valittu, jotkin tiedostot tulevat ulkoisesta palvelimesta. Tämä vähentää palvelimen tarvitsemaa kaistanleveyttä, mutta voi aiheuttaa yksityisyys ongelmia joillekin palstan ylläpitäjille. Oletus asetus phpBB:lle sisältää “jQuery” ja fontin “Open Sans” Googlen palvelimelta.',
+	'ALLOW_LIVE_SEARCHES'			=> 'Salli live haut',
+	'ALLOW_LIVE_SEARCHES_EXPLAIN'	=> 'Jos tämä asetu on voimassa, käyttäjille ehdotetaan avainsanoja kun he kirjoittavat teksiä.',
+	'CUSTOM_PROFILE_FIELDS'			=> 'Muokatut käyttäjätiedon kentät ',
+	'LIMIT_LOAD'					=> 'Palvelimen kuorma raja',
+	'LIMIT_LOAD_EXPLAIN'			=> 'Kun palvelimen 1-minuutin keskikuorma ylittää tämän arvon palsta siirtyy automaattisesti offline tilaan. Lukuarvo 1.0 vastaa ~100% kuormaa yhdelle prosessorille. Tämä toiminto on käytössä vain UNIX-pohjaisissa palvelimissa. Lukuarvo resetoituu automaattisesti jos phpBB ei pysty lukemaan kuorma rajan ohjearvoa.',
 	'LIMIT_SESSIONS'				=> 'Rajoita istuntoja',
-	'LIMIT_SESSIONS_EXPLAIN'		=> 'Keskustelufoorumi sulkeutuu automaattisesti, mikäli istuntojen määrä minuutissa ylittää tämän arvon. Aseta nolla salliaksesi rajoittamattoman määrän istuntoja.',
-	'LOAD_CPF_MEMBERLIST'			=> 'Näytä mukautetut profiilikentät käyttäjälistassa',
-	'LOAD_CPF_VIEWPROFILE'			=> 'Näytä mukautetut profiilikentät käyttäjän profiilissa',
-	'LOAD_CPF_VIEWTOPIC'			=> 'Näytä mukautetut profiilikentät viestien katsonnassa',
+	'LIMIT_SESSIONS_EXPLAIN'		=> 'Jos istuntojen lukumäärä/minuutti ylittää tämän lukeman menee palsta automaattisesti offline tilaan . Asetusarvo 0 = rajoittamaton määrä istuntoja.',
+	'LOAD_CPF_MEMBERLIST'			=> 'Salli tyylien näyttää henkilötietojen muokkaus kentät jäsenlistassa',
+	'LOAD_CPF_PM'					=> 'Näytä henkilötietojen muokkaus kentät yksityisviesteissä',
+	'LOAD_CPF_VIEWPROFILE'			=> 'Näytä henkilötietojen muokkaus kentät käyttäjätiedoissa',
+	'LOAD_CPF_VIEWTOPIC'			=> 'Näytä henkilötietojen muokkaus kentät viestiketju sivulla',
 	'LOAD_USER_ACTIVITY'			=> 'Näytä käyttäjän aktiivisuus',
-	'LOAD_USER_ACTIVITY_EXPLAIN'	=> 'Näyttää aktiivisen viestiketjun/alueen käyttäjän profiilissa ja hallintapaneelissa. On suositeltavaa poistaa tämä käytöstä niillä keskustelufoorumeilla, joissa on yli miljoona viestia',
-	'RECOMPILE_STYLES'				=> 'Rakenna tyylit uudelleen',
-	'RECOMPILE_STYLES_EXPLAIN'		=> 'Tarkista onko tiedostojärjestelmässä oleviin tyyleihin tullut päivityksiä ja rakenna ne tarvittaessa uudelleen.',
-	'YES_ANON_READ_MARKING'			=> 'Ota lukemattomien viestien seuranta käyttöön vieraita varten',
-	'YES_ANON_READ_MARKING_EXPLAIN'	=> 'Tallentaa vierailijoiden luettu/lukematon-tilan. Mikäli poissa käytöstä, viestit ovat aina luettuja vierailijoille.',
-	'YES_BIRTHDAYS'					=> 'Ota käyttöön syntymäpäivälista',
-	'YES_BIRTHDAYS_EXPLAIN'			=> 'Syntymäpäivälistausta ei näytetä, mikäli tämä on poissa käytöstä. Syntymäpäivätoiminnon tulee olla käytössä, jotta tämä asetus toimisi.',
-	'YES_JUMPBOX'					=> 'Näytä hyppylaatikot',
-	'YES_MODERATORS'				=> 'Näytä valvojat',
-	'YES_ONLINE'					=> 'Näytä paikallaolijat',
-	'YES_ONLINE_EXPLAIN'			=> 'Näytä paikallaolijat etusivulla, alueella ja viestin luku -sivuilla.',
-	'YES_ONLINE_GUESTS'				=> 'Näytä vierailijoiden lista paikallaolijoissa',
-	'YES_ONLINE_GUESTS_EXPLAIN'		=> 'Näytä vierailijoiden käyttäjätiedot paikallaolijoissa.',
-	'YES_ONLINE_TRACK'				=> 'Näytä käyttäjän paikallaolokuva',
-	'YES_ONLINE_TRACK_EXPLAIN'		=> 'Näytä paikallaolo profiilissa ja viestienluku sivuilla.',
-	'YES_POST_MARKING'				=> 'Merkitse omat vastaukset viestiketjussa',
-	'YES_POST_MARKING_EXPLAIN'		=> 'Näyttää, onko käyttäjä vastannut viestiketjuun.',
-	'YES_READ_MARKING'				=> 'Ota palvelimen hallitsema viestiketjujen merkitseminen käyttöön',
-	'YES_READ_MARKING_EXPLAIN'		=> 'Tallentaa luetun/lukemattoman viestin tiedot tietokantaan, eikä evästeeseen.',
-    'YES_UNREAD_SEARCH'            => 'Salli uusien (lukemattomien) viestien etsintä',
-
+	'LOAD_USER_ACTIVITY_EXPLAIN'	=> 'Näytä aktiivinen aihe/forum käyttäjätiedoissa ja käyttäjätiedon asetus sivuilla asetus. Jos palstalla on yli 1 miljoona kappaletta viestejä, estä tämä ominaisuus.',
+	'READ_NOTIFICATION_EXPIRE_DAYS'	=> 'Lue ilmoituksen vanhenemistieto',
+	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Lukema joka kertoo kuinka monen päivän kuluttua luettu tieto nollautuu automaattisesti. Lukema 0 asettaa ilmoituksen pysyvästi voimaan.',
+	'RECOMPILE_STYLES'				=> 'Käännä tyylitiedosto uudestaan',
+	'RECOMPILE_STYLES_EXPLAIN'		=> 'Tarkista tiedostojärjestelmän tyyli komponentit ja käännnä.',
+	'YES_ANON_READ_MARKING'			=> 'Salli viestiketjun aiheiden merkitseminen vieraille',
+	'YES_ANON_READ_MARKING_EXPLAIN'	=> 'Muistaa vieraiden luettu/ei_luettu tilatiedot. Kun tämä on estetty, viestit näkyvät aina "luettu" tilaisena vieraille.',
+	'YES_BIRTHDAYS'					=> 'Salli syntymäpäivälistan näkyminen',
+	'YES_BIRTHDAYS_EXPLAIN'			=> 'Jos estetty, syntymäpäivälista ei enää näy. Muista aktivoida syntymäpäivien näkyminen kun haluat ne näkyviin.',
+	'YES_JUMPBOX'					=> 'Salli "hyppy"',
+	'YES_MODERATORS'				=> 'Salli palstan tukihenkilöiden näkyminen',
+	'YES_ONLINE'					=> 'Salli "online" käyttäjien näkyminen',
+	'YES_ONLINE_EXPLAIN'			=> 'Näytä "online" käyttäjän tiedot etusivulla, palstalla ja viestiketuissa.',
+	'YES_ONLINE_GUESTS'				=> 'Salli "online" vieraiden näkyminen',
+	'YES_ONLINE_GUESTS_EXPLAIN'		=> 'Salli vieraiden tilatiedon näkyminen.',
+	'YES_ONLINE_TRACK'				=> 'Salli käyttäjän online/offline tilatieto',
+	'YES_ONLINE_TRACK_EXPLAIN'		=> 'Näytä käyttäjän tilatieto asetussiuilla ja viestiketjussa',
+	'YES_POST_MARKING'				=> 'Salli . merkityt viestiketjut',
+	'YES_POST_MARKING_EXPLAIN'		=> 'Indikoi onko käyttäjä lähettänyt viestin aiheketjuun.',
+	'YES_READ_MARKING'				=> 'Salli tilatiedon säilyttämnen palvelimella',
+	'YES_READ_MARKING_EXPLAIN'		=> 'Tallentaa luettu/ei_luettu tiedon palvelimen tietokantaan.',
+	'YES_UNREAD_SEARCH'				=> 'Salli "ei_luettu" viestien haku',
 ));
 
 // Auth settings
@@ -388,8 +421,15 @@ $lang = array_merge($lang, array(
 
 	'AUTH_METHOD'				=> 'Valitse tunnistautumismenetelmä',
 
+	'AUTH_PROVIDER_OAUTH_ERROR_ELEMENT_MISSING'	=> 'Sekä avain että koodi  OAuth palveluun pitää olla käytössä. Vain toinen näistä on  annettu OAuth palveluun.',
+	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Jokainen OAuth palvelu vaatii sekä koodin että avaimen palvelimelle tunnistautumiseen. Ne molemmat saat OAuth palvelun toimittajalta kun rekisteröit sivustosi heidän palveluunsa - ne molemmat pitää syöttää juuri oikealla tavalla.<br />Jos palveluun ei syötetä haluttuja avaimia eivät ne avaudu käyttäjille. Muista että käyttäjä voi myös rekisteröityä DB tunnistautumisen avulla.',
+	'AUTH_PROVIDER_OAUTH_KEY'					=> 'Avain',
+	'AUTH_PROVIDER_OAUTH_TITLE'					=> 'OAuth',
+	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Koodi',
+
 	'APACHE_SETUP_BEFORE_USE'	=> 'Apachen tunnistautminen täytyy asentaa ensin ennen kuin voit vaihtaa phpBB:n käyttämään tätä menetelmää. Huomaa, että käyttäjätunnuksen apachen tunnistautumiseen täytyy olla sama, kuin phpBB:n käyttäjätunnuksesi.',
 
+	'LDAP'							=> 'LDAP',
 	'LDAP_DN'						=> 'LDAP base <var>dn</var>',
 	'LDAP_DN_EXPLAIN'				=> 'Tämä on se erottuva nimi, joka paikallistaa käyttäjän tiedot, esim. <samp>o=My Company,c=US</samp>',
 	'LDAP_EMAIL'					=> 'LDAP-sähköpostin attribuutti',
@@ -421,6 +461,10 @@ $lang = array_merge($lang, array(
 	'FORCE_SERVER_VARS_EXPLAIN'	=> 'Mikäli asetus on käytössä nämä tiedot korvaavat automaattisesti tunnistetut asetukset',
 	'ICONS_PATH'				=> 'Viestien kuvakkeiden tallennuspolku',
 	'ICONS_PATH_EXPLAIN'		=> 'Polku phpBB:n pääjuuren alla, esim. <samp>images/icons</samp>',
+	'MOD_REWRITE_ENABLE'		=> 'Salli URL kirjoitus',
+	'MOD_REWRITE_ENABLE_EXPLAIN' => 'Kun sallittu, URL:t jotka sisältävät tiedostonimen ylikirjoitetaan (i.e. app.php/foo tulee /foo). <strong>Apache serverin mod_rewrite module tarvitaan tähän toimintoon; jos tämä option on valittu ilman mod_rewrite tukea, URL:t sinun sivuillasi voivat lakata toimimasta.</strong>',
+	'MOD_REWRITE_DISABLED'		=> '<strong>mod_rewrite</strong> module Apache web serverillä on estetty. Salli mod_rewrite tai ota yhteys ylläpitoon kun tarvitset tätä ominaisuutta.',
+	'MOD_REWRITE_INFORMATION_UNAVAILABLE' => 'Palvelimen kykyä ylikirjoittaa URL ei saatu määritettyä. Tämä asetus on mahdollista aktivoida muuta jos URL ylikirjoitus ei toimi , tiedostopolut joita tämä palsta tuottaa saattavat olla rikki (käytössä linkeissä). Ota yhteys web-hosting palveluun jos olet epävarma tämän ominaisuuden toiminnasta.',
 	'PATH_SETTINGS'				=> 'Polun asetukset',
 	'RANKS_PATH'				=> 'Arvonimen kuvakkeen tallennuspolku',
 	'RANKS_PATH_EXPLAIN'		=> 'Polku phpBB:n pääjuuren alla, esim. <samp>images/ranks</samp>',
@@ -437,6 +481,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_PATH_EXPLAIN'		=> 'Polku phpBB:n pääjuuren alla, esim. <samp>images/smilies</samp>',
 	'UPLOAD_ICONS_PATH'			=> 'Tunnisteryhmien ikoneiden talennuspolku',
 	'UPLOAD_ICONS_PATH_EXPLAIN'	=> 'Polku phpBB:n pääjuuren alla, esim. <samp>images/upload_icons</samp>',
+	'USE_SYSTEM_CRON'		=> 'Käytä palvelimen cron jaksoitettuihin tehtäviin',
+	'USE_SYSTEM_CRON_EXPLAIN'		=> 'Kun OFF, phpBB käynnistää jaksoitetut tehtävät automaattisesti. Kun ON, phpBB ei jaksoita tehtäviä itsestään; ylläpitäjän pitää määritellä <code>bin/phpbbcli.php cron:run</code> tehtävät jotka pitää suorittaa säännöllisesti (esim   5 minuutin välein).',
 ));
 
 // Security Settings
@@ -446,6 +492,8 @@ $lang = array_merge($lang, array(
 	'ALL'							=> 'Kaikki',
 	'ALLOW_AUTOLOGIN'				=> 'Salli automaattiset kirjautumiset', 
 	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Määrittelee sallitaanko käyttäjän kirjautua automaattisesti sisään saapuessaan keskustelufoorumille.', 
+	'ALLOW_PASSWORD_RESET'			=> 'Salli salasanan resetointi ("Salasana unohtunut")',
+	'ALLOW_PASSWORD_RESET_EXPLAIN'	=> 'Määrittelee voivatko käyttäjät käyttää "Salasana Unohtunut" linkkiä käyttäjätunnuksensa palauttamisessa. Jos käytät ulkopuolista tunnistautumista - älä käytä tätä ominaisuutta.',
 	'AUTOLOGIN_LENGTH'				=> 'Automaattisen kirjautumisen avaimen kuoleentuminen päivissä', 
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Lukumäärä päivinä, jonka jälkeen kirjautumisen avain vanhenee. Aseta nolla poistaaksesi toiminnon käytöstä.', 
 	'BROWSER_VALID'					=> 'Varmenna selain',
@@ -463,29 +511,29 @@ $lang = array_merge($lang, array(
 	'FORM_SID_GUESTS'				=> 'Sido lomake vierailijan istuntoon',
 	'FORM_SID_GUESTS_EXPLAIN'		=> 'Mikäli tämä on käytössä lomakkeen vierailijoille annettu valtuus on riippuvainen istunnosta. Tämä voi aiheuttaa ongelmia joidenkin internet-yhteydentarjoajien kanssa.',
 	'FORWARDED_FOR_VALID'			=> 'Varmennus <var>X_FORWARDED_FOR</var>-headerille',
-	'NO_REF_VALIDATION'				=> 'Ei mitään',
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Istuntoa jatketaan vain, jos lähetetty <var>X_FORWARDED_FOR</var>-header on sama, kuin edellisellä kerralla vaadittu. Porttikiellot tarkistetaan <var>X_FORWARDED_FOR</var> IP-osoitteiden avulla.',
 	'IP_VALID'						=> 'Istunnon IP-osoitteen varmennus',
+	'IP_VALID_EXPLAIN'				=> 'Määrittelee mikä osa IP-osoitteesta käytetään tunnistamiseen; <samp>All</samp> koko osoite verrataan, <samp>A.B.C</samp> ensimmäiset x.x.x, <samp>A.B</samp> ensimmäiset x.x, <samp>None</samp> ei käytössä. IPv6 osotteista <samp>A.B.C</samp> tarkistaa ensimmäiset 4 ryhmää ja <samp>A.B</samp> ensimmäiset 3 ryhmää.',
 	'IP_LOGIN_LIMIT_MAX'            => 'Enimmäismäärä kirjautumisyrityksiä per IP-osoite',
 	'IP_LOGIN_LIMIT_MAX_EXPLAIN'    => 'Kuinka monta kertaa käyttäjä voi yrittää kirjautumista yhdestä IP-osoitteesta, ennen kuin roskapostituksen estotoimet tulevat käyttöön. Nolla poistaa toiminnon käytöstä.',
 	'IP_LOGIN_LIMIT_TIME'           => 'IP-osoitteen aikaraja',
 	'IP_LOGIN_LIMIT_TIME_EXPLAIN'   => 'Kirjautumisyritykset mitätöityvät tämän ajan jälkeen.',
 	'IP_LOGIN_LIMIT_USE_FORWARDED'  => 'Rajoita kirjautumisyrityksiä <var>X_FORWARDED_FOR</var> viittaajalla',
 	'IP_LOGIN_LIMIT_USE_FORWARDED_EXPLAIN'   => 'Rajoittaa kirjautumisyrityksiä IP-osoitteen sijasta <var>X_FORWARDED_FOR</var>-viittaajan arvoilla. <br /><em><strong>Varoitus:</strong> Käytä tätä vain, jos käytät välityspalvelinta, jonka asettamiin <var>X_FORWARDED_FOR</var>-viittaajin voidaan luottaa.</em>',
-	'IP_VALID_EXPLAIN'				=> 'Määrittelee kuinka suurta osaa käyttäjän IP-osoitteesta käytetään istunnon varmentamiseen; <samp>Kaikki</samp>, varmentaa koko osoitteen, <samp>A.B.C</samp> ensimmäiset x.x.x, <samp>A.B</samp> ensimmäiset x.x, <samp>Ei</samp> poistaa tarkistuksen käytöstä. IPv6-osoitteilla <samp>A.B.C</samp> tarkistaa ensimmäiset 4 osaa ja <samp>A.B</samp> tarkistaa 3 osaa.',
 	'MAX_LOGIN_ATTEMPTS'			=> 'Enimmäismäärä kirjautumisyrityksiä',
     'MAX_LOGIN_ATTEMPTS_EXPLAIN'    => 'Kuinka monta kertaa käyttäjä voi kokeilla kirjautumista, kunnes vaaditaan myös roskapostituksen estoon tarkoitetun kentän täyttämistä.',
 	'NO_IP_VALIDATION'				=> 'Ei',
-	'REF_HOST'						=> 'Varmenna vain isäntä',
-	'REF_PATH'						=> 'Varmenna myös polku',
-	'REFERER_VALID'					=> 'Varmenna viittaaja',
-	'REFERER_VALID_EXPLAIN'			=> 'Mikäli käytössä, POST-pyynnön viittaaja tarkistetaan isännän ja skriptin polun mukaan. Tämä saattaa aiheuttaa ongelmia, jos keskustelufoorumi käyttää useaa osoitetta tai ulkopuolisia kirjautumisia.',
+	'NO_REF_VALIDATION'				=> 'Ei mitään',
 	'PASSWORD_TYPE'					=> 'Salasanan monimutkaisuus',
 	'PASSWORD_TYPE_EXPLAIN'			=> 'Määrittelee kuinka monimutkaisen salasanan on oltava sitä asettaessa tai muutettaessa. Seuraavat asetukset kuuluvat edellisiin asetuksiin.',
 	'PASS_TYPE_ALPHA'				=> 'Täytyy sisältää ISOJA ja pieniä kirjaimia, sekä numeroita',
 	'PASS_TYPE_ANY'					=> 'Ei vaatimuksia',
 	'PASS_TYPE_CASE'				=> 'Täytyy sisältää ISOJA ja pieniä kirjaimia',
 	'PASS_TYPE_SYMBOL'				=> 'Täytyy sisältää ISOJA ja pieniä kirjaimia, sekä numeroita ja symboleita',
+	'REF_HOST'						=> 'Varmenna vain isäntä',
+	'REF_PATH'						=> 'Varmenna myös polku',
+	'REFERRER_VALID'					=> 'Varmenna viittaaja',
+	'REFERRER_VALID_EXPLAIN'			=> 'Mikäli käytössä, POST-pyynnön viittaaja tarkistetaan isännän ja skriptin polun mukaan. Tämä saattaa aiheuttaa ongelmia, jos keskustelufoorumi käyttää useaa osoitetta tai ulkopuolisia kirjautumisia.',
 	'TPL_ALLOW_PHP'					=> 'Salli PHP:n käyttö mallineissa',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'Mikäli tämä vaihtoehto on käytössä, <code>PHP</code>- ja <code>INCLUDEPHP</code> -käskyt tunnistetaan mallineissa ja suoritetaan.',
 ));
@@ -502,6 +550,8 @@ $lang = array_merge($lang, array(
 	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tämä valinta pitää sähköpostiosoitteet yksityisenä tietona.',
 	'CONTACT_EMAIL'					=> 'Ylläpidon sähköpostiosoite',
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Tätä osoitetta käytetään, kun tarvitaan kontakti ylläpitoon, esim. roskaposti, virheviestit, jne. Tätä osoitetta käytetään aina <samp>lähettäjänä</samp> ja <samp>vastausosoitteena</samp>.',
+	'CONTACT_EMAIL_NAME'			=> 'Yhteys nimi',
+	'CONTACT_EMAIL_NAME_EXPLAIN'	=> 'Sähköpostin vastaanottajalle näkyvä yhteys nimi. Jos et halua "Yhteys nime" jätä kenttä tyhjäksi.',
 	'EMAIL_FUNCTION_NAME'			=> 'Sähköpostifunktion nimi',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Käytettävän funktion nimi, kun sähköposti lähetetään PHP:n kautta.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Sähköpostipaketin koko',
@@ -533,9 +583,9 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_JABBER_SETTINGS_EXPLAIN'	=> 'Täällä voit hallita Jabberia ja kuinka sitä käytetään pikaviestintään ja keskustelufoorumin tiedotteisiin. Jabber on avoimeen lähdekoodiin perustuva protokolla ja sitäkautta kaikkien saatavilla. Jotkut Jabber-palvelut pitävät sisällään yhdyskäytävän tai siirtopalvelut, joilla voit olla yhteydessä toisella palvelimella oleviin käyttäjiin. Kaikki palvelimet eivät tarjoa siirtoa ja muutokset protokollassa saattavat estää toiminnan. Huomaa, että Jabber tilin päivitys saattaa kestää useamman sekunnin. Älä pysäytä skriptiä ennen kuin se on suorittanut toimintonsa loppuun!',
 
-	'JAB_GTALK_NOTE'			=> 'Huomaa, että GTalk ei toimi, koska <samp>dns_get_record</samp>-funktiota ei löytynyt. Tätä funktiota ei ole saatavilla PHP4-ympäristössä ja sitä ei ole Windows-alustalla. Tällä hetkellä se ei myöskään toimi BSD-järjestelmissä, joihin myös Mac OS kuuluu.',
 	'JAB_ENABLE'				=> 'Ota Jabber käyttöön',
 	'JAB_ENABLE_EXPLAIN'		=> 'Ottaa Jabber-viestinnän ja ilmoitukset käyttöön',
+	'JAB_GTALK_NOTE'			=> 'Huomaa, että GTalk ei toimi, koska <samp>dns_get_record</samp>-funktiota ei löytynyt. Tätä funktiota ei ole saatavilla PHP4-ympäristössä ja sitä ei ole Windows-alustalla. Tällä hetkellä se ei myöskään toimi BSD-järjestelmissä, joihin myös Mac OS kuuluu.',
 	'JAB_PACKAGE_SIZE'			=> 'Jabber-paketin koko',
 	'JAB_PACKAGE_SIZE_EXPLAIN'	=> 'Jabber lähettää näin monta viestiä yhdessä paketissa. Mikäli asetuksena on 0. Viestit lähetetään välittömästi eikä niitä aseteta jonoon myöhempää lähetystä varten.',
 	'JAB_PASSWORD'				=> 'Jabber-salasana',
@@ -550,5 +600,3 @@ $lang = array_merge($lang, array(
 	'JAB_USERNAME'				=> 'Jabber-käyttäjätunnus tai JID',
 	'JAB_USERNAME_EXPLAIN'		=> 'Anna Jabber-käyttäjätunnus tai JID. Käyttäjätunnuksen oikeellisuutta ei tarkisteta. Mikäli annat vain käyttäjätunnuksen, JID on asetettu palvelimen osoitteeksi. Muussa tapauksessa määrittele kelvollinen JID, esimerkiksi user@jabber.org.',
 ));
-
-?>

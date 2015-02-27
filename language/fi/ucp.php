@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* ucp [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.comm
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -88,13 +91,24 @@ $lang = array_merge($lang, array(
 	'ATTACHMENTS_EXPLAIN'			=> 'Olet lähettänyt nämä liitetiedostot viestiesi mukana.',
 	'ATTACHMENTS_DELETED'			=> 'Liitetiedostot poistettu',
 	'ATTACHMENT_DELETED'			=> 'Liitetiedosto poistettu',
+	'AUTOLOGIN_SESSION_KEYS_DELETED'=> 'Valittu "Muista minut" kirjautumistiedot nollattu.',
 	'AVATAR_CATEGORY'				=> 'Kategoria',
-	'AVATAR_EXPLAIN'				=> 'Enimmäiskoko; leveys %1$d kuvapistettä, korkeus %2$d kuvapistettä, tiedoston koko %3$.2f KiB.',
+	'AVATAR_DRIVER_GRAVATAR_TITLE'	=> 'Gravatar',
+	'AVATAR_DRIVER_GRAVATAR_EXPLAIN'=> 'Gravatarin avulla voit käyttää samaa avataria usealla web-sivustolla. Lisätietoja <a href="http://www.gravatar.com/">Gravatar</a> .',
+	'AVATAR_DRIVER_LOCAL_TITLE'		=> 'Gallery avatar',
+	'AVATAR_DRIVER_LOCAL_EXPLAIN'	=> 'Voit valita itsellesi avatarin jo olemassaolevista.',
+	'AVATAR_DRIVER_REMOTE_TITLE'	=> 'Remote avatar',
+	'AVATAR_DRIVER_REMOTE_EXPLAIN'	=> 'Linkki muualla olevaan avatar kuvaan.',
+	'AVATAR_DRIVER_UPLOAD_TITLE'	=> 'Lataa avatar',
+	'AVATAR_DRIVER_UPLOAD_EXPLAIN'	=> 'Lataa oma henkilökohtainen avatar.',
+	'AVATAR_EXPLAIN'				=> 'Max avatar mitat; leveys: %1$s, korkeus: %2$s, tied.koko: %3$.2f KiB.',
 	'AVATAR_FEATURES_DISABLED'		=> 'Avatar-toiminnot ovat tällä hetkellä pois käytöstä.',
 	'AVATAR_GALLERY'				=> 'Paikallinen galleria',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'En voinut siirtää avataria %s -hakemistoon',
 	'AVATAR_NOT_ALLOWED'			=> 'Avatariasi ei voida näyttää, koska niiden käyttö on estetty.',
 	'AVATAR_PAGE'					=> 'Sivu',
+	'AVATAR_SELECT'					=> 'Valitse itsellesi avatar',
+	'AVATAR_TYPE'					=> 'Avatarin tyyppi',
 	'AVATAR_TYPE_NOT_ALLOWED'		=> 'Avatariasi ei voida näyttää, koska sen tyyppi on kielletty.',
 
 	'BACK_TO_DRAFTS'			=> 'Palaa takaisin luonnoksiin',
@@ -102,8 +116,7 @@ $lang = array_merge($lang, array(
 	'BIRTHDAY'					=> 'Syntymäpäivä',
 	'BIRTHDAY_EXPLAIN'			=> 'Saat oman ikäsi näkyviin antamalla syntymävuotesi.',
 	'BOARD_DATE_FORMAT'			=> 'Ajan näyttö',
-	'BOARD_DATE_FORMAT_EXPLAIN'	=> 'Käytettävä syntaksi vastaa PHP:n <a href="http://www.php.net/date" onclick="this.target=\'_blank\';" title="Avautuu uuteen ikkunaan">date()</a>-funktiota',
-	'BOARD_DST'					=> 'Kesäaika käytössä',
+	'BOARD_DATE_FORMAT_EXPLAIN'	=> 'Ajan esitystapa on samanlainen kuin PHP:n <a href="http://www.php.net/date">date()</a> funktio.',
 	'BOARD_LANGUAGE'			=> 'Käytettävä kieli',
 	'BOARD_STYLE'				=> 'Käytettävä tyyli',
 	'BOARD_TIMEZONE'			=> 'Aikavyöhyke',
@@ -119,12 +132,10 @@ $lang = array_merge($lang, array(
 	'CANNOT_REMOVE_FOLDER'		=> 'Tätä kansiota ei voi poistaa.',
 	'CHANGE_DEFAULT_GROUP'		=> 'Vaihda oletusryhmää',
 	'CHANGE_PASSWORD'			=> 'Vaihda salasanaa',
-    'CLICK_GOTO_FOLDER'         => '%1$sMene “%3$s” -kansioon%2$s',
+	'CLICK_GOTO_FOLDER'		=> '%1$sMene “%3$s” -kansioon%2$s',
 	'CLICK_RETURN_FOLDER'		=> '%1$sPalaa "%3$s" -kansioon%2$s',
 	'CONFIRMATION'				=> 'Vahvistuskoodi',
-	'CONFIRM_CHANGES'			=> 'Varmista muutokset',	
-	'CONFIRM_EMAIL'				=> 'Varmista sähköpostiosoite',
-	'CONFIRM_EMAIL_EXPLAIN'		=> 'Sähköpostiosoite täytyy varmistaa vain, jos vaihdat sen.',
+	'CONFIRM_CHANGES'			=> 'Varmista muutokset',
 	'CONFIRM_EXPLAIN'			=> 'Keskustelufoorumin ylläpitäjät haluavat sinun syöttävän varmistuskoodin estääkseen automaattiset rekisteröitymiset. Koodi näkyy alapuolella olevassa kuvassa. Mikäli et jostain syystä näe kuvaa. Ota yhteyttä %skeskustelufoorumin ylläpitäjiin%s.',
 	'VC_REFRESH'           		=> 'Anna uusi varmistuskoodi',
 	'VC_REFRESH_EXPLAIN'     	=> 'Voit pyytää uuden varmistuskuva, jos tämä on liian hankala.',
@@ -168,7 +179,7 @@ $lang = array_merge($lang, array(
 	'DEMOTE_SELECTED'			=> 'Alenna valituista',
 	'DISABLE_CENSORS'			=> 'Käytä sanojen sensurointia',
 	'DISPLAY_GALLERY'			=> 'Näytä galleria',
-	'DOMAIN_NO_MX_RECORD_EMAIL'	=> 'Antamallasi sähköpostin toimialueella ei ole kelvollista MX-tietuetta.',
+	'DOMAIN_NO_MX_RECORD_EMAIL'	=> 'Antamallasi sähköpostipalvelimella ei ole kelvollista MX-rekisteriä.',
 	'DOWNLOADS'					=> 'Lataukset',
 	'DRAFTS_DELETED'			=> 'Kaikki valitut luonnokset on poistettu.',
 	'DRAFTS_EXPLAIN'			=> 'Täällä voit katsoa, muokata ja poistaa valitsemiasi luonnoksia.',
@@ -188,27 +199,49 @@ $lang = array_merge($lang, array(
 	'EXPORT_FOLDER'				=> 'Vie valitussa muodossa',
 
 	'FIELD_REQUIRED'					=> 'Kenttä “%s” täytyy täyttää.',
-	'FIELD_TOO_SHORT'					=> 'Kenttä "%1$s" on liian lyhyt. Vaaditaan vähintään %2$d merkkiä.',
-	'FIELD_TOO_LONG'					=> 'Kenttä "%1$s" on liian pitkä. Merkkien enimmäismäärä on %2$d kpl.',
-	'FIELD_TOO_SMALL'					=> '"%1$s" arvo on liian matala. Vähimmäisarvo on %2$d .',
-	'FIELD_TOO_LARGE'					=> '"%1$s" arvo on liian suuri. Ensimmäisarvo on %2$d .',
+	'FIELD_TOO_SHORT'					=> array(
+		1	=> 'Kenttä “%2$s” on liian lyhyt, min. mitta on %1$d merkkiä.',
+		2	=> 'Kenttä “%2$s” on liian lyhyt, min. mitta on %1$d merkkiä.',
+	),
+	'FIELD_TOO_LONG'					=> array(
+		1	=> 'Kenttä “%2$s” on liian pitkä, max. mitta on %1$d merkkiä.',
+		2	=> 'Kenttä “%2$s” on liian pitkä, max. mitta on %1$d merkkiä.',
+	),
+	'FIELD_TOO_SMALL'					=> '"%2$s" arvo on liian matala. Vähimmäisarvo on %1$d .',
+	'FIELD_TOO_LARGE'					=> '"%2$s" arvo on liian suuri. Ensimmäisarvo on %1$d .',
+	'FIELD_INVALID_CHARS_INVALID'		=> 'Kentässä “%s” on epäkelpoja merkkejä.',
 	'FIELD_INVALID_CHARS_NUMBERS_ONLY'	=> 'Kentässä “%s” on epäkelpoja merkkejä. Vain numerot ovat sallittuja.',
+	'FIELD_INVALID_CHARS_ALPHA_DOTS'	=> 'Kentässä “%s” on epäkelpoja merkkejä. Vain kirjoitusmerkit tai . merkit ovat sallittuja.',
 	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Kentässä “%s” on epäkelpoja merkkejä. Vain kirjoitusmerkit ovat sallittuja.',
-	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Kentässä “%s” on epäkelpoja merkkejä. Vain kirjaimet, numerot, välilyönnit tai -+_[] merkit ovat sallittuja.',
+	'FIELD_INVALID_CHARS_ALPHA_PUNCTUATION'	=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjoitusmerkit tai _,-. merkit ovat sallittuja ja ensimmäisen merkin pitää olla kirjain.',
+	'FIELD_INVALID_CHARS_ALPHA_SPACERS'	=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjoitusmerkit, tyhjälyönti tai -+_[] merkit sallittuja.',
+	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'	=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjoitusmerkit tai _ merkit sallittuja',
+	'FIELD_INVALID_CHARS_LETTER_NUM_DOTS'	=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjaimet, numerot tai . merkit sallittuja.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_ONLY'	=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjaimet ja numerot ovat sallittuja.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_PUNCTUATION'	=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjaimet, numerot tai _,-. merkit ovat sallittuja ja ensimmäisen merkin pitää olla kirjain.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_SPACERS'		=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjaimet, numerot, tyhjälyönti tai -+_[] merkit sallittuja.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_UNDERSCORE'		=> 'Kentässä “%s” on epäkelpoja merkkejä, vain kirjaimet, numerot, tyhjälyönti tai -+_[] merkit sallittuja.',
 	'FIELD_INVALID_DATE'				=> 'Kentässä “%s” on epäkelpo päivämäärä.',
-    'FIELD_INVALID_VALUE'            	=> 'Kentässä “%s” on epäkelpo arvo.',
+	'FIELD_INVALID_URL'					=> 'Kentässä “%s” on epäkelpo url.',
+	'FIELD_INVALID_VALUE'				=> 'Kentässä “%s” on epäkelpo arvo.',
 
 	'FOE_MESSAGE'				=> 'Vihamiehen lähettämä viesti',
 	'FOES_EXPLAIN'				=> 'Vihamiehet ovat käyttäjiä joita ei huomioida. Näiden käyttäjien kirjoittamia viestejä ei näytetä ja yksityisviestit eivät ole sallittu. Huomaa, että et voi lisätä valvojia tai ylläpitäjiä listaan.',
 	'FOES_UPDATED'				=> 'Vihamiehet ovat päivitetty',
 	'FOLDER_ADDED'				=> 'Kansio lisätty',
-	'FOLDER_MESSAGE_STATUS'		=> '%1$d - %2$d viestiä tallennettu',
+	'FOLDER_MESSAGE_STATUS'		=> array(
+		1	=> '%2$d viesti %1$s muistissa',
+		2	=> '%2$d viestiä %1$s muistissa',
+	),
 	'FOLDER_NAME_EMPTY'			=> 'Tälle kansiolle on annettava nimi.',
 	'FOLDER_NAME_EXIST'			=> '<strong>%s</strong> Kansio on jo olemassa',
 	'FOLDER_OPTIONS'			=> 'Kansion vaihtoehdot',
 	'FOLDER_RENAMED'			=> 'Kansion nimi vaihdettu',
 	'FOLDER_REMOVED'			=> 'Kansio poistettu',
-	'FOLDER_STATUS_MSG'			=> '%1$d%% tilasta käytössä (%2$d viestiä %3$d:sta tallennettu)',
+		'FOLDER_STATUS_MSG'			=> array(
+		1	=> 'Kansio on %3$d%% täynnä (%2$d viesti %1$s talletettu)',
+		2	=> 'Kansio on %3$d%% täynnä (%2$d viestiä %1$s talletettu)',
+	),
 	'FORWARD_PM'				=> 'Lähetä yksityisviesti eteenpäin',
 	'FORCE_PASSWORD_EXPLAIN'	=> 'Vaihda salasanasi jatkaaksesi keskustelufoorumin selausta',
 	'FRIEND_MESSAGE'			=> 'Ystävän lähettämä viesti',
@@ -226,6 +259,11 @@ $lang = array_merge($lang, array(
 
 	'GLOBAL_ANNOUNCEMENT'		=> 'Yleistiedote',
 
+	'GRAVATAR_AVATAR_EMAIL'			=> 'Gravatar sähköposti',
+	'GRAVATAR_AVATAR_EMAIL_EXPLAIN'	=> 'Anna sähköpostiosoite jota käytit kun rekisetröidyit <a href="http://www.gravatar.com/">Gravatar</a> sivuille.',
+	'GRAVATAR_AVATAR_SIZE'			=> 'Avatarin koko',
+	'GRAVATAR_AVATAR_SIZE_EXPLAIN'	=> 'Anna avatarin leveys ja korkeus, jos kenttä tyhjä - automaattinen määritys.',
+
 	'HIDE_ONLINE'				=> 'Piilota paikallaolo',
 	'HIDE_ONLINE_EXPLAIN'		=> 'Vaihtoehto "Ei" tulee voimaan, kun seuraavan kerran vierailet foorumilla.',
 	'HOLD_NEW_MESSAGES'			=> 'Älä vastaanota uusia viestejä (Uudet viestit pidätetään, kunnes saat lisää tilaa)',
@@ -236,16 +274,22 @@ $lang = array_merge($lang, array(
 	'INVALID_USER_BIRTHDAY'			=> 'Antamasi päiväys ei ole kelvollinen syntymäpäivä.',
 	'INVALID_CHARS_USERNAME'	=> 'Käyttäjätunnuksessa on kiellettyjä merkkejä.',
 	'INVALID_CHARS_NEW_PASSWORD'=> 'Salasanassa ei ole vaadittuja merkkejä.',
-    'ITEMS_REQUIRED'			=> 'Tähdellä merkityt kentät ovat pakollisia ja ne täytyy täyttää',
+	'ITEMS_REQUIRED'			=> 'Tähdellä merkityt kentät ovat pakollisia ja ne täytyy täyttää',
 
 	'JOIN_SELECTED'				=> 'Liity valittuihin',
 
 	'LANGUAGE'					=> 'Kieli',
 	'LINK_REMOTE_AVATAR'		=> 'Linkitä toiselta sivustolta',
-	'LINK_REMOTE_AVATAR_EXPLAIN'=> 'Kirjoita haluamasi avatar-kuvan osoite.',
+	'LINK_REMOTE_AVATAR_EXPLAIN'=> 'Kirjoita haluamasi avatar-kuvan URL osoite.',
 	'LINK_REMOTE_SIZE'			=> 'Avatarin koko',
 	'LINK_REMOTE_SIZE_EXPLAIN'	=> 'Määrittele avatarin leveys ja korkeus. Jätä tyhjäksi automaattista tunnistusta varten.',
-	'LOGIN_EXPLAIN_UCP'			=> 'Ole hyvä ja kirjaudu sisään muokataksesi omia asetuksiasi',
+	'LOGIN_EXPLAIN_UCP'			=> 'Kirjaudu jotta voit muuttaa asetuksiasi UCP:ssä.',
+	'LOGIN_LINK'					=> 'Linkitä tai rekisteröi käyttäjä tilisi ulkoisessa palvelussa keskustelupalstan tiedoilla',
+	'LOGIN_LINK_EXPLAIN'			=> 'Olet yrittänyt kirjautua ulkoisella palvelulla jota ei ole vielä linkitetty keskustelupalstan tietoihin. Sinun pitää liittää linkki joko olemassaolevaan tai uuteen käyttäjätiliin.',
+	'LOGIN_LINK_MISSING_DATA'		=> 'Tieto joka tarvitaan linkittämään sinun käyttäjätilisi ulkoiseen palveluun puuttuu. Kirjaudu uudestaan käyttäjäksi.',
+	'LOGIN_LINK_NO_DATA_PROVIDED'	=> 'Ulkoisen palvelun käyttäjätiedon linkittäminen forumin käyttäjätietoon ei onnistu. Ole yhteydessä forumin ylläpitoon jos tarvitset lisäohjeita.',
+	'LOGIN_KEY'					=> 'Login Key',
+	'LOGIN_TIME'				=> 'Login Time',
 	'LOGIN_REDIRECT'			=> 'Olet kirjautunut sisään.',
 	'LOGOUT_FAILED'				=> 'Uloskirjautuminen ei onnistunut, koska pyyntösi ei vastannut istuntoa. Ole hyvä ja ota yhteys keskustelufoorumin ylläpitäjiin, mikäli tämä ongelma jatkuu.',
 	'LOGOUT_REDIRECT'			=> 'Olet kirjautunut ulos.',
@@ -266,16 +310,39 @@ $lang = array_merge($lang, array(
 	'MOVE_DELETED_MESSAGES_TO'		=> 'Siirrä poistettavan kansion viestit',
 	'MOVE_DOWN'						=> 'Siirrä alaspäin',
 	'MOVE_MARKED_TO_FOLDER'			=> 'Siirrä valitut %s',
-	'MOVE_PM_ERROR'					=> 'Viestien siirrossa tapahtui virhe, vain %1d / %2d viestistä on siirretty.',
+	'MOVE_PM_ERROR'					=> array(
+		1	=> 'Viestin siirtovirhe, vain %2$d viesti %1$s siirretty.',
+		2	=> 'Viestin siirtovirhe, vain %2$d viestiä %1$s siirretty.',
+	),
 	'MOVE_TO_FOLDER'				=> 'Siirrä kansioon',
 	'MOVE_UP'						=> 'Siirrä ylöspäin',
-	'NEW_EMAIL_CONFIRM_EMPTY'		=> 'Et varmistanut sähköpostiosoitettasi.',
 
-	'NEW_EMAIL_ERROR'				=> 'Antamasi sähköpostiosoitteet eivät ole samanlaisia.',
 	'NEW_FOLDER_NAME'				=> 'Uuden kansion nimi',
 	'NEW_PASSWORD'					=> 'Salasana',
 	'NEW_PASSWORD_CONFIRM_EMPTY'	=> 'Et varmistanut salasanaasi.',
 	'NEW_PASSWORD_ERROR'			=> 'Antamasi salasanat eivät ole samanlaisia.',
+
+	'NOTIFICATIONS_MARK_ALL_READ'						=> 'Merkitse kaikki ilmoitukset luetuiksi',
+	'NOTIFICATIONS_MARK_ALL_READ_CONFIRM'				=> 'Haluatko varmasti merkitä kaikki ilmoitukset luetuiksi?',
+	'NOTIFICATIONS_MARK_ALL_READ_SUCCESS'				=> 'Kaikki ilmoitukset merkitty luetuiksi.',
+	'NOTIFICATION_GROUP_MISCELLANEOUS'					=> 'Sekalaisia ilmoituksia',
+	'NOTIFICATION_GROUP_MODERATION'						=> 'Palstan huolto ilmoituksia',
+	'NOTIFICATION_GROUP_ADMINISTRATION'					=> 'Palstan ylläpidon ilmoituksia',
+	'NOTIFICATION_GROUP_POSTING'						=> 'Viestien ilmoituksia',
+	'NOTIFICATION_METHOD_EMAIL'							=> 'Sähköposti',
+	'NOTIFICATION_METHOD_JABBER'						=> 'Jabber',
+	'NOTIFICATION_TYPE'									=> 'Ilmoituksen tyyppi',
+	'NOTIFICATION_TYPE_BOOKMARK'						=> 'Joku vastaa merkisemääsi aiheeseen',
+	'NOTIFICATION_TYPE_GROUP_REQUEST'					=> 'Joku pyytää päästä ryhmäsi jäseneksi',
+	'NOTIFICATION_TYPE_IN_MODERATION_QUEUE'				=> 'Viesti tai aihe pitää hyväksyä',
+	'NOTIFICATION_TYPE_MODERATION_QUEUE'				=> 'Sinun viesti/aihe on hyväksytty/hylätty ylläpidon toimesta',
+	'NOTIFICATION_TYPE_PM'								=> 'Joku lähettää sinulle yksityisviestin',
+	'NOTIFICATION_TYPE_POST'							=> 'Joku vastaa aiheeseen jota seuraat',
+	'NOTIFICATION_TYPE_QUOTE'							=> 'Joku viittaa sinun viestissä',
+	'NOTIFICATION_TYPE_REPORT'							=> 'Joku ilmoittaa postista',
+	'NOTIFICATION_TYPE_TOPIC'							=> 'Joku aloittaa uuden aiheen forumilla johon olet kirjautunut',
+	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> 'Uudet käyttäjät tarvitsevat hyväksynnän',
+
 	'NOTIFY_METHOD'					=> 'Ilmoitustapa',
 	'NOTIFY_METHOD_BOTH'			=> 'kummatkin',
 	'NOTIFY_METHOD_EMAIL'			=> 'Vain sähköposti',
@@ -292,18 +359,22 @@ $lang = array_merge($lang, array(
 	'NOT_ADDED_FOES_FRIENDS'		=> 'Et voi lisätä käyttäjiä vihamiehiksi, jos he ovat merkitty ystäviksi.',
  	'NOT_ADDED_FOES_SELF'			=> 'Et voi lisätä itseäsi vihamieheksi.',
 	'NOT_AGREE'						=> 'En hyväksy',
-	'NOT_ENOUGH_SPACE_FOLDER'		=> 'Kohdekansio “%s” on täynnä. Valitsemaasi toimenpidettä ei voitu suorittaa.',
-	'NOT_MOVED_MESSAGE'				=> 'Sinulla on 1 kpl yksityisviestejä pidätettynä, koska kansiosi on täynnä.',
-	'NOT_MOVED_MESSAGES'			=> 'Sinulla on %d kappaletta yksityisviestejä pidätettynä, koska kansiosi on täynnä.',
+	'NOT_ENOUGH_SPACE_FOLDER'		=> 'Kansio “%s” on täynnä. Haluttua toimenpidettä ei voitu tehdä.',
+	'NOT_MOVED_MESSAGES'			=> array(
+		1	=> 'Sinun %d yksityisviesti on pidossa koska kansio on täynnä.',
+		2	=> 'Sinun %d yksityisviestiä on pidossa koska kansio on täynnä.',
+	),
 	'NO_ACTION_MODE'				=> 'Viestin toimintoa ei ole määritelty',
 	'NO_AUTHOR'						=> 'Tälle viestille ei ole määritelty lähettäjää',
-	'NO_AVATAR_CATEGORY'			=> 'Ei',
+	'NO_AVATAR'						=> 'Ei valittu avataria',
+	'NO_AVATAR_CATEGORY'			=> 'Ei avatar luokka',
 
 	'NO_AUTH_DELETE_MESSAGE'		=> 'Et voi poistaa yksityisviestejä.',
 	'NO_AUTH_EDIT_MESSAGE'			=> 'Et voi muokata yksityisviestejä.',
 	'NO_AUTH_FORWARD_MESSAGE'		=> 'Et voi lähettää yksityisviestejä eteenpäin.',
 	'NO_AUTH_GROUP_MESSAGE'			=> 'Et voi lähettää yksityisviestejä käyttäjäryhmille.',
     'NO_AUTH_PASSWORD_REMINDER'     => 'Et voi pyytää uutta salasanaa.',
+	'NO_AUTH_PROFILEINFO'			=> 'Et voi muuttaa käyttäjätietojasi.',
     'NO_AUTH_READ_HOLD_MESSAGE'     => 'Et voi lukea pidätettyjä yksityisviestejä.',
 	'NO_AUTH_READ_MESSAGE'			=> 'Et voi lukea yksityisviestejä.',
 	'NO_AUTH_READ_REMOVED_MESSAGE'	=> 'Et voi lukea tätä yksitysiviestiä, koska lähettäjä on poistanut sen.',
@@ -331,7 +402,7 @@ $lang = array_merge($lang, array(
 	'NO_SAVED_DRAFTS'			=> 'Ei tallennettuja luonnoksia',
 	'NO_TO_RECIPIENT'			=> 'Ei',
 	'NO_WATCHED_FORUMS'			=> 'Et seuraa yhtäkään keskustelualuetta.',
-    'NO_WATCHED_SELECTED'       => 'Et valinnut yhtään seurannassa olevaa aluetta tai viestiä.',
+	'NO_WATCHED_SELECTED'       => 'Et valinnut yhtään seurannassa olevaa aluetta tai viestiä.',
 	'NO_WATCHED_TOPICS'			=> 'Et seuraa yhtäkään viestiketjua.',
 
 	'PASS_TYPE_ALPHA_EXPLAIN'	=> 'Salasanan pituus täytyy olla %1$d ja %2$d merkin väliltä. Siinä tulee olla ISOJA ja pieniä kirjaimia, sekä numeroita',
@@ -348,13 +419,16 @@ $lang = array_merge($lang, array(
 	'PM_FROM_REMOVED_AUTHOR'	=> 'Tämän viestin on lähettänyt käyttäjä, jonka tunnuksia ei enää ole.',
 	'PM_ICON'					=> 'Kuvake',
 	'PM_INBOX'					=> 'Saapuneet',
+	'PM_MARK_ALL_READ'			=> 'Merkitse kaikki yksityisviestit luetuiksi',
+	'PM_MARK_ALL_READ_SUCCESS'	=> 'Kaikki kansion yksityisviestit luettu',
 	'PM_NO_USERS'				=> 'Pyytämääsi käyttäjää ei ole olemassa.',
 	'PM_OUTBOX'					=> 'Lähtevät',
 	'PM_SENTBOX'				=> 'Lähetetyt',
 	'PM_SUBJECT'				=> 'Viestin otsikko',
 	'PM_TO'						=> 'Lähetä',
+	'PM_TOOLS'					=> 'Yksityisviestien työkalut',
+	'PM_USERS_REMOVED_NO_PERMISSION'	=> 'Käyttäjää ei voida lisätä koska hänellä ei ole oikeuksia lukea yksityisviestejä',
 	'PM_USERS_REMOVED_NO_PM'	=> 'Joitain käyttäjiä ei voitu lisätä vastaanottajiksi, koska he ovat ottaneet yksityisviestit pois käytöstä.',
-	'POPUP_ON_PM'				=> 'Ilmoita uudet yksityisviestit ponnahdusikkunalla',
 	'POST_EDIT_PM'				=> 'Muokkaa viestiä',
 	'POST_FORWARD_PM'			=> 'Lähetä viesti eteenpäin',
 	'POST_NEW_PM'				=> 'Lähetä viesti',
@@ -366,6 +440,8 @@ $lang = array_merge($lang, array(
 	'PREFERENCES_UPDATED'		=> 'Asetuksesi on päivitetty.',
 	'PROFILE_INFO_NOTICE'		=> 'Huomaa, että nämä tiedot näkyvät myös muille käyttäjille. Ole varovainen antaessasi henkilökohtaista tietoa. Tähdellä (*) merkityt kentät ovat pakollisia.',
 	'PROFILE_UPDATED'			=> 'Profiilisi on päivitetty.',
+	'PROFILE_AUTOLOGIN_KEYS'	=> '"Muista minut" kirjaa sinut automaattisesti kun vierailet sivuilla. Kun kirjaudut ulos "muista minut" avain nollautuu vain koneella jota käytät.',
+	'PROFILE_NO_AUTOLOGIN_KEYS'	=> '"Muista minut" avaita ei ole muistissa.',
 
 	'RECIPIENT'							=> 'Vastaanottaja',
 	'RECIPIENTS'						=> 'Vastaanottajat',
@@ -390,8 +466,10 @@ $lang = array_merge($lang, array(
 	'RULE_DELETED'						=> 'sääntö poistettu',
 	'RULE_LIMIT_REACHED'				=> 'Et voi luoda uutta YV-sääntöä. Sinulla on jo enimmäismäärä sääntöjä käytössä.',
 	'RULE_NOT_DEFINED'					=> 'Sääntöä ei ole määritelty oikein',
-	'RULE_REMOVED_MESSAGE'				=> 'Yksityisviestien suodattimet ovat poistaneet yhden viestin.',
-	'RULE_REMOVED_MESSAGES'				=> 'Yksityisviestien suodattimet ovat poistaneet %d viestiä.',
+	'RULE_REMOVED_MESSAGES'				=> array(
+		1	=> '%d yksityisviesti poistettu (viestisuodatin).',
+		2	=> '%d yksityisviestiä poistettu (viestisuodatin).',
+	),
 
 	'SAME_PASSWORD_ERROR'		=> 'Antamasi uusi salasana on sama, kuin nykyinen salasanasi',
 	'SEARCH_YOUR_POSTS'			=> 'Katso omia viestejäsi',
@@ -401,6 +479,8 @@ $lang = array_merge($lang, array(
 	'SIGNATURE_EXPLAIN'			=> 'Voit lisätä allekirjoituksen kirjoittamasi viestin perään. Allekirjoituksen pituus on rajoitettu %d merkkiin',
 	'SIGNATURE_PREVIEW'			=> 'Allekirjoituksesi näyttää tältä',
 	'SIGNATURE_TOO_LONG'		=> 'Allekirjoituksesi on liian pitkä.',
+	'SELECT_CURRENT_TIME'		=> 'Aseta aika',
+	'SELECT_TIMEZONE'			=> 'Valitse aikavyöhyke',
 	'SORT'						=> 'Järjestä',
 	'SORT_COMMENT'				=> 'Tiedoston kommentti ',
 	'SORT_DOWNLOADS'			=> 'Lataukset',
@@ -410,20 +490,33 @@ $lang = array_merge($lang, array(
 	'SORT_SIZE'					=> 'Tiedoston koko',
 
 	'TIMEZONE'					=> 'Aikavyöhyke',
+	'TIMEZONE_DATE_SUGGESTION'	=> 'Päivämäärä: %s',
+	'TIMEZONE_INVALID'			=> 'Valitsemasi aikavyöhyke on epäkelpo.',
 	'TO'						=> 'Vastaanottaja',
+	'TO_MASS'					=> 'Vastaanottajat',
+	'TO_ADD'					=> 'Lisää vastaanottaja',
+	'TO_ADD_MASS'				=> 'Lisää vastaanottajat',
+	'TO_ADD_GROUPS'				=> 'Lisää ryhmiä',
 	'TOO_MANY_RECIPIENTS'		=> 'Yritit lähettää yksityisviestin liian monelle vastaanottajalle.',
 	'TOO_MANY_REGISTERS'		=> 'Olet yrittänyt rekisteröityä liian monta kertaa. Yritä myöhemmin uudestaan.',
 
 	'UCP'						=> 'Omat asetukset',
 	'UCP_ACTIVATE'				=> 'Aktivoi tunnukset',
 	'UCP_ADMIN_ACTIVATE'		=> 'Huomaa, että antamasi sähköpostiosoitteen tulee olla toimiva, jotta tunnuksesi voidaan aktivoida. Ylläpitäjä tarkistaa tietosi ja ilmoittaa hyväksymisestä sähköpostilla.',
-	'UCP_AIM'					=> 'AOL Instant Messenger',
 	'UCP_ATTACHMENTS'			=> 'Liitetiedostot',
+	'UCP_AUTH_LINK'				=> 'Ulkoinen käyttäjätili',
+	'UCP_AUTH_LINK_ASK'			=> 'Sinulla ei ole käyttäjätiliä liitettynä tähän palveluun. Allaoleva painike linkittää forumin käyttäjätilin ulkoisen palvelimen käyttäjätiliin.',
+	'UCP_AUTH_LINK_ID'			=> 'Käyttäjätilin id-numero',
+	'UCP_AUTH_LINK_LINK'		=> 'linkki',
+	'UCP_AUTH_LINK_MANAGE'		=> 'Hallinnoi ulkoisen tilin liityntöjä',
+	'UCP_AUTH_LINK_NOT_SUPPORTED'	=> 'Forumi käyttäjätilin linkittäminen ulkoiseen palveluun ei ole mahdollista tällä hetkellä.',
+	'UCP_AUTH_LINK_TITLE'		=> 'Hallinnoi ulkoisen käyttäjätilin liityntöjä',
+	'UCP_AUTH_LINK_UNLINK'		=> 'Pura linkki',
 	'UCP_COPPA_BEFORE'			=> 'Ennen %s',
 	'UCP_COPPA_ON_AFTER'		=> 'Samaan aikaan, tai jälkeen %s',
 	'UCP_EMAIL_ACTIVATE'		=> 'Huomaa, että antamasi sähköpostiosoitteen tulee olla toimiva, jotta tunnuksesi voidaan aktivoida. Saat sähköpostin antamaasi osoitteeseen, jossa on mukana aktivointilinkki tunnuksellesi. Sinun täytyy napsauttaa tuota linkkiä ennen kuin voit kirjautua sisään.',
-	'UCP_ICQ'					=> 'ICQ-numero',
 	'UCP_JABBER'				=> 'Jabber-osoite',
+	'UCP_LOGIN_LINK'			=> 'Aseta ulkoisen käyttäjätilin liitynnät',
 
 	'UCP_MAIN'					=> 'Yleiset',
 	'UCP_MAIN_ATTACHMENTS'		=> 'Hallinnoi liitetiedostoja',
@@ -432,20 +525,22 @@ $lang = array_merge($lang, array(
 	'UCP_MAIN_FRONT'			=> 'Etusivu',
 	'UCP_MAIN_SUBSCRIBED'		=> 'Seuratut',
 
-	'UCP_MSNM'					=> 'WL/MSN Messenger',
 	'UCP_NO_ATTACHMENTS'		=> 'Et ole lähettänyt yhtään tiedostoa',
+
+	'UCP_NOTIFICATION_LIST'				=> 'hallinnoi ilmoituksia',
+	'UCP_NOTIFICATION_LIST_EXPLAIN'		=> 'Tässä voit katsoa kaikki vanhat ilmoitukset.',
+	'UCP_NOTIFICATION_OPTIONS'			=> 'Muokkaa ilmoitusten tietoja',
+	'UCP_NOTIFICATION_OPTIONS_EXPLAIN'	=> 'Tässä voit asettaa palstan ilmoitusten ulkoasun.',
 
 	'UCP_PREFS'					=> 'Asetukset',
 	'UCP_PREFS_PERSONAL'		=> 'Omat asetukset',
 	'UCP_PREFS_POST'			=> 'Viestien lähetys',
 	'UCP_PREFS_VIEW'			=> 'Viestien näyttö',
-	
+
 	'UCP_PM'					=> 'Yksityisviestit',
 	'UCP_PM_COMPOSE'			=> 'Kirjoita viesti',
 	'UCP_PM_DRAFTS'				=> 'Luonnokset',
 	'UCP_PM_OPTIONS'			=> 'Säännöt, kansiot ja asetukset',
-	'UCP_PM_POPUP'				=> 'Yksityisviestit',
-	'UCP_PM_POPUP_TITLE'		=> 'Ponnahdusikkuna',
 	'UCP_PM_UNREAD'				=> 'Lukemattomat viestit',
 	'UCP_PM_VIEW'				=> 'Näytä viestit',
 
@@ -454,16 +549,17 @@ $lang = array_merge($lang, array(
 	'UCP_PROFILE_PROFILE_INFO'	=> 'Profiilisi',
 	'UCP_PROFILE_REG_DETAILS'	=> 'Kirjautuminen',
 	'UCP_PROFILE_SIGNATURE'		=> 'Allekirjoitus',
+	'UCP_PROFILE_AUTOLOGIN_KEYS'=> 'Hallinnoi "Muista minut" avainta',
 
 	'UCP_USERGROUPS'			=> 'Käyttäjäryhmät',
 	'UCP_USERGROUPS_MEMBER'		=> 'Jäsenyydet',
 	'UCP_USERGROUPS_MANAGE'		=> 'Hallitse ryhmiä',
 
+	'UCP_PASSWORD_RESET_DISABLED'	=> 'Salasanan resetointi estetty. Tarvittaessa ota yhteys forumin ylläpitoon %sBoard Administrator%s',
 	'UCP_REGISTER_DISABLE'			=> 'Uuden tunnuksen luominen ei ole tällä hetkellä mahdollista.',
 	'UCP_REMIND'					=> 'Lähetä salasana',
 	'UCP_RESEND'					=> 'Lähetä aktivointiviesti',
 	'UCP_WELCOME'					=> 'Tervetuloa omiin asetuksiin. Täällä voit tarkastella ja muokata omaa profiiliasi, asetuksiasi, seurattuja keskustelualueita ja viestiketjuja. Voit lähettää yksityisviestejä toisille käyttäjille mikäli tämä toiminto on käytössä. Muista lukea tärkeät tiedotteet, ennen kuin jatkat eteenpäin.',
-	'UCP_YIM'						=> 'Yahoo Messenger',
 	'UCP_ZEBRA'						=> 'Ystävät ja vihamiehet',
 	'UCP_ZEBRA_FOES'				=> 'Vihamiehet',
 	'UCP_ZEBRA_FRIENDS'				=> 'Ystävät',
@@ -473,12 +569,12 @@ $lang = array_merge($lang, array(
 	'UPLOAD_AVATAR_FILE'			=> 'Siirrä omalta koneeltasi',
 	'UPLOAD_AVATAR_URL'				=> 'Kopioi osoitteesta',
 	'UPLOAD_AVATAR_URL_EXPLAIN'		=> 'Anna avatar-kuvan osoite. Kuva kopioidaan tämän sivuston palvelimelle.',
-	'USERNAME_ALPHA_ONLY_EXPLAIN'	=> 'Käyttäjätunnuksessa täytyy olla vähintään %1$d merkkiä ja enintään %2$d merkkiä. Voit käyttää vain kirjaimia ja numeroita',
-	'USERNAME_ALPHA_SPACERS_EXPLAIN'=> 'Käyttäjätunnuksen pituus täytyy olla %1$d ja %2$d merkin väliltä ja siinä tulee olla kirjaimia, numeroita ,välilyöntejä tai -+_[] merkkejä.',
-	'USERNAME_ASCII_EXPLAIN'		=> 'Käyttäjätunnuksen pituus täytyy olla %1$d ja %2$d merkin väliltä ja käyttää ainoastaan ASCII-merkkejä, eli ei symboleja',
-	'USERNAME_LETTER_NUM_EXPLAIN'	=> 'Käyttäjätunnuksen pituus täytyy olla %1$d ja %2$d merkin väliltä ja käyttää ainoastaan kirjaimia ja numeroita',
-	'USERNAME_LETTER_NUM_SPACERS_EXPLAIN'=> 'Käyttäjätunnuksen pituus täytyy olla %1$d ja %2$d merkin väliltä ja käyttää kirjaimia, numeroita, välilyöntiä tai -+_[] merkkejä.',
-	'USERNAME_CHARS_ANY_EXPLAIN'	=> 'Pituuden täytyy olla %1$d ja %2$d merkin väliltä.',
+	'USERNAME_ALPHA_ONLY_EXPLAIN'	=> 'Käyttäjätunnuksessa täytyy olla vähintään %1$s merkkiä ja enintään %2$s merkkiä. Voit käyttää vain kirjaimia ja numeroita',
+	'USERNAME_ALPHA_SPACERS_EXPLAIN'=> 'Käyttäjätunnuksen pituus täytyy olla %1$s ja %2$s merkin väliltä ja siinä tulee olla kirjaimia, numeroita ,välilyöntejä tai -+_[] merkkejä.',
+	'USERNAME_ASCII_EXPLAIN'		=> 'Käyttäjätunnuksen pituus täytyy olla %1$s ja %2$s merkin väliltä ja käyttää ainoastaan ASCII-merkkejä, eli ei symboleja',
+	'USERNAME_LETTER_NUM_EXPLAIN'	=> 'Käyttäjätunnuksen pituus täytyy olla %1$s ja %2$s merkin väliltä ja käyttää ainoastaan kirjaimia ja numeroita',
+	'USERNAME_LETTER_NUM_SPACERS_EXPLAIN'=> 'Käyttäjätunnuksen pituus täytyy olla %1$s ja %2$s merkin väliltä ja käyttää kirjaimia, numeroita, välilyöntiä tai -+_[] merkkejä.',
+	'USERNAME_CHARS_ANY_EXPLAIN'	=> 'Pituuden täytyy olla %1$s ja %2$s merkin väliltä.',
 	'USERNAME_TAKEN_USERNAME'		=> 'Valitsemasi käyttäjätunnus on jo olemassa. Ole hyvä ja valitse toinen.',
 	'USERNAME_DISALLOWED_USERNAME'	=> 'Antamasi käyttäjätunnus on porttikiellossa.',
 	'USER_NOT_FOUND_OR_INACTIVE'	=> 'Antamaasi käyttäjätunnusta ei löytynyt, tai ne kuuluvat vahvistamattomalle käyttäjälle.',
@@ -491,10 +587,13 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_PM'				=> 'Seuraava yksityisviesti',
 	'VIEW_PM'					=> 'Näytä viesti',
 	'VIEW_PM_INFO'				=> 'viestin yksityiskohdat',
-	'VIEW_PM_MESSAGE'			=> '1 viesti',
-	'VIEW_PM_MESSAGES'			=> '%d viestiä',
+	'VIEW_PM_MESSAGES'			=> array(
+		1	=> '%d viesti',
+		2	=> '%d viestiä',
+	),
 	'VIEW_PREVIOUS_HISTORY'		=> 'Näytä edellinen yksityisviesti',
 	'VIEW_PREVIOUS_PM'			=> 'Edellinen yksityisviesti',
+	'VIEW_PROFILE'				=> 'Katso kayttäjätietoja',
 	'VIEW_SIGS'					=> 'Näytä allekirjoitukset',
 	'VIEW_SMILIES'				=> 'Näytä hymiöt kuvina',
 	'VIEW_TOPICS_DAYS'			=> 'Näytä viestiketjut aikaväliltä',
@@ -520,14 +619,14 @@ $lang = array_merge($lang, array(
 		'PLACE_INTO_FOLDER'	=> 'Tallenna kansioon',
 		'MARK_AS_READ'		=> 'Merkitse luetuksi',
 		'MARK_AS_IMPORTANT'	=> 'Merkitse viesti',
-		'DELETE_MESSAGE'	=> 'Poista viesti'
+		'DELETE_MESSAGE'	=> 'Poista viesti',
 	),
 	'PM_CHECK' => array(
 		'SUBJECT'	=> 'Otsikko',
 		'SENDER'	=> 'Lähettäjä',
 		'MESSAGE'	=> 'Viesti',
 		'STATUS'	=> 'Viestin tila',
-		'TO'		=> 'Lähetetty käyttäjälle'
+		'TO'		=> 'Lähetetty käyttäjälle',
 	),
 	'PM_RULE' => array(
 		'IS_LIKE'		=> 'On samanlainen',
@@ -543,9 +642,8 @@ $lang = array_merge($lang, array(
 		'ANSWERED'		=> 'Vastattu',
 		'FORWARDED'		=> 'Lähetetty eteenpäin',
 		'TO_GROUP'		=> 'Oletusryhmääni',
-		'TO_ME'			=> 'itselleni'
+		'TO_ME'			=> 'itselleni',
 	),
-
 
 	'GROUPS_EXPLAIN'	=> 'Käyttäjäryhmät auttavat ylläpitoa hallinnoimaan käyttäjiä. Sinut laitetaan rekisteröityessäsi johonkin ryhmään ja tämä ryhmä on oletusryhmäsi. Tämä ryhmä määrittelee näkyvyytesi toisille käyttäjille, kuten simerkiksi käyttäjätunnuksen värin, avatarin, arvon, jne. Mikäli ylläpito on sallinut, voit vaihtaa oletusryhmääsi. Sinut voidaan myös liittää toisiin ryhmiin. Jotkut käyttäjäryhmät sallivat sinun nähdä piilotettuja alueita tai antavat lisää oikeuksia tietyille alueille.',
 	'GROUP_LEADER'		=> 'valvojana',
@@ -557,7 +655,5 @@ $lang = array_merge($lang, array(
 	'NO_LEADER'		=> 'Ei ryhmän valvojia',
 	'NO_MEMBER'		=> 'Ei ryhmän jäsenyyksiä',
 	'NO_PENDING'	=> 'Ei odottavia jäsenyyksiä',
-	'NO_NONMEMBER'	=> 'Et ole jäsenenä',
+	'NO_NONMEMBER'	=> 'Ei ryhmää vieraille',
 ));
-
-?>

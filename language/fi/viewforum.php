@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* viewforum [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio  
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -40,7 +43,7 @@ $lang = array_merge($lang, array(
 	'ANNOUNCEMENTS'			=> 'Tiedotteet',
 
 	'FORUM_PERMISSIONS'		=> 'Keskustelualueen oikeudet',
-	
+
 	'ICON_ANNOUNCEMENT'		=> 'Tiedote',
 	'ICON_STICKY'			=> 'Pysyvä',
 
@@ -52,20 +55,20 @@ $lang = array_merge($lang, array(
 	'NEW_POSTS_LOCKED'		=> 'Uusia viestejä [ Lukittu ]', // ei käytössä
 	'NO_NEW_POSTS_HOT'		=> 'Ei uusia viestejä [ Suosittu ]', // ei käytössä
 	'NO_NEW_POSTS_LOCKED'	=> 'Ei uusia viestejä [ Lukittu ]', // ei käytössä
-    'NO_READ_ACCESS'        => 'Käytössäsi olevat oikeudet eivät salli tämän alueen viestien lukemista.',
-    'NO_UNREAD_POSTS_HOT'      => 'Ei lukemattomia viestejä [ Suosittu ]',
-    'NO_UNREAD_POSTS_LOCKED'   => 'Ei lukemattomia viestejä [ Lukittu ]',
+	'NO_READ_ACCESS'			=> 'Käytössäsi olevat oikeudet eivät salli tämän alueen viestien lukemista.',
+	'NO_UNREAD_POSTS_HOT'		=> 'Ei lukemattomia viestejä [ Suosittu ]',
+	'NO_UNREAD_POSTS_LOCKED'		=> 'Ei lukemattomia viestejä [ Lukittu ]',
 
-    'POST_FORUM_LOCKED'     => 'Alue on lukittu',
+	'POST_FORUM_LOCKED'		=> 'Alue on lukittu',
 
-    'TOPICS_MARKED'         => 'Tämän alueen viestit ovat merkitty luetuiksi.',
+	'TOPICS_MARKED'			=> 'Tämän alueen viestit ovat merkitty luetuiksi.',
 
-    'UNREAD_POSTS_HOT'      => 'Lukemattomia viestejä [ Suosittu ]',
-    'UNREAD_POSTS_LOCKED'   => 'Lukemattomia viestejä [ Lukittu ]',
-	   
+	'UNREAD_POSTS_HOT'			=> 'Lukemattomia viestejä [ Suosittu ]',
+	'UNREAD_POSTS_LOCKED'		=> 'Lukemattomia viestejä [ Lukittu ]',
+
 	'VIEW_FORUM'			=> 'Näytä alue',
-	'VIEW_FORUM_TOPIC'		=> '1 viestiketju',
-	'VIEW_FORUM_TOPICS'		=> '%d viestiketjua',
+	'VIEW_FORUM_TOPICS'		=> array(
+		1	=> '%d viestiketju',
+		2	=> '%d viestiketjua',
+	),
 ));
-
-?>

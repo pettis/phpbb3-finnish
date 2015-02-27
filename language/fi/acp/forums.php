@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_forums [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -43,8 +46,12 @@ $lang = array_merge($lang, array(
 	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Kuinka monta päivää on siivousten välillä.',
 	'AUTO_PRUNE_VIEWED'			=> 'Automaattinen siivous viestin katsomisen mukaan',
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Viesti poistetaan, jos sitä ei ole katsottu tietyn ajan sisällä.',
-	'CONTINUE'						=> 'Jatka',
+	'AUTO_PRUNE_SHADOW_FREQ'	=> 'Automaattinen varjojen siivous',
+	'AUTO_PRUNE_SHADOW_DAYS'	=> 'Automaattinen varjojen siivousaika (päiviä)',
+	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Päivien lukumäärä minkä jälkeen varjo aihe poistetaan.',
+	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Siivousten välinen aika päiviä.',
 
+	'CONTINUE'						=> 'Jatka',
 	'COPY_PERMISSIONS'				=> 'Kopioi oikeudet',
 	'COPY_PERMISSIONS_EXPLAIN'		=> 'Voit helpottaa oikeuksien asettelua kopioimalla oikeudet joltain toiselta alueelta.',
 	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Kun alue on luotu, Sillä on samat oikeudet, kuin valitsemallasi alueella. Mikäli yhtään aluetta ei ole valittuna, uusi alue on piilotettuna, kunnes sen oikeudet on asetettu.',
@@ -86,7 +93,7 @@ $lang = array_merge($lang, array(
 	'FORUM_EDIT_EXPLAIN'				=> 'Voit muokata tätä aluetta allaolevalla lomakkeella. Huomaa, että valvojan oikeudet asetetaan alueen oikeuksissa jokaiselle käyttäjälle tai käyttäjäryhmälle.',
 	'FORUM_IMAGE'						=> 'Alueen kuva',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Alueen kuvan sijainti suhteessa phpBB juurihakemistoon',
-    'FORUM_IMAGE_NO_EXIST'            	=> 'Antamaasi kuvaa ei ole olemassa',
+	'FORUM_IMAGE_NO_EXIST'            	=> 'Antamaasi kuvaa ei ole olemassa',
 	'FORUM_LINK_EXPLAIN'				=> 'Täysi URL (protokolla, esimerkiksi <samp>http://</samp>, mukaan lukien), johon käyttäjä ohjataan tätä aluetta napsautettaessa. Esimerkiksi <samp>http://www.phpbb.com/</samp>',
 	'FORUM_LINK_TRACK'					=> 'Pidä kirjaa uudelleenohjauksista',
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Kertoo kuinka monta kertaa linkkissä on käyty.',
@@ -102,6 +109,8 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_OLD'				=> 'Alueen salasana käyttää vanhaa salakirjoitusmenetelmää ja se tulisi muuttaa.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Antamasi salasanat eivät täsmää.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Automaattinen siivoaminen',
+	'FORUM_PRUNE_SHADOW'				=> 'Salli varjoaiheiden automaattinen siivous',
+	'FORUM_PRUNE_SHADOW_EXPLAIN'			=> 'Siivoaa forumin varjoaiheet, aseta jaksotus/aika asetukset alla.',
 	'FORUM_RESYNCED'					=> 'Alue “%s” on synkronoitu uudelleen ',
 	'FORUM_RULES_EXPLAIN'				=> 'Alueen säännöt voidaan näyttää kaikilla alueen sivuilla.',
 	'FORUM_RULES_LINK'					=> 'Linkki alueen sääntöihin',
@@ -144,9 +153,9 @@ $lang = array_merge($lang, array(
 	'PRUNE_STICKY'				=> 'Siivoa pysyvät tiedotteet',
 	'PRUNE_OLD_POLLS'			=> 'Siivoa vanhat äänestykset',
 	'PRUNE_OLD_POLLS_EXPLAIN'	=> 'Poista keskusteluketjut, joissa on äänestys eikä siihen ole tullut vastausta.',
-	
+
 	'REDIRECT_ACL'	=> 'Nyt voit asettaa %starvittavat oikeudet%s tälle alueelle.',
-	
+
 	'SYNC_IN_PROGRESS'			=> 'Synkronoin alueita',
 	'SYNC_IN_PROGRESS_EXPLAIN'	=> 'Synkronoin alueelta %1$d/%2$d.',
 
@@ -156,5 +165,3 @@ $lang = array_merge($lang, array(
 
 	'UNLOCKED'			=> 'Avoin',
 ));
-
-?>

@@ -1,29 +1,34 @@
 <?php
-/** 
+/**
 *
-* acp_bots [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio 
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
+// DEVELOPERS PLEASE NOTE
+//
+// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
 // Placeholders can now contain order information, e.g. instead of
 // 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
@@ -54,7 +59,7 @@ $lang = array_merge($lang, array(
 	'BOT_IP_EXPLAIN'	=> 'Osittaiset vastaavuudet ovat sallittuja, erota osoitteet toisistaan puolipisteellä.',
 	'BOT_NAME'			=> 'Botin nimi',
 	'BOT_NAME_EXPLAIN'	=> 'Käytetään vain omaan tietoosi.',
-    'BOT_NAME_TAKEN'    => 'Tämä nimi on jo käytössä, joten sitä ei voi antaa botille.',
+	'BOT_NAME_TAKEN'	=> 'Tämä nimi on jo käytössä, joten sitä ei voi antaa botille.',
 	'BOT_NEVER'			=> 'Ei koskaan',
 	'BOT_STYLE'			=> 'Botin tyyli',
 	'BOT_STYLE_EXPLAIN'	=> 'Botille näytettävä tyyli.',
@@ -67,5 +72,3 @@ $lang = array_merge($lang, array(
 	'NO_BOT'		=> 'Antamallasi tunnisteella ei löytynyt botteja',
 	'NO_BOT_GROUP'	=> 'Bottien käyttäjäryhmää ei löytynyt.',
 ));
-
-?>

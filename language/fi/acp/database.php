@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_database [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -39,14 +42,14 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_BACKUP_EXPLAIN'	=> 'Täällä voit ottaa varmuuskopion keskustelufoorumisi tietokannasta. Voit tallentaa syntyvän tiedoston palvelimelle <samp>store/</samp>-hakemistoon tai ladata sen omalle koneellesi. Palvelimen asetuksista riippuen, voit ehkä pakata tiedoston usealla eri tavalla.',
 	'ACP_RESTORE_EXPLAIN'	=> 'Tämä palauttaa kaiken phpBB-tiedon varmuuskopion sisältävästä tiedostosta. Mikäli palvelin tukee, voit käyttää gzip- tai bzip2-pakattua tekstitiedostoa ja se puretaan automaattisesti. <strong>VAROITUS</strong> Varmuuskopion palautus ylikirjoittaa kaiken datan foorumilta. Palautus saattaa kestää pitkän aikaa. Älä poistu tältä sivulta ennen kuin varmuuskopio on palautettu kokonaan. Varmuuskopiot, jotka ovat tallennettu <samp>store/</samp>-kansioon oletetaan olleen luodun phpBB:n omalla varmuuskopiojärjestelmällä. Muulla tavalla luodut varmuuskopiot eivät välttämättä toimi.',
-	
+
 	'BACKUP_DELETE'		=> 'Varmuuskopion sisältävä tiedosto on poistettu',
 	'BACKUP_INVALID'	=> 'Valitsemasi tiedosto varmuuskopiota varten on epäkelpo',
 	'BACKUP_OPTIONS'	=> 'Varmuuskopion vaihtoehdot',
 	'BACKUP_SUCCESS'	=> 'Varmuuskopion sisältävä tiedosto on luotu.',
 	'BACKUP_TYPE'		=> 'varmuuskopion tyyppi',
-	
-	'DATABASE' 			=> 'Tietokantatyökalut',
+
+	'DATABASE'			=> 'Tietokantatyökalut',
 	'DATA_ONLY'			=> 'Vain data',
 	'DELETE_BACKUP'		=> 'Poista varmuuskopio',
 	'DELETE_SELECTED_BACKUP'	=> 'Haluatko varmasti poistaa valitsemasi varmuuskopion?',
@@ -73,5 +76,3 @@ $lang = array_merge($lang, array(
 	'TABLE_SELECT'		=> 'Taulun valinta',
 	'TABLE_SELECT_ERROR'=> 'Valitse ainakin yksi taulu.',
 ));
-
-?>

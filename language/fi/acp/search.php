@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_search [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpBB3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -52,16 +55,40 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Sisällysluettelon poisto on käynnissä',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Hakukone siivoaa sisällysluetteloaan. Tähän voi mennä muutama minuutti.',
 
-	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'MySQL fulltext -hakukonetta voidaan käyttää vain MySQL:n version 4 ja sitä uudempien versioiden kanssa.',
+	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'MySQL fulltext -hakukonetta voidaan käyttää vain MySQL:n version 4 ja sitä uudempien versioiden kanssa.',
 	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext -sisällysluetteloa voidan käyttää vain MyISAM ja InnoDB -tauluissa. MySQL 5.6.4 tai uudempi tarvitaan InnoDB:n fulltext-sisällysluetteloa varten.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Sisällysluettelossa olevien viestien kokonaismäärä',
-	'FULLTEXT_MYSQL_MBSTRING'				=> 'Tuki ei-latinalaisille UTF-8 -merkeille mbstringin avulla:',
-	'FULLTEXT_MYSQL_PCRE'					=> 'Tuki ei-latinalaisille UTF-8 -merkeille PCRE:n avulla:',
-	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Mikäli PCRE:llä ei ole Unicode-merkkien ominaisuuksia, hakukone yrittää käyttää mbstringin säännöllisiin lausekkeisiin perustuvaa moottoria.',
-	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Tämä hakukone vaatii PCRE:n Unicode-merkistön ominaisuudet, jotka ovat saatavilla vain PHP:n versioissa 4.4, 5.1 ja siitä ylöspäin, mikäli haluat etsiä ei-latinalaisia merkkejä.',
-    'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'   => 'Sanat, jotka sisältävät vähintään näin monta merkkiä otetaan mukaan sisällysluetteloon. Tätä asetusta voi muuttaa vain muuttamalla MySQL-palvelimen asetuksia.',
-    'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'   => 'Sanat, jotka sisältävät korkeintaan näin monta merkkiä otetaan mukaan sisällysluetteloon. Tätä asetusta voi muuttaa vain muuttamalla MySQL-palvelimen asetuksia.',
-	'GENERAL_SEARCH_SETTINGS'				=> 'Yleiset hakutoiminnon asetukset',
+	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Sanat joissa on vähintään näin monta kirjainta luetteloidaan hakua varten. Sinä tai ylläpitäjä voi muuttaa tätä mysql asetuksissa.',
+	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Sanat joissa on enintään näin monta merkkiä luetteloidaan hakua varten. Sinä tai ylläpitäjä voi muuttaa tätä mysql asetuksissa.',
+
+	'FULLTEXT_POSTGRES_INCOMPATIBLE_DATABASE'	=> 'PostgreSQL kokotekstin haku on käytössä vain PostgreSQL:ssä.',
+	'FULLTEXT_POSTGRES_TOTAL_POSTS'			=> 'Indeksoitujen viestien kokonaislukumäärä',
+	'FULLTEXT_POSTGRES_VERSION_CHECK'		=> 'PostgreSQL versio',
+	'FULLTEXT_POSTGRES_TS_NAME'				=> 'Tekstihaun konfiguraatio profiili:',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN'			=> 'Avainsanan min. pituus',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN'			=> 'Avainsanan max. pituus',
+	'FULLTEXT_POSTGRES_VERSION_CHECK_EXPLAIN'		=> 'Tämä haku tarvitsee PostgreSQL version 8.3 tai uudempi.',
+	'FULLTEXT_POSTGRES_TS_NAME_EXPLAIN'				=> 'Tekstihaun konfigurointia käytetty määrittämään sanojen merkityksiä.',
+	'FULLTEXT_POSTGRES_MIN_WORD_LEN_EXPLAIN'			=> 'Sanoja joissa on vähintään näin monta merkkiä käytetään tietokannan kyselyssä.',
+	'FULLTEXT_POSTGRES_MAX_WORD_LEN_EXPLAIN'			=> 'Sanoja joissa on enintään näin monta merkkiä käytetään tietokannan kyselyssä.',
+
+	'FULLTEXT_SPHINX_CONFIGURE'				=> 'Anna seuraavat tiedot sphinx config tiedostoa varten',
+	'FULLTEXT_SPHINX_DATA_PATH'				=> 'Polku data kirjastoon',
+	'FULLTEXT_SPHINX_DATA_PATH_EXPLAIN'		=> 'Polku loki ja index tiedostoille. Tämä kirjasto pitää web haulta suojattulla alueella.',
+	'FULLTEXT_SPHINX_DELTA_POSTS'			=> 'Viestien lukumäärä toistuvasti päivitetyssä delta index',
+	'FULLTEXT_SPHINX_HOST'					=> 'Sphinx haku palvelu',
+	'FULLTEXT_SPHINX_HOST_EXPLAIN'			=> 'Host on which the sphinx search daemon (searchd) listens. Leave empty to use the default localhost',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT'		=> 'Indexer memory limit',
+	'FULLTEXT_SPHINX_INDEXER_MEM_LIMIT_EXPLAIN'	=> 'This number should at all times be lower than the RAM available on your machine. If you experience periodic performance problems this might be due to the indexer consuming too many resources. It might help to lower the amount of memory available to the indexer.',
+	'FULLTEXT_SPHINX_MAIN_POSTS'			=> 'Number of posts in main index',
+	'FULLTEXT_SPHINX_PORT'					=> 'Sphinx search daemon port',
+	'FULLTEXT_SPHINX_PORT_EXPLAIN'			=> 'Port on which the sphinx search daemon (searchd) listens. Leave empty to use the default Sphinx API port 9312',
+	'FULLTEXT_SPHINX_WRONG_DATABASE'		=> 'The sphinx search for phpBB supports MySQL and PostgreSQL only.',
+	'FULLTEXT_SPHINX_CONFIG_FILE'			=> 'Sphinx config file',
+	'FULLTEXT_SPHINX_CONFIG_FILE_EXPLAIN'	=> 'The generated content of the sphinx config file. This data needs to be pasted into the sphinx.conf which is used by sphinx search daemon. Replace the [dbuser] and [dbpassword] placeholders with your database credentials.',
+	'FULLTEXT_SPHINX_NO_CONFIG_DATA'		=> 'The sphinx data and config directory paths are not defined. Please define them to generate the config file.',
+
+	'GENERAL_SEARCH_SETTINGS'				=> 'Yleiset haku asetukset',
 	'GO_TO_SEARCH_INDEX'					=> 'Mene hakutoiminnon etusivulle',
 
 	'INDEX_STATS'							=> 'Etusivun tilastot',
@@ -73,8 +100,8 @@ $lang = array_merge($lang, array(
 
 	'MAX_SEARCH_CHARS'						=> 'Sisällysluettelon merkkien enimmäismäärä',
 	'MAX_SEARCH_CHARS_EXPLAIN'				=> 'Sanat, joissa ei ole tätä enempää merkkejä, lisätään sisällysluetteloon.',
-    'MAX_NUM_SEARCH_KEYWORDS'				=> 'Avainsanojen enimmäismäärä',
-    'MAX_NUM_SEARCH_KEYWORDS_EXPLAIN'		=> 'Maksimimäärä haettaville sanoille. Nolla poistaa rajoituksen käytöstä.',
+	'MAX_NUM_SEARCH_KEYWORDS'				=> 'Avainsanojen enimmäismäärä',
+	'MAX_NUM_SEARCH_KEYWORDS_EXPLAIN'		=> 'Maksimimäärä haettaville sanoille. Nolla poistaa rajoituksen käytöstä.',
 	'MIN_SEARCH_CHARS'						=> 'Sisällysluettelon merkkien vähimmäismäärä',
 	'MIN_SEARCH_CHARS_EXPLAIN'				=> 'Sanassa täytyy olla vähintään näin monta merkkiä päästäkseen sisällysluetteloon.',
 	'MIN_SEARCH_AUTHOR_CHARS'				=> 'Minimimäärä merkkejä kirjoittajan nimessä',
@@ -84,8 +111,15 @@ $lang = array_merge($lang, array(
 
 	'SEARCH_GUEST_INTERVAL'					=> 'Hakutoiminnon rajoitus vieraiden käyttämänä',
 	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> 'Kuinka monta sekuntia vierailijan on odotettava hakujensa välillä. Mikäli yksi vieras on etsimässä tietoa, muiden on odotettava, kunnes aikaraja on täytynyt.',
-	'SEARCH_INDEX_CREATE_REDIRECT'			=> 'Kaikki viestit id-arvoon %1$d asti on luetteloitu, joista %2$d viestiä oli mukana tässä vaiheessa.<br />Tämänhetkinen sisällysluettelon rakanetamisen nopeus on noin %3$.1f viestiä sekunnissa.<br />Sisällysluettelon rakennus on käynnissä…',
-	'SEARCH_INDEX_DELETE_REDIRECT'			=> 'Kaikki viestit id-arvoon %1$d asti on poistettu sisällysluettelosta.<br />Poistaminen on käynnissä…',
+	'SEARCH_INDEX_CREATE_REDIRECT'			=> array(
+		2	=> 'Kaikki viestit id-arvoon %2$d asti on luetteloitu, joista %1$d viestiä oli mukana tässä vaiheessa.<br />',
+	),
+	'SEARCH_INDEX_CREATE_REDIRECT_RATE'		=> array(
+		2	=> 'Tämänhetkinen sisällysluettelon rakanetamisen nopeus on noin %1$.1f viestiä sekunnissa.<br />Sisällysluettelon rakennus on käynnissä…',
+	),
+	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
+		2	=> 'Kaikki viestit id-arvoon %2$d on poistettu luettelosta.<br />Poisto kesken',
+	),
 	'SEARCH_INDEX_CREATED'					=> 'Kaikki keskustelufoorumin viesttit ovat sisällysluettelossa',
 	'SEARCH_INDEX_REMOVED'					=> 'Tämän hakukoneen sisällysluettelo on poistettu',
 	'SEARCH_INTERVAL'						=> 'Hakutoiminnon rajoitus rekisteröityneeltä käyttäjältä',
@@ -104,5 +138,3 @@ $lang = array_merge($lang, array(
 	'YES_SEARCH_UPDATE'						=> 'Ota käyttöön fulltext päivitykset',
 	'YES_SEARCH_UPDATE_EXPLAIN'				=> 'fulltext-sisällysluettelon päivitys viestin lähetyksen yhteydessä. Tämä asetus ohitetaan, mikäli Hakutoiminto ei ole käytössä.',
 ));
-
-?>

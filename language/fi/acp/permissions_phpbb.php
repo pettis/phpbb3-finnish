@@ -1,28 +1,32 @@
 <?php
-/** 
+/**
 *
-*  acp_permissions (phpBB Permission Set)[Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com	
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
+// DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
@@ -35,208 +39,175 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 /**
-*	MODDERS PLEASE NOTE
-*	
-*	You are able to put your permission sets into a seperate file too by
-*	prefixing the new file with permissions_ and putting it into the acp 
-*	language folder.
+*	EXTENSION-DEVELOPERS PLEASE NOTE
 *
-*	An example of how the file could look like:
-*
-*	<code>
-*
-*	if (empty($lang) || !is_array($lang))
-*	{
-*		$lang = array();
-*	}
-*
-*	// Adding new category
-*	$lang['permission_cat']['bugs'] = 'Bugs';
-*
-*	// Adding new permission set
-*	$lang['permission_type']['bug_'] = 'Bug Permissions';
-*
-*	// Adding the permissions
-*	$lang = array_merge($lang, array(
-*		'acl_bug_view'		=> array('lang' => 'Can view bug reports', 'cat' => 'bugs'),
-*		'acl_bug_post'		=> array('lang' => 'Can post bugs', 'cat' => 'post'), // Using a phpBB category here
-*	));
-*
-*	</code>
+*	You are able to put your permission sets into your extension.
+*	The permissions logic should be added via the 'core.permissions' event.
+*	You can easily add new permission categories, types and permissions, by
+*	simply merging them into the respective arrays.
+*	The respective language strings should be added into a language file, that
+*	start with 'permissions_', so they are automatically loaded within the ACP.
 */
 
-// Define categories and permission types
 $lang = array_merge($lang, array(
-	'permission_cat'	=> array(
-		'actions'		=> 'Toimenpiteet',
-		'content'		=> 'Sisältö',
-		'forums'		=> 'Alueet',
-		'misc'			=> 'Sekalaiset',
-		'permissions'	=> 'Oikeudet',
-		'pm'			=> 'Yksityisviestit',
-		'polls'			=> 'Äänestykset',
-		'post'			=> 'Viesti',
-		'post_actions'	=> 'Viestitoimenpiteet',
-		'posting'		=> 'Viestin lähetys',
-		'profile'		=> 'Profiili',
-		'settings'		=> 'Asetukset',
-		'topic_actions'	=> 'Viestiketjun toimenpiteet',
-		'user_group'	=> 'Käyttäjät &amp; Ryhmät',
-	),
-
-	// With defining 'global' here we are able to specify what is printed out if the permission is within the global scope.
-	'permission_type'	=> array(
-		'u_'			=> 'Käyttäjän oikeudet',
-		'a_'			=> 'Ylläpitäjän oikeudet',
-		'm_'			=> 'Valvojan oikeudet',
-		'f_'			=> 'Alueen oikeudet',
-		'global'		=> array(
-			'm_'			=> 'Yleiset valvojan oikeudet',
-		),
-	),
+	'ACL_CAT_ACTIONS'		=> 'Toimenpiteet',
+	'ACL_CAT_CONTENT'		=> 'Sisältö',
+	'ACL_CAT_FORUMS'		=> 'Forums',
+	'ACL_CAT_MISC'			=> 'Sekal',
+	'ACL_CAT_PERMISSIONS'	=> 'Oikeudet',
+	'ACL_CAT_PM'			=> 'Yksityisviestit',
+	'ACL_CAT_POLLS'			=> 'Äänestys',
+	'ACL_CAT_POST'			=> 'Viestit',
+	'ACL_CAT_POST_ACTIONS'	=> 'Viestitoimenpiteet',
+	'ACL_CAT_POSTING'		=> 'Viestien läheys',
+	'ACL_CAT_PROFILE'		=> 'Profiili',
+	'ACL_CAT_SETTINGS'		=> 'Asetukset',
+	'ACL_CAT_TOPIC_ACTIONS'	=> 'Viestiketjun toimenpiteet',
+	'ACL_CAT_USER_GROUP'	=> 'Käyttäjät &amp; Ryhmät',
 ));
 
 // User Permissions
 $lang = array_merge($lang, array(
-	'acl_u_viewprofile'	=> array('lang' => 'Voi katsoa profiilia', 'cat' => 'profile'),
-	'acl_u_chgname'		=> array('lang' => 'Voi vaihtaa käyttäjätunnusta', 'cat' => 'profile'),
-	'acl_u_chgpasswd'	=> array('lang' => 'Voi vaihtaa salasanaa', 'cat' => 'profile'),
-	'acl_u_chgemail'	=> array('lang' => 'Voi vaihtaa sähköpostiosoitetta', 'cat' => 'profile'),
-	'acl_u_chgavatar'	=> array('lang' => 'Voi vaihtaa avataria', 'cat' => 'profile'),
-	'acl_u_chggrp'		=> array('lang' => 'Voi vaihtaa oletusryhmäänsä', 'cat' => 'profile'),
+	'ACL_U_VIEWPROFILE'	=> 'Voi katsoa profiilia',
+	'ACL_U_CHGNAME'		=> 'Voi vaihtaa käyttäjätunnusta',
+	'ACL_U_CHGPASSWD'	=> 'Voi vaihtaa salasanaa',
+	'ACL_U_CHGEMAIL'	=> 'Voi vaihtaa sähköpostiosoitetta',
+	'ACL_U_CHGAVATAR'	=> 'Voi vaihtaa avataria',
+	'ACL_U_CHGGRP'		=> 'Voi vaihtaa oletusryhmäänsä',
+	'ACL_U_CHGPROFILEINFO'	=> 'Voi vaihtaa profiilin tietoja',
 
-	'acl_u_attach'		=> array('lang' => 'Voi lisätä liitetiedoston', 'cat' => 'post'),
-	'acl_u_download'	=> array('lang' => 'Voi ladata tiedostoja', 'cat' => 'post'),
-	'acl_u_savedrafts'	=> array('lang' => 'Voi tallentaa luonnoksia', 'cat' => 'post'),
-	'acl_u_chgcensors'	=> array('lang' => 'Voi ohittaa sanasensuroinnin', 'cat' => 'post'),
-	'acl_u_sig'			=> array('lang' => 'Voi käyttää allekirjoitusta', 'cat' => 'post'),
+	'ACL_U_ATTACH'		=> 'Voi lisätä liitetiedoston',
+	'ACL_U_DOWNLOAD'	=> 'Voi ladata tiedostoja',
+	'ACL_U_SAVEDRAFTS'	=> 'Voi tallentaa luonnoksia',
+	'ACL_U_CHGCENSORS'	=> 'Voi ohittaa sanasensuroinnin',
+	'ACL_U_SIG'			=> 'Voi käyttää allekirjoitusta',
 
-	'acl_u_sendpm'		=> array('lang' => 'Voi lähettää yksityisviestejä', 'cat' => 'pm'),
-	'acl_u_masspm'      => array('lang' => 'Voi lähettää yksityisviestin monelle vastaanottajalle', 'cat' => 'pm'),
-    'acl_u_masspm_group'=> array('lang' => 'Voi lähettää yksityisviestin ryhmälle', 'cat' => 'pm'),
-	'acl_u_readpm'		=> array('lang' => 'Voi lukea yksityisviestejä', 'cat' => 'pm'),
-	'acl_u_pm_edit'		=> array('lang' => 'Voi muokata omia yksityisviestejään', 'cat' => 'pm'),
-	'acl_u_pm_delete'	=> array('lang' => 'Voi poistaa yksityisviestejä omasta kansiostaan', 'cat' => 'pm'),
-	'acl_u_pm_forward'	=> array('lang' => 'Voi lähettää yksityisviestejä eteenpäin', 'cat' => 'pm'),
-	'acl_u_pm_emailpm'	=> array('lang' => 'Voi lähettää yksityisviestin sähköpostilla', 'cat' => 'pm'),
-	'acl_u_pm_printpm'	=> array('lang' => 'Voi tulostaa yksityisviestin', 'cat' => 'pm'),
-	'acl_u_pm_attach'	=> array('lang' => 'Voi lisätä liitetiedoston yksityisviestiin', 'cat' => 'pm'),
-	'acl_u_pm_download'	=> array('lang' => 'Voi ladata yksityisviesteissä olevia liitetiedostoja', 'cat' => 'pm'),
-	'acl_u_pm_bbcode'	=> array('lang' => 'Voi käyttää BBCodea yksityisviesteissä', 'cat' => 'pm'),
-	'acl_u_pm_smilies'	=> array('lang' => 'Voi käyttää hymiöitä yksityisviesteissä', 'cat' => 'pm'),
-	'acl_u_pm_img'		=> array('lang' => 'Voi käyttää [img]-BBCode-tagia yksityisviesteissä', 'cat' => 'pm'),
-	'acl_u_pm_flash'	=> array('lang' => 'Voi käyttää [flash]-BBCode-tagia yksityisviesteissä', 'cat' => 'pm'),
+	'ACL_U_SENDPM'		=> 'Voi lähettää yksityisviestejä',
+	'ACL_U_MASSPM'		=> 'Voi lähettää yksityisviestin monelle vastaanottajalle',
+	'ACL_U_MASSPM_GROUP'=> 'Voi lähettää yksityisviestin ryhmälle',
+	'ACL_U_READPM'		=> 'Voi lukea yksityisviestejä',
+	'ACL_U_PM_EDIT'		=> 'Voi muokata omia yksityisviestejään',
+	'ACL_U_PM_DELETE'	=> 'Voi poistaa yksityisviestejä omasta kansiostaan',
+	'ACL_U_PM_FORWARD'	=> 'Voi lähettää yksityisviestejä eteenpäin',
+	'ACL_U_PM_EMAILPM'	=> 'Voi lähettää yksityisviestin sähköpostilla',
+	'ACL_U_PM_PRINTPM'	=> 'Voi tulostaa yksityisviestin',
+	'ACL_U_PM_ATTACH'	=> 'Voi lisätä liitetiedoston yksityisviestiin',
+	'ACL_U_PM_DOWNLOAD'	=> 'Voi ladata yksityisviesteissä olevia liitetiedostoja',
+	'ACL_U_PM_BBCODE'	=> 'Voi käyttää BBCodea yksityisviesteissä',
+	'ACL_U_PM_SMILIES'	=> 'Voi käyttää hymiöitä yksityisviesteissä',
+	'ACL_U_PM_IMG'		=> 'Voi käyttää [img]-BBCode-tagia yksityisviesteissä',
+	'ACL_U_PM_FLASH'	=> 'Voi käyttää [flash]-BBCode-tagia yksityisviesteissä',
 
-	'acl_u_sendemail'	=> array('lang' => 'Voi lähettää sähköpostia', 'cat' => 'misc'),
-	'acl_u_sendim'		=> array('lang' => 'Voi lähettää pikaviestin', 'cat' => 'misc'),
-	'acl_u_ignoreflood'	=> array('lang' => 'Voi ohittaa viestin lähetyksen aikarajan', 'cat' => 'misc'),
-	'acl_u_hideonline'	=> array('lang' => 'Voi piilottaa paikallaolonsa', 'cat' => 'misc'),
-	'acl_u_viewonline'	=> array('lang' => 'Voi nähdä kaikki paikallaolijat', 'cat' => 'misc'),
-	'acl_u_search'		=> array('lang' => 'Voi käyttää hakutoimintoa', 'cat' => 'misc'),
+	'ACL_U_SENDEMAIL'	=> 'Voi lähettää sähköpostia',
+	'ACL_U_SENDIM'		=> 'Voi lähettää pikaviestin',
+	'ACL_U_IGNOREFLOOD'	=> 'Voi ohittaa viestin lähetyksen aikarajan',
+	'ACL_U_HIDEONLINE'	=> 'Voi piilottaa paikallaolonsa',
+	'ACL_U_VIEWONLINE'	=> 'Voi nähdä kaikki paikallaolijat',
+	'ACL_U_SEARCH'		=> 'Voi käyttää hakutoimintoa',
 ));
 
 // Forum Permissions
 $lang = array_merge($lang, array(
-	'acl_f_list'		=> array('lang' => 'Näkee alueen', 'cat' => 'post'),
-	'acl_f_read'		=> array('lang' => 'Voi lukea alueen', 'cat' => 'post'),
-	'acl_f_post'		=> array('lang' => 'Voi kirjoittaa alueelle', 'cat' => 'post'),
-	'acl_f_announce'	=> array('lang' => 'Voi kirjoittaa tiedotteen', 'cat' => 'post'),
-	'acl_f_sticky'		=> array('lang' => 'Voi kirjoittaa pysyvän tiedotteen', 'cat' => 'post'),
-	'acl_f_reply'		=> array('lang' => 'Voi vastata viestiin', 'cat' => 'post'),
-	'acl_f_icons'		=> array('lang' => 'Voi käyttää viestille/viestiketjulle kuvaketta', 'cat' => 'post'),
+	'ACL_F_LIST'		=> 'Näkee alueen',
+	'ACL_F_READ'		=> 'Voi lukea alueen',
+	'ACL_F_SEARCH'		=> 'Voi etsiä keskustelualueita',
+	'ACL_F_SUBSCRIBE'	=> 'Voi seurata aluetta',
+	'ACL_F_PRINT'		=> 'Voi tulostaa viestiketjuja',
+	'ACL_F_EMAIL'		=> 'Voi lähettää viestiketjun sähköpostilla',
+	'ACL_F_BUMP'		=> 'Voi tönäistä viestiketjua',
+	'ACL_F_USER_LOCK'	=> 'Voi lukita omat viestiketjunsa',
+	'ACL_F_DOWNLOAD'	=> 'Voi ladata tiedostoja',
+	'ACL_F_REPORT'		=> 'Voi ilmoittaa viestejä',
 
-	'acl_f_poll'		=> array('lang' => 'Voi luoda äänestyksiä', 'cat' => 'polls'),
-	'acl_f_vote'		=> array('lang' => 'Voi äänestää', 'cat' => 'polls'),
-	'acl_f_votechg'		=> array('lang' => 'Voi muuttaa antamaansa ääntä', 'cat' => 'polls'),
+	'ACL_F_POST'		=> 'Voi kirjoittaa alueelle',
+	'ACL_F_STICKY'		=> 'Voi kirjoittaa pysyvän tiedotteen',
+	'ACL_F_ANNOUNCE'	=> 'Voi kirjoittaa tiedotteen',
+	'ACL_F_REPLY'		=> 'Voi vastata viestiin',
+	'ACL_F_EDIT'		=> 'Voi muokata viestejään',
+	'ACL_F_DELETE'		=> 'Voi poistaa omia viestejään',
+	'ACL_F_SOFTDELETE'	=> 'Voi piilottaa oman viestin<br /><em>Tukihenkilöt, jotka hyväksyvät viestejä, voi palauttaa viestin.</em>',
+	'ACL_F_IGNOREFLOOD' => 'Voi ohittaa aikarajat',
+	'ACL_F_POSTCOUNT'	=> 'Nosta viestilaskurin lukemaa<br /><em>Huomioi, että tämä asetus vaikuttaa vain uusiin viesteihin.</em>',
+	'ACL_F_NOAPPROVE'	=> 'Voi lähettää viestin ilman hyväksyntää',
 
-	'acl_f_attach'		=> array('lang' => 'Voi lisätä liitetiedoston', 'cat' => 'content'),
-	'acl_f_download'	=> array('lang' => 'Voi ladata tiedostoja', 'cat' => 'content'),
-	'acl_f_sigs'		=> array('lang' => 'Voi käyttää allekirjoitusta', 'cat' => 'content'),
-	'acl_f_bbcode'		=> array('lang' => 'Voi käyttää BBCodea', 'cat' => 'content'),
-	'acl_f_smilies'		=> array('lang' => 'Voi käyttää hymiöitä', 'cat' => 'content'),
-	'acl_f_img'			=> array('lang' => 'Voi käyttää [img]-BBCode-tagia', 'cat' => 'content'),
-	'acl_f_flash'		=> array('lang' => 'Voi käyttää [flash]-BBCode-tagia', 'cat' => 'content'),
+	'ACL_F_ATTACH'		=> 'Voi lisätä liitetiedoston',
+	'ACL_F_ICONS'		=> 'Voi käyttää viestille/viestiketjulle kuvaketta',
+	'ACL_F_BBCODE'		=> 'Voi käyttää BBCodea',
+	'ACL_F_FLASH'		=> 'Voi käyttää [flash]-BBCode-tagia',
+	'ACL_F_IMG'			=> 'Voi käyttää [img]-BBCode-tagia',
+	'ACL_F_SIGS'		=> 'Voi käyttää allekirjoitusta',
+	'ACL_F_SMILIES'		=> 'Voi käyttää hymiöitä',
 
-	'acl_f_edit'		=> array('lang' => 'Voi muokata viestejään', 'cat' => 'actions'),
-	'acl_f_delete'		=> array('lang' => 'Voi poistaa omia viestejään', 'cat' => 'actions'),
-	'acl_f_user_lock'	=> array('lang' => 'Voi lukita omat viestiketjunsa', 'cat' => 'actions'),
-	'acl_f_bump'		=> array('lang' => 'Voi tönäistä viestiketjua', 'cat' => 'actions'),
-	'acl_f_report'		=> array('lang' => 'Voi ilmoittaa viestejä', 'cat' => 'actions'),
-	'acl_f_subscribe'	=> array('lang' => 'Voi seurata aluetta', 'cat' => 'actions'),
-	'acl_f_print'		=> array('lang' => 'Voi tulostaa viestiketjuja', 'cat' => 'actions'),
-	'acl_f_email'		=> array('lang' => 'Voi lähettää viestiketjun sähköpostilla', 'cat' => 'actions'),
-
-	'acl_f_search'		=> array('lang' => 'Voi etsiä keskustelualueita', 'cat' => 'misc'),
-	'acl_f_ignoreflood' => array('lang' => 'Voi ohittaa aikarajat', 'cat' => 'misc'),
-	'acl_f_postcount'	=> array('lang' => 'Nosta viestilaskurin lukemaa<br /><em>Huomioi, että tämä asetus vaikuttaa vain uusiin viesteihin.</em>', 'cat' => 'misc'),
-	'acl_f_noapprove'	=> array('lang' => 'Voi lähettää viestin ilman hyväksyntää', 'cat' => 'misc'),
+	'ACL_F_POLL'		=> 'Voi luoda äänestyksiä',
+	'ACL_F_VOTE'		=> 'Voi äänestää',
+	'ACL_F_VOTECHG'		=> 'Voi muuttaa antamaansa ääntä',
 ));
 
 // Moderator Permissions
 $lang = array_merge($lang, array(
-	'acl_m_edit'		=> array('lang' => 'Voi muokata viestejä', 'cat' => 'post_actions'),
-	'acl_m_delete'		=> array('lang' => 'Voi poistaa viestejä', 'cat' => 'post_actions'),
-	'acl_m_approve'		=> array('lang' => 'Voi hyväksyä viestejä', 'cat' => 'post_actions'),
-	'acl_m_report'		=> array('lang' => 'Voi sulkea ja poistaa ilmoitettuja viestejä', 'cat' => 'post_actions'),
-	'acl_m_chgposter'	=> array('lang' => 'Voi muuttaa viestin lähettäjää', 'cat' => 'post_actions'),
+	'ACL_M_EDIT'		=> 'Voi muokata viestejä',
+	'ACL_M_DELETE'		=> 'Voi poistaa viestejä',
+	'ACL_M_SOFTDELETE'	=> 'Voi piilottaa viestejä<br /><em>Tukihenkilöt, jotka hyväksyvät viestejä, voi palauttaa viestin.</em>',
+	'ACL_M_APPROVE'		=> 'Voi hyväksyä viestejä',
+	'ACL_M_REPORT'		=> 'Voi sulkea ja poistaa ilmoitettuja viestejä',
+	'ACL_M_CHGPOSTER'	=> 'Voi muuttaa viestin lähettäjää',
 
-	'acl_m_move'	=> array('lang' => 'Voi siirtää viestiketjuja', 'cat' => 'topic_actions'),
-	'acl_m_lock'	=> array('lang' => 'Voi lukita viestiketjuja', 'cat' => 'topic_actions'),
-	'acl_m_split'	=> array('lang' => 'Voi jakaa viestiketjuja', 'cat' => 'topic_actions'),
-	'acl_m_merge'	=> array('lang' => 'Voi yhdistää viestiketjuja', 'cat' => 'topic_actions'),
+	'ACL_M_MOVE'	=> 'Voi siirtää viestiketjuja',
+	'ACL_M_LOCK'	=> 'Voi lukita viestiketjuja',
+	'ACL_M_SPLIT'	=> 'Voi jakaa viestiketjuja',
+	'ACL_M_MERGE'	=> 'Voi yhdistää viestiketjuja',
 
-	'acl_m_info'	=> array('lang' => 'Voi katsoa viestin tietoja', 'cat' => 'misc'),
-	'acl_m_warn'	=> array('lang' => 'Voi antaa varoituksen', 'cat' => 'misc'),
-	'acl_m_ban'		=> array('lang' => 'Voi hallita porttikieltoja', 'cat' => 'misc'), // This moderator setting is only global (and not local)
+	'ACL_M_INFO'	=> 'Voi katsoa viestin tietoja',
+	'ACL_M_WARN'	=> 'Voi antaa varoituksen<br />', // This moderator setting is only global (and not local)
+	'ACL_M_BAN'		=> 'Voi hallita porttikieltoja<br />', // This moderator setting is only global (and not local)
 ));
 
 // Admin Permissions
 $lang = array_merge($lang, array(
-	'acl_a_board'		=> array('lang' => 'Voi muuttaa keskustelufoorumin asetuksia', 'cat' => 'settings'),
-	'acl_a_server'		=> array('lang' => 'Voi muuttaa palvelimen/kommunikoinnin asetuksia', 'cat' => 'settings'),
-	'acl_a_jabber'		=> array('lang' => 'Voi muuttaa Jabber-asetuksia', 'cat' => 'settings'),
-	'acl_a_phpinfo'		=> array('lang' => 'Voi katsoa PHP-asetuksia', 'cat' => 'settings'),
+	'ACL_A_BOARD'		=> 'Voi muuttaa keskustelufoorumin asetuksia',
+	'ACL_A_SERVER'		=> 'Voi muuttaa palvelimen/kommunikoinnin asetuksia',
+	'ACL_A_JABBER'		=> 'Voi muuttaa Jabber-asetuksia',
+	'ACL_A_PHPINFO'		=> 'Voi katsoa PHP-asetuksia',
 
-	'acl_a_forum'		=> array('lang' => 'Voi muokata keskustelualueita', 'cat' => 'forums'),
-	'acl_a_forumadd'	=> array('lang' => 'Voi lisätä uusia alueita', 'cat' => 'forums'),
-	'acl_a_forumdel'	=> array('lang' => 'Voi poistaa alueita', 'cat' => 'forums'),
-	'acl_a_prune'		=> array('lang' => 'Voi siivota alueita', 'cat' => 'forums'),
+	'ACL_A_FORUM'		=> 'Voi muokata keskustelualueita',
+	'ACL_A_FORUMADD'	=> 'Voi lisätä uusia alueita',
+	'ACL_A_FORUMDEL'	=> 'Voi poistaa alueita',
+	'ACL_A_PRUNE'		=> 'Voi siivota alueita',
 
-	'acl_a_icons'		=> array('lang' => 'Voi muuttaa viestien/viestiketjun kuvakkeita ja hymiöitä', 'cat' => 'posting'),
-	'acl_a_words'		=> array('lang' => 'Voi muokata sanojen sensurointia', 'cat' => 'posting'),
-	'acl_a_bbcode'		=> array('lang' => 'Voi määritellä BBCode-tageja', 'cat' => 'posting'),
-	'acl_a_attach'		=> array('lang' => 'Voi muuttaa liitetiedostoihin liittyviä asetuksia', 'cat' => 'posting'),
+	'ACL_A_ICONS'		=> 'Voi muuttaa viestien/viestiketjun kuvakkeita ja hymiöitä',
+	'ACL_A_WORDS'		=> 'Voi muokata sanojen sensurointia',
+	'ACL_A_BBCODE'		=> 'Voi määritellä BBCode-tageja',
+	'ACL_A_ATTACH'		=> 'Voi muuttaa liitetiedostoihin liittyviä asetuksia',
 
-	'acl_a_user'		=> array('lang' => 'Voi hallita käyttäjiä<br /><em>Tähän kuuluu myös käyttäjien käyttäjäagentin näkeminen paikalla olevien käyttäjien listassa.</em>', 'cat' => 'user_group'),
-	'acl_a_userdel'		=> array('lang' => 'Voi poistaa/siivota käyttäjiä', 'cat' => 'user_group'),
-	'acl_a_group'		=> array('lang' => 'Voi hallita ryhmiä', 'cat' => 'user_group'),
-	'acl_a_groupadd'	=> array('lang' => 'Voi lisätä uusia ryhmiä', 'cat' => 'user_group'),
-	'acl_a_groupdel'	=> array('lang' => 'Voi poistaa ryhmiä', 'cat' => 'user_group'),
-	'acl_a_ranks'		=> array('lang' => 'Voi hallita arvonimeä', 'cat' => 'user_group'),
-	'acl_a_profile'		=> array('lang' => 'Voi muokata mukautettuja profiilikenttiä', 'cat' => 'user_group'),
-	'acl_a_names'		=> array('lang' => 'Voi hallita kiellettyjä nimiä', 'cat' => 'user_group'),
-	'acl_a_ban'			=> array('lang' => 'Voi hallita porttikieltoja', 'cat' => 'user_group'),
+	'ACL_A_USER'		=> 'Voi hallita käyttäjiä<br /><em>Tähän kuuluu myös käyttäjien käyttäjäagentin näkeminen paikalla olevien käyttäjien listassa.</em>',
+	'ACL_A_USERDEL'		=> 'Voi poistaa/siivota käyttäjiä',
+	'ACL_A_GROUP'		=> 'Voi hallita ryhmiä',
+	'ACL_A_GROUPADD'	=> 'Voi lisätä uusia ryhmiä',
+	'ACL_A_GROUPDEL'	=> 'Voi poistaa ryhmiä',
+	'ACL_A_RANKS'		=> 'Voi hallita arvonimeä',
+	'ACL_A_PROFILE'		=> 'Voi muokata mukautettuja profiilikenttiä',
+	'ACL_A_NAMES'		=> 'Voi hallita kiellettyjä nimiä',
+	'ACL_A_BAN'			=> 'Voi hallita porttikieltoja',
 
-	'acl_a_viewauth'	=> array('lang' => 'Voi katsoa oikeuden maskeja', 'cat' => 'permissions'),
-	'acl_a_fauth'		=> array('lang' => 'Voi muuttaa alueen oikeuksia', 'cat' => 'permissions'),
-	'acl_a_mauth'		=> array('lang' => 'Voi muuttaa valvojan asetuksia', 'cat' => 'permissions'),
-	'acl_a_aauth'		=> array('lang' => 'Voi muuttaa ylläpitäjän asetuksia', 'cat' => 'permissions'),
-	'acl_a_uauth'		=> array('lang' => 'Voi muuttaa käyttäjän oikeuksia', 'cat' => 'permissions'),
-	'acl_a_authgroups'	=> array('lang' => 'Voi muuttaa käyttäjäryhmän oikeuksia', 'cat' => 'permissions'),
-	'acl_a_authusers'	=> array('lang' => 'Voi muuttaa käyttäjien oikeuksia', 'cat' => 'permissions'),
-	'acl_a_roles'		=> array('lang' => 'Voi hallita rooleja', 'cat' => 'permissions'),
-	'acl_a_switchperm'	=> array('lang' => 'Voi käyttää toisten oikeuksia', 'cat' => 'permissions'),
+	'ACL_A_VIEWAUTH'	=> 'Voi katsoa oikeuksien maskeja',
+	'ACL_A_AUTHGROUPS'	=> 'Voi muuttaa käyttäjäryhmän oikeuksia',
+	'ACL_A_AUTHUSERS'	=> 'Voi muuttaa käyttäjien oikeuksia',
+	'ACL_A_FAUTH'		=> 'Voi muuttaa alueen oikeuksia',
+	'ACL_A_MAUTH'		=> 'Voi muuttaa valvojan asetuksia',
+	'ACL_A_AAUTH'		=> 'Voi muuttaa ylläpitäjän asetuksia',
+	'ACL_A_UAUTH'		=> 'Voi muuttaa käyttäjän oikeuksia',
+	'ACL_A_ROLES'		=> 'Voi hallita rooleja',
+	'ACL_A_SWITCHPERM'	=> 'Voi käyttää toisten oikeuksia',
 
-	'acl_a_styles'		=> array('lang' => 'Voi hallita tyylejä', 'cat' => 'misc'),
-	'acl_a_viewlogs'	=> array('lang' => 'Voi katsoa lokitietoja', 'cat' => 'misc'),
-	'acl_a_clearlogs'	=> array('lang' => 'Voi tyhjentää lokit', 'cat' => 'misc'),
-	'acl_a_modules'		=> array('lang' => 'Voi hallita moduuleita', 'cat' => 'misc'),
-	'acl_a_language'	=> array('lang' => 'Voi hallita kielipaketteja', 'cat' => 'misc'),
-	'acl_a_email'		=> array('lang' => 'Voi lähettää joukkosähköpostia', 'cat' => 'misc'),
-	'acl_a_bots'		=> array('lang' => 'Voi hallita botteja', 'cat' => 'misc'),
-	'acl_a_reasons'		=> array('lang' => 'Voi hallita ilmoituksia/hylkäyksen syitä', 'cat' => 'misc'),
-	'acl_a_backup'		=> array('lang' => 'Voi ottaa varmuuskopion tietokannasta/palauttaa tietokannan varmuuskopiosta', 'cat' => 'misc'),
-	'acl_a_search'		=> array('lang' => 'Voi hallita hakukoneita ja asetuksia', 'cat' => 'misc'),
+	'ACL_A_STYLES'		=> 'Voi hallita tyylejä',
+	'ACL_A_EXTENSIONS'	=> 'Voi muuttaa laajennuksia',
+	'ACL_A_VIEWLOGS'	=> 'Voi katsoa lokitietoja',
+	'ACL_A_CLEARLOGS'	=> 'Voi tyhjentää lokit',
+	'ACL_A_MODULES'		=> 'Voi hallita moduuleita',
+	'ACL_A_LANGUAGE'	=> 'Voi hallita kielipaketteja',
+	'ACL_A_EMAIL'		=> 'Voi lähettää joukkosähköpostia',
+	'ACL_A_BOTS'		=> 'Voi hallita botteja',
+	'ACL_A_REASONS'		=> 'Voi hallita ilmoituksia/hylkäyksen syitä',
+	'ACL_A_BACKUP'		=> 'Voi ottaa varmuuskopion tietokannasta/palauttaa tietokannan varmuuskopiosta',
+	'ACL_A_SEARCH'		=> 'Voi hallita hakukoneita ja asetuksia',
 ));
-
-?>

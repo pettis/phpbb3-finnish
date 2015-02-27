@@ -1,13 +1,16 @@
 <?php
 /** 
 *
-* help_bbcode [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
@@ -32,7 +35,7 @@ if (!defined('IN_PHPBB'))
 $help = array(
 	array(
 		0 => '--',
-		1 => 'Tervetuloa'
+		1 => 'Esittely'
 	),
 	array(
 		0 => 'Mitä on BBCode?',
@@ -63,7 +66,7 @@ $help = array(
 		1 => 'Voit lainata tekstiä kahdella tavalla, joko näyttämällä lainattavan kirjoittajan nimen tai ei.<ul><li>Kun käytät lainaustoimintoa lainataksesi keskustelufoorumilla olevaa tekstiä tulisi sinun huomata, että lainattava teksti on ympäröity <strong>[quote=""][/quote]</strong>-tageilla. Tämä menetelmä antaa sinun lainata tekstiä tietyltä käyttäjältä tai laittaa siihen otsikoksi mitä haluat! Esimerkiksi lainataksesi pätkän tekstiä, jonka herra klöntti kirjoitti, tulisi se laittaa :<br /><br /><strong>[quote="herra klöntti"]</strong>Herra klöntin kirjoittama teksti tulee silloin tähän<strong>[/quote]</strong><br /><br />Tuloksena on, herra klöntti kirjoitti: otsikko ennen varsinaista tekstiä. Huomaa, että sinun<strong>on käytettävä</strong> käytettävä ""-merkkejä lainattavan kirjoittajan nimen ympärillä.</li><li>Toinen menetelmä antaa lainata tekstiä sokeasti. Käyttääksesi tätä menetelmää lainattava teksti tulee ympäröidä <strong>[quote][/quote]</strong>-tageilla. Kun katsot viestiä, siinä näkyy vain Lainaus: ennen varsinaista tekstiä.</li></ul>'
 	),
 	array(
-		0 => 'Koodin, tai muun kiinteän välistyksen omaavan tekstin kirjoittaminen',
+		0 => 'Koodin, tai muun kiinteän kirjaivälin omaavan tekstin kirjoittaminen',
 		1 => 'Mikäli haluat tulostaa ruudulle koodia tai jotain muuta tekstiä, joka vaatii kiinteän välistyksen, kuten esimerkiksi Courier-tyylin fontin, valitsemasi teksti täytyy ympäröidä <strong>[code][/code]</strong>-tageilla. Esimerkiksi <br /><br /><strong>[code]</strong>echo "Tässä on jotain koodia";<strong>[/code]</strong><br /><br />Kaikki käytetty muotoilu <strong>[code][/code]</strong>-tagien välissä säilytetään, kunnes katsot sitä myöhemmin.'
 	),
 	array(
@@ -96,6 +99,10 @@ $help = array(
 		1 => 'Kuvien näyttäminen viesteissä'
 	),
 	array(
+		0 => 'Kuvan lisääminen viestiin',
+		1 => 'phpBB:n BBC-koodi mahdollistaa kuvan lisäämisen viestiin. Muista kuitenkin: monet eivät pidä kun viesteissä on paljon kuvia ja lisäksi kuvan pitää aina olla jollakin palvelimella josta se on avattavissa.'
+	),
+	array(
 		0 => 'Kuvan liittäminen viestiin',
 		1 => 'phpBB:n BBCodessa on olemassa tagi, jolla voi liittää kuvia viesteihin. Tätä tagia käytettäessä täytyy muistaa kaksi tärkeää asiaa: jotkut käyttäjät eivät tykkää useista kuvista viesteissä ja toiseksi sen kuvan tulee olla jo internetissä (et voi linkittää kuvaa omalta koneeltasi, mikäli se ei ole verkkopalvelin!). Näyttääksesi kuvan sen URL tulee ympäröidä <strong>[img][/img]</strong>-tageilla. Esimerkiksi:<br /><br /><strong>[img]</strong>http://www.phpbb.com/images/phplogo.gif<strong>[/img]</strong><br /><br />Kuten URL-ohjeissa todettiin, voit ympäröidä img-tagin myös<strong>[url][/url]</strong>-tageilla halutessasi, esim.<br /><br /><strong>[url=http://www.phpbb.com/][img]</strong>http://www.phpbb.com/images/phplogo.gif<strong>[/img][/url]</strong><br /><br />Saa aikaan:<br /><br /><a href="http://www.phpbb.com/" target="_blank"><img src="http://www.phpbb.com/images/phplogo.gif" border="0" alt="" /></a><br />'
 	),
@@ -106,7 +113,5 @@ $help = array(
 	array(
 		0 => 'Voinko lisätä omia tageja?',
 		1 => 'Jos olet tämän keskustelualueen ylläpitäjä ja sinulla on tarvittavat oikeudet, voit lisätä uusia BBCode-tageja ylläpitäjän hallintapaneelin kautta.'
-	)
+	),
 );
-
-?>

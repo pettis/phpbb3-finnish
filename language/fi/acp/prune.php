@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_prune [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpBB3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -38,6 +41,9 @@ if (empty($lang) || !is_array($lang))
 // User pruning
 $lang = array_merge($lang, array(
 	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Täällä voit sulkea käyttäjätunnuksia tai poistaa foorumin käyttäjiä. Tunnuksia voi selata eri tavoin, kuten viestien määrällä, aktiivisuudella, jne. Kriteereitä voi yhdistää tarkemmaksi hauksi. Voit esimerkiksi poistaa käyttäjät, joilla on alle kymmenen viestiä ja jotka ovat olleet poissa 2002-01-01 lähtien. Voit myös jättää kriteerit kokonaan pois ja laittaa käyttäjät yksitellen omille riveillensä. Ole tarkkana! Kun poistat käyttäjän, sitä ei voi palauttaa.',
+
+	'CRITERIA'				=> 'Kriteeri',
+
 	'DEACTIVATE_DELETE'			=> 'Sulje tunnukset tai poista',
 	'DEACTIVATE_DELETE_EXPLAIN'	=> 'Valitse haluatko sulkea tunnukset tai poistaa ne kokonaan. Huomaa, että poistettua käyttäjää ei voi palauttaa!',
 	'DELETE_USERS'				=> 'Poista',
@@ -48,6 +54,9 @@ $lang = array_merge($lang, array(
 
 	'LAST_ACTIVE_EXPLAIN'		=> 'Anna päivämäärä <kbd>VVVV-KK-PP</kbd>-muodossa. Laita <kbd>0000-00-00</kbd> poistaaksesi käyttäjät, jotka eivät ole koskaan kirjautuneet sisään. <em>Ennen</em> ja <em>jälkeen</em>-valintoja ei oteta huomioon.',
 
+	'POSTS_ON_QUEUE'			=> 'Viestejä odottaa hyväksyntää',
+	'PRUNE_USERS_GROUP_EXPLAIN'	=> 'Valitun ryhmän käyttäjien lukumäärän raja.',
+	'PRUNE_USERS_GROUP_NONE'	=> 'Kaikki ryhmät',
 	'PRUNE_USERS_LIST'				=> 'Siivottavat käyttäjät',
 	'PRUNE_USERS_LIST_DELETE'		=> 'Valitsemiesi kriteerien mukaisesti. Nämä käyttäjätunnukset poistetaan.',
 	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'Valitsemiesi kriteerien mukaisesti. Nämä käyttäjätunnukset suljetaan.',
@@ -86,5 +95,3 @@ $lang = array_merge($lang, array(
 
 	'TOPICS_PRUNED'		=> 'Siivotut viestiketjut',
 ));
-
-?>

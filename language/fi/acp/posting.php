@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* posting [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpBB3.1.x
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -40,16 +43,19 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_BBCODES_EXPLAIN'		=> 'BBCode on HTML-kielestä johdettu ja se tarjoaa paremman tavan muokata näytettäviä asioita. Tällä sivulla voit muokata ja poistaa omia BBCode-tageja.',
 	'ADD_BBCODE'				=> 'Lisää uusi BBCode tagi',
+
 	'BBCODE_DANGER'				=> 'Olet lisäämässä BBCodea, joka sisältää {TEXT}-arvon HTML:n sisällä. Tämä voi johtaa XSS-haavoittuvuuteen sivustollasi ja on suositeltavaa käyttää rajoitettuja {SIMPLETEXT}- tai {INTTEXT}-arvoja. Jatka eteenpäin vain jos hyväksyt riskin ja {TEXT}-arvon korvaaminen toisella ei ole mahdollista.',
 	'BBCODE_DANGER_PROCEED'		=> 'Ymmärrän riskin ja haluan jatkaa', //'I understand the risk',
 
 	'BBCODE_ADDED'				=> 'Uusi BBCode-tagi on lisätty',
 	'BBCODE_EDITED'				=> 'BBCode-tagia on muokattu',
+	'BBCODE_DELETED'			=> 'BBCode-tagia on poistettu.',
 	'BBCODE_NOT_EXIST'			=> 'Antamasi BBCode-tagia ei ole olemassa',
 	'BBCODE_HELPLINE'			=> 'Apurivi',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Tässä kentässä on selitys, kun hiiri on BBCode-tagin päällä',
 	'BBCODE_HELPLINE_TEXT'		=> 'Apurivin teksti',
-    'BBCODE_HELPLINE_TOO_LONG'  => 'Antamasi apurivi on liian pitkä.',
+	'BBCODE_HELPLINE_TOO_LONG'	=> 'Antamasi apurivi on liian pitkä.',
+
 	'BBCODE_INVALID_TAG_NAME'	=> 'Antamasi BBCode-tagin nimi on jo olemassa.',
 	'BBCODE_INVALID'			=> 'Käyttämäsi BBCode-muotoilu on rakenteeltaan epäkelpo.',
 	'BBCODE_OPEN_ENDED_TAG'		=> 'Tekemälläsi BBCodella täytyy olla aloitus- ja lopetustagit.',
@@ -76,15 +82,15 @@ $lang = array_merge($lang, array(
 	'tokens'	=>	array(
 		'TEXT'			=> 'Mikä tahansa teksti, ulkomaalaiset kirjoitusmerkit, numerot, jne. mukaan luettuna. Huomaa, että tämän käyttö HTML-tagien sisällä ei ole suositeltavaa ja se saattaa johtaa tietoturvaongelmiin. Käytä {IDENTIFIER}- tai {SIMPLETEXT} -muotoja siellä missä {TEXT}-muotoa ei välttämättä tarvita.',
 		'SIMPLETEXT'	=> 'Kirjoitusmerkit latinalaisesta aakkosjärjestyksestä (A-Z), numerot, välilyönnit, pilkut, pisteet, miinus, plus, tavuviiva ja alaviiva',
-		'IDENTIFIER'	=> 'Kirjoitusmerkit latinalaisesta aakkosjärjestyksestä (A-Z), numerot, tavuviiva ja alaviiva',
 		'INTTEXT'		=> 'Unicode-merkistö, numerot, välilyönnit, pilkut, pisteet, miinus, plus, heittomerkki, alaviiva ja välisteet.',
+		'IDENTIFIER'	=> 'Kirjoitusmerkit latinalaisesta aakkosjärjestyksestä (A-Z), numerot, tavuviiva ja alaviiva.',
 		'NUMBER'		=> 'Mikä tahansa merkkijono',
 		'EMAIL'			=> 'Kelvollinen sähköpostiosoite',
 		'URL'			=> 'Kelvollinen URL, joka käyttää mitä tahansa protokollaa (http, ftp, jne. ei voi käyttää JavaScript-haavoittuvuuksiin). Mikäli muuta ei ole annettu, "http://" on oletuksena',
 		'LOCAL_URL'		=> 'Paikallinen URL. URL tulee olla suhteessa viestiketjun sijaintiin ja siinä ei saa olla palvelimen nimeä tai protokollaa, koska linkkeihin lisätään automaattisesti “%s”',
 		'RELATIVE_URL'	=> 'Suhteellinen URL. Voit käyttää tätä täsmätäksesi osia URL:sta, mutta ole varovainen: Täysi URL on toimiva suhteellinen URL. Jos haluat käyttää suhteellisia URL:eja keskustelufoorumillasi, voit käyttää LOCAL_URL-muuttujaa.',
 		'COLOR'			=> 'HTML-väri voi olla numeerisessa muodossa <samp>#FF1234</samp> tai <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS-värin arvona</a>, kuten <samp>fuchsia</samp> tai <samp>InactiveBorder</samp>'
-	)
+	),
 ));
 
 // Smilies and topic icons
@@ -118,18 +124,22 @@ $lang = array_merge($lang, array(
 	'FIRST'			=> 'Ensimmäinen',
 
 	'ICONS_ADD'				=> 'Lisää uusi kuvake',
-	'ICONS_NONE_ADDED'		=> 'Kuvakkeita ei lisätty.',
-	'ICONS_ONE_ADDED'		=> 'Kuvake on lisätty.',
-	'ICONS_ADDED'			=> 'Kuvakkeet on lisätty.',
+	'ICONS_ADDED'			=> array(
+		0	=> 'Kuvakkeita ei lisätty.',
+		1	=> 'Kuvake on lisätty.',
+		2	=> 'Kuvakkeet on lisätty.',
+	),
 	'ICONS_CONFIG'			=> 'Kuvakkeen asetukset',
 	'ICONS_DELETED'			=> 'Kuvake on poistettu.',
 	'ICONS_EDIT'			=> 'Muokkaa kuvaketta.',
-	'ICONS_EDITED'			=> 'Kuvake on päivitetty.',
-	'ICONS_NONE_EDITED'		=> 'Kuvakkeita ei päivitetty.',
+	'ICONS_EDITED'			=> array(
+		0	=> 'Kuvakkeita ei päivitetty.',
+		1	=> 'Kuvake on päivitetty.',
+		2	=> 'Kuvakkeita päivitetty.',
+	),
 	'ICONS_HEIGHT'			=> 'Kuvakkeen korkeus',
 	'ICONS_IMAGE'			=> 'Kuvakkeen kuva',
 	'ICONS_IMPORTED'		=> 'Kuvakepaketti on asennettu.',
-	'ICONS_ONE_EDITED'		=> 'Kuvake on päivitetty.',
 	'ICONS_IMPORT_SUCCESS'	=> 'Kuvakepaketin tuonti onnistui',
 	'ICONS_LOCATION'		=> 'Kuvakkeen sijainti',
 	'ICONS_NOT_DISPLAYED'	=> 'Näitä kuvakkeita ei näytetä viestin kirjoitussivulla',
@@ -158,22 +168,26 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Valitse pakettitiedosto',
 	'SMILIES_ADD'				=> 'Lisää uusi hymiö',
-	'SMILIES_ADDED'				=> 'Hymiöt on lisätty.',
+	'SMILIES_ADDED'				=> array(
+		0	=> 'Hymiöitä ei lisätty.',
+		1	=> 'Hymiö on lisätty.',
+		2	=> 'Hymiöitä on lisätty.',
+	),
 	'SMILIES_CODE'				=> 'Hymiön koodi',
 	'SMILIES_CONFIG'			=> 'Hymiön asetukset',
 	'SMILIES_DELETED'			=> 'Hymiö on poistettu.',
-	'SMILIES_NONE_ADDED'		=> 'Hymiöitä ei lisätty.',
-	'SMILIES_ONE_ADDED'			=> 'Hymiö on lisätty.',
+	'SMILIES_EDIT'				=> 'Muokkaa hymiötä',
 	'SMILIE_NO_CODE'			=> 'Hymiötä “%s” ei kelpuutettu, koska sille ei ollut koodia.',
 	'SMILIE_NO_EMOTION'			=> 'Hymiötä “%s” ei kelpuutettu, koska sille ei ollut tunnetilaa.',
-    'SMILIE_NO_FILE'            => 'Hymiötä “%s” ei kelpuutettu, koska tiedostoa ei ole olemassa.',
-	'SMILIES_EDIT'				=> 'Muokkaa hymiötä',
-	'SMILIES_EDITED'			=> 'Hymiö on päivitetty.',
+	'SMILIE_NO_FILE'			=> 'Hymiötä “%s” ei kelpuutettu, koska tiedostoa ei ole olemassa.',
+	'SMILIES_EDITED'			=> array(
+		0	=> 'Hymiöitä ei päivitetty.',
+		1	=> 'Hymiö on päivitetty.',
+		2	=> 'Hymiöitä on päivitetty.',
+	),
 	'SMILIES_EMOTION'			=> 'Tunnetila',
 	'SMILIES_HEIGHT'			=> 'Hymiön korkeus',
 	'SMILIES_IMAGE'				=> 'Hymiön kuva',
-	'SMILIES_NONE_EDITED'		=> 'Hymiöitä ei päivitetty.',
-	'SMILIES_ONE_EDITED'		=> 'Hymiö on päivitetty.',
 	'SMILIES_IMPORTED'			=> 'Hymiöpaketti on asennettu.',
 	'SMILIES_IMPORT_SUCCESS'	=> 'Hymiöpaketti on tuotu',
 	'SMILIES_LOCATION'			=> 'Hymiön sijainti',
@@ -181,7 +195,11 @@ $lang = array_merge($lang, array(
 	'SMILIES_ORDER'				=> 'Hymiöiden järjestys',
 	'SMILIES_URL'				=> 'Hymiöiden tiedosto',
 	'SMILIES_WIDTH'				=> 'Hymiön leveys',
-	'TOO_MANY_SMILIES'			=> 'Hymiöiden enimmäismäärä %d saavutettu.',
+
+	'TOO_MANY_SMILIES'			=> array(
+		1	=> 'Hymiöiden enimmäismäärä %d saavutettu.',
+		2	=> 'Hymiöiden enimmäismäärä %d saavutettu.',
+	),
 
 	'WRONG_PAK_TYPE'	=> 'Antamassasi paketissa ei ole kelvollista dataa.',
 ));
@@ -212,7 +230,7 @@ $lang = array_merge($lang, array(
 	'ADD_RANK'				=> 'Lisää uusi arvonimi',
 
 	'MUST_SELECT_RANK'		=> 'Valitse arvonimi.',
-	
+
 	'NO_ASSIGNED_RANK'		=> 'Arvonimeä ei ole annettu.',
 	'NO_RANK_TITLE'			=> 'Et ole antanut arvonimelle otsikkoa.',
 	'NO_UPDATE_RANKS'		=> 'Arvonimen poisto onnistui, mutta käyttäjiä, joilla tämä oli käytössä, ei ole päivitetty. Näiden käyttäjien arvonimi täytyy muuttaa manuaalisesti.',
@@ -249,12 +267,12 @@ $lang = array_merge($lang, array(
 	'ACP_REASONS_EXPLAIN'	=> 'Täällä voit hallita syitä, joita käytetään ilmoituksissa ja hylkäyksissä, kun hylkäät viestin. Oletussyy on merkitty tähtimerkillä (*) ja et voi poistaa sitä, sillä sitä käytetään, jos mikään muu syy ei päde.',
 	'ADD_NEW_REASON'		=> 'Lisää uusi syy',
 	'AVAILABLE_TITLES'		=> 'Saatavilla olevat lokalisoidut syiden otsikot',
-	
+
 	'IS_NOT_TRANSLATED'		=> 'Tätä syytä <strong>ei</strong> ole lokalisoitu',
 	'IS_NOT_TRANSLATED_EXPLAIN'	=> 'Tätä syytä <strong>ei</strong> ole lokalisoitu. Mikäli haluat lokalisoida tämän sinun tulee tehdä se oikeaan avaimeen ilmoituksen syiden hallinnassa.',
 	'IS_TRANSLATED'			=> 'Tämä syy on lokalisoitu',
 	'IS_TRANSLATED_EXPLAIN'		=> 'Tämä syy on lokalisoitu. Mikäli tässä antamasi otsikko on määritelty kielitiedostoissa ilmoituksen syyt osiossa. Lokalisoitu versio tästä syystä pidetään käytössä.',
-	
+
 	'NO_REASON'					=> 'Syytä ei löytynyt',
 	'NO_REASON_INFO'			=> 'Sinun täytyy antaa otsikko ja kuvaus tälle syylle.',
 	'NO_REMOVE_DEFAULT_REASON'	=> 'Et voi poistaa tätä oletus syytä "Muu".',
@@ -273,5 +291,3 @@ $lang = array_merge($lang, array(
 
 	'USED_IN_REPORTS'		=> 'Ilmoituksien lukumäärä',
 ));
-
-?>

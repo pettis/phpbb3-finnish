@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_common [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpBB3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -60,6 +63,7 @@ $lang = array_merge($lang, array(
 	
 	'ACP_CAPTCHA'				=> 'CAPTCHA',
 
+	'ACP_CAT_CUSTOMISE'			=> 'Asetuksia',
 	'ACP_CAT_DATABASE'			=> 'Tietokanta',
 	'ACP_CAT_DOT_MODS'			=> '.MODit',
 	'ACP_CAT_FORUMS'			=> 'Alueet',
@@ -73,16 +77,20 @@ $lang = array_merge($lang, array(
 	'ACP_CAT_USERS'				=> 'Käyttäjät',
 	'ACP_CLIENT_COMMUNICATION'	=> 'Asiakasohjelman kommunikointi',
 	'ACP_COOKIE_SETTINGS'		=> 'Evästeiden asetukset',
+	'ACP_CONTACT'				=> 'Kontakti sivu',
+	'ACP_CONTACT_SETTINGS'		=> 'Kontakti sivun asetuksia',
 	'ACP_CRITICAL_LOGS'			=> 'Virheiden loki',
 	'ACP_CUSTOM_PROFILE_FIELDS'	=> 'Mukautetut profiilikentät',
-	
+
 	'ACP_DATABASE'				=> 'Tietokannan hallinta',
 	'ACP_DISALLOW'				=> 'Kiellä',
 	'ACP_DISALLOW_USERNAMES'	=> 'Kiellä käyttäjätunnukset',
-	
+
 	'ACP_EMAIL_SETTINGS'		=> 'Sähköpostiasetukset',
 	'ACP_EXTENSION_GROUPS'		=> 'Tunnisteryhmien asetukset',
-	
+	'ACP_EXTENSION_MANAGEMENT'	=> 'Laajennusten hallinta',
+	'ACP_EXTENSIONS'			=> 'Hallinnoi laajennuksia',
+
 	'ACP_FORUM_BASED_PERMISSIONS'	=> 'Alueeseen perustuvat oikeudet',
 	'ACP_FORUM_LOGS'				=> 'Alueen lokit',
 	'ACP_FORUM_MANAGEMENT'			=> 'Alueen hallinta',
@@ -100,21 +108,25 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE'				=> 'Hallitse ryhmiä',
 	'ACP_GROUPS_MANAGEMENT'			=> 'Ryhmän hallinta',
 	'ACP_GROUPS_PERMISSIONS'		=> 'Ryhmän oikeudet',
-	
+	'ACP_GROUPS_POSITION'			=> 'Hallitse ryhmän asetuksia',
+
 	'ACP_ICONS'					=> 'Viestiketjujen kuvakkeet',
 	'ACP_ICONS_SMILIES'			=> 'Viestiketjujen kuvakkeet/hymiöt',
-	'ACP_IMAGESETS'				=> 'Kuvapaketit',
-	'ACP_INACTIVE_USERS'		=> 'Vahvistamattomat käyttäjät',
+	'ACP_INACTIVE_USERS'		=> 'Käyttäjä poissa',
 	'ACP_INDEX'					=> 'Ylläpidon etusivu',
-	
+
 	'ACP_JABBER_SETTINGS'		=> 'Jabber-asetukset',
-	
+
 	'ACP_LANGUAGE'				=> 'Kielten hallinta',
 	'ACP_LANGUAGE_PACKS'		=> 'Kielipaketit',
 	'ACP_LOAD_SETTINGS'			=> 'Kuormituksen asetukset',
 	'ACP_LOGGING'				=> 'Kirjaa lokiin',
-	
+
 	'ACP_MAIN'					=> 'Ylläpidon etusivu',
+
+	'ACP_MANAGE_ATTACHMENTS'			=> 'Hallitse liitteitä',
+	'ACP_MANAGE_ATTACHMENTS_EXPLAIN'	=> 'Tässä voit katsoa ja poistaa viestien liitetiedostot',
+
 	'ACP_MANAGE_EXTENSIONS'		=> 'Tunnisteiden hallinta',
 	'ACP_MANAGE_FORUMS'			=> 'Alueiden hallinta',
 	'ACP_MANAGE_RANKS'			=> 'Arvonimien hallinta',
@@ -126,11 +138,11 @@ $lang = array_merge($lang, array(
 	'ACP_MODULE_MANAGEMENT'		=> 'Moduulien hallinta',
 	'ACP_MOD_LOGS'				=> 'Valvojien lokitiedot',
 	'ACP_MOD_ROLES'				=> 'Valvojien roolit',
-	
+
 	'ACP_NO_ITEMS'				=> 'Ei kohteita.',
 
 	'ACP_ORPHAN_ATTACHMENTS'	=> 'Orvot liitetiedostot',
-	
+
 	'ACP_PERMISSIONS'			=> 'Oikeudet',
 	'ACP_PERMISSION_MASKS'		=> 'Oikeuksien maskit',
 	'ACP_PERMISSION_ROLES'		=> 'Oikeuksien roolit',
@@ -140,17 +152,17 @@ $lang = array_merge($lang, array(
 	'ACP_PRUNE_FORUMS'			=> 'Automaattinen siivous',
 	'ACP_PRUNE_USERS'			=> 'Käyttäjien siivoaminen',
 	'ACP_PRUNING'				=> 'Siivoaminen',
-	
+
 	'ACP_QUICK_ACCESS'			=> 'Pikalinkit',
-	
+
 	'ACP_RANKS'					=> 'Arvonimet',
 	'ACP_REASONS'				=> 'Ilmoitus/hylkäyksen syy',
 	'ACP_REGISTER_SETTINGS'		=> 'Rekisteröitymisen asetukset',
 
 	'ACP_RESTORE'				=> 'Palauta',
+
 	'ACP_FEED'					=> 'Syötteiden hallinta',
 	'ACP_FEED_SETTINGS'			=> 'Syötteiden asetukset',
-
 
 	'ACP_SEARCH'				=> 'Hakutoiminnon asetukset',
 	'ACP_SEARCH_INDEX'			=> 'Hakutoiminnon sisällysluettelo',
@@ -162,14 +174,16 @@ $lang = array_merge($lang, array(
 	'ACP_SERVER_SETTINGS'		=> 'Palvelimen asetukset',
 	'ACP_SIGNATURE_SETTINGS'	=> 'Allekirjoituksen asetukset',
 	'ACP_SMILIES'				=> 'Hymiöt',
-	'ACP_STYLE_COMPONENTS'		=> 'Tyylien komponentit',
 	'ACP_STYLE_MANAGEMENT'		=> 'Tyylien hallinta',
 	'ACP_STYLES'				=> 'Tyylit',
+	'ACP_STYLES_CACHE'			=> 'Nollaa välimuisti',
+	'ACP_STYLES_INSTALL'		=> 'Asenna tyyli',
+
 	'ACP_SUBMIT_CHANGES'		=> 'Lähetä muutokset',
-	
+
 	'ACP_TEMPLATES'				=> 'Mallineet',
 	'ACP_THEMES'				=> 'Teemat',
-	
+
 	'ACP_UPDATE'					=> 'Päivittää',
 	'ACP_USERS_FORUM_PERMISSIONS'	=> 'Käyttäjien oikeudet alueittain',
 	'ACP_USERS_LOGS'				=> 'Käyttäjien lokitiedot',
@@ -187,7 +201,6 @@ $lang = array_merge($lang, array(
 	'ACP_USER_ROLES'				=> 'Käyttäjän roolit',
 	'ACP_USER_SECURITY'				=> 'Käyttäjän tietoturva',
 	'ACP_USER_SIG'					=> 'Allekirjoitus',
-
 	'ACP_USER_WARNINGS'				=> 'Varoitukset',
 
 	'ACP_VC_SETTINGS'					=> 'Roskapostituksen esto',
@@ -198,7 +211,7 @@ $lang = array_merge($lang, array(
 	'ACP_VIEW_FORUM_PERMISSIONS'		=> 'Katso alueen oikeuksia',
 	'ACP_VIEW_GLOBAL_MOD_PERMISSIONS'	=> 'Katso valvojien oikeuksia',
 	'ACP_VIEW_USER_PERMISSIONS'			=> 'Katso käyttäjien oikeuksia',
-	
+
 	'ACP_WORDS'					=> 'Sanasensuuri',
 
 	'ACTION'				=> 'Toimenpide',
@@ -216,6 +229,10 @@ $lang = array_merge($lang, array(
 
 	'COLOUR_SWATCH'			=> 'Web-turvalliset värit',
 	'CONFIG_UPDATED'		=> 'Asetukset on päivitetty',
+	'CRON_LOCK_ERROR'		=> 'cron lukitus virhe.',
+	'CRON_NO_SUCH_TASK'		=> 'Ei löydy cron tehtävää “%s”.',
+	'CRON_NO_TASK'			=> 'Ei cron tehtäviä tällä hetkellä.',
+	'CRON_NO_TASKS'			=> 'Ei löydy cron tehtäviä.',
 
 	'DEACTIVATE'				=> 'Sulje',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Polkua “%s” ei ole olemassa.',
@@ -226,6 +243,7 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_AS'				=> 'Lataa muodossa',
 	'DOWNLOAD_STORE'			=> 'Lataa tai tallenna tiedosto',
 	'DOWNLOAD_STORE_EXPLAIN'	=> 'Voit ladata tiedoston tai tallentaa sen <samp>store/</samp>-hakemistoon.',
+	'DOWNLOADS'					=> 'Lataukset',
 
 	'EDIT'					=> 'Muokkaa',
 	'ENABLE'				=> 'Ota käyttöön',
@@ -240,6 +258,8 @@ $lang = array_merge($lang, array(
 	'IP'					=> 'Käyttäjän IP-osoite',
 	'IP_HOSTNAME'			=> 'IP-osoite tai isäntänimi',
 
+	'LOAD_NOTIFICATIONS'			=> 'Näytä ilmoitukset',
+	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Näytä ilmoitukset joka sivulla (sivun headerissa).',
 	'LOGGED_IN_AS'			=> 'Kirjattu sisään käyttäjätunnuksella:',
 	'LOGIN_ADMIN'			=> 'Sinun tulee olla tunnistettu käyttäjä hallinnoidaksesi keskustelufoorumia.',
 	'LOGIN_ADMIN_CONFIRM'	=> 'Kirjaudu sisään uudelleen hallinnoidaksesi keskustelufoorumia.',
@@ -257,6 +277,7 @@ $lang = array_merge($lang, array(
 	'NOTIFY'				=> 'Ilmoitus',
 	'NO_ADMIN'				=> 'Oikeutesi eivät riitä muokkaamaan tämän keskustelufoorumin asetuksia.',
 	'NO_EMAILS_DEFINED'		=> 'Sopivaa sähköpostiosoitetta ei löytynyt',
+	'NO_FILES_TO_DELETE'	=> 'Liitteitä ei löydy.',
 	'NO_PASSWORD_SUPPLIED'	=> 'Anna salasanasi, ennen kuin jatkat ylläpidon asetuksiin.',	
 
 	'OFF'					=> 'Pois käytöstä',
@@ -271,8 +292,8 @@ $lang = array_merge($lang, array(
 
 	'REMIND'							=> 'Muistuta',
 	'RESYNC'							=> 'Synkronoi',
-	'RETURN_TO'							=> 'Palaa...',
 
+	'RUNNING_TASK'			=> 'Tehtävä %s. käynnissä',
 	'SELECT_ANONYMOUS'		=> 'Valitse vierailijan tunnus',
 	'SELECT_OPTION'			=> 'Valitse vaihtoehto',
 
@@ -280,7 +301,12 @@ $lang = array_merge($lang, array(
 	'SETTING_TOO_BIG'		=> 'Antamasi arvo asetukselle “%1$s” on liian suuri. Enimmäisarvo on %2$d.',	
 	'SETTING_TOO_LONG'		=> 'Antamasi arvo asetukselle “%1$s” on liian pitkä. Suurin sallittu pituus on %2$d.',
 	'SETTING_TOO_SHORT'		=> 'Antamasi arvo asetukselle “%1$s” ei ole tarpeeksi pitkä. Pienin sallittu pituus on %2$d.',
+
 	'SHOW_ALL_OPERATIONS'	=> 'Näytä kaikki toimenpiteet',
+
+	'TASKS_NOT_READY'			=> 'Tehtävä kesken:',
+	'TASKS_READY'			=> 'Tehtävä valmis:',
+	'TOTAL_SIZE'			=> 'koko yhteensä',
 
 	'UCP'					=> 'Käyttäjien hallintapaneeli',
 	'USERNAMES_EXPLAIN'		=> 'Laita jokainen käyttäjätunnus omalle rivillensä',
@@ -325,6 +351,7 @@ $lang = array_merge($lang, array(
 
 	'DATABASE_SERVER_INFO'	=> 'Tietokantapalvelin',
 	'DATABASE_SIZE'			=> 'Tietokannan koko',
+
 	// Enviroment configuration checks, mbstring related
 	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> 'Function overload ei ole asetettu oikein',
 	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> '<var>mbstring.func_overload</var> arvon tulee olla asetettu joko 0 tai 4. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
@@ -340,12 +367,14 @@ $lang = array_merge($lang, array(
 
 	'GZIP_COMPRESSION'	=> 'Gzip-pakkaus',
 
+	'NO_SEARCH_INDEX'	=> 'Haluttu kohde ei ole haku indeksissä.<br />Muodosta index uudestaan “%1$s”  %2$s haku index %3$s kohdassa.',
 	'NOT_AVAILABLE'		=> 'Ei saatavilla',
 	'NUMBER_FILES'		=> 'Liitetiedostojen lukumäärä',
 	'NUMBER_POSTS'		=> 'Viestien lukumäärä',
 	'NUMBER_TOPICS'		=> 'Viestiketjujen lukumäärä',
 	'NUMBER_USERS'		=> 'Käyttäjät',
 	'NUMBER_ORPHAN'		=> 'Orvot liitetiedostot',
+
 	'PHP_VERSION_OLD'	=> 'Palvelimen käyttämä PHP-versio ei ole tuettu tulevien phpBB-versioiden käyttämiseen. %sLisätietoja%s',
 
 	'POSTS_PER_DAY'		=> 'Viestiä päivässä',
@@ -353,29 +382,38 @@ $lang = array_merge($lang, array(
 	'PURGE_CACHE'			=> 'Tyhjennä välimuisti',
 	'PURGE_CACHE_CONFIRM'	=> 'Haluatko varmasti tyhjentää välimuistin?',
 	'PURGE_CACHE_EXPLAIN'	=> 'Tyhjennä kaikki välimuistiin liittyvät asiat. Tähän kuuluu mallineet ja suoritetut kyselyt',
+	'PURGE_CACHE_SUCCESS'	=> 'Välimuistin nollaus onnistui.',
 
 	'PURGE_SESSIONS'			=> 'Tyhjennä istunnot',
 	'PURGE_SESSIONS_CONFIRM'	=> 'Haluatko varmasti tyhjentää istunnot? Tämä kirjaa kaikki käyttäjät ulos.',
 	'PURGE_SESSIONS_EXPLAIN'	=> 'Tyhjennä istunnot. Tämä tyhjentää istuntoihin käytettävän taulun tietokannasta',
+	'PURGE_SESSIONS_SUCCESS'	=> 'Istuntojen nollaus onnistui.',
 
 	'RESET_DATE'					=> 'Muuta keskustelufoorumin aloituspäivämäärä',
 	'RESET_DATE_CONFIRM'			=> 'Haluatko varmasti asettaa aloituspäivämäärän uudestaan?',
+	'RESET_DATE_SUCCESS'				=> 'Palstan käynnistys pvm. nollaus',
 	'RESET_ONLINE'					=> 'Muuta vierailleiden käyttäjien määrää',
 	'RESET_ONLINE_CONFIRM'			=> 'Haluatko varmasti muuttaa vierailleiden käyttäjien määrää?',
+	'RESET_ONLINE_SUCCESS'				=> 'Käyttäjiä eniten reset',
 	'RESYNC_POSTCOUNTS'				=> 'Synkronoi viestien lukumäärä',
 	'RESYNC_POSTCOUNTS_EXPLAIN'		=> 'Vain olemassaolevat viestit lasketaan. Siivottuja viestejä ei huomioida.',
 	'RESYNC_POSTCOUNTS_CONFIRM'		=> 'Haluatko varmasti laskea viestien lukumäärän uudelleen?',
+	'RESYNC_POSTCOUNTS_SUCCESS'			=> 'Viestien synkronointi onnistui',
 	'RESYNC_POST_MARKING'			=> 'Synkronoi omien vastausten näyttö',
 	'RESYNC_POST_MARKING_CONFIRM'	=> 'Haluatko varmasti synkronoida omat vastaukset?',
 	'RESYNC_POST_MARKING_EXPLAIN'	=> 'Poistaa ensin merkinnän kaikista viesteistä ja laskee sen jälkeen uusiksi kaikki viestit, joissa on ollut toimintaa viimeisen puolen vuoden aikana.',
+	'RESYNC_POST_MARKING_SUCCESS'	=> 'Synkronoitu . merkityt aiheet',
 	'RESYNC_STATS'					=> 'Synkronoi tilastot',
 	'RESYNC_STATS_CONFIRM'			=> 'Haluatko varmasti synkronoida tilastot?',
 	'RESYNC_STATS_EXPLAIN'			=> 'Laskee viestit, viestiketjut, käyttäjät ja tiedostot uudelleen.',
+	'RESYNC_STATS_SUCCESS'			=> 'Synkronoinnin tilatietoja',
 	'RUN'							=> 'Suorita',
 
 	'STATISTIC'					=> 'Tilastot',
 	'STATISTIC_RESYNC_OPTIONS'	=> 'Synkronoi tai nollaa tilastot',
 
+	'TIMEZONE_INVALID'	=> 'Haluttu aikavyöhyke ei mahdollinen.',
+	'TIMEZONE_SELECTED'	=> '(valittu aikavyöhyke)',
 	'TOPICS_PER_DAY'	=> 'Viestiketjuja päivässä',
 
 	'UPLOAD_DIR_SIZE'	=> 'Liitetiedostojen hakemiston koko',
@@ -388,7 +426,7 @@ $lang = array_merge($lang, array(
 	'VIEW_INACTIVE_USERS'	=> 'Näytä vahvistamattomat käyttäjät',
 
 	'WELCOME_PHPBB'			=> 'Tervetuloa phpBB:hen',
-    'WRITABLE_CONFIG'       => 'Asetustiedostosi (config.php) on kirjoitettavissa. Suosittelemme, että muutat tiedoston oikeudet muotoon 640 tai ainakin 644 (esimerkiksi: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">chmod</a> 640 config.php).',
+	'WRITABLE_CONFIG'		=> 'Asetustiedostosi (config.php) on kirjoitettavissa. Suosittelemme, että muutat tiedoston oikeudet muotoon 640 tai ainakin 644 (esimerkiksi: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">chmod</a> 640 config.php).',
 ));
 
 // Inactive Users
@@ -455,7 +493,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_ACL_TRANSFER_PERMISSIONS'		=> '<strong>Siirsi oikeudet käyttäjältä</strong><br />» %s',
 	'LOG_ACL_RESTORE_PERMISSIONS'		=> '<strong>Palautti omat oikeutensa testattuaan käyttäjää</strong><br />» %s',
-	
+
 	'LOG_ADMIN_AUTH_FAIL'		=> '<strong>Epäonnistunut kirjautuminen ylläpitoon</strong>',
 	'LOG_ADMIN_AUTH_SUCCESS'	=> '<strong>Onnistunut kirjautuminen ylläpitoon</strong>',
 
@@ -504,8 +542,8 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_MESSAGE'		=> '<strong>Muutti yksityisviestien asetuksia</strong>',
 	'LOG_CONFIG_POST'			=> '<strong>Muutti viestien lähettämisen asetuksia</strong>',
 	'LOG_CONFIG_REGISTRATION'	=> '<strong>Muutti rekisteröitymisen asetuksia</strong>',
-	'LOG_CONFIG_SEARCH'			=> '<strong>Muutti hakutoiminnon asetuksia</strong>',
 	'LOG_CONFIG_FEED'			=> '<strong>Muutti syötteiden asetuksia</strong>',
+	'LOG_CONFIG_SEARCH'			=> '<strong>Muutti hakutoiminnon asetuksia</strong>',
 	'LOG_CONFIG_SECURITY'		=> '<strong>Muutti tietoturva asetuksia</strong>',
 	'LOG_CONFIG_SERVER'			=> '<strong>Muutti palvelimen asetuksia</strong>',
 	'LOG_CONFIG_SETTINGS'		=> '<strong>Muutti foorumin asetuksia</strong>',
@@ -515,24 +553,30 @@ $lang = array_merge($lang, array(
 	'LOG_APPROVE_TOPIC'			=> '<strong>Hyväksyi viestiketjun</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Käyttäjä tönäisi omaa viestiketjuaan</strong><br />» %s',
 	'LOG_DELETE_POST'			=> '<strong>Poisti viestin “%1$s” jonka lähettäjä oli</strong><br />» %2$s',
-    'LOG_DELETE_SHADOW_TOPIC'   => '<strong>Poisti varjoketjun</strong><br />» %s',
+	'LOG_DELETE_SHADOW_TOPIC'	=> '<strong>Poisti varjoketjun</strong><br />» %s',
 	'LOG_DELETE_TOPIC'			=> '<strong>Poisti viestiketjun “%1$s” jonka oli aloittanut</strong><br />» %2$s',
 	'LOG_FORK'					=> '<strong>Kopioi viestiketjun</strong><br />» alueelta %s',
 	'LOG_LOCK'					=> '<strong>Lukitsi viestiketjun</strong><br />» %s',
 	'LOG_LOCK_POST'				=> '<strong>Lukitsi viestin</strong><br />» %s',
 	'LOG_MERGE'					=> '<strong>yhdisti viestiketjun</strong> viestiketjuun<br />»%s',
 	'LOG_MOVE'					=> '<strong>Siirsi viestiketjun</strong><br />» alueelta %1$s alueelle %2$s',
+	'LOG_MOVED_TOPIC'			=> '<strong>Siirretty viestiketju</strong><br />» %s',
 	'LOG_PM_REPORT_CLOSED'		=> '<strong>Sulki YV-ilmoituksen</strong><br />» %s',
 	'LOG_PM_REPORT_DELETED'		=> '<strong>Poisti YV-ilmoituksen</strong><br />» %s',
 	'LOG_POST_APPROVED'			=> '<strong>Hyväksyi viestin</strong><br />» %s',
 	'LOG_POST_DISAPPROVED'		=> '<strong>Hylkäsi viestin “%1$s” ja antoi syyn</strong><br />» %2$s',
 	'LOG_POST_EDITED'			=> '<strong>Muokkasi viestiä “%1$s” Kirjoittanut</strong><br />» %2$s',
+	'LOG_POST_RESTORED'			=> '<strong>Palautettu viesti</strong><br />» %s',
 	'LOG_REPORT_CLOSED'			=> '<strong>Sulki ilmoituksen</strong><br />» %s',
 	'LOG_REPORT_DELETED'		=> '<strong>Poisti ilmoituksen</strong><br />» %s',
+	'LOG_RESTORE_TOPIC'			=> '<strong>Palautettu aihe “%1$s” kirjoittaja</strong><br />» %2$s',
+	'LOG_SOFTDELETE_POST'		=> '<strong>Poistettu viesti “%1$s” kirjoittaja “%2$s” seuraavasta syystä</strong><br />» %3$s',
+	'LOG_SOFTDELETE_TOPIC'		=> '<strong>Poistettu aihe “%1$s” kirjoittaja “%2$s” seuraavasta syystä</strong><br />» %3$s',
 	'LOG_SPLIT_DESTINATION'		=> '<strong>Siirsi jaetut viestit</strong><br />» alueelle %s',
 	'LOG_SPLIT_SOURCE'			=> '<strong>Jakoi viestit</strong><br />» from %s',
 
 	'LOG_TOPIC_APPROVED'		=> '<strong>Hyväksyi viestiketjun</strong><br />» %s',
+	'LOG_TOPIC_RESTORED'		=> '<strong>Palautettu aiha</strong><br />» %s',
 	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Hylkäsi viestiketjun “%1$s” ja antoi syyn</strong><br />%2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Synkronoi viestien laskurit</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>Vaihtoi viestiketjun tyyppiä</strong><br />» %s',
@@ -552,18 +596,18 @@ $lang = array_merge($lang, array(
 
 	'LOG_ERROR_JABBER'		=> '<strong>Jabber-virhe</strong><br />» %s',
 	'LOG_ERROR_EMAIL'		=> '<strong>Sähköposti-virhe</strong><br />» %s',
-	
+
 	'LOG_FORUM_ADD'							=> '<strong>Loi uuden alueen</strong><br />» %s',
 	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Kopioi alueen oikeudet</strong> alueelta %1$s<br />» %2$s',
 	'LOG_FORUM_DEL_FORUM'					=> '<strong>Poisti alueen</strong><br />» %s',
 	'LOG_FORUM_DEL_FORUMS'					=> '<strong>Poisti alueen ja sisäalueen</strong><br />» %s',
 	'LOG_FORUM_DEL_MOVE_FORUMS'				=> '<strong>Poisti alueen ja siirsi sisäalueet</strong> alueelle %1$s<br />» %2$s',
 	'LOG_FORUM_DEL_MOVE_POSTS'				=> '<strong>Poisti alueen ja siirsi viestit </strong> alueelle %1$s<br />» %2$s',
-    'LOG_FORUM_DEL_MOVE_POSTS_FORUMS'      	=> '<strong>Poisti alueen ja sen sisäalueet, viestit siirretty</strong> alueelle %1$s<br />» %2$s',
-    'LOG_FORUM_DEL_MOVE_POSTS_MOVE_FORUMS'  => '<strong>Poisti alueen ja siirsi viestit</strong> alueelle %1$s <strong>ja sisäalueet</strong> alueelle %2$s<br />» %3$s',
-    'LOG_FORUM_DEL_POSTS'               	=> '<strong>Poisti alueen ja kaikki viestit</strong><br />» %s',
-    'LOG_FORUM_DEL_POSTS_FORUMS'         	=> '<strong>Poisti alueen, viestit ja sisäalueet</strong><br />» %s',
-    'LOG_FORUM_DEL_POSTS_MOVE_FORUMS'      	=> '<strong>Poisti alueen ja viestit. Sisäalueet siirretty</strong> alueelle %1$s<br />» %2$s',
+	'LOG_FORUM_DEL_MOVE_POSTS_FORUMS'		=> '<strong>Poisti alueen ja sen sisäalueet, viestit siirretty</strong> alueelle %1$s<br />» %2$s',
+	'LOG_FORUM_DEL_MOVE_POSTS_MOVE_FORUMS'	=> '<strong>Poisti alueen ja siirsi viestit</strong> alueelle %1$s <strong>ja sisäalueet</strong> alueelle %2$s<br />» %3$s',
+	'LOG_FORUM_DEL_POSTS'		=> '<strong>Poisti alueen ja kaikki viestit</strong><br />» %s',
+	'LOG_FORUM_DEL_POSTS_FORUMS'		=> '<strong>Poisti alueen, viestit ja sisäalueet</strong><br />» %s',
+	'LOG_FORUM_DEL_POSTS_MOVE_FORUMS'		=> '<strong>Poisti alueen ja viestit. Sisäalueet siirretty</strong> alueelle %1$s<br />» %2$s',
 	'LOG_FORUM_EDIT'						=> '<strong>Muokkasi alueen yksityiskohtia</strong><br />» %s',
 	'LOG_FORUM_MOVE_DOWN'					=> '<strong>Siirsi alueen</strong> %1$s <strong>alas</strong> %2$s',
 	'LOG_FORUM_MOVE_UP'						=> '<strong>Siirsi alueen</strong> %1$s <strong>ylös</strong> %2$s',
@@ -584,15 +628,6 @@ $lang = array_merge($lang, array(
 	'LOG_USERS_PENDING'		=> '<strong>Käyttäjä pyysi liittymistä ryhmään “%1$s” ja tarvitsee hyväksynnän</strong><br />» %2$s',
 
 	'LOG_IMAGE_GENERATION_ERROR'	=> '<strong>Kuvan luonnissa tapahtui virhe</strong><br />» Virhe tiedostossa %1$s rivillä %2$s: %3$s',
-	'LOG_IMAGESET_ADD_DB'		=> '<strong>Lisäsi uuden kuvapaketin tietokantaan</strong><br />» %s',
-	'LOG_IMAGESET_ADD_FS'		=> '<strong>Lisäsi uuden kuvapaketin tiedostojärjestelmään</strong><br />» %s',
-	'LOG_IMAGESET_DELETE'		=> '<strong>Poisti kuvapaketin</strong><br />» %s',
-	'LOG_IMAGESET_EDIT_DETAILS'	=> '<strong>Muokkasi kuvapaketin tietoja</strong><br />» %s',
-	'LOG_IMAGESET_EDIT'			=> '<strong>Muokkasi kuvapakettia</strong><br />» %s',
-	'LOG_IMAGESET_EXPORT'		=> '<strong>Vei kuvapaketin</strong><br />» %s',
-	'LOG_IMAGESET_LANG_MISSING'		=> '<strong>Kuvapaketista puuttuu “%2$s” lokalisoitu versio</strong><br />» %1$s',
-	'LOG_IMAGESET_LANG_REFRESHED'	=> '<strong>Virkisti “%2$s” lokalisoidun kuvapaketin</strong><br />» %1$s',
-	'LOG_IMAGESET_REFRESHED'	=> '<strong>Virkisti kuvapaketin</strong><br />» %s',
 
 	'LOG_INACTIVE_ACTIVATE'	=> '<strong>Aktivoi aktivoimattomat käyttäjät</strong><br />» %s',
 	'LOG_INACTIVE_DELETE'	=> '<strong>Poisti aktivoimattomat käyttäjät</strong><br />» %s',
@@ -638,6 +673,8 @@ $lang = array_merge($lang, array(
 	'LOG_U_ROLE_EDIT'		=> '<strong>Muokkasi käyttäjän roolia</strong><br />» %s',
 	'LOG_U_ROLE_REMOVED'	=> '<strong>Poisti käyttäjän roolin</strong><br />» %s',
 
+	'LOG_PLUPLOAD_TIDY_FAILED'		=> '<strong>Ei voi avata %1$s järjestelyyn, tarkista oikeudet.</strong><br />Exception: %2$s<br />Trace: %3$s',
+
 	'LOG_PROFILE_FIELD_ACTIVATE'	=> '<strong>Aktivoi profiilikentän</strong><br />» %s',
 	'LOG_PROFILE_FIELD_CREATE'		=> '<strong>Lisäsi profiilikentän</strong><br />» %s',
 	'LOG_PROFILE_FIELD_DEACTIVATE'	=> '<strong>Poisti profiilikentän käytöstä</strong><br />» %s',
@@ -646,6 +683,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_PRUNE'					=> '<strong>Siivosi keskustelualueet</strong><br />» %s',
 	'LOG_AUTO_PRUNE'			=> '<strong>Siivosi keskustelualueet automaattisesti</strong><br />» %s',
+	'LOG_PRUNE_SHADOW'		=> '<strong>Tiivistetyt varjo aiheet</strong><br />» %s',
 	'LOG_PRUNE_USER_DEAC'		=> '<strong>Suljetut käyttäjät</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_DEL'	=> '<strong>Käyttäjiä siivottu ja viestejä poistettu</strong><br />» %s',
 	'LOG_PRUNE_USER_DEL_ANON'	=> '<strong>Käyttäjiä siivottu ja viestit jätetty</strong><br />» %s',
@@ -664,33 +702,41 @@ $lang = array_merge($lang, array(
 	'LOG_REFERER_INVALID'		=> '<strong>Viittaajan varmennus epäonnistui</strong><br />»Viittaaja oli “<em>%1$s</em>”. Pyyntö hylättiin ja istunto lopetettiin.',
 	'LOG_RESET_DATE'			=> '<strong>Muutti keskustelufoorumin aloituspäivää</strong>',
 	'LOG_RESET_ONLINE'			=> '<strong>Muutti käyttäjäennätyksen määrää</strong>',
+	'LOG_RESYNC_FILES_STATS'	=> '<strong>File statistics resynchronised</strong>',
 	'LOG_RESYNC_POSTCOUNTS'		=> '<strong>Synkronoi käyttäjien viestien määrän</strong>',
 	'LOG_RESYNC_POST_MARKING'	=> '<strong>Synkronoi pisteistetyt viestiketjut</strong>',
 	'LOG_RESYNC_STATS'			=> '<strong>Päivitti viestin, viestiketjun ja käyttäjien tilastot</strong>',
 
 	'LOG_SEARCH_INDEX_CREATED'	=> '<strong>Loi sisällysluettelon</strong><br />» %s',
 	'LOG_SEARCH_INDEX_REMOVED'	=> '<strong>Poisti sisällysluettelon</strong><br />» %s',
+	'LOG_SPHINX_ERROR'			=> '<strong>Sphinx Error</strong><br />» %s',
 	'LOG_STYLE_ADD'				=> '<strong>Lisäsi uuden tyylin</strong><br />» %s',
 	'LOG_STYLE_DELETE'			=> '<strong>Poisti tyylin</strong><br />» %s',
 	'LOG_STYLE_EDIT_DETAILS'	=> '<strong>Muokkasi tyyliä</strong><br />» %s',
 	'LOG_STYLE_EXPORT'			=> '<strong>Vei tyylin</strong><br />» %s',
 
+	// @deprecated 3.1
 	'LOG_TEMPLATE_ADD_DB'			=> '<strong>Lisäsi uuden mallinepaketin tietokantaan</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_TEMPLATE_ADD_FS'			=> '<strong>Lisäsi uuden mallinepaketin tiedostojärjestelmään</strong><br />» %s',
 	'LOG_TEMPLATE_CACHE_CLEARED'	=> '<strong>Poisti mallinepaketin tiedostot välimuistista <i>%1$s</i></strong><br />» %2$s',
 	'LOG_TEMPLATE_DELETE'			=> '<strong>Poisti mallinepaketin</strong><br />» %s',
 	'LOG_TEMPLATE_EDIT'				=> '<strong>Muokkasi mallinepakettia <i>%1$s</i></strong><br />» %2$s',
 	'LOG_TEMPLATE_EDIT_DETAILS'		=> '<strong>Muokkasi mallineen tietoja</strong><br />» %s',
 	'LOG_TEMPLATE_EXPORT'			=> '<strong>Vei mallinepaketin</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_TEMPLATE_REFRESHED'		=> '<strong>Virkisti mallinepaketin</strong><br />» %s',
 
+	// @deprecated 3.1
 	'LOG_THEME_ADD_DB'			=> '<strong>Lisäsi uuden teeman tietokantaan</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_THEME_ADD_FS'			=> '<strong>Lisäsi uuden teeman tiedostojärjestelmään</strong><br />» %s',
 	'LOG_THEME_DELETE'			=> '<strong>Poisti teeman</strong><br />» %s',
 	'LOG_THEME_EDIT_DETAILS'	=> '<strong>Muokkasi teeman tietoja</strong><br />» %s',
 	'LOG_THEME_EDIT'			=> '<strong>Muokkasi teemaa <em>%1$s</em></strong>',
 	'LOG_THEME_EDIT_FILE'		=> '<strong>Muokkasi teemaa <em>%1$s</em></strong><br />» Muokkasi tiedostoa <em>%2$s</em>',
 	'LOG_THEME_EXPORT'			=> '<strong>Vei teeman</strong><br />» %s',
+	// @deprecated 3.1
 	'LOG_THEME_REFRESHED'		=> '<strong>Virkisti teeman</strong><br />» %s',
 
 	'LOG_UPDATE_DATABASE'	=> '<strong>Päivitti tietokannan versiosta %1$s versioon %2$s</strong>',
@@ -736,12 +782,17 @@ $lang = array_merge($lang, array(
 	'LOG_USER_GROUP_RESIGN'			=> '<strong>Käyttäjä erosi ryhmästä</strong><br />» %s',
 
 	'LOG_WARNING_DELETED'		=> '<strong>Poisti varoituksen</strong><br />» %s',
-	'LOG_WARNINGS_DELETED'		=> '<strong>Poisti %2$s varoitusta</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+	'LOG_WARNINGS_DELETED'		=> array(
+		1 => '<strong>Käyttäjän varoitus nollattu</strong><br />» %1$s',
+		2 => '<strong>Nollattu %2$d käyttäjän varoitusta</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+	),
 	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Poisti kaikki varoitukset</strong><br />» %s',
 
 	'LOG_WORD_ADD'			=> '<strong>Lisäsi sensuroitavan sanan</strong><br />» %s',
 	'LOG_WORD_DELETE'		=> '<strong>Poisti sensuroitavan sanan</strong><br />» %s',
 	'LOG_WORD_EDIT'			=> '<strong>Muokkasi sanojen sensurointia</strong><br />» %s',
-));
 
-?>
+	'LOG_EXT_ENABLE'	=> '<strong>Laajennus sallittu</strong><br />» %s',
+	'LOG_EXT_DISABLE'	=> '<strong>Laajennus estetty</strong><br />» %s',
+	'LOG_EXT_PURGE'		=> '<strong>Laajennuksen tiedot nollattu</strong><br />» %s',
+));

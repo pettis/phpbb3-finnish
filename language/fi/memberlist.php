@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* memberlist [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -47,11 +50,13 @@ $lang = array_merge($lang, array(
 
 	'BEFORE'				=> 'Ennen',
 
-	'CC_EMAIL'				=> 'Lähetä kopio itselleni',
-	'CONTACT_USER'			=> 'Yhteystiedot käyttäjälle',
+	'CC_SENDER'				=> 'Lähetä kopio itselleni',
+	'CONTACT_ADMIN'			=> 'Yhteystiedot käyttäjälle',
 
 	'DEST_LANG'				=> 'Kieli',
 	'DEST_LANG_EXPLAIN'		=> 'Valitse vastaanottajan kieli. (Jos saatavilla)',
+
+	'EDIT_PROFILE'			=> 'Muuta tietoja',
 
 	'EMAIL_BODY_EXPLAIN'	=> 'Tämä viesti lähetetään pelkkänä tekstinä. Älä käytä HTML:ää tai BBCode:a. Palautusosoitteeksi laitetaan sinun sähköpostiosoite.',
 	'EMAIL_DISABLED'		=> 'Pahoittelut, mutta kaikki sähköpostiin liittyvät toiminnot ovat poissa käytöstä.',
@@ -61,6 +66,8 @@ $lang = array_merge($lang, array(
 	'EMPTY_MESSAGE_EMAIL'	=> 'Kirjoita viesti.',
 	'EMPTY_MESSAGE_IM'		=> 'Kirjoita viesti.',
 	'EMPTY_NAME_EMAIL'		=> 'Anna vastaanottajan oikea nimi.',
+	'EMPTY_SENDER_EMAIL'	=> 'Anna voimassa oleva email osoite.',
+	'EMPTY_SENDER_NAME'		=> 'Anna lähettäjän nimi.',
 	'EMPTY_SUBJECT_EMAIL'	=> 'Anna viestille otsikko.',
 	'EQUAL_TO'				=> 'Saman arvoinen',
 
@@ -72,16 +79,10 @@ $lang = array_merge($lang, array(
 	'HIDE_MEMBER_SEARCH'	=> 'Piilota jäsenhaku',
 
 	'IM_ADD_CONTACT'		=> 'Lisää yhteystieto',
-	'IM_AIM'				=> 'Huomaa, että AOL Instant Messengerin pitää olla asennettuna käyttääksesi tätä toimintoa.',
-	'IM_AIM_EXPRESS'		=> 'AIM Express',
 	'IM_DOWNLOAD_APP'		=> 'Lataa sovellus',
-	'IM_ICQ'				=> 'Huomaa, että käyttäjät voivat estää kutsumattomat yhteydenotot pikaviestimillä.',
 	'IM_JABBER'				=> 'Huomaa, että käyttäjät voivat estää kutsumattomat yhteydenotot pikaviestimillä.',
 	'IM_JABBER_SUBJECT'		=> 'Tämä on automaattinen viesti. Älä vastaa! Viesti käyttäjältä %1$s missä %2$s',
-	'IM_MESSAGE'			=> 'Viestisi',
-	'IM_MSNM'				=> 'Huomaa, että sinulla pitää olla Windows Messenger asennettuna käyttääksesi tätä toimintoa.',
-	'IM_MSNM_BROWSER'		=> 'Selaimesi ei tue tätä.',
-	'IM_MSNM_CONNECT'		=> 'MSNM ei ole yhdistetty.\nSinun täytyy yhdistää MSNM jatkaaksesi.',		
+	'IM_MESSAGE'			=> 'Viestisi',		
 	'IM_NAME'				=> 'Nimesi',
 	'IM_NO_DATA'			=> 'Tälle käyttäjälle ei ole kontakti-informaatiota.',
 	'IM_NO_JABBER'			=> 'Pahoittelut, mutta suora viestintä Jabber käyttäjien kanssa ei ole tuettuna tällä palvelimella. Sinulla täytyy olla Jabber-ohjelma asennettuna ottaaksesi yhteyttä yläpuolella olevaan henkilöön.',
@@ -93,15 +94,19 @@ $lang = array_merge($lang, array(
 	
 	'LAST_ACTIVE'				=> 'Viimeisin käynti',
 	'LESS_THAN'					=> 'Vähemmän kuin',
-	'LIST_USER'					=> '1 käyttäjä',
-	'LIST_USERS'				=> '%d käyttäjää',
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Kirjaudu sisään katsoaksesi henkilökunnan tietoja.',
+	'LIST_USERS'				=> array(
+		1	=> '%d käyttäjä',
+		2	=> '%d käyttäjää',
+	),
+	'LOGIN_EXPLAIN_TEAM'		=> 'Kirjaudu sisään katsoaksesi henkilökunnan tietoja.',
 	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Kirjaudu sisään katsoaksesi jäsenluetteloa.',
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Kirjaudu sisään etsiäksesi käyttäjien tietoja.',
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Kirjaudu sisään katsoaksesi tätä profiilia.',
 
 	'MORE_THAN'				=> 'Enemmän kuin',
 
+	'NO_CONTACT_FORM'		=> 'Ylläpidon yhteyslomake ei ole käytössä.',
+	'NO_CONTACT_PAGE'		=> 'Ylläpidon yhteyssivu ei ole käytössä.',
 	'NO_EMAIL'				=> 'Et voi lähettää sähköpostia tälle käyttäjälle.',
 	'NO_VIEW_USERS'			=> 'Sinulla ei ole oikeuksia katsoa käyttäjälistaa tai profiileja.',
 
@@ -117,12 +122,12 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MARKED'			=> 'Valitse merkityt',
 	'SELECT_SORT_METHOD'	=> 'Lajittele:',
-	'SEND_AIM_MESSAGE'		=> 'Lähetä AIM-viesti',
+	'SENDER_EMAIL_ADDRESS'	=> 'Anna lähettäjän sähköpostiosoite',
+	'SENDER_NAME'			=> 'Anna lähettäjän nimi',
 	'SEND_ICQ_MESSAGE'		=> 'Lähetä ICQ-viesti',
 	'SEND_IM'				=> 'Pikaviestintä',
 	'SEND_JABBER_MESSAGE'	=> 'Lähetä Jabber-viesti',
 	'SEND_MESSAGE'			=> 'Viesti',
-	'SEND_MSNM_MESSAGE'		=> 'Lähetä MSNM/WLM-viesti',
 	'SEND_YIM_MESSAGE'		=> 'Lähetä YIM-viesti',
 	'SORT_EMAIL'			=> 'Sähköposti',
 	'SORT_LAST_ACTIVE'		=> 'Viimeisin käynti',
@@ -133,16 +138,18 @@ $lang = array_merge($lang, array(
 	'USER_BAN'				=> 'Porttikielto',
 	'USER_FORUM'			=> 'Tilastot',
 	'USER_LAST_REMINDED'	=> array(
-		0		=> 'Ei muistutettu vielä',
+		0		=> 'Ei lähetettyjä muistutuksia',
 		1		=> '%1$d muistutus lähetetty<br />» %2$s',
+		2		=> '%1$d muistutusta lähetetty<br />» %2$s',
 	),
 	'USER_ONLINE'			=> 'Paikalla',
 	'USER_PRESENCE'			=> 'Läsnäolo alueella',
+	'USERS_PER_PAGE'		=> 'Käyttäjiä sivulla',
 
 	'VIEWING_PROFILE'		=> '%s - Profiili',
-	'VISITED'				=> 'Viimeisin käynti',
-
-	'WWW'					=> 'WWW',
+	'VIEW_FACEBOOK_PROFILE'	=> 'Katso Facebook tietoja',
+	'VIEW_SKYPE_PROFILE'	=> 'Katso Skype tietoja',
+	'VIEW_TWITTER_PROFILE'	=> 'Katso Twitter tietoja',
+	'VIEW_YOUTUBE_CHANNEL'	=> 'Katso YouTube tietoja',
+	'VIEW_GOOGLEPLUS_PROFILE' => 'Katso Google+ tietoja',
 ));
-
-?>

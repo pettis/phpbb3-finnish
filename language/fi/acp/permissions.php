@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* acp_permissions [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*	phpBB3.1.x versio
+*	harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -50,7 +53,7 @@ $lang = array_merge($lang, array(
 
 		<h2>Oikeuksien maski</h2>
 		<p>Näitä käytetään, kun halutaan katsoa käyttäjillä, valvojilla (pää ja tavallinen), ylläpitäjällä ja alueella voimassa olevia oikeuksia.</p>
-	
+
 		<br />
 
 		<p>Ole hyvä ja katso <a href="https://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">Kohta 1.5 pikaoppaasta</a> saadaksesi lisätietoa oikeuksien asettamisesta ja hallinnoimisesta.</p>
@@ -71,7 +74,7 @@ $lang = array_merge($lang, array(
 	'ACL_TYPE_GLOBAL_M_'	=> 'Päävalvojan oikeudet',
 	'ACL_TYPE_LOCAL_M_'		=> 'Alueen valvojan oikeudet',
 	'ACL_TYPE_LOCAL_F_'		=> 'Alueen oikeudet',
-	
+
 	'ACL_NO'				=> 'Ei',
 	'ACL_VIEW'				=> 'Oikeuksien katsominen',
 	'ACL_VIEW_EXPLAIN'		=> 'Voit katsoa käyttäjäryhmällä voimassaolevat oikeudet. Punainen neliö tarkoittaa, että käyttäjällä/ryhmällä ei ole oikeutta suorittaa toimintoa. Vihreä neliö tarkoittaa, että käyttäjällä/ryhmällä on oikeus toiminnon suorittamiseen.',
@@ -207,7 +210,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_USER_NOPM'		=> 'Rajoitetut oikeudet ja ei saa käyttää yksityisviestejä.',
 	'ROLE_DESCRIPTION_USER_STANDARD'	=> 'Pääsee käyttämään suurinta osaa toiminnoista, mutta ei kaikkia toimintoja. Esimerkiksi ei voi vaihtaa käyttäjän nimeä tai ohittaa aikarajoja.',
 	'ROLE_DESCRIPTION_USER_NEW_MEMBER'	=> 'Rooli uusien käyttäjien ryhmälle. Asetuksissa <samp>EI KOSKAAN</samp> estääkseen tiettyjen toimintojen käytön.',
-	
+
 	'ROLE_DESCRIPTION_EXPLAIN'		=> 'Voit lisätä lyhyen kuvauksen mitä tämä rooli tekee tai mihin käyttöön se on tarkoitettu. Syöttämäsi teksti näytetään myös oikeudet sivulla.',
 	'ROLE_DESCRIPTION_LONG'			=> 'Roolin kuvaus on liian pitkä. Ole hyvä ja rajoita kuvaus alle 4000 merkkiin.',
 	'ROLE_DETAILS'					=> 'Roolin yksityiskohdat',
@@ -253,7 +256,6 @@ $lang = array_merge($lang, array(
 	'TRACE_USER_GLOBAL_NEVER_TOTAL_KEPT'	=> 'Tämän alueen itsenäiset käyttäjän oikeudet arvioituu <samp>EI KOSKAAN</samp>, mikä ei vaikuta paikallisiin oikeuksiin. %sJäljitä yleiset oikeudet%s',
 
 	'TRACE_USER_FOUNDER'					=> 'Tämä käyttäjä on merkitty perustajaksi, joten ylläpitäjän oikeudet ovat automaattiseti voimassa.',
-	'TRACE_USER_FOUNDER'					=> 'Tämä käyttäjä on perustaja, joten ylläpitäjän asetukset ovat aina <samp>KYLLÄ</samp>.',
 	'TRACE_USER_KEPT'						=> 'Käyttäjän oikeus on <samp>EI</samp>, joten vanha yhteisarvo pidetään.',
 	'TRACE_USER_KEPT_LOCAL'					=> 'Käyttäjän oikeudet tälle alueelle on asetettu <samp>EI</samp>, joten vanha arvo pidetään.',
 	'TRACE_USER_NEVER_TOTAL_NEVER'			=> 'Käyttäjän oikeus on asetettu <samp>EI KOSKAAN</samp> ja yhteisarvo on EI KOSKAAN, joten mitään ei muuteta.',
@@ -285,5 +287,3 @@ $lang = array_merge($lang, array(
 	'WRONG_PERMISSION_TYPE'	=> 'Väärä oikeuksien tyyppi valittu',
 	'WRONG_PERMISSION_SETTING_FORMAT'	=> 'Oikeuden asetukset ovat väärässä muodossa. phpBB ei pysty suorittamaan niitä oikein.',
 ));
-
-?>

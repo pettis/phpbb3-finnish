@@ -10,5 +10,4 @@ Sinulle lähetetty viesti:
 
 {MESSAGE}
 
-
 {EMAIL_SIG}

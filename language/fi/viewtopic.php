@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* viewtopic [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio  
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -36,11 +39,12 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	'APPROVE'								=> 'Hyväksy',
 	'ATTACHMENT'						=> 'Liitteet',
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Liitetiedostot eivät ole käytettävissä.',
 
 	'BOOKMARK_ADDED'		=> 'Kirjanmerkki on lisätty.',
-    'BOOKMARK_ERR'          => 'Kirjanmerkin lisääminen epäonnistui. Ole hyvä ja yritä uudelleen.',
+	'BOOKMARK_ERR'			=> 'Kirjanmerkin lisääminen epäonnistui. Ole hyvä ja yritä uudelleen.',
 	'BOOKMARK_REMOVED'		=> 'Kirjanmerkki on poistettu.',
 	'BOOKMARK_TOPIC'		=> 'Lisää kirjanmerkki',
 	'BOOKMARK_TOPIC_REMOVE'	=> 'Poista kirjanmerkeistä',
@@ -48,13 +52,16 @@ $lang = array_merge($lang, array(
 	'BUMP_TOPIC'			=> 'Tönäise viestiä',
 
 	'CODE'					=> 'Koodi',
-	'COLLAPSE_QR'			=> 'Piilota pikavastaus',
 
 	'DELETE_TOPIC'			=> 'Poista viestiketju',
+	'DELETED_INFORMATION'	=> '%1$s poistanut %2$s',
+	'DISAPPROVE'					=> 'Hylkäys',
 	'DOWNLOAD_NOTICE'		=> 'Sinulla ei ole tarvittavia oikeuksia nähdäksesi tämän viestin liitetiedostoja.',
 
-	'EDITED_TIMES_TOTAL'	=> 'Viimeksi muokannut %1$s päivämäärä %2$s, muokattu yhteensä %3$d kertaa',
-	'EDITED_TIME_TOTAL'		=> 'Viimeksi muokannut %1$s päivämäärä %2$s, muokattu yhteensä %3$d kerran',
+	'EDITED_TIMES_TOTAL'	=> array(
+		1	=> 'Viimeksi muokannut %2$s %3$s, yhteensä muokattu %1$d kertaa.',
+		2	=> 'Viimeksi muokannut %2$s %3$s, yhteensä muokattu %1$d kertaa.',
+	),
 	'EMAIL_TOPIC'			=> 'Lähetä kaverille',
 	'ERROR_NO_ATTACHMENT'	=> 'Valitsemaasi liitetiedostoa ei ole olemassa',
 
@@ -70,8 +77,10 @@ $lang = array_merge($lang, array(
 	'MAKE_GLOBAL'				=> 'Muuta yleistiedotteeksi',
 	'MAKE_NORMAL'				=> 'Muuta normaaliksi',
 	'MAKE_STICKY'				=> 'Muuta pysyväksi',
-	'MAX_OPTIONS_SELECT'		=> 'Voit valita maksimissaan <strong>%d</strong> vaihtoehtoa',
-	'MAX_OPTION_SELECT'			=> 'Voit valita vain <strong>1</strong> vaihtoehdon',
+	'MAX_OPTIONS_SELECT'		=> array(
+		1	=> 'Voit valita <strong>%d</strong> vaihtoehtoa',
+		2	=> 'Voit valita <strong>%d</strong> vaihtoehtoa',
+	),
 	'MISSING_INLINE_ATTACHMENT'	=> 'Liitetiedosto <strong>%s</strong> ei ole enää saatavilla',
 	'MOVE_TOPIC'				=> 'Siirrä viestiketju',
 
@@ -85,6 +94,7 @@ $lang = array_merge($lang, array(
 	'POLL_ENDED_AT'			=> 'Äänestys päättyi %s',
 	'POLL_RUN_TILL'			=> 'Äänestys on voimassa %s asti',
 	'POLL_VOTED_OPTION'		=> 'Äänestit tätä vaihtoehtoa',
+	'POST_DELETED_RESTORE'	=> 'Tämä viesti on poistettu, se voidaan palauttaa.',
 	'PRINT_TOPIC'			=> 'Tulostusnäkymä',
 
 	'QUICK_MOD'				=> 'Valvojan työkalut',
@@ -92,11 +102,13 @@ $lang = array_merge($lang, array(
 	'QUOTE'					=> 'Lainaa',
 
 	'REPLY_TO_TOPIC'		=> 'Vastaa viestiin',
+	'RESTORE'				=> 'Palauta',
+	'RESTORE_TOPIC'			=> 'Palauta aihe',
 	'RETURN_POST'			=> '%sPalaa viestiin%s',
-	'SHOW_QR'				=> 'Pikavastaus',
 
 	'SUBMIT_VOTE'			=> 'Äänestä',
 
+	'TOPIC_TOOLS'			=> 'Viestiketjun työkalut',
 	'TOTAL_VOTES'			=> 'Ääniä yhteensä',
 
 	'UNLOCK_TOPIC'			=> 'Avaa viestiketju',
@@ -105,13 +117,12 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_TOPIC'		=> 'Seuraava viestiketju',
 	'VIEW_PREVIOUS_TOPIC'	=> 'Edellinen viestiketju',
 	'VIEW_RESULTS'			=> 'Näytä tulokset',
-	'VIEW_TOPIC_POST'		=> '1 viesti',
-	'VIEW_TOPIC_POSTS'		=> '%d viestiä',
+	'VIEW_TOPIC_POSTS'		=> array(
+		1	=> '%d viesti',
+		2	=> '%d viestiä',
+	),
 	'VIEW_UNREAD_POST'		=> 'Ensimmäinen lukematon viesti',
-	'VISIT_WEBSITE'			=> 'WWW',
 	'VOTE_SUBMITTED'		=> 'Äänestyksesi on kirjattu.',
-	'VOTE_CONVERTED'		=> 'Äänestysvaihtoehdon vaihtaminen ei ole sallittua muunnetussa äänestyksissä.',
+	'VOTE_CONVERTED'		=> 'Äänestysvaihtoehdon vaihtaminen ei ole sallittua muunnetussa äänestyksessä.',
 
 ));
-
-?>

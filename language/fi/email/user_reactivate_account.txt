@@ -15,5 +15,4 @@ Ole hyvä ja napsauta alapuolella olevaa linkkiä aktivoidaksesi tunnuksesi.
 
 {U_ACTIVATE}
 
-
 {EMAIL_SIG}

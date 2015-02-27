@@ -1,22 +1,25 @@
 <?php
-/** 
+/**
 *
-* mcp [Finnish [Fin]]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @copyright (c) 2006 phpBB Group 
-* @author 2006-11-14 - Lurttinen@phpbbsuomi.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
+*
+*		phpbb3.1.x versio
+*		harri1952@gmail.com
 */
 
 /**
 * DO NOT CHANGE
 */
-    if (!defined('IN_PHPBB'))
-    {
-       exit;
-    }
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
 
 if (empty($lang) || !is_array($lang))
 {
@@ -53,6 +56,10 @@ $lang = array_merge($lang, array(
 	'APPROVE_POST_CONFIRM'	=> 'Haluatko varmasti hyväksyä tämän viestin?',
 	'APPROVE_POSTS'			=> 'Hyväksy viestit',
 	'APPROVE_POSTS_CONFIRM'	=> 'Haluatko varmasti hyväksyä valitut viestit?',
+	'APPROVE_TOPIC'			=> 'Hyväksy aihe',
+	'APPROVE_TOPIC_CONFIRM'	=> 'Haluatko varmasti hyväksyä aiheen?',
+	'APPROVE_TOPICS'		=> 'Hyväksy aiheet',
+	'APPROVE_TOPICS_CONFIRM'=> 'Haluatko varmasti hyväksyä valitut aiheet?',
 
 	'CANNOT_MOVE_SAME_FORUM'=> 'Et voi siirtää viestiketjua samalle alueelle, jossa se jo on',
 	'CANNOT_WARN_ANONYMOUS'	=> 'Et voi varoittaa vierailevaa käyttäjää',
@@ -67,22 +74,18 @@ $lang = array_merge($lang, array(
 	'CLOSE_REPORT_CONFIRM'	=> 'Haluatko varmasti sulkea ilmoituksen?',
 	'CLOSE_REPORTS'			=> 'Sulje ilmoitukset',
 	'CLOSE_REPORTS_CONFIRM'	=> 'Haluatko varmasti sulkea valitsemasi ilmoitukset?',
+
 	'DELETE_PM_REPORT'			=> 'Poista yksityisviesti-ilmoitus',
 	'DELETE_PM_REPORT_CONFIRM'	=> 'Haluatko varmasti poistaa valitsemasi yksityisviesti-ilmoituksen?',
-	'DELETE_PM_REPORTS'			=> 'Poista yksityisviesti-ilmoitukset',
-	'DELETE_PM_REPORTS_CONFIRM'	=> 'Haluatko varmasti poistaa valitsemasi yksityisviesti-ilmoitukset?',
-
-	'DELETE_POSTS'				=> 'Poista viestit',
-	'DELETE_POSTS_CONFIRM'		=> 'Haluatko varmasti poistaa nämä viestit?',
-	'DELETE_POST_CONFIRM'		=> 'Haluatko varmasti poistaa tämän viestin?',
+	'DELETE_PM_REPORTS'			=> 'Poista yksityisviestit',
+	'DELETE_PM_REPORTS_CONFIRM'	=> 'Haluatko varmasti poistaa nämä yksityisviestit?',
+	'DELETE_POSTS'				=> 'Haluatko varmasti poistaa nämä viestit?',
 	'DELETE_REPORT'				=> 'Poista ilmoitus',
 	'DELETE_REPORT_CONFIRM'		=> 'Haluatko varmasti poistaa valitun ilmoituksen?',
 	'DELETE_REPORTS'			=> 'Poista ilmoitukset',
 	'DELETE_REPORTS_CONFIRM'	=> 'Haluatko varmasti poistaa valitsemasi ilmoitukset?',
 	'DELETE_SHADOW_TOPIC'		=> 'Poista varjo',
 	'DELETE_TOPICS'				=> 'Poista valitut viestiketjut',
-	'DELETE_TOPICS_CONFIRM'		=> 'Haluatko varmasti poistaa nämä viestiketjut?',
-	'DELETE_TOPIC_CONFIRM'		=> 'Haluatko varmasti poistaa tämän viestiketjun?',
 	'DISAPPROVE'				=> 'Hylkää',
 	'DISAPPROVE_REASON'			=> 'Hylkäyksen syy',
 	'DISAPPROVE_POST'			=> 'Hylkää viesti',
@@ -120,8 +123,10 @@ $lang = array_merge($lang, array(
 	'LATEST_WARNING_TIME'		=> 'Viimeksi varoitettu',
 	'LATEST_WARNINGS'			=> 'Viisi viimeksi varoituksen saanutta käyttäjää',
 	'LEAVE_SHADOW'				=> 'Jätä varjoaihe',
-	'LIST_REPORT'				=> '1 ilmoitus',
-	'LIST_REPORTS'				=> '%d ilmoitusta',
+	'LIST_REPORTS'				=> array(
+		1	=> '%d ilmoitus',
+		2	=> '%d ilmoitukset',
+	),
 	'LOCK'						=> 'Lukitse',
 	'LOCK_POST_POST'			=> 'Lukitse viesti',
 	'LOCK_POST_POST_CONFIRM'	=> 'Haluatko varmasti estää tämän viestin muokkauksen?',
@@ -179,7 +184,7 @@ $lang = array_merge($lang, array(
 	'MCP_NOTES_USER'				=> 'Käyttäjän yksityiskohdat',
 
 	'MCP_POST_REPORTS'				=> 'Tästä viestistä annetut ilmoitukset',
-	
+
 	'MCP_PM_REPORTS'				=> 'Ilmoitetut yksityisvivestit',
 	'MCP_PM_REPORT_DETAILS'			=> 'YV-ilmoituksen tiedot',
 	'MCP_PM_REPORTS_CLOSED'			=> 'Suljetut YV-ilmoitukset',
@@ -200,8 +205,12 @@ $lang = array_merge($lang, array(
 	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Tässä listassa on kaikki viestit, jotka vaativat hyväksynnän ennen julkaisua',
 	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Viestiketjut, jotka odottavat hyväksyntää',
 	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Tässä listassa on kaikki viestiketjut, jotka vaativat hyväksynnän ennen julkaisua',
+	'MCP_QUEUE_DELETED_POSTS'				=> 'Poistetut viestit',
+	'MCP_QUEUE_DELETED_POSTS_EXPLAIN'		=> 'Nämä viestit aiotaan poistaa. Sinä voit palauttaa tai pysyvästi poistaa ne tästä näytöstä.',
+	'MCP_QUEUE_DELETED_TOPICS'				=> 'Poistetut aiheet',
+	'MCP_QUEUE_DELETED_TOPICS_EXPLAIN'		=> 'Nämä aiheet aiotaan poistaa. Sinä voit palauttaa tai pysyvästi poistaa ne tästä näytöstä.',
 
-	'MCP_VIEW_USER'			=> 'Näytä tietyn käyttäjän saamat varoitukset',
+	'MCP_VIEW_USER'				=> 'Näytä tietyn käyttäjän saamat varoitukset',
 
 	'MCP_WARN'				=> 'Varoitukset',
 	'MCP_WARN_FRONT'		=> 'Etusivu',
@@ -237,41 +246,50 @@ $lang = array_merge($lang, array(
 	'NO_POST'						=> 'Valitse viesti varoittaaksesi käyttäjää sen perusteella',
 	'NO_POST_REPORT'				=> 'Tätä viestiä ei ole ilmoitettu.',
 	'NO_POST_SELECTED'				=> 'Valitse ainakin yksi viesti suorittaaksesi toiminnon',
+	'NO_POSTS_DELETED'				=> 'Ei poistettuja viestejä.',
+	'NO_POSTS_QUEUE'				=> 'Ei viestejä odottamassa hyväksyntää.',
 	'NO_REASON_DISAPPROVAL'			=> 'Ole hyvä ja anna hylkäämiselle syy',
 	'NO_REPORT'						=> 'Ilmoitusta ei löytynyt',
 	'NO_REPORTS'					=> 'Ilmoituksia ei löytynyt',	
 	'NO_REPORT_SELECTED'			=> 'Valitse ainakin yksi ilmoitus suorittaaksesi tämän toiminnon',
 	'NO_TOPIC_ICON'					=> 'Ei',
 	'NO_TOPIC_SELECTED'				=> 'Valitse ainakin yksi viestiketju suorittaaksesi toiminnon',
+	'NO_TOPICS_DELETED'				=> 'Ei poistettuja aiheita.',
 	'NO_TOPICS_QUEUE'				=> 'Ei viestiketjuja odottamassa hyväksyntää',
 
 	'ONLY_TOPIC'			=> 'Vain viestiketjussa “%s”',
 	'OTHER_USERS'			=> 'Muut käyttäjät, jotka kirjoittavat tästä IP-osoitteesta',
+
+	'QUICKMOD_ACTION_NOT_ALLOWED' => "%s ei sallittu quickmod",
+
 	'PM_REPORT_CLOSED_SUCCESS'	=> 'Valitsemasi YV-ilmoitus on suljettu.',
 	'PM_REPORT_DELETED_SUCCESS'	=> 'Valitsemasti YV-ilmoitus on poistettu.',
 	'PM_REPORTED_SUCCESS'		=> 'Yksityisviestin ilmoitus onnistui.',
-	'PM_REPORT_TOTAL'			=> '<strong>1</strong> YV-ilmoitus käsiteltävänä.',
 	'PM_REPORTS_CLOSED_SUCCESS'	=> 'Valitsemasi ilmoitukset on suljettu.',
 	'PM_REPORTS_DELETED_SUCCESS'=> 'Valitsemasi ilmoitukset on poistettu.',
-	'PM_REPORTS_TOTAL'			=> 'Yhteensä <strong>%d</strong> YV-ilmoitusta käsilteltävänä.',
-	'PM_REPORTS_ZERO_TOTAL'		=> 'Ei ilmoitettuja yksityisviestejä.',
+	'PM_REPORTS_TOTAL'			=> array(
+		0	=> 'Ei yksityisviesti ilmoituksia.',
+		1	=> 'Yhteensä <strong>1</strong> yksityisviestin ilmoitus.',
+		2	=> 'Yhteensä <strong>%d</strong> yksityisviestien ilmoituksia.',
+	),
 	'PM_REPORT_DETAILS'			=> 'Yksityisviesti ilmoituksen tiedot',
-
 	'POSTER'					=> 'Kirjoittaja',
 	'POSTS_APPROVED_SUCCESS'	=> 'Valitut viestit on hyväksytty',
 	'POSTS_DELETED_SUCCESS'		=> 'Valitut viestit on poistettu tietokannasta',
 	'POSTS_DISAPPROVED_SUCCESS'	=> 'Valitut viestit on hylätty',
 	'POSTS_LOCKED_SUCCESS'		=> 'Valitut viestit on lukittu',
 	'POSTS_MERGED_SUCCESS'		=> 'Valitut viestit on yhdistetty',
-	'POSTS_UNLOCKED_SUCCESS'	=> 'Valitut viestit on avattu',
 	'POSTS_PER_PAGE'			=> 'Viestiä per sivu',
 	'POSTS_PER_PAGE_EXPLAIN'	=> '(aseta 0 nähdäksesi kaikki viestit)',
+	'POSTS_RESTORED_SUCCESS'	=> 'Valitut viestit palautettu onnistuneesti.',
+	'POSTS_UNLOCKED_SUCCESS'	=> 'Valitut viestit on avattu',
 	'POST_APPROVED_SUCCESS'		=> 'Valitut viestit on hyväksytty',
 	'POST_DELETED_SUCCESS'		=> 'Valitut viestit on poistettu tietokannasta',
 	'POST_DISAPPROVED_SUCCESS'	=> 'Valitut viestit on poistettu',
 	'POST_LOCKED_SUCCESS'		=> 'Viesti lukittu',
 	'POST_NOT_EXIST'			=> 'Pyytämääsi viestiä ei ole olemassa',
 	'POST_REPORTED_SUCCESS'		=> 'Tämän viestin ilmoittaminen onnistui',
+	'POST_RESTORED_SUCCESS'		=> 'Tämä viesti on palautettu onnistuneesti.',
 	'POST_UNLOCKED_SUCCESS'		=> 'Viesti avattu',
 
 	'READ_USERNOTES'			=> 'Käyttäjän muistiinpanot',
@@ -282,8 +300,11 @@ $lang = array_merge($lang, array(
 	'REPORTED_ON_DATE'			=> '»',
 	'REPORTS_CLOSED_SUCCESS'	=> 'Valitut ilmoitukset on suljettu.',
 	'REPORTS_DELETED_SUCCESS'	=> 'Valitut ilmoitukset on poistettu.',
-	'REPORTS_TOTAL'				=> 'Yhteensä <strong>%d</strong> ilmoitusta tarkistettavana',
-	'REPORTS_ZERO_TOTAL'		=> 'Ei ilmoitettuja viestejä',
+	'REPORTS_TOTAL'				=> array(
+		0	=> 'Ei ilmoituksia.',
+		1	=> 'Yhteensä <strong>1</strong> ilmoitus.',
+		2	=> 'Yhteensä <strong>%d</strong> ilmoitusta.',
+	),
 	'REPORT_CLOSED'				=> 'Tämä ilmoitus on suljettu aiemmin.',
 	'REPORT_CLOSED_SUCCESS'		=> 'Valittu ilmoitus on suljettu.',
 	'REPORT_DELETED_SUCCESS'	=> 'Valittu ilmoitus on poistettu.',
@@ -295,7 +316,15 @@ $lang = array_merge($lang, array(
 	'REPORT_POST_EXPLAIN'		=> 'Tällä lomakkeella voit lähettää ilmoituksen asiattomasta viestistä sivuston ylläpitäjille ja valvojille. Viesti tulee ilmoittaa vain, jos se rikkoo keskustelualueen sääntöjä.',
 	'REPORT_REASON'				=> 'Ilmoituksen syy',
 	'REPORT_TIME'				=> 'Ilmoituksen aika',
-	'REPORT_TOTAL'				=> '<strong>1</strong> ilmoitus odottamassa toimenpiteitä',
+	'RESTORE'					=> 'Palauta',
+	'RESTORE_POST'				=> 'Palauta viesti',
+	'RESTORE_POST_CONFIRM'		=> 'Haluatko varmasti palauttaa tämän viestin?',
+	'RESTORE_POSTS'				=> 'Palauta viestit',
+	'RESTORE_POSTS_CONFIRM'		=> 'Haluatko varmasti palauttaa nämä viestit?',
+	'RESTORE_TOPIC'				=> 'Palauta aihe',
+	'RESTORE_TOPIC_CONFIRM'		=> 'Haluatko varmasti palauttaa tämän aiheen?',
+	'RESTORE_TOPICS'			=> 'Palauta aiheet',
+	'RESTORE_TOPICS_CONFIRM'	=> 'Haluatko varmasti palauttaa nämä aiheet?',
 	'RESYNC'					=> 'Synkronoi',
 	'RETURN_MESSAGE'			=> '%sPalaa viesteihin%s',
 	'RETURN_NEW_FORUM'			=> '%sSiirry uudelle alueelle%s',
@@ -327,8 +356,8 @@ $lang = array_merge($lang, array(
 	'SPLIT_TOPIC_BEYOND'				=> 'Jaa keskusteluketju valitusta viestistä eteenpäin',
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> 'Haluatko varmasti jakaa tämä keskusteluketjun valitusta viestistä eteenpäin?',
 	'SPLIT_TOPIC_EXPLAIN'				=> 'Voit jakaa valitsemasi viestiketjun, joko yksittäisinä viesteinä, tai valitusta viestistä eteenpäin',
-	'THIS_PM_IP'				=> 'Yksityisviestin IP-osoite',
 
+	'THIS_PM_IP'				=> 'Yksityisviestin IP-osoite',
 	'THIS_POST_IP'				=> 'Tämän viestin IP-osoite',
 	'TOPICS_APPROVED_SUCCESS'	=> 'Valitut viestiketjut on hyväksytty',
 	'TOPICS_DELETED_SUCCESS'	=> 'Valitut viestiketjut on poistettu tietokannasta',
@@ -336,6 +365,7 @@ $lang = array_merge($lang, array(
 	'TOPICS_FORKED_SUCCESS'		=> 'Valitut viestiketjut on kopioitu',
 	'TOPICS_LOCKED_SUCCESS'		=> 'Valitut viestiketjut on lukittu',
 	'TOPICS_MOVED_SUCCESS'		=> 'Valitut viestiketjut on siirretty onnistuneesti',
+	'TOPICS_RESTORED_SUCCESS'	=> 'Valitut viestiketjut on palautettu onnistuneesti.',
 	'TOPICS_RESYNC_SUCCESS'		=> 'Valitut viestiketjut on synkronoitu',
 	'TOPICS_TYPE_CHANGED'		=> 'Viestin tyyppi on vaihdettu.',
 	'TOPICS_UNLOCKED_SUCCESS'	=> 'Valitut viestiketjut on avattu',
@@ -346,6 +376,7 @@ $lang = array_merge($lang, array(
 	'TOPIC_LOCKED_SUCCESS'		=> 'valittu viestiketju on lukittu',
 	'TOPIC_MOVED_SUCCESS'		=> 'valittu viestiketju on siirretty',
 	'TOPIC_NOT_EXIST'			=> 'Valitsemaasi viestiketjua ei ole olemassa',
+	'TOPIC_RESTORED_SUCCESS'	=> 'valittu viestiketju on palautettu onnistuneesti.',
 	'TOPIC_RESYNC_SUCCESS'		=> 'valittu viestiketju on synkronoitu',
 	'TOPIC_SPLIT_SUCCESS'		=> 'valittu viestiketju on jaettu',
 	'TOPIC_TIME'				=> 'Viestin aika',
@@ -353,9 +384,11 @@ $lang = array_merge($lang, array(
 	'TOPIC_UNLOCKED_SUCCESS'	=> 'valittu viestiketju on avattu',
 	'TOTAL_WARNINGS'			=> 'varoituksia yhteensä',
 
-	'UNAPPROVED_POSTS_TOTAL'		=> 'Yhteensä <strong>%d</strong> viestiä odottamassa hyväksyntää',
-	'UNAPPROVED_POSTS_ZERO_TOTAL'	=> 'Ei hyväksyttäviä viestejä',
-	'UNAPPROVED_POST_TOTAL'			=> '<strong>1</strong> viesti odottaa hyväksymistä',
+	'UNAPPROVED_POSTS_TOTAL'		=> array(
+		0	=> 'Ei viestejä odottamassa hyväksyntää.',
+		1	=> 'Yhteensä <strong>1</strong> viesti odottaa hyväksyntää.',
+		2	=> 'Yhteensä <strong>%d</strong> viestiä odottaa hyväksyntää.',
+	),
 	'UNLOCK'						=> 'Avaa',
 	'UNLOCK_POST'					=> 'Avaa viesti',
 	'UNLOCK_POST_EXPLAIN'			=> 'Salli muokkaus',
@@ -379,9 +412,9 @@ $lang = array_merge($lang, array(
 	'WARNED_USERS'			=> 'Varoitettuja käyttäjiä',
 	'WARNED_USERS_EXPLAIN'	=> 'Lista käyttäjistä, joilla on voimassa olevia varoituksia',
 	'WARNING_PM_BODY'		=> 'Tämä on virallinen varoitus, jonka on antanut tämän sivuston valvoja tai ylläpitäjä.[quote]%s[/quote]',
-	'WARNING_PM_SUBJECT'	=> 'varoitus annettu',
-	'WARNING_POST_DEFAULT'	=> 'Tämä on varoitus kirjoittamastasi viestistä: %s .',
-	'WARNINGS_ZERO_TOTAL'	=> 'Ei olemassa olevia varoituksia',
+	'WARNING_PM_SUBJECT'		=> 'varoitus annettu',
+	'WARNING_POST_DEFAULT'		=> 'Tämä on varoitus kirjoittamastasi viestistä: %s .',
+	'NO_WARNINGS'		=> 'Ei olemassa olevia varoituksia',
 
 	'YOU_SELECTED_TOPIC'	=> 'Valitsit keskusteluketjun numero %d: %s',
 
@@ -397,8 +430,6 @@ $lang = array_merge($lang, array(
 			'SPAM'		=> 'Ilmoitetun viestin ainoa tarkoitus on mainostaa nettisivua tai tuotetta',
 			'OFF_TOPIC'	=> 'Viesti on harhautunut alkuperäisestä aiheesta',
 			'OTHER'		=> 'Ilmoitettu viesti ei sovi edellä mainittuihin luokkiin. Anna oma selite.'
-		)
+		),
 	),
 ));
-
-?>
