@@ -538,22 +538,22 @@ $lang = array_merge($lang, array(
 
 		<h1>Julkaisutiedote</h1>
 
-		<p>Ole hyvä ja lue <a href="%1$s" title="%1$s">uusimman version julkaisutiedote</a> ennen kuin jatkat päivittämistä, sillä siinä voi olla tärkeää tietoa. Siitä löytyvät myös latauslinkit ja muutosten tiedot.</p>
+		<p>Ole hyvä ja lue uusimman version julkaisutiedote ennen kuin jatkat päivittämistä, sillä siinä voi olla tärkeää tietoa. Siitä löytyvät myös latauslinkit ja muutosten tiedot.</p>
 
 		<br />
 
 		<h1>Kuinka voit päivittää asennuksesi?</h1>
 
-		<p>Suositeltava päivitystapa sisältää nämä vaiheet:</p>
+		<p>Tässä mainittu suositeltava päivitystapa koskee vain automaattista päivityspakettia. Voit päivittää asennuksesi käyttämällä INSTALL.html-tiedostossa mainittuja tapoja. Automaattisen phpBB3-päivityksen vaiheet ovat</p>
 
 		<ul style="margin-left: 20px; font-size: 1.1em;">
 			<li>Mene <a href="https://www.phpbb.com/downloads.php" title="https://www.phpbb.com/downloads.php">phpBB.com-lataussivulle</a> ja lataa oikea "phpBB Update Package" -tiedosto.<br /><br /></li>
 			<li>Pura tiedosto.<br /><br /></li>
-			<li>Siirrä puretut asennushakemistot phpBB:n juurihakemistoon (sama hakemisto, missä config.php-tiedosto sijaitsee).<br /><br /></li>
+			<li>Siirrä puretut "install" ja "vendor" -hakemistot phpBB:n juurihakemistoosi (sama hakemisto, missä config.php-tiedosto sijaitsee).<br /><br /></li>
 		</ul>
 
 		<p>Kun olet siirtänyt tiedostot, keskustelufoorumi sulkeutuu normaaleilta käyttäjiltä, koska asennushakemisto on siirretty palvelimelle.<br /><br />
-		<strong><a href="%2$s" title="%2$s">Nyt voit aloittaa päivityksen osoittamalla selaimesi asennustiedostot sisältävään hakemistoon</a>.</strong><br />
+		<strong><a href="%1$s" title="%1$s">Nyt voit aloittaa päivityksen osoittamalla selaimesi asennustiedostot sisältävään hakemistoon (install)</a>.</strong><br />
 		<br />
 		Sinut ohjataan päivityksen läpi ja saat tiedon, koska päivitys on suoritettu.
 		</p>
