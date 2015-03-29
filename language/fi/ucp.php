@@ -42,7 +42,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'TERMS_OF_USE_CONTENT'	=> 'Käyttämällä "%1$s" palvelua (jälkeenpäin "me", "meitä", "meidän", "%1$s", "%2$s"), sitoudut noudattamaan seuraavia ehtoja. Mikäli et hyväksy näitä ehtoja, älä rekisteröidy ja/tai käytä "%1$s"-palvelua. Me voimme muuttaa näitä ehtoja koska tahansa ja teemme parhaamme informoidaksemme sinua. On kuitenkin suositeltavaa lukea nämä ehdot säännöllisesti, koska "%1$s"-palvelun käyttö vaatii että hyväksyt nämä ehdot siinä muodossa, kuin ne on päivitetty tai korjattu.<br />
 	<br />
-	Keskustelufoorumimme käyttää phpBB-ohjelmistoa, (jälkeenpäin "he", "heidät", "heidän", "phpBB-ohjelmisto", "www.phpbb.com", "phpBB Group", "phpBB Tiimit"), joka on julkaistu "<a href="http://www.gnu.org/licenses/gpl.html">General Public License</a>" -lisenssillä (jälkeenpäin "GPL") ja se voidaan ladata osoitteesta <a href="https://www.phpbb.com/">www.phpbb.com</a>. phpBB-ohjelmisto luo vain ympäristön internet-keskustelulle ja GPL-lisenssi kieltää meitä rajoittamasta sivuston sisältöä ja toimintatapaa. Saadaksesi lisätietoa phpBB:stä vieraile osoitteessa: <a href="https://www.phpbb.com/">https://www.phpbb.com/</a>.<br />
+	Keskustelufoorumimme käyttää phpBB-ohjelmistoa, (jälkeenpäin "he", "heidät", "heidän", "phpBB-ohjelmisto", "www.phpbb.com", "phpBB Group", "phpBB Tiimit"), joka on julkaistu "<a href="http://opensource.org/licenses/gpl-2.0.php">General Public License v2</a>" -lisenssillä (jälkeenpäin "GPL") ja se voidaan ladata osoitteesta <a href="https://www.phpbb.com/">www.phpbb.com</a>. phpBB-ohjelmisto luo vain ympäristön internet-keskustelulle. phpBB Limited ei ole vastuussa siitä, mitä sallimme tai kiellämme sopivana sisältönä ja/tai käytöksenä. Saadaksesi lisätietoa phpBB:stä vieraile osoitteessa: <a href="https://www.phpbb.com/">https://www.phpbb.com/</a>.<br />
 	<br />
 	Suostut olemaan esittämättä loukkaavaa, vihamielistä, epämoraalista tai muutakaan materiaalia, joka voisi loukata voimassa olevia lakeja oli se sitten omassa maassasi, se maa, johon "%1$s"-palvelin on sijoitettu tai kansainvälisiä lakeja. Toimimalla tätä vastoin voidaan sinut välittömästi ja lopullisesti poistaa järjestelmän käyttäjistä ja tarvittaessa internet-yhteydentarjoajaasi otetaan yhteyttä. Kaikkien viestien IP-osoite tallennetaan näiden ehtojen noudattamisen tarkkailua varten. Hyväksyt, että "%1$s" on oikeus poistaa, muokata, siirtää ja sulkea mikä tahansa keskusteluketju tai viesti niin halutessamme. Suostut myös siihen, että kaikki yllä annettu tieto tallennetaan tietokantaan. Tätä tietoa ei anneta kolmannelle osapuolelle ilman suostumustasi, mutta "%1$s" tai phpBB ei ole vastuussa mahdollisen tietoturvamurron aiheuttamasta tietojen vuodosta ulkopuolisille tahoille.
 	',
@@ -94,7 +94,7 @@ $lang = array_merge($lang, array(
 	'AUTOLOGIN_SESSION_KEYS_DELETED'=> 'Valittu "Muista minut" kirjautumistiedot nollattu.',
 	'AVATAR_CATEGORY'				=> 'Kategoria',
 	'AVATAR_DRIVER_GRAVATAR_TITLE'	=> 'Gravatar',
-	'AVATAR_DRIVER_GRAVATAR_EXPLAIN'=> 'Gravatarin avulla voit käyttää samaa avataria usealla web-sivustolla. Lisätietoja <a href="http://www.gravatar.com/">Gravatar</a> .',
+	'AVATAR_DRIVER_GRAVATAR_EXPLAIN'=> 'Gravatarin avulla voit käyttää samaa avataria usealla web-sivustolla. Lisätietoja <a href="http://www.gravatar.com/">Gravatarista</a> .',
 	'AVATAR_DRIVER_LOCAL_TITLE'		=> 'Gallery avatar',
 	'AVATAR_DRIVER_LOCAL_EXPLAIN'	=> 'Voit valita itsellesi avatarin jo olemassaolevista.',
 	'AVATAR_DRIVER_REMOTE_TITLE'	=> 'Remote avatar',
@@ -187,7 +187,7 @@ $lang = array_merge($lang, array(
 
 	'EDIT_DRAFT_EXPLAIN'		=> 'Täällä voit muokata luonnoksiasi. Luonnoksissa ei ole mukana äänestystä tai liitetiedostoja.',
 	'EMAIL_BANNED_EMAIL'		=> 'Antamasi sähköpostiosoitteen käyttäminen ei ole sallittu.',
-	'EMAIL_REMIND'				=> 'Tämän täytyy olla sama sähköpostiosoite, jonka annoit rekisteröityessäsi.',
+	'EMAIL_REMIND'				=> 'Tämän täytyy olla tiliisi liitetty sähköpostiosoite. Jos et ole vaihtanut sitä profiilistasi, se on sähköpostiosoite, jonka annoit rekisteröinnin yhteydessä.',
 	'EMAIL_TAKEN_EMAIL'			=> 'Antamasi sähköpostiosoite on jo käytössä.',
 	'EMPTY_DRAFT'				=> 'Sinun täyty antaa viesti lähettääksesi muutokset',
 	'EMPTY_DRAFT_TITLE'			=> 'Sinun täytyy antaa luonnokselle otsikko',
@@ -200,14 +200,14 @@ $lang = array_merge($lang, array(
 
 	'FIELD_REQUIRED'					=> 'Kenttä “%s” täytyy täyttää.',
 	'FIELD_TOO_SHORT'					=> array(
-		1	=> 'Kenttä “%2$s” on liian lyhyt, min. mitta on %1$d merkkiä.',
-		2	=> 'Kenttä “%2$s” on liian lyhyt, min. mitta on %1$d merkkiä.',
+		1	=> 'Kenttä “%2$s” on liian lyhyt, vähintään %1$d merkki vaaditaan.',
+		2	=> 'Kenttä “%2$s” on liian lyhyt, vähintään %1$d merkkiä vaaditaan.',
 	),
 	'FIELD_TOO_LONG'					=> array(
-		1	=> 'Kenttä “%2$s” on liian pitkä, max. mitta on %1$d merkkiä.',
-		2	=> 'Kenttä “%2$s” on liian pitkä, max. mitta on %1$d merkkiä.',
+		1	=> 'Kenttä “%2$s” on liian pitkä, enintään %1$d merkki sallitaan.',
+		2	=> 'Kenttä “%2$s” on liian pitkä, enintään %1$d merkkiä sallitaan.',
 	),
-	'FIELD_TOO_SMALL'					=> '"%2$s" arvo on liian matala. Vähimmäisarvo on %1$d .',
+	'FIELD_TOO_SMALL'					=> '"%2$s" arvo on liian pieni. Vähimmäisarvo on %1$d .',
 	'FIELD_TOO_LARGE'					=> '"%2$s" arvo on liian suuri. Ensimmäisarvo on %1$d .',
 	'FIELD_INVALID_CHARS_INVALID'		=> 'Kentässä “%s” on epäkelpoja merkkejä.',
 	'FIELD_INVALID_CHARS_NUMBERS_ONLY'	=> 'Kentässä “%s” on epäkelpoja merkkejä. Vain numerot ovat sallittuja.',
@@ -230,8 +230,8 @@ $lang = array_merge($lang, array(
 	'FOES_UPDATED'				=> 'Vihamiehet ovat päivitetty',
 	'FOLDER_ADDED'				=> 'Kansio lisätty',
 	'FOLDER_MESSAGE_STATUS'		=> array(
-		1	=> '%2$d viesti %1$s muistissa',
-		2	=> '%2$d viestiä %1$s muistissa',
+		1	=> '%2$d / %1$s tallennettu',
+		2	=> '%2$d / %1$s tallennettu',
 	),
 	'FOLDER_NAME_EMPTY'			=> 'Tälle kansiolle on annettava nimi.',
 	'FOLDER_NAME_EXIST'			=> '<strong>%s</strong> Kansio on jo olemassa',
@@ -239,8 +239,8 @@ $lang = array_merge($lang, array(
 	'FOLDER_RENAMED'			=> 'Kansion nimi vaihdettu',
 	'FOLDER_REMOVED'			=> 'Kansio poistettu',
 		'FOLDER_STATUS_MSG'			=> array(
-		1	=> 'Kansio on %3$d%% täynnä (%2$d viesti %1$s talletettu)',
-		2	=> 'Kansio on %3$d%% täynnä (%2$d viestiä %1$s talletettu)',
+		1	=> 'Kansio on %3$d%% täynnä (%2$d viesti enimmäismäärästä %1$s talletettu)',
+		2	=> 'Kansio on %3$d%% täynnä (%2$d viestiä enimmäismäärästä %1$s talletettu)',
 	),
 	'FORWARD_PM'				=> 'Lähetä yksityisviesti eteenpäin',
 	'FORCE_PASSWORD_EXPLAIN'	=> 'Vaihda salasanasi jatkaaksesi keskustelufoorumin selausta',
@@ -311,8 +311,8 @@ $lang = array_merge($lang, array(
 	'MOVE_DOWN'						=> 'Siirrä alaspäin',
 	'MOVE_MARKED_TO_FOLDER'			=> 'Siirrä valitut %s',
 	'MOVE_PM_ERROR'					=> array(
-		1	=> 'Viestin siirtovirhe, vain %2$d viesti %1$s siirretty.',
-		2	=> 'Viestin siirtovirhe, vain %2$d viestiä %1$s siirretty.',
+		1	=> 'Viestien siirrossa uuteen hakemistoon tapahtui virhe. Vain %2$d viesti yhteensä %1$s kappaleesta siirrettiin.',
+		2	=> 'Viestien siirrossa uuteen hakemistoon tapahtui virhe. Vain %2$d viestiä yhteensä %1$s kappaleesta siirrettiin.',
 	),
 	'MOVE_TO_FOLDER'				=> 'Siirrä kansioon',
 	'MOVE_UP'						=> 'Siirrä ylöspäin',
@@ -514,7 +514,7 @@ $lang = array_merge($lang, array(
 	'UCP_AUTH_LINK_UNLINK'		=> 'Pura linkki',
 	'UCP_COPPA_BEFORE'			=> 'Ennen %s',
 	'UCP_COPPA_ON_AFTER'		=> 'Samaan aikaan, tai jälkeen %s',
-	'UCP_EMAIL_ACTIVATE'		=> 'Huomaa, että antamasi sähköpostiosoitteen tulee olla toimiva, jotta tunnuksesi voidaan aktivoida. Saat sähköpostin antamaasi osoitteeseen, jossa on mukana aktivointilinkki tunnuksellesi. Sinun täytyy napsauttaa tuota linkkiä ennen kuin voit kirjautua sisään.',
+	'UCP_EMAIL_ACTIVATE'		=> 'Huomaa, että antamasi sähköpostiosoitteen tulee olla toimiva, jotta tunnuksesi voidaan aktivoida. Saat sähköpostin antamaasi osoitteeseen, jossa on mukana aktivointilinkki tunnuksellesi.',
 	'UCP_JABBER'				=> 'Jabber-osoite',
 	'UCP_LOGIN_LINK'			=> 'Aseta ulkoisen käyttäjätilin liitynnät',
 
@@ -626,7 +626,7 @@ $lang = array_merge($lang, array(
 		'SENDER'	=> 'Lähettäjä',
 		'MESSAGE'	=> 'Viesti',
 		'STATUS'	=> 'Viestin tila',
-		'TO'		=> 'Lähetetty käyttäjälle',
+		'TO'		=> 'Vastaanottaja',
 	),
 	'PM_RULE' => array(
 		'IS_LIKE'		=> 'On samanlainen',

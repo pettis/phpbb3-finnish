@@ -65,7 +65,7 @@ $lang = array_merge($lang, array(
 
 	'ACP_CAT_CUSTOMISE'			=> 'Asetuksia',
 	'ACP_CAT_DATABASE'			=> 'Tietokanta',
-	'ACP_CAT_DOT_MODS'			=> '.MODit',
+	'ACP_CAT_DOT_MODS'			=> 'Laajennokset',
 	'ACP_CAT_FORUMS'			=> 'Alueet',
 	'ACP_CAT_GENERAL'			=> 'Yleinen',
 	'ACP_CAT_MAINTENANCE'		=> 'Huolto',
@@ -87,7 +87,7 @@ $lang = array_merge($lang, array(
 	'ACP_DISALLOW_USERNAMES'	=> 'Kiellä käyttäjätunnukset',
 
 	'ACP_EMAIL_SETTINGS'		=> 'Sähköpostiasetukset',
-	'ACP_EXTENSION_GROUPS'		=> 'Tunnisteryhmien asetukset',
+	'ACP_EXTENSION_GROUPS'		=> 'Liitetiedostojen tunnisteryhmien asetukset',
 	'ACP_EXTENSION_MANAGEMENT'	=> 'Laajennusten hallinta',
 	'ACP_EXTENSIONS'			=> 'Hallinnoi laajennuksia',
 
@@ -127,7 +127,7 @@ $lang = array_merge($lang, array(
 	'ACP_MANAGE_ATTACHMENTS'			=> 'Hallitse liitteitä',
 	'ACP_MANAGE_ATTACHMENTS_EXPLAIN'	=> 'Tässä voit katsoa ja poistaa viestien liitetiedostot',
 
-	'ACP_MANAGE_EXTENSIONS'		=> 'Tunnisteiden hallinta',
+	'ACP_MANAGE_EXTENSIONS'		=> 'Liitetiedostojen tunnisteiden hallinta',
 	'ACP_MANAGE_FORUMS'			=> 'Alueiden hallinta',
 	'ACP_MANAGE_RANKS'			=> 'Arvonimien hallinta',
 	'ACP_MANAGE_REASONS'		=> 'Hallitse ilmoituksia/hylkäyksen syitä',
@@ -552,9 +552,9 @@ $lang = array_merge($lang, array(
 
 	'LOG_APPROVE_TOPIC'			=> '<strong>Hyväksyi viestiketjun</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Käyttäjä tönäisi omaa viestiketjuaan</strong><br />» %s',
-	'LOG_DELETE_POST'			=> '<strong>Poisti viestin “%1$s” jonka lähettäjä oli</strong><br />» %2$s',
+	'LOG_DELETE_POST'			=> '<strong>Poisti viestin “%1$s” jonka lähettäjä oli “%2$s” syyllä</strong><br />» %3$s',
 	'LOG_DELETE_SHADOW_TOPIC'	=> '<strong>Poisti varjoketjun</strong><br />» %s',
-	'LOG_DELETE_TOPIC'			=> '<strong>Poisti viestiketjun “%1$s” jonka oli aloittanut</strong><br />» %2$s',
+	'LOG_DELETE_TOPIC'			=> '<strong>Poisti viestiketjun “%1$s” jonka oli kirjoittanut “%2$s” seuraavan syyn vuoksi</strong><br />» %3$s',
 	'LOG_FORK'					=> '<strong>Kopioi viestiketjun</strong><br />» alueelta %s',
 	'LOG_LOCK'					=> '<strong>Lukitsi viestiketjun</strong><br />» %s',
 	'LOG_LOCK_POST'				=> '<strong>Lukitsi viestin</strong><br />» %s',
@@ -564,8 +564,8 @@ $lang = array_merge($lang, array(
 	'LOG_PM_REPORT_CLOSED'		=> '<strong>Sulki YV-ilmoituksen</strong><br />» %s',
 	'LOG_PM_REPORT_DELETED'		=> '<strong>Poisti YV-ilmoituksen</strong><br />» %s',
 	'LOG_POST_APPROVED'			=> '<strong>Hyväksyi viestin</strong><br />» %s',
-	'LOG_POST_DISAPPROVED'		=> '<strong>Hylkäsi viestin “%1$s” ja antoi syyn</strong><br />» %2$s',
-	'LOG_POST_EDITED'			=> '<strong>Muokkasi viestiä “%1$s” Kirjoittanut</strong><br />» %2$s',
+	'LOG_POST_DISAPPROVED'		=> '<strong>Hylkäsi viestin “%1$s”, jonka oli kirjoittanut “%2$s” ja antoi syyn</strong><br />» %3$s',
+	'LOG_POST_EDITED'			=> '<strong>Muokkasi viestiä “%1$s”, jonka oli kirjoittanut “%2$s” ja antoi syyn </strong><br />» %3$s',
 	'LOG_POST_RESTORED'			=> '<strong>Palautettu viesti</strong><br />» %s',
 	'LOG_REPORT_CLOSED'			=> '<strong>Sulki ilmoituksen</strong><br />» %s',
 	'LOG_REPORT_DELETED'		=> '<strong>Poisti ilmoituksen</strong><br />» %s',
@@ -577,7 +577,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_TOPIC_APPROVED'		=> '<strong>Hyväksyi viestiketjun</strong><br />» %s',
 	'LOG_TOPIC_RESTORED'		=> '<strong>Palautettu aiha</strong><br />» %s',
-	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Hylkäsi viestiketjun “%1$s” ja antoi syyn</strong><br />%2$s',
+	'LOG_TOPIC_DISAPPROVED'		=> '<strong>Hylkäsi viestiketjun “%1$s”, jonka oli kirjoittanut “%3$s” ja antoi syyn</strong><br />%2$s',
 	'LOG_TOPIC_RESYNC'			=> '<strong>Synkronoi viestien laskurit</strong><br />» %s',
 	'LOG_TOPIC_TYPE_CHANGED'	=> '<strong>Vaihtoi viestiketjun tyyppiä</strong><br />» %s',
 	'LOG_UNLOCK'				=> '<strong>Avasi viestiketjun </strong><br />» %s',
@@ -783,8 +783,8 @@ $lang = array_merge($lang, array(
 
 	'LOG_WARNING_DELETED'		=> '<strong>Poisti varoituksen</strong><br />» %s',
 	'LOG_WARNINGS_DELETED'		=> array(
-		1 => '<strong>Käyttäjän varoitus nollattu</strong><br />» %1$s',
-		2 => '<strong>Nollattu %2$d käyttäjän varoitusta</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
+		1 => '<strong>Käyttäjän varoitus poistettu</strong><br />» %1$s',
+		2 => '<strong>Poistettu %2$d käyttäjän varoitusta</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
 	),
 	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Poisti kaikki varoitukset</strong><br />» %s',
 

@@ -59,15 +59,15 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_NOTICE'		=> 'Sinulla ei ole tarvittavia oikeuksia nähdäksesi tämän viestin liitetiedostoja.',
 
 	'EDITED_TIMES_TOTAL'	=> array(
-		1	=> 'Viimeksi muokannut %2$s %3$s, yhteensä muokattu %1$d kertaa.',
-		2	=> 'Viimeksi muokannut %2$s %3$s, yhteensä muokattu %1$d kertaa.',
+		1	=> 'Viimeksi muokannut %2$s, %3$s. Yhteensä muokattu %1$d kertaa.',
+		2	=> 'Viimeksi muokannut %2$s, %3$s. Yhteensä muokattu %1$d kertaa.',
 	),
 	'EMAIL_TOPIC'			=> 'Lähetä kaverille',
 	'ERROR_NO_ATTACHMENT'	=> 'Valitsemaasi liitetiedostoa ei ole olemassa',
 
 	'FILE_NOT_FOUND_404'	=> 'Tiedostoa <strong>%s</strong> ei ole.',
 	'FORK_TOPIC'			=> 'Kopioi viestiketju',
-	'FULL_EDITOR'			=> 'Täysi editori',
+	'FULL_EDITOR'			=> 'Täysi editori ja esikatselu',
 
 	'LINKAGE_FORBIDDEN'		=> 'Sinulla ei ole oikeuksia nähdä, ladata tai linkittää tältä sivulta.',
 	'LOGIN_NOTIFY_TOPIC'	=> 'Teille on ilmoitettu tästä viestistä. Kirjaudu sisään nähdäksesi sen.',
@@ -78,8 +78,8 @@ $lang = array_merge($lang, array(
 	'MAKE_NORMAL'				=> 'Muuta normaaliksi',
 	'MAKE_STICKY'				=> 'Muuta pysyväksi',
 	'MAX_OPTIONS_SELECT'		=> array(
-		1	=> 'Voit valita <strong>%d</strong> vaihtoehtoa',
-		2	=> 'Voit valita <strong>%d</strong> vaihtoehtoa',
+		1	=> 'Voit valita <strong>%d</strong> vaihtoehdon',
+		2	=> 'Voit valita enintään <strong>%d</strong> vaihtoehtoa',
 	),
 	'MISSING_INLINE_ATTACHMENT'	=> 'Liitetiedosto <strong>%s</strong> ei ole enää saatavilla',
 	'MOVE_TOPIC'				=> 'Siirrä viestiketju',

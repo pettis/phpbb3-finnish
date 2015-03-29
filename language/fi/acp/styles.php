@@ -39,7 +39,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_STYLES_EXPLAIN'	=> 'Täällä voit muokata käytettävissä olevia tyylejä. Tyyliin kuuluu mallineet, teemat ja kuvapaketit. Voit muokata jo asennettuja tyylejä, poistaa, ottaa käyttöön, luoda tai tuoda uusia. Voit katsoa miltä uusi tyyli näyttää käyttämällä esikatselua. Oletustyyli on merkitty tähtimerkillä (*). Tilasto näyttää myös kuinka monta käyttäjää on asettanut tietyn tyylin omaksi tyylikseen. Huomaa, että käyttäjän tyylin ohitus ei näy tässä listassa.',
+	'ACP_STYLES_EXPLAIN'	=> 'Täällä voit muokata käytettävissä olevia tyylejä. Voit muokata jo asennettuja tyylejä, poistaa, poistaa käytöstä, ottaa käyttöön asentaa asentaa uusia. Voit katsoa miltä uusi tyyli näyttää käyttämällä esikatselua. Tilasto näyttää myös kuinka monta käyttäjää on asettanut tietyntyylin omaksi tyylikseen. Huomaa, että käyttäjän tyylin ohitus ei näy tässä listassa.',
 
 	'CANNOT_BE_INSTALLED'			=> 'Ei voi asentaa',
 	'CONFIRM_UNINSTALL_STYLES'		=> 'Haluatko varmasti poistaa valitsemasi tyylit?',

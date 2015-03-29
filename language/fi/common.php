@@ -115,7 +115,7 @@ $lang = array_merge($lang, array(
 	'AVATAR_URL_INVALID'			=> 'Antamasi URL osoite ei kelpaa.',
 	'AVATAR_URL_NOT_FOUND'			=> 'Haluttua tiedostoa ei löydy.',
 	'AVATAR_WRONG_FILESIZE'			=> 'Avatarin tiedostokoko pitää olla 0 ... %1$d %2$s.',
-	'AVATAR_WRONG_SIZE'				=> 'Avatarin koko on %5$s leveä ja %6$s korkea. Avatarin koko tulee olla %1$s ... %3$s leveä ja %2$s ... %4$s korkea.',
+	'AVATAR_WRONG_SIZE'				=> 'Avatarin koko on %5$s leveä ja %6$s korkea. Avatarin koko tulee olla %1$s - %3$s leveä ja %2$s - %4$s korkea.',
 
 	'BACK_TO_TOP'			=> 'Ylös',
 	'BACK_TO_PREV'			=> 'Takaisin edelliselle sivulle',
@@ -197,8 +197,8 @@ $lang = array_merge($lang, array(
 	'DOWNLOADED'			=> 'Ladattu',
 	'DOWNLOADING_FILE'		=> 'Lataa tiedostoa',
 	'DOWNLOAD_COUNTS'		=> array(
-		0	=> 'Tiedosto ladattu %d kertaa',
-		1	=> 'Tiedosto ladattu %d kertaa',
+		0	=> 'Ei vielä ladattu',
+		1	=> 'Tiedosto ladattu %d kerta',
 		2	=> 'Tiedosto ladattu %d kertaa',
 	),
 
@@ -237,7 +237,7 @@ $lang = array_merge($lang, array(
 	'FILE_COMMENT'			=> 'Tiedoston kommentti',
 	'FILE_CONTENT_ERR'		=> 'Tiedoston lukuvirhe: %s',
 	'FILE_JSON_DECODE_ERR'	=> 'Tiedoston json lukuvirhe: %s',
-	'FILE_NOT_FOUND'		=> 'Pyytämääsi tiedostoa ei löytynyt',
+	'FILE_NOT_FOUND'		=> 'Pyytämääsi tiedostoa ei löytynyt: %s',
 	'FIND_USERNAME'			=> 'Etsi käyttäjä',
 	'FOLDER'				=> 'Kansio',
 	'FORGOT_PASS'			=> 'Unohdin salasanani',
@@ -345,7 +345,7 @@ $lang = array_merge($lang, array(
 	'JOINED'				=> 'Liittynyt',
 	'JUMP_PAGE'				=> 'Laita haluamasi sivun numero',
 	'JUMP_TO'				=> 'Hyppää',
-	'JUMP_TO_PAGE'			=> 'Hyppää sivulle...',
+	'JUMP_TO_PAGE'			=> 'Hyppää sivulle',
 	'JUMP_TO_PAGE_CLICK'	=> 'Valitse hypätäksesi sivulle…',
 
 	'KB'					=> 'KB',
@@ -382,7 +382,7 @@ $lang = array_merge($lang, array(
 	'LOGIN_REQUIRED'					=> 'Sinun pitää kirjautua käyttäjäksi.',
 	'LOGOUT'							=> 'Kirjaudu ulos',
 	'LOGOUT_USER'						=> 'Kirjaudu ulos [ %s ]',
-	'LOG_ME_IN'							=> 'Kirjaudu automaattisesti sisään.',
+	'LOG_ME_IN'							=> 'Muista minut',
 
 	'MAIN'					=> 'Main',
 	'MARK'					=> 'Valitse',
@@ -526,7 +526,7 @@ $lang = array_merge($lang, array(
 	),
 	'NUM_POSTS_IN_QUEUE'		=> array(
 	0		=> 'Ei viestejä jonossa',		// 0
-	1		=> 'Yksi viesti jonossa',		// 1
+	1		=> '1 viesti jonossa',		    // 1
 	2		=> '%d viestiä jonossa',		// 2+
 	),
 
@@ -536,13 +536,13 @@ $lang = array_merge($lang, array(
 	'ONLINE_BUDDIES'			=> 'Paikalla olevat kaverit',
 	// "... :: x registered and y hidden"
 	'ONLINE_USERS_TOTAL'		=> array(
-		1	=> 'Yhteensä <strong>%1$d</strong> käyttäjä paikalla : %2$s  ja %3$s ',
-		2	=> 'Yhteensä <strong>%1$d</strong> käyttäjää paikalla : %2$s   %3$s ',
+		1	=> 'Yhteensä <strong>%1$d</strong> käyttäjä paikalla :: %2$s ja %3$s ',
+		2	=> 'Yhteensä <strong>%1$d</strong> käyttäjää paikalla :: %2$s ja %3$s ',
 	),
 	// "... :: x registered, y hidden and z guests"
 	'ONLINE_USERS_TOTAL_GUESTS'	=> array(
-		1	=> 'Yhteensä <strong>%1$d</strong> käyttäjä paikalla : %2$s , %3$s  ja %4$s ',
-		2	=> 'Yhteensä <strong>%1$d</strong> käyttäjää paikalla : %2$s , %3$s  ja  %4$s ',
+		1	=> 'Yhteensä <strong>%1$d</strong> käyttäjä paikalla :: %2$s, %3$s ja %4$s ',
+		2	=> 'Yhteensä <strong>%1$d</strong> käyttäjää paikalla :: %2$s, %3$s ja %4$s ',
 	),
 	'OPTIONS'					=> 'Vaihtoehdot',
 
@@ -570,7 +570,7 @@ $lang = array_merge($lang, array(
 	'POSTS_UNAPPROVED'		=> 'Ainakin yhtä tässä ketjussa olevaa viestiä ei ole hyväksytty',
 	'POSTS_UNAPPROVED_FORUM'=> 'Ainakin yhtä tässä ketjussa olevaa viestiä ei ole hyväksytty',
 	'POST_BY_AUTHOR'		=> 'Kirjoittaja',
-	'POST_BY_FOE'           => 'Tämän viestin lähetti <strong>%1$s</strong>, joka on hylkäyslistallasi. Paina %2$sTÄSTÄ%3$s nähdäksesi kyseisen viestin.',
+	'POST_BY_FOE'           => 'Tämän viestin lähetti <strong>%1$s</strong>, joka on hylkäyslistallasi.',
 	'POST_DISPLAY'			=> '%1$s Näytä tämä viesti %2$s.',
 	'POST_DAY'				=> '%.2f viestiä päivässä',
 	'POST_DELETED_ACTION'	=> 'Poistettu viesti:',
@@ -587,7 +587,7 @@ $lang = array_merge($lang, array(
 	'POST_SUBJECT'			=> 'Viestin otsikko',
 	'POST_TIME'				=> 'Päiväys',
 	'POST_TOPIC'			=> 'Lähetä uusi viesti',
-	'POST_UNAPPROVED_ACTION'	=> 'Tämä viesti odottaa hyväksyntää',
+	'POST_UNAPPROVED_ACTION'	=> 'Hyväksyntää odottava viesti:',
 	'POST_UNAPPROVED'		=> 'Viestiä ei ole hyväksytty',
 	'POWERED_BY'			=> 'Keskustelufoorumin ohjelmisto %s',
 	'PREVIEW'				=> 'Esikatselu',
@@ -619,8 +619,8 @@ $lang = array_merge($lang, array(
 		2	=> '%1$d rekisteröity käyttäjä ja %2$s piilotettu',
 	),
 	'REG_USERS_TOTAL'			=> array(
-		1	=> '%d rekisteröityä',
-		2	=> '%d rekisteröityä',
+		1	=> '%d rekisteröitynyt',
+		2	=> '%d rekisteröitynyttä',
 	),
 	'REMOVE'					=> 'Poista',
 	'REMOVE_INSTALL'			=> 'Ole hyvä ja poista, siirrä tai muuta install-hakemiston nimeä. Mikäli tämä hakemisto on palvelimella, vain ylläpidon asetukset ovat käytettävissä.',
@@ -638,7 +638,7 @@ $lang = array_merge($lang, array(
 	'RETURN_FORUM'				=> '%sPalaa alueelle, jossa olit viimeksi%s',
 	'RETURN_PAGE'				=> '%sPalaa edelliselle sivulle%s',
 	'RETURN_TOPIC'				=> '%sPalaa viestiin, jota luit viimeksi%s',
-	'RETURN_TO'					=> 'Paluu',
+	'RETURN_TO'					=> 'Palaa sivulle “%s”',
 	'RETURN_TO_INDEX'			=> 'Palaa etusivulle',
 	'FEED'						=> 'Syöte',
 	'FEED_NEWS'					=> 'Uutiset',
@@ -667,16 +667,16 @@ $lang = array_merge($lang, array(
 	'SEARCH_ADV_EXPLAIN'		=> 'Näytä tarkan haun vaihtoehdot',
 	'SEARCH_KEYWORDS'			=> 'Etsi avainsanoja',
 	'SEARCHING_FORUMS'			=> 'Etsimässä',
-	'SEARCH_ACTIVE_TOPICS'		=> 'Näytä aktiiviset viestiketjut',
+	'SEARCH_ACTIVE_TOPICS'		=> 'Aktiiviset viestiketjut',
 	'SEARCH_FOR'				=> 'Etsi tätä',
 	'SEARCH_FORUM'				=> 'Etsi tältä alueelta',	
-	'SEARCH_NEW'				=> 'Näytä uudet viestit',
+	'SEARCH_NEW'				=> 'Uudet viestit',
 	'SEARCH_POSTS_BY'			=> 'Etsi viestejä käyttäjältä',
-	'SEARCH_SELF'				=> 'Näytä omat viestit',
+	'SEARCH_SELF'				=> 'Omat viestit',
 	'SEARCH_TOPIC'				=> 'Etsi viestiketjusta',
-	'SEARCH_UNANSWERED'			=> 'Näytä vastaamattomat viestit',
-	'SEARCH_UNREAD'				=> 'Näytä lukemattomat viestit',
-	'SEARCH_USER_POSTS'		=> 'Etsi käyttäjän viesteistä',
+	'SEARCH_UNANSWERED'			=> 'Vastaamattomat viestit',
+	'SEARCH_UNREAD'				=> 'Lukemattomat viestit',
+	'SEARCH_USER_POSTS'		    => 'Etsi käyttäjän viesteistä',
 	'SECONDS'					=> 'Sekuntia',
 	'SEE_ALL'					=> 'Katso kaikki',
 	'SELECT'					=> 'Valitse',
@@ -821,8 +821,8 @@ $lang = array_merge($lang, array(
 	'VARIANT_DATE_SEPARATOR'	=> ' / ',	// Used in date format dropdown, eg: "Today, 13:37 / 01 Jan 2007, 13:37" ... to join a relative date with calendar date
 	'VIEWED'					=> 'Katselee',
 	'VIEWED_COUNTS'		=> array(
-		0	=> 'Katsottu %d kertaa',
-		1	=> 'Katsottu %d kertaa',
+		0	=> 'Ei katsottu vielä',
+		1	=> 'Katsottu %d kerta',
 		2	=> 'Katsottu %d kertaa',
 	),
 	'VIEWING_CONTACT_ADMIN'		=> 'Katselee yhteys sivua',

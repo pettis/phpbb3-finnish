@@ -126,8 +126,8 @@ $lang = array_merge($lang, array(
 	'ICONS_ADD'				=> 'Lisää uusi kuvake',
 	'ICONS_ADDED'			=> array(
 		0	=> 'Kuvakkeita ei lisätty.',
-		1	=> 'Kuvake on lisätty.',
-		2	=> 'Kuvakkeet on lisätty.',
+		1	=> 'Kuvake on lisätty onnistuneesti.',
+		2	=> 'Kuvakkeet on lisätty onnistuneesti.',
 	),
 	'ICONS_CONFIG'			=> 'Kuvakkeen asetukset',
 	'ICONS_DELETED'			=> 'Kuvake on poistettu.',
@@ -135,7 +135,7 @@ $lang = array_merge($lang, array(
 	'ICONS_EDITED'			=> array(
 		0	=> 'Kuvakkeita ei päivitetty.',
 		1	=> 'Kuvake on päivitetty.',
-		2	=> 'Kuvakkeita päivitetty.',
+		2	=> 'Kuvakketta on päivitetty.',
 	),
 	'ICONS_HEIGHT'			=> 'Kuvakkeen korkeus',
 	'ICONS_IMAGE'			=> 'Kuvakkeen kuva',
@@ -171,7 +171,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_ADDED'				=> array(
 		0	=> 'Hymiöitä ei lisätty.',
 		1	=> 'Hymiö on lisätty.',
-		2	=> 'Hymiöitä on lisätty.',
+		2	=> 'Hymiötä on lisätty.',
 	),
 	'SMILIES_CODE'				=> 'Hymiön koodi',
 	'SMILIES_CONFIG'			=> 'Hymiön asetukset',
@@ -183,7 +183,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_EDITED'			=> array(
 		0	=> 'Hymiöitä ei päivitetty.',
 		1	=> 'Hymiö on päivitetty.',
-		2	=> 'Hymiöitä on päivitetty.',
+		2	=> 'Hymiötä on päivitetty.',
 	),
 	'SMILIES_EMOTION'			=> 'Tunnetila',
 	'SMILIES_HEIGHT'			=> 'Hymiön korkeus',

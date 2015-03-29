@@ -82,7 +82,7 @@ $lang = array_merge($lang, array(
 	'CONTINUE_OLD_CONVERSION'	=> 'Jatka keskeytynyttä muunnosta',
 	'CONVERT'					=> 'Muunna',
 	'CONVERT_COMPLETE'			=> 'Muunnos on valmis',
-	'CONVERT_COMPLETE_EXPLAIN'	=> 'Keskustelufoorumin muuntaminen phpBB3-alustalle on suoritettu onnistuneesti loppuun. Voit kirjautua sisään ja <a href="../">Hallita keskustelufoorumiasi</a>. Ole hyvä ja varmista, että kaikki asetukset ovat siirretty oikein ennen kuin otat foorumin käyttöön poistamalla install-hakemiston. Muista, että saat käyttötukea verkosta lukemalla <a href="https://www.phpbb.com/support/documentation/3.0/">käyttö-opasta</a> ja <a href="https://www.phpbb.com/community/viewforum.php?f=46">tukifoorumilta</a>',
+	'CONVERT_COMPLETE_EXPLAIN'	=> 'Keskustelufoorumin muuntaminen phpBB3-alustalle on suoritettu onnistuneesti loppuun. Voit kirjautua sisään ja <a href="../">Hallita keskustelufoorumiasi</a>. Ole hyvä ja varmista, että kaikki asetukset ovat siirretty oikein ennen kuin otat foorumin käyttöön poistamalla install-hakemiston. Muista, että saat käyttötukea verkosta lukemalla <a href="https://www.phpbb.com/support/docs/en/3.1/ug/">käyttö-opasta</a> ja <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumilta</a>',
 	'CONVERT_INTRO'				=> 'Tervetuloa phpBB Unified Convertor Frameworkiin',
 	'CONVERT_INTRO_BODY'		=> 'Täällä voit tuoda tiedot muista (asennetuista) keskustelufoorumeista. Alla olevassa listassa on kaikki tämänhetkiset muunnosmoduulit. Mikäli haluamaasi muuntajaa ei löydy listasta, tarkista nettisivuiltamme olisiko siellä muita muuntajia ladattavissa.',
 	'CONVERT_NEW_CONVERSION'	=> 'Uusi muunnos',
@@ -159,7 +159,7 @@ $lang = array_merge($lang, array(
 	'DLL_XML'					=> 'XML-tuki [ Jabber ]',
 	'DLL_ZLIB'					=> 'zlib-pakkauksen tuki [ gz, .tar.gz, .zip ]',
 	'DL_CONFIG'					=> 'Lataa asetukset omalle koneellesi',
-	'DL_CONFIG_EXPLAIN'			=> 'Voita ladata config.php-tiedoston omalle tietokoneellesi ja sen jälkeen siirtää tiedoston takaisin palvelimelle samalla ylikirjoittaen vanhan tiedoston phpBB 3.0 -juurihakemistossa. Muista siirtää tiedosto ASCII-muodossa (Katso lisätietoja käyttämäsi FTP-ohjelman ohjeista, mikäli et ole varma tästä). Kun olet siirtänyt tiedoston, napsauta "Valmis" jatkaaksesi seuraavaan vaiheeseen.',
+	'DL_CONFIG_EXPLAIN'			=> 'Voita ladata config.php-tiedoston omalle tietokoneellesi ja sen jälkeen siirtää tiedoston takaisin palvelimelle samalla ylikirjoittaen vanhan tiedoston phpBB 3.1 -juurihakemistossa. Muista siirtää tiedosto ASCII-muodossa (Katso lisätietoja käyttämäsi FTP-ohjelman ohjeista, mikäli et ole varma tästä). Kun olet siirtänyt tiedoston, napsauta "Valmis" jatkaaksesi seuraavaan vaiheeseen.',
 	'DL_DOWNLOAD'				=> 'Lataa koneellesi',
 	'DONE'						=> 'Valmis',
 
@@ -190,11 +190,11 @@ $lang = array_merge($lang, array(
 	'INITIAL_CONFIG_EXPLAIN'	=> 'Asennusohjelma on todennut, että palvelimella voi ajaa phpBB:tä ja seuraavaksi sinun tulee antaa joitakin perusasetuksia. Mikäli et tiedä kuinka otetaan yhteys tietokantaan, ole hyvä ja kysy nämä tiedot palveluntarjoajaltasi (ensimmäinen vaihtoehto) tai käytä phpBB-tukifoorumia. Kun kirjoitat tietoja, varmista, että ne ovat varmasti oikein.',
 	'INSTALL_CONGRATS'			=> 'Onnea!',
 	'INSTALL_CONGRATS_EXPLAIN'	=> '
-		phpBB %1$s .asennus on onnistunut. Jatka eteenpäin valitsemalla jokin seuraavista vaihtoehdoista:</p>
+		phpBB %1$s -asennus on onnistunut. Jatka eteenpäin valitsemalla jokin seuraavista vaihtoehdoista:</p>
 		<h2>Muunna vanha foorumi käyttämään phpBB3 alustaa</h2>
-		<p>phpBB Unified Convertor Framework tukee muunnosta phpBB 2.0.x -alustalta ja muilta ohjelmistoilta phpBB3-alustalle. Mikäli sinulla on keskustelufoorumi, jonka haluat muuntaa, voit<a href="%2$s">jatkaa muuntajaan</a>.</p>
+		<p>phpBB Unified Convertor Framework tukee muunnosta phpBB 2.0.x -alustalta ja muilta ohjelmistoilta phpBB3-alustalle. Mikäli sinulla on keskustelufoorumi, jonka haluat muuntaa, voit <a href="%2$s">jatkaa muuntajaan</a>.</p>
 		<h2>Julkaise phpBB3-foorumisi!</h2>
-		<p>Linkki vie ylläpitoon, josta voit lähettää hieman tilastotietoja kehittäjille. Olisimme iloisia, jos lähetät nämä tiedot. Tämän jälkeen voisit viettää hetken aikaa tutkiaksesi ylläpitoa ja sen eri vaihtoehtoja. Muistathan, että tukea on saatavilla <a href="https://www.phpbb.com/support/documentation/3.0/">dokumentaatiosta</a>, <a href="%3$s">README-tiedostosta</a> ja <a href="https://www.phpbb.com/community/viewforum.php?f=46">tukifoorumilta</a>.</p><p><strong>Ole hyvä ja poista install-hakemisto. Mikäli tämä hakemisto on palvelimella, vain ylläpidon asetukset ovat käytettävissä.</strong>',
+		<p>Linkki vie ylläpitoon, josta voit lähettää hieman tilastotietoja kehittäjille hallintapaneelistasi. Olisimme iloisia, jos lähetät nämä tiedot. Tämän jälkeen voisit viettää hetken aikaa tutkiaksesi ylläpitoa ja sen eri vaihtoehtoja. Muistathan, että tukea on saatavilla <a href="https://www.phpbb.com/support/docs/en/3.1/ug/">dokumentaatiosta</a>, <a href="%3$s">README-tiedostosta</a> ja <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumilta</a>.</p><p><strong>Ole hyvä ja poista install-hakemisto. Mikäli tämä hakemisto on palvelimella, vain ylläpidon asetukset ovat käytettävissä.</strong>',
 	'INSTALL_INTRO'				=> 'Tervetuloa asennukseen',
 
 	'INSTALL_INTRO_BODY'		=> 'Voit asentaa phpBB3:n palvelimellesi valitsemalla tämän vaihtoehdon.</p><p>Jotta voit jatkaa asentamista, tarvitset käytössäsi olevan tietokannan asetukset. Mikäli et tiedä tietokantasi asetuksia, ole hyvä ja ota yhteyttä palveluntarjoajaasi ja kysy tiedot heiltä. Et voi jatkaa asennusta eteenpäin, mikäli tiedot puuttuvat. Tarvitset:</p>
@@ -215,8 +215,8 @@ $lang = array_merge($lang, array(
 		<li>PostgreSQL 8.3+</li>
 		<li>SQLite 2.8.2+</li>
 		<li>SQLite 3.6.15+</li>
-		<li>MS SQL Server 2000 or above (directly or via ODBC)</li>
-		<li>MS SQL Server 2005 or above (native)</li>
+		<li>MS SQL Server 2000 or above (suoraan tai ODBC:n kautta)</li>
+		<li>MS SQL Server 2005 or above (natiivi)</li>
 		<li>Oracle</li>
 	</ul>
 
@@ -276,7 +276,7 @@ $lang = array_merge($lang, array(
 	'MAKE_FOLDER_WRITABLE'		=> 'Varmista, että tämä hakemisto on olemassa palvelimella, ja että siihen voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
 	'MAKE_FOLDERS_WRITABLE'		=> 'Varmista, että nämä hakemistot ovat olemassa palvelimella, ja että niihin voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
 
-	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Käyttämäsi MySQL tietokanta on liian vanha phpBB:lle. phpBB tunnisti version MySQL 3.x/4.x, mutta palvelimessa on MySQL %2$s.<br /><strong>Ennenkuin päivität versiota pitää sinun luoda tietokanta uudestaan.',
+	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Käyttämäsi MySQL tietokanta on liian vanha phpBB:lle. phpBB tunnisti version MySQL 3.x/4.x, mutta palvelimessa on MySQL %2$s.<br /><strong>Ennenkuin päivität versiota pitää sinun päivittää tietokantarakenne.</strong><br /><br />Ohjeet MySQL-tietokannan päivittämiseen löytyvät <a href="https://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">MySQL:n päivittämiseen liittyvästä tietopankkiartikkelista</a>. Jos tarvitset apua, voit käyttää <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumia</a>.',
 
 	'NAMING_CONFLICT'			=> 'Nimeämisvirhe: %s ja %s ovat kummatkin aliaksia<br /><br />%s',
 	'NEXT_STEP'					=> 'Jatka seuraavaan vaiheeseen',
@@ -303,10 +303,10 @@ $lang = array_merge($lang, array(
 	'PHP_REGISTER_GLOBALS_EXPLAIN'	=> 'phpBB toimii vaikka tämä asetus on käytössä, mutta mikäli mahdollista, on suositeltavaa, että register_globals on poissa käytöstä tietoturvasyistä johtuen.',
 	'PHP_SAFE_MODE'					=> 'Safe mode',
 	'PHP_SETTINGS'					=> 'PHP-versio ja asetukset',
-	'PHP_SETTINGS_EXPLAIN'			=> '<strong>Pakollinen</strong> - PHP-version tulee olla vähintään 4.3.3 asentaaksesi phpBB:n. Mikäli "safe mode" on näkyvissä alapuolella, PHP-asennuksesi on asetettu tähän tilaan. Tämä asettaa rajoituksia etähallintaan ja muihin sen kaltaisiin toimintoihin.',
+	'PHP_SETTINGS_EXPLAIN'			=> '<strong>Pakollinen</strong> - PHP-version tulee olla vähintään 5.3.3 asentaaksesi phpBB:n. Mikäli <var>safe mode</var> on näkyvissä alapuolella, PHP-asennuksesi on asetettu tähän tilaan. Tämä asettaa rajoituksia etähallintaan ja muihin sen kaltaisiin toimintoihin.',
 	'PHP_URL_FOPEN_SUPPORT'			=> 'PHP-asetus <var>allow_url_fopen</var> on päällä',
 	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>Vaihtoehtoinen</strong> - Tätä asetusta ei ole vaadittu, mutta jotkin phpBB:n toiminnoista, kuten linkitetyt avatar-tiedostot eivät toimi kunnolla ilman tätä. ',
-	'PHP_VERSION_REQD'				=> 'PHP-versio >= 4.3.3',
+	'PHP_VERSION_REQD'				=> 'PHP-versio >= 5.3.3',
 	'POST_ID'						=> 'Viestin tunniste',
 	'PREFIX_FOUND'					=> 'Asennus on löytänyt kelvollisen asennuksen tietokannasta, joka käyttää <strong>%s</strong> etuliitettä tauluissa.',
 	'PREPROCESS_STEP'				=> 'Suorittaa pre-processing funktioita/kyselyitä',
@@ -334,7 +334,7 @@ $lang = array_merge($lang, array(
 	'STAGE_ADVANCED_EXPLAIN'	=> 'Näitä asetuksia tarvitsee muuttaa vain, jos tiedät, että oletusasetukset eivät ole oikein. Jos olet epävarma, jatka suoraan seuraavaan vaiheeseen. Nämä tiedot voi muuttaa myöhemmin ylläpidon asetuksista.',
 	'STAGE_CONFIG_FILE'			=> 'Asetustiedosto',
 	'STAGE_CREATE_TABLE'		=> 'Luo taulut tietokantaan',
-	'STAGE_CREATE_TABLE_EXPLAIN'	=> 'phpBB 3.0:n käyttämät taulut on luotu tietokantaan sisältäen alustavia tietoja. Jatka seuraavaan vaiheeseen viimeistelläksesi asennuksen.',
+	'STAGE_CREATE_TABLE_EXPLAIN'	=> 'phpBB 3.1:n käyttämät taulut on luotu tietokantaan ja täytetty alustavilla tiedoilla. Jatka seuraavaan vaiheeseen viimeistelläksesi phpBB-asennuksen.',
 	'STAGE_DATABASE'			=> 'Tietokannan asetukset',
 	'STAGE_FINAL'				=> 'Viimeinen vaihe',
 	'STAGE_INTRO'				=> 'Tervetuloa',
@@ -347,7 +347,7 @@ $lang = array_merge($lang, array(
 	'SUB_LICENSE'				=> 'Lisenssi',
 	'SUB_SUPPORT'				=> 'Tuki',
 	'SUCCESSFUL_CONNECT'		=> 'Yhteydenotto onnistui',
-	'SUPPORT_BODY'				=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=65">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=81">modifikaatioiden foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=80">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/documentation/3.0/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajantasalla ja saadaksesi uutiset uusimmista versioista. Mikset liittyisi <a href="https://www.phpbb.com/support/">postituslistallemme</a>?<br /><br />',
+	'SUPPORT_BODY'				=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=486">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=451">laajennosten foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=471">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajantasalla ja saadaksesi uutiset uusimmista versioista. Mikset liittyisi <a href="https://www.phpbb.com/support/">postituslistallemme</a>?<br /><br />',
 	'SYNC_FORUMS'				=> 'Aloitetaan keskustelualueiden synkronointi',
 	'SYNC_POST_COUNT'			=> 'Synkronoin post_counts',
 	'SYNC_POST_COUNT_ID'		=> 'Synkronoin post_counts <var>entry</var> %1$s, %2$s:sta.',
@@ -375,7 +375,7 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat uusinta versiota.',
+	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat ajantasalla uusimman phpBB-version kanssa.',
 	'ARCHIVE_FILE'				=> 'Lähdetiedosto arkistotiedostosta',
 
  	'BACK'				=> 'Takaisin',
@@ -542,12 +542,12 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<h1>Kuinka voit päivittää asennuksesi?</h1>
+		<h1>Kuinka voit päivittää asennuksesi automaattisella päivityspaketilla?</h1>
 
 		<p>Tässä mainittu suositeltava päivitystapa koskee vain automaattista päivityspakettia. Voit päivittää asennuksesi käyttämällä INSTALL.html-tiedostossa mainittuja tapoja. Automaattisen phpBB3-päivityksen vaiheet ovat</p>
 
 		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li>Mene <a href="https://www.phpbb.com/downloads.php" title="https://www.phpbb.com/downloads.php">phpBB.com-lataussivulle</a> ja lataa oikea "phpBB Update Package" -tiedosto.<br /><br /></li>
+			<li>Mene <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com-lataussivulle</a> ja lataa oikea "phpBB Update Package" -tiedosto.<br /><br /></li>
 			<li>Pura tiedosto.<br /><br /></li>
 			<li>Siirrä puretut "install" ja "vendor" -hakemistot phpBB:n juurihakemistoosi (sama hakemisto, missä config.php-tiedosto sijaitsee).<br /><br /></li>
 		</ul>

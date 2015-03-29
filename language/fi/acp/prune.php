@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 
 // User pruning
 $lang = array_merge($lang, array(
-	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Täällä voit sulkea käyttäjätunnuksia tai poistaa foorumin käyttäjiä. Tunnuksia voi selata eri tavoin, kuten viestien määrällä, aktiivisuudella, jne. Kriteereitä voi yhdistää tarkemmaksi hauksi. Voit esimerkiksi poistaa käyttäjät, joilla on alle kymmenen viestiä ja jotka ovat olleet poissa 2002-01-01 lähtien. Voit myös jättää kriteerit kokonaan pois ja laittaa käyttäjät yksitellen omille riveillensä. Ole tarkkana! Kun poistat käyttäjän, sitä ei voi palauttaa.',
+	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Täällä voit sulkea käyttäjätunnuksia tai poistaa foorumin käyttäjiä. Tunnuksia voi selata eri tavoin, kuten viestien määrällä, aktiivisuudella, jne. Kriteereitä voi yhdistää tarkemmaksi hauksi. Voit esimerkiksi poistaa käyttäjät, joilla on alle kymmenen viestiä ja jotka ovat olleet poissa 2002-01-01 lähtien. Käytä * merkkiä jokerimerkkinä tekstikentissä. Voit myös jättää kriteerit kokonaan pois ja laittaa käyttäjät yksitellen omille riveillensä. Ole tarkkana! Kun poistat käyttäjän, sitä ei voi palauttaa.',
 
 	'CRITERIA'				=> 'Kriteeri',
 
@@ -50,7 +50,7 @@ $lang = array_merge($lang, array(
 	'DELETE_USER_POSTS'			=> 'Poista myös viestit',
 	'DELETE_USER_POSTS_EXPLAIN' => 'Tuhoaa poistettujen käyttäjien tekemät viestit. Tämä asetus ei päde, mikäli olet vain sulkenut käyttäjätunnuksen.',
 
-	'JOINED_EXPLAIN'			=> 'Anna päivämäärä <kbd>VVVV-KK-PP</kbd>-muodossa.',
+	'JOINED_EXPLAIN'			=> 'Anna päivämäärä <kbd>VVVV-KK-PP</kbd>-muodossa. Voit myös käyttää kumpaakin kenttää määritelläksesi aikavälin tai jättää toisen tyhjäksi määritelläksesi vain toisen aikarajan.',
 
 	'LAST_ACTIVE_EXPLAIN'		=> 'Anna päivämäärä <kbd>VVVV-KK-PP</kbd>-muodossa. Laita <kbd>0000-00-00</kbd> poistaaksesi käyttäjät, jotka eivät ole koskaan kirjautuneet sisään. <em>Ennen</em> ja <em>jälkeen</em>-valintoja ei oteta huomioon.',
 
@@ -58,8 +58,8 @@ $lang = array_merge($lang, array(
 	'PRUNE_USERS_GROUP_EXPLAIN'	=> 'Valitun ryhmän käyttäjien lukumäärän raja.',
 	'PRUNE_USERS_GROUP_NONE'	=> 'Kaikki ryhmät',
 	'PRUNE_USERS_LIST'				=> 'Siivottavat käyttäjät',
-	'PRUNE_USERS_LIST_DELETE'		=> 'Valitsemiesi kriteerien mukaisesti. Nämä käyttäjätunnukset poistetaan.',
-	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'Valitsemiesi kriteerien mukaisesti. Nämä käyttäjätunnukset suljetaan.',
+	'PRUNE_USERS_LIST_DELETE'		=> 'Valitsemiesi kriteerien mukaisesti nämä käyttäjätunnukset poistetaan. Voit poistaa listasta yksittäisiä käyttäjiä poistamalla valinnan käyttäjänimen vierestä.',
+	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'Valitsemiesi kriteerien mukaisesti nämä käyttäjätunnukset suljetaan. Voit poistaa listasta yksittäisiä käyttäjiä poistamalla valinnan käyttäjänimen vierestä.',
 
 	'SELECT_USERS_EXPLAIN'		=> 'Anna käyttäjätunnukset tähän. Niitä käytetään ylläolevien vaihtoehtojen asetuksina. Perustajia ei voi poistaa',
 

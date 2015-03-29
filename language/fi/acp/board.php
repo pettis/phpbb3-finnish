@@ -117,9 +117,9 @@ $lang = array_merge($lang, array(
 	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Salli avatarin siirto toiselta nettisivulta.',
 	'ALLOW_UPLOAD'					=> 'Salli avatarien siirto palvelimelle',
 	'AVATAR_GALLERY_PATH'			=> 'Avatar-gallerian polku',
-	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Esiasennettujen kuvien hakemistopolku keskustelufoorumin pääjuuresta, esim, <samp>images/avatars/gallery</samp>',
+	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Esiasennettujen kuvien hakemistopolku keskustelufoorumin pääjuuresta, esim, <samp>images/avatars/gallery</samp><br />Tuplapisteet, kuten <samp>../</samp> poistetaan polusta tietoturvasyistä.',
 	'AVATAR_STORAGE_PATH'			=> 'Avatarin tallennuspolku',
-	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Polku keskustelufoorumin pääjuuresta, esim. <samp>images/avatars/upload</samp>',
+	'AVATAR_STORAGE_PATH_EXPLAIN'	=> 'Polku keskustelufoorumin pääjuuresta, esim. <samp>images/avatars/upload</samp>.<br />Avatarien lataus <strong>ei ole käytettävissä</strong> jos tähän polkuun ei voi kirjoittaa.<br />Tuplapisteet, kuten <samp>../</samp> poistetaan polusta tietoturvasyistä.',
 	'MAX_AVATAR_SIZE'				=> 'Avatarin enimmäiskoko',
 	'MAX_AVATAR_SIZE_EXPLAIN'		=> 'Leveys x korkeus kuvapisteinä',
 	'MAX_FILESIZE'					=> 'Avatar-tiedoston enimmäiskoko',
@@ -223,7 +223,7 @@ $lang = array_merge($lang, array(
 	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Täällä voit määritellä rekisteröitymiseen ja profiiliin liittyviä asetuksia.',
 
 	'ACC_ACTIVATION'			=> 'Käyttäjätunnusten aktivointi',
-	'ACC_ACTIVATION_EXPLAIN'	=> 'Tämä määrittelee. Pääseekö käyttäjä suoraan keskustelufoorumille vai tarvitseeko käyttäjätunnukset varmentaa ensin. Voit myös poistaa rekisteröitymisen kokonaan käytöstä. Sähköpostitoimintojen tulee olla käytössä, jos aktivoinnin suorittaa käyttäjä tai ylläpitäjä.',
+	'ACC_ACTIVATION_EXPLAIN'	=> 'Tämä määrittelee. Pääseekö käyttäjä suoraan keskustelufoorumille vai tarvitseeko käyttäjätunnukset varmentaa ensin. Voit myös poistaa rekisteröitymisen kokonaan käytöstä. <em>Sähköpostitoimintojen tulee olla käytössä, jos aktivoinnin suorittaa käyttäjä tai ylläpitäjä.</em>',
 	'ACC_ACTIVATION_WARNING'	=> 'Huomaa että valittu aktivointi edellyttää sähköpostin käyttöä, muutoin rekisteröinti ei ole mahdollista. Käytä joko toisenlaista aktivointitapaa tai salli sähköposti.',
 	'NEW_MEMBER_POST_LIMIT'			=> 'Uuden jäsenen viestiraja',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Uudet käyttäjät ovat <em>Uudet jäsenet</em> -ryhmässä siihen asti, kunnes ovat lähettäneet tämän verran viestejä. Tätä ryhmää voi käyttää estämään yksityisviestien lähetys ja vaatia viestien hyväksynnän valvojan toimesta ennen julkaisemista keskustelufoorumilla. <strong>Nolla poistaa asetuksen käytöstä.</strong>',
@@ -233,7 +233,7 @@ $lang = array_merge($lang, array(
 	'ACC_ADMIN'					=> 'Ylläpitäjä',
 	'ACC_DISABLE'				=> 'Poista rekisteröityminen käytöstä',
 	'ACC_NONE'					=> 'Ei aktivointia (Käyttäjä pääsee heti keskustelufoorumille)',
-	'ACC_USER'					=> 'Käyttäjä (Käyttäjä varmistaa tunnuksen antamansa sähköpostiosoitteen avulla)',
+	'ACC_USER'					=> 'Käyttäjä (sähköpostivarmennus)',
 //	'ACC_USER_ADMIN'			=> 'User + Admin',
 	'ALLOW_EMAIL_REUSE'			=> 'Salli sähköpostiosoitteen uudelleenkäyttö',
 	'ALLOW_EMAIL_REUSE_EXPLAIN'	=> 'Sallii eri käyttäjien rekisteröityä käyttämällä samaa sähköpostiosoitetta.',
@@ -417,7 +417,7 @@ $lang = array_merge($lang, array(
 
 // Auth settings
 $lang = array_merge($lang, array(
-	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'phpBB tukee tunnistautumisen plug-in palikoita, tai moduuleita. Näiden avulla voit määrittää kuinka käyttäjä tunnistetaan hänen saapuessaan keskustelufoorumille. phpBB-paketin mukana on toimitettu kolme erilaista tunnistautumismenetelmää: DB, LDAP ja Apache. Kaikkia tietoja ei tarvita, joten täytä vain ne, jotka ovat tarvittavia valitsemassasi tunnistamismenetelmässä.',
+	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'phpBB tukee tunnistautumisen lisäosia tai moduuleita. Näiden avulla voit määrittää kuinka käyttäjä tunnistetaan hänen saapuessaan keskustelufoorumille. phpBB-paketin mukana on toimitettu neljä erilaista tunnistautumismenetelmää: DB, LDAP, Apache ja OAuth. Kaikkia tietoja ei tarvita, joten täytä vain ne, jotka ovat tarvittavia valitsemassasi tunnistamismenetelmässä.',
 
 	'AUTH_METHOD'				=> 'Valitse tunnistautumismenetelmä',
 
@@ -490,11 +490,11 @@ $lang = array_merge($lang, array(
 	'ACP_SECURITY_SETTINGS_EXPLAIN'		=> 'Täällä voit määritellä kirjautumiseen ja istuntoon liittyviä asetuksia',
 
 	'ALL'							=> 'Kaikki',
-	'ALLOW_AUTOLOGIN'				=> 'Salli automaattiset kirjautumiset', 
+	'ALLOW_AUTOLOGIN'				=> 'Salli "Muista minut" -kirjautumiset',
 	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Määrittelee sallitaanko käyttäjän kirjautua automaattisesti sisään saapuessaan keskustelufoorumille.', 
 	'ALLOW_PASSWORD_RESET'			=> 'Salli salasanan resetointi ("Salasana unohtunut")',
 	'ALLOW_PASSWORD_RESET_EXPLAIN'	=> 'Määrittelee voivatko käyttäjät käyttää "Salasana Unohtunut" linkkiä käyttäjätunnuksensa palauttamisessa. Jos käytät ulkopuolista tunnistautumista - älä käytä tätä ominaisuutta.',
-	'AUTOLOGIN_LENGTH'				=> 'Automaattisen kirjautumisen avaimen kuoleentuminen päivissä', 
+	'AUTOLOGIN_LENGTH'				=> '"Muista minut" -avaimen kuoleentuminen päivissä',
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Lukumäärä päivinä, jonka jälkeen kirjautumisen avain vanhenee. Aseta nolla poistaaksesi toiminnon käytöstä.', 
 	'BROWSER_VALID'					=> 'Varmenna selain',
 	'BROWSER_VALID_EXPLAIN'			=> 'Ottaa selaimen varmennuksen käyttöön jokaiselle istunnolle varmentaen näin tietoturvaa.',
@@ -540,7 +540,7 @@ $lang = array_merge($lang, array(
 
 // Email Settings
 $lang = array_merge($lang, array(
-	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Näitä asetuksia käytetään keskustelufoorumin sähköpostitoimintoihin. Varmista, että käyttämäsi sähköpostiosoite on toimiva, sillä palautettavista ja epäonnistuneista viesteistä tulee ilmoitus todennäköisesti juuri tähän osoitteeseen. Voit lähettää sähköpostia, joko PHP:n natiivilla toiminnolla, tai käyttämällä SMTP-palvelinta viestien lähettämiseen. SMTP-palvelimen käyttöön tarvittavat tunnukset saat palveluntarjoajaltasi.',
+	'ACP_EMAIL_SETTINGS_EXPLAIN'	=> 'Näitä asetuksia käytetään keskustelufoorumin sähköpostitoimintoihin. Varmista, että käyttämäsi sähköpostiosoite on toimiva, sillä palautettavista ja epäonnistuneista viesteistä tulee ilmoitus todennäköisesti juuri tähän osoitteeseen. Voit lähettää sähköpostia, joko PHP:n natiivilla toiminnolla, tai käyttämällä SMTP-palvelinta viestien lähettämiseen. SMTP-palvelimen käyttöön tarvittavat tunnukset saat palveluntarjoajaltasi. Jos palvelin käyttää tunnistautumista (ja vain jos), syötä tarvittava tunnus, salasana ja tunnistautumismenetelmä.',
 
 	'ADMIN_EMAIL'					=> 'Sähköpostin palautusosoite',
 	'ADMIN_EMAIL_EXPLAIN'			=> 'Tätä käytetään kaikkien sähköpostiviestien <samp>palautusosoitteena</samp> ja <samp>lähettäjän</samp> osoitteena.',
@@ -555,11 +555,11 @@ $lang = array_merge($lang, array(
 	'EMAIL_FUNCTION_NAME'			=> 'Sähköpostifunktion nimi',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Käytettävän funktion nimi, kun sähköposti lähetetään PHP:n kautta.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Sähköpostipaketin koko',
-	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Kuinka monta sähköpostia lähetetään yhdessä paketissa.',
+	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Kuinka monta sähköpostia lähetetään yhdessä paketissa. Tämä asetus määrittelee sisäisen viestijonon. Aseta tämä arvoon 0, jos ilmoitussähköpostien saapumisessa on ongelmia.',
 	'EMAIL_SIG'						=> 'Sähköpostin allekirjoitus',
 	'EMAIL_SIG_EXPLAIN'				=> 'Tämä teksti liitetään kaikkiin lähetettyihin sähköpostiviesteihin.',
 	'ENABLE_EMAIL'					=> 'Ota sähköpostitoiminnot käyttöön',
-	'ENABLE_EMAIL_EXPLAIN'			=> 'Mikäli tämä on poissa käytöstä, keskustelufoorumi ei lähetä yhtäkään sähköpostiviestiä.',
+	'ENABLE_EMAIL_EXPLAIN'			=> 'Mikäli tämä on poissa käytöstä, keskustelufoorumi ei lähetä yhtäkään sähköpostiviestiä.<em>Huomaa, että käyttäjän ja ylläpitäjän toimesta tehdyt tunnusten aktivoinnit vaativat tämän asetuksen käyttöönottoa. Jos käytät käyttäjän tai ylläpitäjän aktivointia, tämän toiminnon poistäminen käytöstä estää rekisteröitymisen.</em>',
 	'SMTP_AUTH_METHOD'				=> 'SMTP:n tunnistautumismenetelmä',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> 'Tätä käytetään vain, mikäli käyttäjätunnus/salasana on asetettu. Kysy palveluntarjoajaltasi, jos et ole varma mitä menetelmää tulisi käyttää.',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',

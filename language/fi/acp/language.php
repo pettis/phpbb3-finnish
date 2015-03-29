@@ -48,9 +48,9 @@ $lang = array_merge($lang, array(
 
 	'LANGUAGE_DETAILS_UPDATED'			=> 'Kielen asetukset on päivitetty',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Tämä kielipaketti on jo asennettu.',
-	'LANGUAGE_PACK_DELETED'				=> 'Kielipaketti <strong>%s</strong> on poistettu. Tätä pakettia käyttäneet käyttäjät on asetettu käyttämään keskustelufoorumin oletuskieltä.',
+	'LANGUAGE_PACK_DELETED'				=> 'Kielipaketti “%s” on poistettu. Tätä pakettia käyttäneet käyttäjät on asetettu käyttämään keskustelufoorumin oletuskieltä.',
 	'LANGUAGE_PACK_DETAILS'				=> 'Kielipaketin tiedot',
-	'LANGUAGE_PACK_INSTALLED'			=> 'Kielipaketti <strong>%s</strong> on asennettu onnistuneesti.',
+	'LANGUAGE_PACK_INSTALLED'			=> 'Kielipaketti “%s” on asennettu onnistuneesti.',
 	'LANGUAGE_PACK_CPF_UPDATE'			=> 'Mukautettujen profiilikenttien tekstit ovat kopioitu oletuskielestä. Voit muuttaa niitä tarvittaessa.',
 	'LANGUAGE_PACK_ISO'					=> 'ISO',
 	'LANGUAGE_PACK_LOCALNAME'			=> 'Paikallinen nimi',
@@ -71,8 +71,8 @@ $lang = array_merge($lang, array(
 	'NO_REMOVE_DEFAULT_LANG'		=> 'Et voi poistaa oletuskieltä.<br />Jos haluat poistaa tämän kielipaketin, vaihda oletuskieli ensin.',
 	'NO_UNINSTALLED_LANGUAGE_PACKS'	=> 'Ei poistettuja kielipaketteja',
 
-	'THOSE_MISSING_LANG_FILES'			=> 'Nämä kielipaketin tarvitsemat tiedostot puuttuvat kielen %s hakemistosta',
-	'THOSE_MISSING_LANG_VARIABLES'		=> 'Nämä kielitiedoston muuttujat puuttuvat <strong>%s</strong> kielipaketista',
+	'THOSE_MISSING_LANG_FILES'			=> 'Nämä kielipaketin tarvitsemat tiedostot puuttuvat kielen “%s” hakemistosta',
+	'THOSE_MISSING_LANG_VARIABLES'		=> 'Nämä kielitiedoston muuttujat puuttuvat “%s” kielipaketista',
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Poistetut kielipaketit',
 ));

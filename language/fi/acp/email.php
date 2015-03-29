@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 
 // Email settings
 $lang = array_merge($lang, array(
-	'ACP_MASS_EMAIL_EXPLAIN'		=> 'Täältä voit lähettää sähköpostia kaikille käyttäjille, tai vain tietylle käyttäjäryhmälle. Sähköpostiviesti lähetetään käyttäen ylläpitäjän sähköpostiosoitetta lähettäjänä ja lähettämällä jokainen viesti piilokopiona (BCC). Mikäli lähetät viestin käyttäjäryhmälle, jossa on paljon jäseniä, odota rauhassa äläkä keskeytä toimintoa ennen kuin se on valmis. On aivan normaalia, että sähköpostin lähetykseen kuluu aikaa. Saat ilmoituksen, kun viestit ovat lähetetyt.',
+	'ACP_MASS_EMAIL_EXPLAIN'		=> 'Täältä voit lähettää sähköpostia kaikille käyttäjille, tai vain tietylle käyttäjäryhmälle, <strong>jotka ovat valinneet haluavansa vastaanottaa sähköposteja</strong>. Sähköpostiviesti lähetetään käyttäen ylläpitäjän sähköpostiosoitetta lähettäjänä ja lähettämällä jokainen viesti piilokopiona (BCC). Oletuksena viestiin sisällytetään vain 20 vastaanottajaa ja mikäli vastaanottajia on enemmän, lähetetään useampi sähköposti. Mikäli lähetät viestin käyttäjäryhmälle, jossa on paljon jäseniä, odota rauhassa äläkä keskeytä toimintoa ennen kuin se on valmis. On aivan normaalia, että sähköpostin lähetykseen kuluu aikaa. Saat ilmoituksen, kun viestit ovat lähetetyt.',
 	'ALL_USERS'						=> 'Kaikki käyttäjät',
 
 	'COMPOSE'				=> 'Luo uusi',

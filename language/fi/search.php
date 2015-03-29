@@ -65,8 +65,8 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'Kirjaudu sisään katsoaksesi edellisen käynnin jälkeen tulleita viestejä.',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
-		1	=> 'Annoit liian monta hakusanaa, max. %1$d kpl.',
-		2	=> 'Annoit liian monta hakusanaa, max. %1$d kpl.',
+		1	=> 'Annoit liian monta hakusanaa. Anna enintään %1$d sanaa.',
+		2	=> 'Annoit liian monta hakusanaa. Anna enintään %1$d sanaa.',
 	),
 
 	'NO_KEYWORDS'			=> 'Anna ainakin yksi sana haettavaksi. Jokainen sana täytyy olla vähintään %s merkkiä pitkä ja siinä ei saa olla enempää kuin %s merkkiä, poisluettuna jokerimerkit.',
@@ -120,7 +120,7 @@ $lang = array_merge($lang, array(
 	'SPHINX_SEARCH_FAILED_LOG'	=> 'Haku epäonnistui, lisätietoja voit katsoa virhelokista.',
 
 	'TOO_FEW_AUTHOR_CHARS'	=> array(
-		1	=> 'Anna vähintään %d merkkiä kirjoittajan nimestä.',
+		1	=> 'Anna vähintään %d merkki kirjoittajan nimestä.',
 		2	=> 'Anna vähintään %d merkkiä kirjoittajan nimestä.',
 	),
 ));

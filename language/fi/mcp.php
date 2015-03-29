@@ -125,7 +125,7 @@ $lang = array_merge($lang, array(
 	'LEAVE_SHADOW'				=> 'Jätä varjoaihe',
 	'LIST_REPORTS'				=> array(
 		1	=> '%d ilmoitus',
-		2	=> '%d ilmoitukset',
+		2	=> '%d ilmoitusta',
 	),
 	'LOCK'						=> 'Lukitse',
 	'LOCK_POST_POST'			=> 'Lukitse viesti',
@@ -148,9 +148,9 @@ $lang = array_merge($lang, array(
 	'MCP_ADD'						=> 'Lisää varoitus',
 
 	'MCP_BAN'					=> 'Porttikiellot',
-	'MCP_BAN_EMAILS'			=> 'sähköpostille',
-	'MCP_BAN_IPS'				=> 'IP-osoitteelle',
-	'MCP_BAN_USERNAMES'			=> 'käyttäjätunnukselle',
+	'MCP_BAN_EMAILS'			=> 'Porttikielto sähköpostille',
+	'MCP_BAN_IPS'				=> 'Porttikielto IP-osoitteelle',
+	'MCP_BAN_USERNAMES'			=> 'Porttikielto tunnukselle',
 
 	'MCP_LOGS'						=> 'Valvojien lokitiedot',
 	'MCP_LOGS_FRONT'				=> 'Etusivu',
@@ -239,7 +239,7 @@ $lang = array_merge($lang, array(
 	'NOT_MODERATOR'					=> 'Et ole tämän alueen valvoja',
 	'NO_DESTINATION_FORUM'			=> 'Valitse kohdealue',
 	'NO_DESTINATION_FORUM_FOUND'	=> 'Kohdealuetta ei ole saatavilla.',
-	'NO_ENTRIES'					=> 'Ei lokitietoja tältä ajalta',
+	'NO_ENTRIES'					=> 'Ei lokitietoja',
 	'NO_FEEDBACK'					=> 'Tästä käyttäjästä ei ole viestejä',
 	'NO_FINAL_TOPIC_SELECTED'		=> 'Anna kohde yhdistettäville viestiketjuille',
 	'NO_MATCHES_FOUND'				=> 'Ei vastaavia',
@@ -270,7 +270,7 @@ $lang = array_merge($lang, array(
 	'PM_REPORTS_TOTAL'			=> array(
 		0	=> 'Ei yksityisviesti ilmoituksia.',
 		1	=> 'Yhteensä <strong>1</strong> yksityisviestin ilmoitus.',
-		2	=> 'Yhteensä <strong>%d</strong> yksityisviestien ilmoituksia.',
+		2	=> 'Yhteensä <strong>%d</strong> yksityisviestien ilmoitusta.',
 	),
 	'PM_REPORT_DETAILS'			=> 'Yksityisviesti ilmoituksen tiedot',
 	'POSTER'					=> 'Kirjoittaja',
