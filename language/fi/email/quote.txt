@@ -1,4 +1,4 @@
-Asia: Aiheeseen vastattu ilmoitus - "{TOPIC_TITLE}"
+Subject: Aiheeseen vastattu ilmoitus - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 

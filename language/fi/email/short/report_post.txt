@@ -1,4 +1,4 @@
-Asia: Viestin ilmoitus - "{TOPIC_TITLE}"
+Subject: Viestin ilmoitus - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 

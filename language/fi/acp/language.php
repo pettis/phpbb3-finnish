@@ -58,7 +58,7 @@ $lang = array_merge($lang, array(
 	'LANG_ISO_CODE'						=> 'ISO-koodi',
 	'LANG_LOCAL_NAME'					=> 'Paikallinen nimi',
 
-	'MISSING_LANG_FILES'		=> 'Kielipaketti puuttuu: <span style="color:red">%s</span>',
+	'MISSING_LANG_FILES'		=> 'Puuttuvat kielitiedostot',
 	'MISSING_LANG_VARIABLES'	=> 'Puuttuvat muuttujat',
 
 	'NO_FILE_SELECTED'				=> 'Et ole määritellyt kielitiedostoa.',

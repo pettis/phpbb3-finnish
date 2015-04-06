@@ -1,4 +1,4 @@
-Asia: Aiheen valvonnan ilmoitus - "{TOPIC_TITLE}"
+Subject: Aiheen valvonnan ilmoitus - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 

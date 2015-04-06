@@ -270,6 +270,6 @@ $lang = array_merge($lang, array(
 	'VIEW_MESSAGE'				=> '%sNäytä lähettämäsi viesti%s',
 	'VIEW_PRIVATE_MESSAGE'		=> '%sNäytä lähettämäsi yksityisviesti%s',
 
-	'WRONG_FILESIZE'			=> 'Liian suuri tiedosto. Enimmäiskoko on %1d %2s',
+	'WRONG_FILESIZE'			=> 'Liian suuri tiedosto. Enimmäiskoko on %1$d %2$s',
 	'WRONG_SIZE'				=> 'Kuvan täytyy olla vähintään %1$s leveä, %2$s korkea ja enintään %3$s %4$s korkea. Lähettämäsi kuva on %5$s leveä ja %6$s korkea.',
 ));

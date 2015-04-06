@@ -1,4 +1,4 @@
-Asia: Yksityis viestin raportti - "{TOPIC_TITLE}"
+Subject: Yksityis viestin raportti - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 
