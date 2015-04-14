@@ -3,9 +3,9 @@ Finnish Translation for phpBB 3.1
 
 Translators
 ---
-Lurttinen
-harritapio
-Pettis
-Coder
-Potku
-n.lintulaakso
+* Lurttinen
+* harritapio
+* Pettis
+* Coder
+* Potku
+* n.lintulaakso
