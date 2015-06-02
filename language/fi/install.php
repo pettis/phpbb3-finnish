@@ -73,7 +73,7 @@ $lang = array_merge($lang, array(
 	'CONFIG_RETRY'				=> 'Yritä uudelleen',
 	'CONTINUE_CONVERT'			=> 'Jatka muunnosta',
 	'CONTINUE_CONVERT_BODY'		=> 'Asennus on havainnut keskeytyneen muunnosyrityksen. Voit valita haluatko jatkaa edellistä muunnosta tai aloittaa alusta.',
-	'CONTINUE_LAST'				=> 'Jatka viimeisista lausekkeista',
+	'CONTINUE_LAST'				=> 'Jatka viimeisistä lausekkeista',
 	'CONTINUE_OLD_CONVERSION'	=> 'Jatka keskeytynyttä muunnosta',
 	'CONVERT'					=> 'Muunna',
 	'CONVERT_COMPLETE'			=> 'Muunnos on valmis',
@@ -271,7 +271,7 @@ $lang = array_merge($lang, array(
 	'MAKE_FOLDER_WRITABLE'		=> 'Varmista, että tämä hakemisto on olemassa palvelimella, ja että siihen voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
 	'MAKE_FOLDERS_WRITABLE'		=> 'Varmista, että nämä hakemistot ovat olemassa palvelimella, ja että niihin voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
 
-	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Käyttämäsi MySQL tietokanta on liian vanha phpBB:lle. phpBB tunnisti version MySQL 3.x/4.x, mutta palvelimessa on MySQL %2$s.<br /><strong>Ennenkuin päivität versiota pitää sinun päivittää tietokantarakenne.</strong><br /><br />Ohjeet MySQL-tietokannan päivittämiseen löytyvät <a href="https://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">MySQL:n päivittämiseen liittyvästä tietopankkiartikkelista</a>. Jos tarvitset apua, voit käyttää <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumia</a>.',
+	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Käyttämäsi MySQL tietokanta on liian vanha phpBB:lle. phpBB tunnisti version MySQL 3.x/4.x, mutta palvelimessa on MySQL %2$s.<br /><strong>Ennen kuin päivität versiota pitää sinun päivittää tietokantarakenne.</strong><br /><br />Ohjeet MySQL-tietokannan päivittämiseen löytyvät <a href="https://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">MySQL:n päivittämiseen liittyvästä tietopankkiartikkelista</a>. Jos tarvitset apua, voit käyttää <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumia</a>.',
 
 	'NAMING_CONFLICT'			=> 'Nimeämisvirhe: %s ja %s ovat kummatkin aliaksia<br /><br />%s',
 	'NEXT_STEP'					=> 'Jatka seuraavaan vaiheeseen',
@@ -282,7 +282,7 @@ $lang = array_merge($lang, array(
 	'NO_LOCATION'				=> 'En löytänyt. Mikäli tiedät, että ImageMagick on asennettuna, voit määritellä sen asennuspolun myöhemmin ylläpidon asetuksissa.',
 	'NO_TABLES_FOUND'			=> 'En löytänyt tauluja.',
 	
-	'OVERVIEW_BODY'				=> 'Tervetuloa phpBB3-ohjelmaan<br /><br />phpBB™ on maailman käytetyin avoimen lähdekoodin keskustelufoorumiohjelmisto. phpBB3 on uusin versio seitsemän vuoden olemassaolonsa aikana. Kuten edeltäjänsäkin, phpBB3 on täynnä ominaisuuksia ja erittäin käyttäjäystävällinen. Lisäksi se on phpBB Teamin tukema. phpBB3 parantaa niitä ominaisuuksia, jotka tekivät phpBB2:sta suositun ja siihen on lisätty ominaisuuksia, joita ei ollut aiemmissa versioissa. Toivomme, että ylitämme odotuksesi.<br /><br />Tämä asennusohjelma opastaa sinua asentamaan phpBB3:n, päivittämään aiemmasta phpBB3:n versiosta uusimpaan ja myös siirtymään muista keskustelufoorumiohjelmistoista (mukaanlukien phpBB2) phpBB3:n käyttäjäksi. Saadaksesi lisätietoja ole hyvä ja lue <a href="../docs/INSTALL.html">asennusohje</a>.<br /><br />Lukeaksesi ohjelmistolisenssin tai saadaksesi tietoa käyttötuesta ja meidän roolistamme, ole hyvä ja valitse asiaankuuluva vaihtoehto sivupalkista. Jatkaaksesi eteenpäin valitse haluamasi toiminto yläpuolella olevista välilehdistä.',
+	'OVERVIEW_BODY'				=> 'Tervetuloa phpBB3-ohjelmaan<br /><br />phpBB™ on maailman käytetyin avoimen lähdekoodin keskustelufoorumiohjelmisto. phpBB3 on uusin versio seitsemän vuoden olemassaolonsa aikana. Kuten edeltäjänsäkin, phpBB3 on täynnä ominaisuuksia ja erittäin käyttäjäystävällinen. Lisäksi se on phpBB Teamin tukema. phpBB3 parantaa niitä ominaisuuksia, jotka tekivät phpBB2:sta suositun ja siihen on lisätty ominaisuuksia, joita ei ollut aiemmissa versioissa. Toivomme, että ylitämme odotuksesi.<br /><br />Tämä asennusohjelma opastaa sinua asentamaan phpBB3:n, päivittämään aiemmasta phpBB3:n versiosta uusimpaan ja myös siirtymään muista keskustelufoorumiohjelmistoista (mukaan lukien phpBB2) phpBB3:n käyttäjäksi. Saadaksesi lisätietoja ole hyvä ja lue <a href="../docs/INSTALL.html">asennusohje</a>.<br /><br />Lukeaksesi ohjelmistolisenssin tai saadaksesi tietoa käyttötuesta ja meidän roolistamme, ole hyvä ja valitse asiaankuuluva vaihtoehto sivupalkista. Jatkaaksesi eteenpäin valitse haluamasi toiminto yläpuolella olevista välilehdistä.',
 	
 	'PCRE_UTF_SUPPORT'				=> 'PCRE UTF-8 -tuki',
 	'PCRE_UTF_SUPPORT_EXPLAIN'		=> 'phpBB <strong>ei toimi</strong> mikäli palvelimella oleva PHP ei ole käännetty PCRE-laajennusosan UTF-8 -tuen kanssa.',
@@ -293,7 +293,7 @@ $lang = array_merge($lang, array(
 	'PHP_OPTIONAL_MODULE'			=> 'Valinnaiset moduulit',
 	'PHP_OPTIONAL_MODULE_EXPLAIN'	=> '<strong>Valinnainen</strong> - Nämä moduulit tai sovellukset ovat valinnaisia. Et tarvitse näitä käyttääksesi phpBB 3.0 -ohjelmistoa, mutta mikäli nämä ovat saatavilla, ne antavat enemmän toimintoja keskustelufoorumin käyttämiseen.',
 	'PHP_SUPPORTED_DB'				=> 'Tuetut tietokannat',
-	'PHP_SUPPORTED_DB_EXPLAIN'		=> '<strong>Pakollinen</strong> - Täytyy olla vähintään yksi PHP:n kanssa yhteensopiva tietokanta. Mikäli tässä ei näy yhtään tietokantamoduulia, sinun täytyy ottaa yhteys palveluntajoajaasi tai tutkia käyttämäsi PHP-version asennusohjeita saadaksesi neuvoja.',
+	'PHP_SUPPORTED_DB_EXPLAIN'		=> '<strong>Pakollinen</strong> - Täytyy olla vähintään yksi PHP:n kanssa yhteensopiva tietokanta. Mikäli tässä ei näy yhtään tietokantamoduulia, sinun täytyy ottaa yhteys palveluntarjoajaasi tai tutkia käyttämäsi PHP-version asennusohjeita saadaksesi neuvoja.',
 	'PHP_REGISTER_GLOBALS'			=> 'PHP-asetus "register_globals" on poissa käytöstä',
 	'PHP_REGISTER_GLOBALS_EXPLAIN'	=> 'phpBB toimii vaikka tämä asetus on käytössä, mutta mikäli mahdollista, on suositeltavaa, että register_globals on poissa käytöstä tietoturvasyistä johtuen.',
 	'PHP_SAFE_MODE'					=> 'Safe mode',
@@ -342,7 +342,7 @@ $lang = array_merge($lang, array(
 	'SUB_LICENSE'				=> 'Lisenssi',
 	'SUB_SUPPORT'				=> 'Tuki',
 	'SUCCESSFUL_CONNECT'		=> 'Yhteydenotto onnistui',
-	'SUPPORT_BODY'				=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=486">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=451">laajennosten foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=471">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajantasalla ja saadaksesi uutiset uusimmista versioista. Mikset liittyisi <a href="https://www.phpbb.com/support/">postituslistallemme</a>?<br /><br />',
+	'SUPPORT_BODY'				=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=486">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=451">laajennosten foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=471">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajan tasalla ja saadaksesi uutiset uusimmista versioista. Mikset liittyisi <a href="https://www.phpbb.com/support/">postituslistallemme</a>?<br /><br />',
 	'SYNC_FORUMS'				=> 'Aloitetaan keskustelualueiden synkronointi',
 	'SYNC_POST_COUNT'			=> 'Synkronoin post_counts',
 	'SYNC_POST_COUNT_ID'		=> 'Synkronoin post_counts <var>entry</var> %1$s, %2$s:sta.',
@@ -370,32 +370,32 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat ajantasalla uusimman phpBB-version kanssa.',
+	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat ajan tasalla uusimman phpBB-version kanssa.',
 	'ARCHIVE_FILE'				=> 'Lähdetiedosto arkistotiedostosta',
 
  	'BACK'				=> 'Takaisin',
 	'BINARY_FILE'		=> 'Binääritiedosto',
 	'BOT'				=> 'Spider/Robot',
 
-	'CHANGE_CLEAN_NAMES'			=> 'Menetelmä, joka varmistaa, että sama käyttäjätunnus ei ole käytössä useammalla käyttäjällä on muuttunut. Joillain käyttäjilla on sama nimi, kun heidät tarkistetaan uudella menetelmällä. Jatkamista varten nämä käyttäjätunnukset tulee joko poistaa tai nimetä uudelleen, jotta vain yksi tällainen nimi on olemassa.',
+	'CHANGE_CLEAN_NAMES'			=> 'Menetelmä, joka varmistaa, että sama käyttäjätunnus ei ole käytössä useammalla käyttäjällä on muuttunut. Joillain käyttäjillä on sama nimi, kun heidät tarkistetaan uudella menetelmällä. Jatkamista varten nämä käyttäjätunnukset tulee joko poistaa tai nimetä uudelleen, jotta vain yksi tällainen nimi on olemassa.',
 	'CHECK_FILES'					=> 'Tarkista tiedostot',
 	'CHECK_FILES_AGAIN'				=> 'Tarkista tiedostot uudelleen',
 	'CHECK_FILES_EXPLAIN'			=> 'Seuraavassa vaiheessa kaikki tiedostot tarkistetaan päivitysversioita vastaan - Tässä saattaa kestää hetken aikaa, jos tämä on ensimmäinen tarkistuskerta.',
-	'CHECK_FILES_UP_TO_DATE'		=> 'Tietokannan mukaan asennuksesi on ajantasalla. Voit halutessasi suorittaa tiedostojen tarkistuksen varmistaaksesi, että myös nämä ovat ajantasalla.',
+	'CHECK_FILES_UP_TO_DATE'		=> 'Tietokannan mukaan asennuksesi on ajan tasalla. Voit halutessasi suorittaa tiedostojen tarkistuksen varmistaaksesi, että myös nämä ovat ajan tasalla.',
 	'CHECK_UPDATE_DATABASE'			=> 'Jatka päivitystä',
 	'COLLECTED_INFORMATION'			=> 'Tiedostoista kerätyt tiedot',
 	'COLLECTED_INFORMATION_EXPLAIN'	=> 'Alapuolella näkyy lista tiedostoista, jotka vaativat päivittämistä. Lue tiedot jokaisen tiedoston tilasta nähdäksesi tarpeelliset toimenpiteet tiedoston päivittämiseksi.',
 	'COLLECTING_FILE_DIFFS'			=> 'Kerään tiedostojen eroavaisuuksia',
-	'COMPLETE_LOGIN_TO_BOARD'		=> '<a href="../ucp.php?mode=login">Kirjaudu sisään keskustelufoorumillesi</a> ja tarkista, että kaikki toimii normaalisti. Älä unohda poistaa, siirtää tai uudelleennimetä /install-hakemistoa!',
+	'COMPLETE_LOGIN_TO_BOARD'		=> '<a href="../ucp.php?mode=login">Kirjaudu sisään keskustelufoorumillesi</a> ja tarkista, että kaikki toimii normaalisti. Älä unohda poistaa, siirtää tai uudelleen nimetä /install-hakemistoa!',
 	'CONTINUE_UPDATE_NOW'			=> 'Jatka päivittämistä',
 	'CONTINUE_UPDATE'				=> 'Jatka päivittämistä',					// Shown after file upload to indicate the update process is not yet finished
 	'CURRENT_FILE'					=> 'Konfliktin alku - Alkuperäinen koodi ennen päivitystä',
 	'CURRENT_VERSION'				=> 'Tämänhetkinen versio',
 
 	'DATABASE_TYPE'						=> 'Tietokannan tyyppi',
-	'DATABASE_UPDATE_COMPLETE'			=> 'Tietokanna päivitys valmis!',
+	'DATABASE_UPDATE_COMPLETE'			=> 'Tietokannan päivitys valmis!',
 	'DATABASE_UPDATE_CONTINUE'			=> 'Jatka tietokannan päivitystä',
-	'DATABASE_UPDATE_INFO_OLD'			=> 'install-hakemistossa oleva tietokannan päivitystiedosto ei ole ajantasalla. Varmista, että olet siirtänyt palvelimelle oikean version tuosta tiedostosta.',
+	'DATABASE_UPDATE_INFO_OLD'			=> 'install-hakemistossa oleva tietokannan päivitystiedosto ei ole ajan tasalla. Varmista, että olet siirtänyt palvelimelle oikean version tuosta tiedostosta.',
 	'DATABASE_UPDATE_NOT_COMPLETED'		=> 'Tietokannan päivitys käynnissä.',
 	'DELETE_USER_REMOVE'				=> 'Poista käyttäjä ja viestit',
 	'DELETE_USER_RETAIN'				=> 'Poista käyttäjä, mutta säilytä viestit',
@@ -417,7 +417,7 @@ $lang = array_merge($lang, array(
 
 	'EDIT_USERNAME'	=> 'Muokkaa käyttäjätunnusta',
 	'ERROR'			=> 'Virhe',
-	'EVERYTHING_UP_TO_DATE'		=> 'Kaikki kunnossa viimeisimmän phpBB version kanssa. Kirjaudu <a href="%1$s">palstalle</a> ja tarkista että kaikki toimii hyvin. Muista poistaa tai nimetä uudelleen install kirjasto. Lähetä päivitetty tieto palstan ja palvelimen asetuksista <a href="%2$s">lähetä tila</a> painikkeesta ACP:ssä.',
+	'EVERYTHING_UP_TO_DATE'		=> 'Kaikki kunnossa viimeisimmän phpBB version kanssa. Kirjaudu <a href="%1$s">palstalle</a> ja tarkista että kaikki toimii hyvin. Muista poistaa tai nimetä uudelleen install-hakemisto. Lähetä päivitetty tieto palstan ja palvelimen asetuksista <a href="%2$s">lähetä tila</a> painikkeesta ACP:ssä.',
 
 	'FILE_ALREADY_UP_TO_DATE'		=> 'Tiedosto on jo päivitetty',
 	'FILE_DIFF_NOT_ALLOWED'			=> 'Tiedoston vertailua ei ole sallittu',
@@ -427,11 +427,11 @@ $lang = array_merge($lang, array(
 	'FILES_DELETED'					=> 'Poistetut tiedostot',
 	'FILES_DELETED_EXPLAIN'			=> 'Seuraavat tiedostot ovat tarpeettomia uudessa versiossa. Ne on poistettu asennuksen yhteydessä.',
 	'FILES_MODIFIED'				=> 'Muokatut tiedostot',
-	'FILES_MODIFIED_EXPLAIN'		=> 'Nämä tiedostot ovat muokattuja ja eivät ole kelvollisia vertailutiedostoja alkuperäiseen asenukseen. Päivitetty tiedosto on yhdistelmä vanhaa tiedostoa ja uusia tiedostoja.',
+	'FILES_MODIFIED_EXPLAIN'		=> 'Nämä tiedostot ovat muokattuja ja eivät ole kelvollisia vertailutiedostoja alkuperäiseen asennukseen. Päivitetty tiedosto on yhdistelmä vanhaa tiedostoa ja uusia tiedostoja.',
 	'FILES_NEW'						=> 'Uudet tiedostot',
 	'FILES_NEW_EXPLAIN'				=> 'Näitä tiedostoja ei ole olemassa tämänhetkisessä asennuksessasi.',
 	'FILES_NEW_CONFLICT'			=> 'Uudet konfliktin aiheuttavat tiedostot',
-	'FILES_NEW_CONFLICT_EXPLAIN'	=> 'Nämä tiedostot ovat uusinta versiota, mutta saman niminen tiedosto on jo olemassa samassa paikassa. Tämä tiedosto ylikirjoittaa vanhan tiedoston.',
+	'FILES_NEW_CONFLICT_EXPLAIN'	=> 'Nämä tiedostot ovat uusinta versiota, mutta samanniminen tiedosto on jo olemassa samassa paikassa. Tämä tiedosto ylikirjoittaa vanhan tiedoston.',
 	'FILES_NOT_MODIFIED'			=> 'Muokkaamattomat tiedostot',
 	'FILES_NOT_MODIFIED_EXPLAIN'	=> 'Näitä tiedostoja ei ole muokattu ja ne ovat kelvollisia tiedostoja päivitykseen.',
 	'FILES_UP_TO_DATE'				=> 'Nämä tiedostot ovat jo päivitetty',
@@ -439,7 +439,7 @@ $lang = array_merge($lang, array(
 	'FTP_SETTINGS'					=> 'FTP-asetukset',
 	'FTP_UPDATE_METHOD'				=> 'FTP-siirto palvelimelle',
 
-	'INCOMPATIBLE_UPDATE_FILES'		=> 'Löydetyt päivitystiedostot eivät ole yhteensopivia käyttämäsi version kanssa. Käytössäsi oleva versio on %1$s ja käytössäsi oleva tiedosto on takoitettu päivittämään %2$s -> %3$s.',
+	'INCOMPATIBLE_UPDATE_FILES'		=> 'Löydetyt päivitystiedostot eivät ole yhteensopivia käyttämäsi version kanssa. Käytössäsi oleva versio on %1$s ja käytössäsi oleva tiedosto on tarkoitettu päivittämään %2$s -> %3$s.',
 	'INCOMPLETE_UPDATE_FILES'		=> 'Päivitystiedosto on vajaa',
 	'INLINE_UPDATE_SUCCESSFUL'		=> 'Tietokannan päivittäminen onnistui. Voit jatkaa päivitystä eteenpäin',
 
@@ -458,7 +458,7 @@ $lang = array_merge($lang, array(
 	'MERGE_MODIFICATIONS_OPTION'	=> 'Yhdistä muutokset',
 
 	'MERGE_NO_MERGE_NEW_OPTION'		=> 'Älä yhdistä - käytä uutta tiedostoa',
-	'MERGE_NO_MERGE_MOD_OPTION'		=> 'Älä yhdistä - käytä jo olemassaolevaa tiedostoa',
+	'MERGE_NO_MERGE_MOD_OPTION'		=> 'Älä yhdistä - käytä jo olemassa olevaa tiedostoa',
 	'MERGE_MOD_FILE_OPTION'      	=> 'Yhdistä muutokset (Hävitä uusi phpBB-koodi konfliktista)',
 	'MERGE_NEW_FILE_OPTION'      	=> 'Yhdistä muutokset (Hävitä konfliktin aiheuttava muuttunut koodi)',
 	'MERGE_SELECT_ERROR'      		=> 'Konfliktin yhdistämistapa on valittu väärin.',
@@ -471,8 +471,8 @@ $lang = array_merge($lang, array(
 	'NO_ERRORS'						=> 'Ei virheitä',
 	'NO_UPDATE_FILES'				=> 'Näitä tiedostoja ei päivitetä',
 	'NO_UPDATE_FILES_EXPLAIN'		=> 'Nämä tiedostot ovat uusia tai muokattuja, mutta kohdehakemistoa ei löytynyt. Mikäli tässä listassa on muita hakemistoja, kuin language/ tai styles/, hakemistorakenteesi saattaa olla muutettu ja päivitys voi jäädä vaillinaiseksi.',
-	'NO_UPDATE_FILES_OUTDATED'		=> 'En löytänyt kelvollista päivityshakemistoa. Ole hyvä ja tarkista, että olet siirtänyt tarvittavat tiedostot palvelimelle.<br /><br />Käyttämäsi versio <strong>Ei ole</strong> ajantasalla. Käyttämääsi phpBB %1$s -versioon on saatavilla päivityksiä. Ole hyvä ja vieraile osoitteessa <a href="https://www.phpbb.com/downloads.php" rel="external">https://www.phpbb.com/downloads.php</a> sadaksesi oikean paketin päivittääksesi käytössä olevan %2$s version uudempaan %3$s-versioon.',
-	'NO_UPDATE_FILES_UP_TO_DATE'	=> 'Käyttämäsi versio on ajantasalla ja päivitystyökalun ajamiseen ei ole tarvetta. Mikäli haluat tarkistaa käyttämiesi tiedostojen eheyden. Ole hyvä ja tarkista, että olet siirtänyt oikeat tiedostot palvelimelle.',
+	'NO_UPDATE_FILES_OUTDATED'		=> 'En löytänyt kelvollista päivityshakemistoa. Ole hyvä ja tarkista, että olet siirtänyt tarvittavat tiedostot palvelimelle.<br /><br />Käyttämäsi versio <strong>Ei ole</strong> ajan tasalla. Käyttämääsi phpBB %1$s -versioon on saatavilla päivityksiä. Ole hyvä ja vieraile osoitteessa <a href="https://www.phpbb.com/downloads.php" rel="external">https://www.phpbb.com/downloads.php</a> sadaksesi oikean paketin päivittääksesi käytössä olevan %2$s version uudempaan %3$s-versioon.',
+	'NO_UPDATE_FILES_UP_TO_DATE'	=> 'Käyttämäsi versio on ajan tasalla ja päivitystyökalun ajamiseen ei ole tarvetta. Mikäli haluat tarkistaa käyttämiesi tiedostojen eheyden. Ole hyvä ja tarkista, että olet siirtänyt oikeat tiedostot palvelimelle.',
 	'NO_UPDATE_INFO'				=> 'En löytänyt päivitystiedoston tietoja.',
 	'NO_UPDATES_REQUIRED'			=> 'Päivitykset eivät ole tarpeellisia',
 	'NO_VISIBLE_CHANGES'			=> 'Ei näkyviä muutoksia',
@@ -492,7 +492,7 @@ $lang = array_merge($lang, array(
 	'RESULT'					=> 'Tulos',
 	'RUN_DATABASE_SCRIPT'		=> 'Päivitä tietokanta',
 	
-	'SELECT_DIFF_MODE'			=> 'Valitse vertailun moodi',
+	'SELECT_DIFF_MODE'			=> 'Valitse vertailutapa',
 	'SELECT_DOWNLOAD_FORMAT'	=> 'Valitse ladattavan paketin formaatti',
 	'SELECT_FTP_SETTINGS'		=> 'Valitse FTP-asetukset',
 	'SHOW_DIFF_CONFLICT'		=> 'Näytä erot/konfliktit',
@@ -518,7 +518,7 @@ $lang = array_merge($lang, array(
 	'STATUS_UP_TO_DATE'			=> 'Tämä tiedosto on jo päivitetty',
 
 	'TOGGLE_DISPLAY'			=> 'Näytä/Piilota tiedostolista',
-	'TRY_DOWNLOAD_METHOD'		=> 'Saatat haluata ladata muuttuneet tiedostot omalle koneellesi.<br />Tämä tapa toimii varmemmin ja on myös suositeltu tapa.',
+	'TRY_DOWNLOAD_METHOD'		=> 'Saatat haluta ladata muuttuneet tiedostot omalle koneellesi.<br />Tämä tapa toimii varmemmin ja on myös suositeltu tapa.',
 	'TRY_DOWNLOAD_METHOD_BUTTON'		=> 'Yritä tätä tapaa',
 
 	'UPDATE_COMPLETED'				=> 'Päivitys on suoritettu',
@@ -570,12 +570,12 @@ $lang = array_merge($lang, array(
 	'USER_INACTIVE'					=> 'Suljettu käyttäjätunnus',
 
 	'VERSION_CHECK'					=> 'Version tarkistus',
-	'VERSION_CHECK_EXPLAIN'			=> 'Tarkistaa onko keskustelufoorumisi ajantasalla.',
-	'VERSION_NOT_UP_TO_DATE'		=> 'Keskustelufoorumisi ei ole ajantasalla. Ole hyvä ja jatka päivitystä.',
-	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Keskustelufoorumisi ei ole ajantasalla.<br />Alapuolella on linkki julkaisuteidotteeseen, josta saat lisää tietoa ja ohjeita.',
-	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Keskustelufoorumisi ei ole ajantasalla.',
-	'VERSION_UP_TO_DATE'			=> 'Keskustelufoorumisi on ajantasalla. Voit jatkaa tiedostojen tarkistusta, vaikka uusia versioita ei ole saatavilla.',
-	'VERSION_UP_TO_DATE_ACP'		=> 'Keskustelufoorumisi on ajantasalla. Uusia päivityksiä ei ole saatavilla.',
+	'VERSION_CHECK_EXPLAIN'			=> 'Tarkistaa onko keskustelufoorumisi ajan tasalla.',
+	'VERSION_NOT_UP_TO_DATE'		=> 'Keskustelufoorumisi ei ole ajan tasalla. Ole hyvä ja jatka päivitystä.',
+	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Keskustelufoorumisi ei ole ajan tasalla.<br />Alapuolella on linkki julkaisuteidotteeseen, josta saat lisää tietoa ja ohjeita.',
+	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Keskustelufoorumisi ei ole ajan tasalla.',
+	'VERSION_UP_TO_DATE'			=> 'Keskustelufoorumisi on ajan tasalla. Voit jatkaa tiedostojen tarkistusta, vaikka uusia versioita ei ole saatavilla.',
+	'VERSION_UP_TO_DATE_ACP'		=> 'Keskustelufoorumisi on ajan tasalla. Uusia päivityksiä ei ole saatavilla.',
 	'VIEWING_FILE_CONTENTS'			=> 'Katselee tiedoston sisältöä',
 	'VIEWING_FILE_DIFF'				=> 'Katselee tiedoston muutoksia',
 
