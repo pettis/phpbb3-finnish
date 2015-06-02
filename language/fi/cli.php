@@ -33,7 +33,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'CLI_CONFIG_CANNOT_CACHED'			=> 'Valitse tämä asetus jos konfigurointi muuttuu niin nopeasti ettei sitä ole cache muistissa.',
-	'CLI_CONFIG_CURRENT'				=> 'Nykyinen asetusarvo, käytä 0 tai 1 (boolen luku) sen tilalla',
+	'CLI_CONFIG_CURRENT'				=> 'Nykyinen asetusarvo, käytä 0 tai 1 (boolean luku) sen tilalla',
 	'CLI_CONFIG_DELETE_SUCCESS'			=> 'Asetus poistettu onnistuneesti: %s.',
 	'CLI_CONFIG_NEW'					=> 'Uusi asetusarvo, käytä 0 tai 1 lukua',
 	'CLI_CONFIG_NOT_EXISTS'				=> 'Asetusarvoa %s ei ole määritelty',
