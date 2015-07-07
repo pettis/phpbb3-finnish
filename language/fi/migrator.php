@@ -48,6 +48,13 @@ $lang = array_merge($lang, array(
 	'MIGRATION_NOT_VALID'				=> '%s ei ole hyväksyttävä asennus.',
 	'MIGRATION_SCHEMA_DONE'				=> 'Asennettu kaavio: %1$s; aika: %2$.2f sekuntia',
 	'MIGRATION_SCHEMA_RUNNING'			=> 'Asennan kaaviota: %s.',
+	
+	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Muunnos on virheellinen. Ehtolausekkeen apurista puuttuu ehto.',
+	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'Muunnos on virheellinen. Ehtolausekkeen apurista puuttuu toimiva muunnosvaiheen kutsu.',
+	'MIGRATION_INVALID_DATA_CUSTOM_NOT_CALLABLE'	=> 'Muunnos on virheellinen. Mukautettua kutsuttavaa funktiota ei pystytty kutsumaan.',
+	'MIGRATION_INVALID_DATA_UNKNOWN_TYPE'			=> 'Muunnos on virheellinen. Kohdattiin tuntematon muuntotyökalun tyyppi.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_TOOL'			=> 'Muunnos on virheellinen. Kohdattiin tuntematon muuntotyökalu.',
+	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Muunnos on virheellinen. Kohdattiin tuntematon muuntotyökalun metodi',
 
 	'MODULE_ERROR'						=> 'Virhe kun luotiin modulia: %s',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'Tarvittava modulin info tiedosto puuttuu: %2$s',

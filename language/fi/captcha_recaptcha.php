@@ -44,6 +44,6 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_PRIVATE'				=> 'Yksityinen reCaptcha-avain',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Yksityinen reCaptcha-avain. Avaimia voi hankkia osoitteesta <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 
-	'RECAPTCHA_EXPLAIN'				=> 'Haluamme sinun kirjoittavan nämä kaksi sanaa vieressä olevaan laatikkoon. Tämän on tarkoitus estää automaattista roskapostitusta.',
+	'RECAPTCHA_EXPLAIN'				=> 'Haluamme sinun kirjoittavan ohessa näkyvän tekstin alla olevaan laatikkoon. Tämän on tarkoitus estää automaattista roskapostitusta.',
 	'RECAPTCHA_SOCKET_ERROR'		=> 'Ongelma RECAPTCHA palvelussa: ei voitu avata porttia. Yritä myöhemmin uudestaan.',
 ));
