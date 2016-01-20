@@ -65,6 +65,12 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NAME'			=> 'Laajennuksen nimi',
 	'EXTENSION_ACTIONS'			=> 'Toiminta',
 	'EXTENSION_OPTIONS'			=> 'Vaihtoehdot',
+	'EXTENSION_INSTALL_HEADLINE'=> 'Laajennoksen asennus',
+	'EXTENSION_INSTALL_EXPLAIN'	=> '<ol>
+			<li>Lataa laajennus phpBB:n laajennustietokannasta</li>
+			<li>Pura laajennustiedosto ja lataa se palvelimella olevan phpBB-asennuksesi <samp>ext/</samp> hakemistoon</li>
+			<li>Kytke laajennus päälle laajennusten hallinnasta</li>
+		</ol>',
 	'EXTENSION_UPDATE_HEADLINE'	=> 'Laajennuksen päivitys',
 	'EXTENSION_UPDATE_EXPLAIN'	=> '<ol>
 			<li>Laajennuksen esto</li>
@@ -115,6 +121,8 @@ $lang = array_merge($lang, array(
 	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'Tarkista versiot uudestaan',
 	'FORCE_UNSTABLE'					=> 'Tarkista aina epävakaat versiot',
 	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Versiotarkistuksen asetukset',
+
+    'BROWSE_EXTENSIONS_DATABASE'		=> 'Selaa laajennostietokantaa',
 
 	'META_FIELD_NOT_SET'	=> 'Vaadittavaa meta kenttää %s ei ole asetettu.',
 	'META_FIELD_INVALID'	=> 'Meta kenttä %s ei käytössä.',

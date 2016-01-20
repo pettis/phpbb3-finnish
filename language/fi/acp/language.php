@@ -70,4 +70,6 @@ $lang = array_merge($lang, array(
 	'THOSE_MISSING_LANG_VARIABLES'		=> 'Nämä kielitiedoston muuttujat puuttuvat “%s” kielipaketista',
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Poistetut kielipaketit',
+
+	'BROWSE_LANGUAGE_PACKS_DATABASE'	=> 'Selaa kielipakettien tietokantaa',
 ));

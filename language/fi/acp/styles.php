@@ -80,4 +80,6 @@ $lang = array_merge($lang, array(
 	'STYLE_USED_BY'				=> 'Käyttäjien lkm',
 
 	'UNINSTALL_DEFAULT'		=> 'Et voi poistaa oletus tyyliä.',
+
+	'BROWSE_STYLES_DATABASE'	=> 'Selaa tyylien tietokantaa',
 ));
