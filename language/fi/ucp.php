@@ -336,7 +336,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TYPE_QUOTE'							=> 'Joku viittaa sinun viestissä',
 	'NOTIFICATION_TYPE_REPORT'							=> 'Joku ilmoittaa postista',
 	'NOTIFICATION_TYPE_TOPIC'							=> 'Joku aloittaa uuden aiheen forumilla johon olet kirjautunut',
-	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> 'Uudet käyttäjät tarvitsevat hyväksynnän',
+	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER'				=> 'Käyttäjä odottaa aktivointia',
 
 	'NOTIFY_METHOD'					=> 'Ilmoitustapa',
 	'NOTIFY_METHOD_BOTH'			=> 'kummatkin',

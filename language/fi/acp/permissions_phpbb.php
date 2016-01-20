@@ -152,9 +152,11 @@ $lang = array_merge($lang, array(
 	'ACL_M_SPLIT'	=> 'Voi jakaa viestiketjuja',
 	'ACL_M_MERGE'	=> 'Voi yhdistää viestiketjuja',
 
-	'ACL_M_INFO'	=> 'Voi katsoa viestin tietoja',
-	'ACL_M_WARN'	=> 'Voi antaa varoituksen<br />', // This moderator setting is only global (and not local)
-	'ACL_M_BAN'		=> 'Voi hallita porttikieltoja<br />', // This moderator setting is only global (and not local)
+	'ACL_M_INFO'		=> 'Voi tarkastella viestin tietoja',
+	'ACL_M_WARN'		=> 'Voi antaa varoituksia<br /><em>Tämä asetus asetetaan koko foorumin tasolla. Se ei ole aluekohtainen.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_PM_REPORT'	=> 'Voi sulkea ja poistaa yksityisviestien raportteja<br /><em>Tämä asetus asetetaan koko foorumin tasolla. Se ei ole aluekohtainen.</em>', // This moderator setting is only global (and not local)
+	'ACL_M_BAN'			=> 'Voi hallinnoida porttikieltoja<br /><em>Tämä asetus asetetaan koko foorumin tasolla. Se ei ole aluekohtainen.</em>', // This moderator setting is only global (and not local)
+
 ));
 
 // Admin Permissions

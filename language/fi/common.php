@@ -326,6 +326,7 @@ $lang = array_merge($lang, array(
 	'IMAGE_FILETYPE_INVALID'	=> 'Tätä kuvan tyyppiä %d mime-tyypille %s ei ole tuettu.',
 	'IMAGE_FILETYPE_MISMATCH'	=> 'Kuvatyyppi ei täsmää: odotettiin tunnistetta %1$s, mutta annettiin %2$s.',
 	'IN'						=> 'Sijainti:',
+	'INACTIVE'					=> 'Ei aktiivinen',
 	'INDEX'						=> 'Etusivu',
 	'INFORMATION'				=> 'Informaatio',
 	'INSECURE_REDIRECT'			=> 'Yritys uudelleenohjata turvattomaan url osoitteeseen.',
@@ -464,7 +465,7 @@ $lang = array_merge($lang, array(
 	'NOTIFICATION_TOPIC_DISAPPROVED'	=> '<strong>Aihe hylätty</strong>:',
 	'NOTIFICATION_TOPIC_IN_QUEUE'		=> '<strong>Aiheen hyväksyntä</strong> pyyntö %1$s:',
 	'NOTIFICATION_TYPE_NOT_EXIST'		=> 'Ilmoituksen tyyppi "%s" puuttuu tiedostojärjestelmästä.',
-	'NOTIFICATION_ADMIN_ACTIVATE_USER'	=> '<strong>Aktivointi vaaditaan</strong> uusille jäsenille: “%1$s”',
+	'NOTIFICATION_ADMIN_ACTIVATE_USER'	=> '<strong>Aktivointi vaaditaan</strong> suljettu tai uusi käyttäjä: “%1$s”',
 	// Used in conjuction with NOTIFICATION_BOOKMARK and NOTIFICATION_POST.
 	'NOTIFICATION_MANY_OTHERS'			=> 'muut',
 	'NOTIFICATION_X_OTHERS'				=> array(

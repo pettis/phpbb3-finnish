@@ -98,6 +98,7 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Kirjaudu sisään etsiäksesi käyttäjien tietoja.',
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Kirjaudu sisään katsoaksesi tätä profiilia.',
 
+	'MANAGE_GROUP'			=> 'Hallitse ryhmää',
 	'MORE_THAN'				=> 'Enemmän kuin',
 
 	'NO_CONTACT_FORM'		=> 'Ylläpidon yhteyslomake ei ole käytössä.',

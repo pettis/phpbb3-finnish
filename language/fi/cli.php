@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_ENABLE_EXTENSION'			=> 'Salli määrätty laajennus.',
 	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Etsi muutokset joilla ei ole riippuvuuksia.',
 	'CLI_DESCRIPTION_GET_CONFIG'				=> 'Hae asetusarvo',
-	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Kasvata asetusarvon muuttujaa',
+	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Kasvata asetuksen kokonaislukuarvoa',
 	'CLI_DESCRIPTION_LIST_EXTENSIONS'			=> 'Näytä kaikki tietokannan ja tiedostojärjestelmän laajennukset.',
 	'CLI_DESCRIPTION_OPTION_SAFE_MODE'			=> 'Huolto tila (Safe Mode, without extensions).',
 	'CLI_DESCRIPTION_OPTION_SHELL'				=> 'Aukaise komento ikkuna (shell).',
@@ -75,4 +75,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_ENABLED'			=> 'Sallittu',
 
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Kaikki email-hash kentät laskettu uudestaan.',
+));
+
+// Additional help for commands.
+$lang = array_merge($lang, array(
+	'CLI_HELP_CRON_RUN'			=> $lang['CLI_DESCRIPTION_CRON_RUN'] . ' Vaihtoehtoisesti voit määritellä ajastetun tehtävän nimen suorittaaksesi vain tietyn ajastetun tehtävän.',
 ));
