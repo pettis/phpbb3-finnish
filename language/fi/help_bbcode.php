@@ -70,7 +70,7 @@ $help = array(
 	),
 	array(
 		0 => 'Järjestämättömän listan luominen',
-		1 => 'BBCode tukee kahden tyyppistä listaa: järjestämätön ja järjestetty. Nämä ovat perusteiltaan samat kuin HTML-kielessä. Järjestämätön lista näyttää jokaisen rivin omanaan sisennyksen ja listamerkin kanssa. Luodaksesi järjestämättömän listan sinun tulee käyttää <strong>[list][/list]</strong>-tageja ja määritellä jokainen aihekohta erikseen laittamalla rivin eteen <strong>[*]</strong>. Esimerkiksi, listataksesi lempivärisi, voisit tehdä sen:<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Punainen<br /><strong>[*]</strong>Sininen<br /><strong>[*]</strong>Keltainen<br /><strong>[/list]</strong><br /><br />Tämä luo seuraavanlaisen listan:<ul><li>Punainen</li><li>Sininen</li><li>Keltainen</li></ul>'
+		1 => 'BBCode tukee kahden tyyppistä listaa: järjestämätön ja järjestetty. Nämä ovat perusteiltaan samat kuin HTML-kielessä. Järjestämätön lista näyttää jokaisen rivin omanaan sisennyksen ja listamerkin kanssa. Luodaksesi järjestämättömän listan sinun tulee käyttää <strong>[list][/list]</strong>-tageja ja määritellä jokainen aihekohta erikseen laittamalla rivin eteen <strong>[*]</strong>. Esimerkiksi, listataksesi lempivärisi, voisit tehdä sen:<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Punainen<br /><strong>[*]</strong>Sininen<br /><strong>[*]</strong>Keltainen<br /><strong>[/list]</strong><br /><br />Tämä luo seuraavanlaisen listan:<ul><li>Punainen</li><li>Sininen</li><li>Keltainen</li></ul><br />Vaihtoehtoisesti voit määritellä listamerkkien tyylin seuraavasti: <strong>[list=disc][/list]</strong>, <strong>[list=circle][/list]</strong> tai <strong>[list=square][/list]</strong>.'
 	),
 	array(
 		0 => 'Järjestetyn listan luominen',

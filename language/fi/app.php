@@ -41,5 +41,5 @@ $lang = array_merge($lang, array(
 	'CONTROLLER_ARGUMENT_VALUE_MISSING'	=> 'Puuttuva arvo muuttujalta #%1$s: <strong>%3$s</strong> luokassa <strong>%2$s</strong>',
 	'CONTROLLER_NOT_SPECIFIED'			=> 'Ohjaimen määrittely puuttuu.',
 	'CONTROLLER_METHOD_NOT_SPECIFIED'	=> 'Ohjaustapaa ei ole määritelty.',
-	'CONTROLLER_SERVICE_UNDEFINED'		=> 'Liityntää ohjaimeen "<strong>%s</strong>" ei ole määritelty tiedostossa ./config/services.yml.',
+	'CONTROLLER_SERVICE_UNDEFINED'		=> 'Liityntää ohjaimeen “<strong>%s</strong>” ei ole määritelty tiedostossa ./config/services.yml.',
 ));
