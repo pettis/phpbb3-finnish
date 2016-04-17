@@ -37,6 +37,7 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_QA'		=> 'Q&amp;A',
 	'CONFIRM_QUESTION_EXPLAIN'		=> 'Tämän kysymyksen tarkoitus on estää roskapostitusta foorumille.',
 	'CONFIRM_QUESTION_WRONG'		=> 'Olet antanut epäkelvon vastauksen kysymykseen.',
+	'CONFIRM_QUESTION_MISSING'	=> 'Roskapostieston kysymyksiä ei voitu hakea. Ota yhteyttä foorumin ylläpitoon.',
 
 	'QUESTION_ANSWERS'			=> 'Vastaukset',
 	'ANSWERS_EXPLAIN'			=> 'Laita tähän oikeat vastaukset. Yksi per rivi.',

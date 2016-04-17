@@ -591,6 +591,7 @@ $lang = array_merge($lang, array(
 
 	'LOG_ERROR_JABBER'		=> '<strong>Jabber-virhe</strong><br />» %s',
 	'LOG_ERROR_EMAIL'		=> '<strong>Sähköposti-virhe</strong><br />» %s',
+	'LOG_ERROR_CAPTCHA'		=> '<strong>CAPTCHA-virhe</strong><br />» %s',
 
 	'LOG_FORUM_ADD'							=> '<strong>Loi uuden alueen</strong><br />» %s',
 	'LOG_FORUM_COPIED_PERMISSIONS'			=> '<strong>Kopioi alueen oikeudet</strong> alueelta %1$s<br />» %2$s',
