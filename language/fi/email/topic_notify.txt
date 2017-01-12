@@ -7,7 +7,7 @@ Sait tämän ilmoituksen, koska seuraat viestiketjua "{TOPIC_TITLE}" {SITENAME} 
 Jos haluat nähdä uusimman viestin viime käyntisi jälkeen, napsauta alla olevaa linkkiä:
 {U_NEWEST_POST}
 
-Jos haluat nähdä koko viestiketjun, napsauta all aolevaa linkkiä:
+Jos haluat nähdä koko viestiketjun, napsauta alla olevaa linkkiä:
 {U_TOPIC}
 
 Jos haluat nähdä keskustelualueen, napsauta alla olevaa linkkiä:
