@@ -105,7 +105,9 @@ $lang = array_merge($lang, array(
 	'ACP_GROUPS_PERMISSIONS'		=> 'Ryhmän oikeudet',
 	'ACP_GROUPS_POSITION'			=> 'Hallitse ryhmän asetuksia',
 
-	'ACP_ICONS'					=> 'Viestiketjujen kuvakkeet',
+    'ACP_HELP_PHPBB'			=> 'Auta tukemaan phpBB:tä',
+
+    'ACP_ICONS'					=> 'Viestiketjujen kuvakkeet',
 	'ACP_ICONS_SMILIES'			=> 'Viestiketjujen kuvakkeet/hymiöt',
 	'ACP_INACTIVE_USERS'		=> 'Käyttäjä poissa',
 	'ACP_INDEX'					=> 'Ylläpidon etusivu',
@@ -164,7 +166,6 @@ $lang = array_merge($lang, array(
 	'ACP_SEARCH_SETTINGS'		=> 'Hakutoiminnon asetukset',
 
 	'ACP_SECURITY_SETTINGS'		=> 'Tietoturva-asetukset',
-	'ACP_SEND_STATISTICS'		=> 'Lähetä tilastotiedot',
 	'ACP_SERVER_CONFIGURATION'	=> 'Palvelimen konfiguraatio',
 	'ACP_SERVER_SETTINGS'		=> 'Palvelimen asetukset',
 	'ACP_SIGNATURE_SETTINGS'	=> 'Allekirjoituksen asetukset',
@@ -222,12 +223,26 @@ $lang = array_merge($lang, array(
 
 	'BACK'					=> 'Takaisin',
 
+    'CANNOT_CHANGE_FILE_GROUP'	=> 'Tiedostoryhmää ei voitu vaihtaa',
+    'CANNOT_CHANGE_FILE_PERMISSIONS'	=> 'Tiedosto-oikeuksia ei voitu vaihtaa',
+    'CANNOT_COPY_FILES'		=> 'Tiedostoja ei voitu kopioida',
+    'CANNOT_CREATE_SYMLINK'	=> 'Tiedostolinkkiä ei voitu luoda',
+    'CANNOT_DELETE_FILES'	=> 'Järjestelmästä ei voitu poistaa tiedostoja',
+    'CANNOT_DUMP_FILE'		=> 'Tiedostoa ei voitu vedostaa',
+    'CANNOT_MIRROR_DIRECTORY'	=> 'Hakemiston peilaaminen ei onnistunut',
+    'CANNOT_RENAME_FILE'	=> 'Tiedostoa ei voitu uudelleen nimetä',
+    'CANNOT_TOUCH_FILES'	=> 'Ei voitu määrittää, onko tiedosto olemassa',
+
+    'CONTAINER_EXCEPTION' => 'phpBB kohtasi virheen rakentaessaan säiliötä asennetun laajennoksen takia. Tämän vuoksi kaikki laajennokset on väliaikaisesti poistettu käytöstä. Kokeile tyhjentää foorumisi väliaikaistiedostot. Kaikki laajennokset otetaan uudelleen käyttöön, kun säiliön virhe on ratkaistu. Jos tämä virhe jatkuu, vieraile <a href="https://www.phpbb.com/support">phpBB.com</a> saadaksesi tukea.',
+    'EXCEPTION' => 'Poikkeus',
+
 	'COLOUR_SWATCH'			=> 'Web-turvalliset värit',
 	'CONFIG_UPDATED'		=> 'Asetukset on päivitetty',
 	'CRON_LOCK_ERROR'		=> 'cron lukitus virhe.',
 	'CRON_NO_SUCH_TASK'		=> 'Ei löydy cron tehtävää “%s”.',
 	'CRON_NO_TASK'			=> 'Ei cron tehtäviä tällä hetkellä.',
 	'CRON_NO_TASKS'			=> 'Ei löydy cron tehtäviä.',
+    'CURRENT_VERSION'		=> 'Nykyinen versio',
 
 	'DEACTIVATE'				=> 'Sulje',
 	'DIRECTORY_DOES_NOT_EXIST'	=> 'Polkua “%s” ei ole olemassa.',
@@ -253,6 +268,7 @@ $lang = array_merge($lang, array(
 	'IP'					=> 'Käyttäjän IP-osoite',
 	'IP_HOSTNAME'			=> 'IP-osoite tai isäntänimi',
 
+    'LATEST_VERSION'		=> 'Viimeisin versio',
 	'LOAD_NOTIFICATIONS'			=> 'Näytä ilmoitukset',
 	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Näytä ilmoitukset joka sivulla (sivun headerissa).',
 	'LOGGED_IN_AS'			=> 'Kirjattu sisään käyttäjätunnuksella:',
@@ -285,7 +301,9 @@ $lang = array_merge($lang, array(
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'Selaat keskustelufoorumia samoilla oikeuksilla, kuin käyttäjä %1$s. Näet keskustelufoorumin sellaisena, kuin tämä käyttäjä sen näkee. Et pääse ylläpidon asetuksiin, sillä näitä oikeuksia ei ole siirretty. Voit palauttaa <a href="%2$s"><strong>omat oikeutesi</strong></a> koska tahansa.',
 	'PROCEED_TO_ACP'					=> '%sJatka hallintapaneeliin%s',
 
+    'RELEASE_ANNOUNCEMENT'		=> 'Tiedote',
 	'REMIND'							=> 'Muistuta',
+    'REPARSE_LOCK_ERROR'				=> 'Uudelleenparsinta on jo käynnissä toisen prosessin toimesta.',
 	'RESYNC'							=> 'Synkronoi',
 
 	'RUNNING_TASK'			=> 'Tehtävä %s. käynnissä',
@@ -306,6 +324,10 @@ $lang = array_merge($lang, array(
 	'UCP'					=> 'Käyttäjien hallintapaneeli',
 	'USERNAMES_EXPLAIN'		=> 'Laita jokainen käyttäjätunnus omalle rivillensä',
 	'USER_CONTROL_PANEL'	=> 'Käyttäjien hallintapaneeli',
+
+    'UPDATE_NEEDED'			=> 'Foorumi ei ole ajantasalla.',
+    'UPDATE_NOT_NEEDED'		=> 'Foorumi on ajantasalla.',
+    'UPDATES_AVAILABLE'		=> 'Päivityksiä saatavilla:',
 
 	'WARNING'				=> 'Varoitus',
 ));
@@ -417,6 +439,11 @@ $lang = array_merge($lang, array(
 	'VALUE'					=> 'Arvo',
 	'VERSIONCHECK_FAIL'			=> 'Versio-informaation haku epäonnistui.',
 	'VERSIONCHECK_FORCE_UPDATE'	=> 'Tarkista versio uudelleen',
+    'VERSION_CHECK'				=> 'Versiotarkistus',
+    'VERSION_CHECK_EXPLAIN'		=> 'Tarkistaa onko phpBB-asennuksesi ajantasalla.',
+    'VERSION_NOT_UP_TO_DATE_ACP'	=> 'phpBB-asennuksesi ei ole ajantasalla.<br />Alla on linkki julkaisutiedotteeseen, joka sisältää lisätietoja päivityksestä ja päivitysohjeet.',
+    'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'phpBB-asennuksesi ei ole ajantasalla.',
+    'VERSION_UP_TO_DATE_ACP'	=> 'phpBB-asennuksesi on ajantasalla. Päivityksiä ei ole tällä hetkellä saatavilla.',
 	'VIEW_ADMIN_LOG'		=> 'Katso ylläpidon lokitietoja',
 	'VIEW_INACTIVE_USERS'	=> 'Näytä vahvistamattomat käyttäjät',
 
@@ -449,7 +476,7 @@ $lang = array_merge($lang, array(
 	'USER_IS_INACTIVE'		=> 'Käyttäjätunnus ei ole aktiivinen',
 ));
 
-// Send statistics page
+// Help support phpBB page
 $lang = array_merge($lang, array(
 	'EXPLAIN_SEND_STATISTICS'	=> 'Ole ystävällinen ja lähetä tilastotietoa palvelimesta phpBB:lle analysointia varten. Kaikki tiedot joista voi tunnistaa nettisivustosi on poistettu - lähetettävä tieto on täysin <strong>anonyymiä</strong>. Käytämme tätä tietoa kehittääksemme phpBB:tä. Tilastotiedot ovat julkisia ja me jaamme tämän tiedon myös PHP-projektin kanssa, jonka kehittämällä kielellä phpBB on luotu.',
 	'EXPLAIN_SHOW_STATISTICS'	=> 'Käytä alapuolella olevaa nappulaa nähdäksesi lähetettävät tiedot.',
@@ -457,8 +484,10 @@ $lang = array_merge($lang, array(
 	'GO_ACP_MAIN'				=> 'Mene ylläpidon aloitussivulle',
 	'HIDE_STATISTICS'			=> 'Piilota yksityiskohdat',
 	'SEND_STATISTICS'			=> 'Lähetä tilastotiedot',
+    'SEND_STATISTICS_LONG'		=> 'Lähetä tilastollisia tietoja',
 	'SHOW_STATISTICS'			=> 'Näytä yksityiskohdat',
 	'THANKS_SEND_STATISTICS'	=> 'Kiitämme tietojen lähetyksestä.',
+    'FAIL_SEND_STATISTICS'		=> 'phpBB ei onnistunut tilastotietojen lähettämisessä',
 ));
 
 // Log Entries
@@ -791,4 +820,5 @@ $lang = array_merge($lang, array(
 	'LOG_EXT_ENABLE'	=> '<strong>Laajennus sallittu</strong><br />» %s',
 	'LOG_EXT_DISABLE'	=> '<strong>Laajennus estetty</strong><br />» %s',
 	'LOG_EXT_PURGE'		=> '<strong>Laajennuksen tiedot nollattu</strong><br />» %s',
+    'LOG_EXT_UPDATE'	=> '<strong>Laajennus päivitetty</strong><br />Â» %s',
 ));

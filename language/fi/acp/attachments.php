@@ -67,9 +67,6 @@ $lang = array_merge($lang, array(
 
 	'CAT_FLASH_FILES'			=> 'Flash-tiedostot',
 	'CAT_IMAGES'				=> 'Kuvat',
-	'CAT_QUICKTIME_FILES'		=> 'Quicktime Media',
-	'CAT_RM_FILES'				=> 'Real Media Stream',
-	'CAT_WM_FILES'				=> 'Win Media Stream',
 	'CHECK_CONTENT'				=> 'Tarkista liitetiedosto',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Joitakin selaimia voi huijata olettamaan tiedoston sisältävän vääränlaisen mime-tyypin. Tämä vaihtoehto varmistaa, että tällaiset tiedostot hylätään.',
 	'CREATE_GROUP'				=> 'Luo uusi ryhmä',
@@ -102,9 +99,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_FLASH_FILES'		=> 'Flash-tiedostot',
 	'EXT_GROUP_IMAGES'		=> 'Kuvat',
 	'EXT_GROUP_PLAIN_TEXT'		=> 'Pelkkä teksti',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Media',
-	'EXT_GROUP_REAL_MEDIA'		=> 'Real Media',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
 
 	'FILES_GONE'			=> 'Kaikkia poistettavia liitetiedostoja ei löydy, ne on saatettu jo poistaa. Löytyneet liitetiedostot poistettu.',
 	'FILES_STATS_WRONG'		=> 'Tiedostojen kirjanpito liian epätarkka niiden synkronointiin. Tilanne nyt: liitetiedostoja = %1$d, niiden koko yhteensä = %2$s.<br />Valitse %3$shere%4$s ja synkronoi tiedostot.',

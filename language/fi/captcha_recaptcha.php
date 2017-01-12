@@ -37,13 +37,14 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_LANG'				=> 'fi',
 	'RECAPTCHA_NOT_AVAILABLE'		=> 'reCaptchan käyttöä varten tarvitset käyttäjätilin. Voit rekisteröidä tilin osoitteessa <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
-	'RECAPTCHA_INCORRECT'			=> 'Antamasi visuaalinen varmennus oli väärin',
+	'RECAPTCHA_INCORRECT'			=> 'Antamasi ratkaisu oli väärin',
+
+    'RECAPTCHA_NOSCRIPT'			=> 'Salli JavaScript selaimessasi, jotta varmistushaaste voidaan näyttää.',
 
 	'RECAPTCHA_PUBLIC'				=> 'Avoin reCaptcha-avain',
 	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Avoin reCaptcha-avaimesi. Avaimia voi hankkia osoitteesta <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'				=> 'Yksityinen reCaptcha-avain',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Yksityinen reCaptcha-avain. Avaimia voi hankkia osoitteesta <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 
-	'RECAPTCHA_EXPLAIN'				=> 'Haluamme sinun kirjoittavan ohessa näkyvän tekstin alla olevaan laatikkoon. Tämän on tarkoitus estää automaattista roskapostitusta.',
-	'RECAPTCHA_SOCKET_ERROR'		=> 'Ongelma RECAPTCHA palvelussa: ei voitu avata porttia. Yritä myöhemmin uudestaan.',
+	'RECAPTCHA_EXPLAIN'				=> 'Jotta pystyisimme estämään automaattisia lähetyksiä, pyydämme sinua suorittamaan seuraavan varmistushaasteen.',
 ));

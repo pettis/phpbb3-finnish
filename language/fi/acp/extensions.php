@@ -40,6 +40,7 @@ $lang = array_merge($lang, array(
 	'EXTENSION_NOT_AVAILABLE'	=> 'Haluttua laajennusta ei ole tälle forumille, tarkista phpBB ja PHP ohjelmaversioiden sopivuus (katso yksityiskohtia sivu).',
 	'EXTENSION_DIR_INVALID'		=> 'Halutun laajennuksen kirjastopolku ei voimassa ja laajennusta ei voi aktivoida.',
 	'EXTENSION_NOT_ENABLEABLE'	=> 'Haluttua laajennusta ei voi aktivoida, tarkista laajennuksen vaatimukset.',
+    'EXTENSION_NOT_INSTALLED'	=> 'Laajennus %s ei ole saatavilla. Tarkista, että olet asentanut sen oikein.',
 
 	'DETAILS'				=> 'Yksityiskohdat',
 

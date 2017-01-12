@@ -96,6 +96,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_TOPIC_NOTIFY'		=> 'Salli keskusteluketjun seuraaminen',
 	'BOARD_PM'					=> 'Yksityisviestit',
 	'BOARD_PM_EXPLAIN'			=> 'Ota yksityisviestit käyttöön kaikille käyttäjille.',
+    'ALLOW_BOARD_NOTIFICATIONS' => 'Allow salli foorumin ilmoitukset',
 ));
 
 // Avatar Settings
@@ -346,6 +347,8 @@ $lang = array_merge($lang, array(
 
 	'COOKIE_DOMAIN'				=> 'Evästeiden palvelin',
 	'COOKIE_NAME'				=> 'Evästeen nimi',
+    'COOKIE_NOTICE'				=> 'Evästehuomautus',
+    'COOKIE_NOTICE_EXPLAIN'		=> 'Jos valittuna, näytetään foorumilla vieraileville käyttäjille huomautus evästeiden käyttämisestä. Foorumisi sisällöstä ja käytössä olevista laajennoksista riippuen tämä saattaa olla lain vaatima ilmoitus.',
 	'COOKIE_PATH'				=> 'Evästeen polku',
 	'COOKIE_SECURE'				=> 'Suojattu eväste',
 	'COOKIE_SECURE_EXPLAIN'		=> 'Mikäli palvelimellasi on SSL käytössä, ota tämä käyttöön. Mikäli tämä on käytössä ja palvelin ei tue SSL:ää, se johtaa ongelmiin uudelleenohjausten kanssa.',
@@ -531,6 +534,8 @@ $lang = array_merge($lang, array(
 	'REFERRER_VALID_EXPLAIN'			=> 'Mikäli käytössä, POST-pyynnön viittaaja tarkistetaan isännän ja skriptin polun mukaan. Tämä saattaa aiheuttaa ongelmia, jos keskustelufoorumi käyttää useaa osoitetta tai ulkopuolisia kirjautumisia.',
 	'TPL_ALLOW_PHP'					=> 'Salli PHP:n käyttö mallineissa',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'Mikäli tämä vaihtoehto on käytössä, <code>PHP</code>- ja <code>INCLUDEPHP</code> -käskyt tunnistetaan mallineissa ja suoritetaan.',
+    'UPLOAD_CERT_VALID'				=> 'Vahvista latauksen varmenne',
+    'UPLOAD_CERT_VALID_EXPLAIN'		=> 'Jos käytössä, etälatausten varmenteet vahvistetaan. Tämä vaatii että CA If enabled, certificates of remote uploads will be validated. This requires the CA nippu on määritelty <samp>openssl.cafile</samp> tai <samp>curl.cainfo</samp> -asetuksessa php.ini -tiedostossasi.',
 ));
 
 // Email Settings
@@ -555,6 +560,8 @@ $lang = array_merge($lang, array(
 	'EMAIL_SIG_EXPLAIN'				=> 'Tämä teksti liitetään kaikkiin lähetettyihin sähköpostiviesteihin.',
 	'ENABLE_EMAIL'					=> 'Ota sähköpostitoiminnot käyttöön',
 	'ENABLE_EMAIL_EXPLAIN'			=> 'Mikäli tämä on poissa käytöstä, keskustelufoorumi ei lähetä yhtäkään sähköpostiviestiä.<em>Huomaa, että käyttäjän ja ylläpitäjän toimesta tehdyt tunnusten aktivoinnit vaativat tämän asetuksen käyttöönottoa. Jos käytät käyttäjän tai ylläpitäjän aktivointia, tämän toiminnon poistäminen käytöstä estää rekisteröitymisen.</em>',
+    'SEND_TEST_EMAIL'				=> 'Lähetä testisähköposti',
+    'SEND_TEST_EMAIL_EXPLAIN'		=> 'Tämä lähettää testisähköpostin tunnuksellesi määriteltyyn sähköpostiosoitteeseen.',
 	'SMTP_AUTH_METHOD'				=> 'SMTP:n tunnistautumismenetelmä',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> 'Tätä käytetään vain, mikäli käyttäjätunnus/salasana on asetettu. Kysy palveluntarjoajaltasi, jos et ole varma mitä menetelmää tulisi käyttää.',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
@@ -567,9 +574,11 @@ $lang = array_merge($lang, array(
 	'SMTP_PORT'						=> 'SMTP-palvelimen portti',
 	'SMTP_PORT_EXPLAIN'				=> 'Vaihda tätä vain, jos tiedät SMTP-palvelimen toimivan toisessa portissa.',
 	'SMTP_SERVER'					=> 'SMTP-palvelimen osoite',
+    'SMTP_SERVER_EXPLAIN'			=> 'Huomaa, että sinun täytyy antaa myös protokolla, jota palvelimesi käyttää. Jos käytät SSL:ää, tämä täytyy olla muotoa "ssl://sinun.sahkopostipalvelimesi.com"',
 	'SMTP_SETTINGS'					=> 'SMTP-asetukset',
 	'SMTP_USERNAME'					=> 'SMTP-käyttäjätunnus',
 	'SMTP_USERNAME_EXPLAIN'			=> 'Anna käyttäjätunnus vain, jos palvelin sitä vaatii.',
+    'TEST_EMAIL_SENT'				=> 'Testisähköposti on lähetetty.<br />Jos et saanut sitä, tarkista sähköpostisi asetukset.<br /><br />Jos tarvitset apua, vieraile <a href="https://www.phpbb.com/community/">phpBB tukifoorumilla</a>.',
 	'USE_SMTP'						=> 'Käytä SMTP-palvelinta sähköpostin lähettämiseen',
 	'USE_SMTP_EXPLAIN'				=> 'Valitse "kyllä", jos haluat lähettää sähköpostit erillisen SMTP-palvelimen kautta etkä käytä paikallista sähköpostin lähetystä.',
 ));

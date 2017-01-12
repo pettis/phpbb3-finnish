@@ -80,7 +80,7 @@ $lang = array_merge($lang, array(
 	'GROUP_MEMBERS'					=> 'Ryhmän jäsenet',
 	'GROUP_MEMBERS_EXPLAIN'			=> 'Tässä on täydellinen lista tähän ryhmään kuuluvista käyttäjistä. valvojat, odottavat ja hyväksyty käyttäjät. Täällä voi muokata ryhmän jäsenyyksiä ja heidän rooliaan. Poistaaksesi ryhmältä valvojan, mutta pitääksesi hänet silti ryhmässä. Valitse Alenna, älä Poista. Samaten voit valita Ylennä, antaaksesi jollekin jäsenelle valvojan oikeudet ryhmään.',
 	'GROUP_MESSAGE_LIMIT'			=> 'Ryhmän yksityisviestien rajoitus per kansio',
-	'GROUP_MESSAGE_LIMIT_EXPLAIN'	=> 'Tämä asetus ohittaa käyttäjän rajoituksen yksityisviesteissä. Arvo 0 tarkoittaa, että käyttäjän oletusasetus on käytössä.',
+	'GROUP_MESSAGE_LIMIT_EXPLAIN'	=> 'Tämä asetus ohittaa käyttäjän rajoituksen yksityisviesteissä. Käyttäjän kaikkien ryhmien maksimiarvoa käytetään oikeana arvona. <br /> Asettamalla arvoksi 0 käytetään foorumin laajuista asetusta.',
 	'GROUP_MODS_ADDED'				=> 'Uudet ryhmän valvojat on määritelty.',
 	'GROUP_MODS_DEMOTED'			=> 'Ryhmän valvojat on alennettu',
 	'GROUP_MODS_PROMOTED'			=> 'Ryhmän jäsenet on ylennetty',
@@ -89,7 +89,7 @@ $lang = array_merge($lang, array(
 	'GROUP_OPEN'					=> 'Avoin',
 	'GROUP_PENDING'					=> 'Odottavat jäsenet',
 	'GROUP_MAX_RECIPIENTS'          => 'Yksityisviestien vastaanottajien enimmäismäärä',
-	'GROUP_MAX_RECIPIENTS_EXPLAIN'  => 'Kuinka monta vastaanottajaa yksityisviestillä voi olla. Nolla ottaa käyttöön foorumin oletusasetuksen.',
+	'GROUP_MAX_RECIPIENTS_EXPLAIN'  => 'Kuinka monta vastaanottajaa yksityisviestillä voi olla. Käyttäjän kaikkien ryhmien maksimiarvoa käytetään oikeana arvona. <br /> Asettamalla arvoksi 0 käytetään foorumin laajuista asetusta.',
 	'GROUP_OPTIONS_SAVE'			=> 'Ryhmänlaajuiset vaihtoehdot',
 	'GROUP_PROMOTE'					=> 'Ylennä',
 	'GROUP_RANK'					=> 'Ryhmän arvonimi',
@@ -126,6 +126,8 @@ $lang = array_merge($lang, array(
 	'NO_USERS'					=> 'Et antanut yhtään käyttäjää.',
 	'NO_USERS_ADDED'			=> 'Yhtään käyttäjää ei lisätty ryhmään.',
 	'NO_VALID_USERS'			=> 'Et ole antanut yhtään soveliasta käyttäjää tälle toiminnolle.',
+
+    'PENDING_MEMBERS'			=> 'Odottaa',
 
 	'SELECT_GROUP'				=> 'Valitse ryhmä',
 	'SPECIAL_GROUPS'			=> 'Alustavasti määritellyt ryhmät',

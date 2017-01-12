@@ -132,6 +132,7 @@ $lang = array_merge($lang, array(
 	'LOCK_TOPICS_CONFIRM'		=> 'Haluatko varmasti lukita valitut viestiketjut?',
 	'LOGS_CURRENT_TOPIC'		=> 'Katsoo lokitietoja:',
 	'LOGIN_EXPLAIN_MCP'			=> 'Sinun täytyy kirjautua sisään valvoaksesi tätä aluetta.',
+    'LOGVIEW_VIEWPOST'			=> 'Katso viestiä',
 	'LOGVIEW_VIEWTOPIC'			=> 'Katso viestiketjua',
 	'LOGVIEW_VIEWLOGS'			=> 'Katso viestiketjun lokitiedot',
 	'LOGVIEW_VIEWFORUM'			=> 'Katso alue',

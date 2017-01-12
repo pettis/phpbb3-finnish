@@ -117,6 +117,7 @@ $lang = array_merge($lang, array(
 	'ACL_F_POST'		=> 'Voi kirjoittaa alueelle',
 	'ACL_F_STICKY'		=> 'Voi kirjoittaa pysyvän tiedotteen',
 	'ACL_F_ANNOUNCE'	=> 'Voi kirjoittaa tiedotteen',
+    'ACL_F_ANNOUNCE_GLOBAL'	=> 'Voi kirjoittaa foorumin laajuisen tiedotteen',
 	'ACL_F_REPLY'		=> 'Voi vastata viestiin',
 	'ACL_F_EDIT'		=> 'Voi muokata viestejään',
 	'ACL_F_DELETE'		=> 'Voi poistaa omia viestejään',

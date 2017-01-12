@@ -1,0 +1,9 @@
+Subject: phpBB on asennettu oikein lähettämään sähköposteja
+
+Hei {USERNAME},
+
+Onnittelut. Jos saat tämän viestin, phpBB on asennettu oikein lähettämään sähköposteja.
+
+Jos tarvitset apua, vieraile phpBB tukifoorumilla https://www.phpbb.com/community/
+
+{EMAIL_SIG}

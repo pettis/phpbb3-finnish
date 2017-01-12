@@ -51,7 +51,7 @@ $lang = array_merge($lang, array(
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Hakukone siivoaa sisällysluetteloaan. Tähän voi mennä muutama minuutti.',
 
 	'FULLTEXT_MYSQL_INCOMPATIBLE_DATABASE'	=> 'MySQL fulltext -hakukonetta voidaan käyttää vain MySQL:n version 4 ja sitä uudempien versioiden kanssa.',
-	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext -sisällysluetteloa voidan käyttää vain MyISAM ja InnoDB -tauluissa. MySQL 5.6.4 tai uudempi tarvitaan InnoDB:n fulltext-sisällysluetteloa varten.',
+	'FULLTEXT_MYSQL_NOT_SUPPORTED'			=> 'MySQL fulltext -sisällysluetteloa voidan käyttää vain MyISAM ja InnoDB -tauluissa. MySQL 5.6.8 tai uudempi tarvitaan InnoDB:n fulltext-sisällysluetteloa varten.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Sisällysluettelossa olevien viestien kokonaismäärä',
 	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Sanat joissa on vähintään näin monta kirjainta luetteloidaan hakua varten. Sinä tai ylläpitäjä voi muuttaa tätä mysql asetuksissa.',
 	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Sanat joissa on enintään näin monta merkkiä luetteloidaan hakua varten. Sinä tai ylläpitäjä voi muuttaa tätä mysql asetuksissa.',
