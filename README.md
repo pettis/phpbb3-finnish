@@ -1,7 +1,11 @@
 # phpBB 3.1 Finnish Translation
-Finnish Translation for [phpBB](https://www.phpbb.com) 3.1 forum software
+Finnish Translation for [phpBB](https://www.phpbb.com) 3.x forum software
 
 Validated version is available from [phpBB.com Language pack page](https://www.phpbb.com/customise/db/translation/finnish/).
+
+## Contributing
+
+Clone/fork this project to your own account and make edits there. When complete, you can make pull request to this repository. If translation files are properly edited, they will be merged into this project.
 
 Translators
 ---
