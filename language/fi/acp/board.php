@@ -365,7 +365,7 @@ $lang = array_merge($lang, array(
 	'CONTACT_US_ENABLE'				=> 'Salli yhteydenotto sivu',
 	'CONTACT_US_ENABLE_EXPLAIN'		=> 'Tämä sivun avulla voi lähettää viestin palstan ylläpidolle',
 
-	'CONTACT_US_INFO'				=> 'Yhteys tiedot',
+	'CONTACT_US_INFO'				=> 'Yhteystiedot',
 	'CONTACT_US_INFO_EXPLAIN'		=> 'Tämä viesti näkyy yhteydenotto sivulla',
 	'CONTACT_US_INFO_PREVIEW'		=> 'Yhteydenotto esikatselu',
 	'CONTACT_US_INFO_UPDATED'		=> 'Yhteys sivun sisältö päivitetty.',
