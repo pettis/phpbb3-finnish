@@ -45,9 +45,18 @@ $lang = array_merge($lang, array(
 	'MIGRATION_EFFECTIVELY_INSTALLED'	=> 'Asennus on jo suoritettu : %s',
 	'MIGRATION_EXCEPTION_ERROR'			=> 'Pyynnön suorituksessa virhe. Ennen virhettä tehdyt muutokset ovat palautettu - sikäli kun mahdollista, tarkista forum virheiden varalta.',
 	'MIGRATION_NOT_FULFILLABLE'			=> 'Asennusta "%1$s" ei voi suorittaa loppuun, puuttuva asennus "%2$s".',
+    'MIGRATION_NOT_INSTALLED'			=> 'Muunnosta "%s" ei ole asennettu.',
 	'MIGRATION_NOT_VALID'				=> '%s ei ole hyväksyttävä asennus.',
-	'MIGRATION_SCHEMA_DONE'				=> 'Asennettu kaavio: %1$s; aika: %2$.2f sekuntia',
-	'MIGRATION_SCHEMA_RUNNING'			=> 'Asennan kaaviota: %s.',
+	'MIGRATION_SCHEMA_DONE'				=> 'Asennettu malli: %1$s; aika: %2$.2f sekuntia',
+    'MIGRATION_SCHEMA_IN_PROGRESS'		=> 'Asennetaan mallia: %1$s; aika: %2$.2f sekuntia',
+    'MIGRATION_SCHEMA_RUNNING'			=> 'Asennetaan mallia: %s.',
+
+    'MIGRATION_REVERT_DATA_DONE'		=> 'Palautettiin tiedot: %1$s; Aika: %2$.2f sekuntia',
+    'MIGRATION_REVERT_DATA_IN_PROGRESS'	=> 'Palautetaan tietoja: %1$s; Aika: %2$.2f sekuntia',
+    'MIGRATION_REVERT_DATA_RUNNING'		=> 'Palautetaan tietoja: %s.',
+    'MIGRATION_REVERT_SCHEMA_DONE'		=> 'Palautettiin malli: %1$s; aika: %2$.2f sekuntia',
+    'MIGRATION_REVERT_SCHEMA_IN_PROGRESS'	=> 'Palautetaan mallia: %1$s; Aika: %2$.2f sekuntia',
+    'MIGRATION_REVERT_SCHEMA_RUNNING'	=> 'Palautetaan mallia: %s.',
 	
 	'MIGRATION_INVALID_DATA_MISSING_CONDITION'		=> 'Muunnos on virheellinen. Ehtolausekkeen apurista puuttuu ehto.',
 	'MIGRATION_INVALID_DATA_MISSING_STEP'			=> 'Muunnos on virheellinen. Ehtolausekkeen apurista puuttuu toimiva muunnosvaiheen kutsu.',
@@ -57,9 +66,12 @@ $lang = array_merge($lang, array(
 	'MIGRATION_INVALID_DATA_UNDEFINED_METHOD'		=> 'Muunnos on virheellinen. Kohdattiin tuntematon muuntotyökalun metodi',
 
 	'MODULE_ERROR'						=> 'Virhe kun luotiin modulia: %s',
+    'MODULE_EXISTS'						=> 'Moduli on jo olemassa: %s',
+    'MODULE_EXIST_MULTIPLE'				=> 'Useita moduleita annetulla isäntä moduulilla langname on jo olemassa: %s. Yritä käyttää ennen/jälkeen avaimia selvittääksesi moduulin sijainnin.',
 	'MODULE_INFO_FILE_NOT_EXIST'		=> 'Tarvittava modulin info tiedosto puuttuu: %2$s',
 	'MODULE_NOT_EXIST'					=> 'Tarvittavaa modulia ei löydy: %s',
 
+    'PARENT_MODULE_FIND_ERROR'			=> 'Ei voitu selvittää isäntämodulin tunnistetta: %s',
 	'PERMISSION_NOT_EXIST'				=> 'Ei mahdollista muuttaa "%s" oikeuksia.',
 
 	'ROLE_NOT_EXIST'					=> 'Ei mahdollista muuttaa "%s" oikeuksia.',
