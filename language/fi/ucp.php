@@ -524,7 +524,7 @@ $lang = array_merge($lang, array(
 
 	'UCP_NO_ATTACHMENTS'		=> 'Et ole lähettänyt yhtään tiedostoa',
 
-	'UCP_NOTIFICATION_LIST'				=> 'hallinnoi ilmoituksia',
+	'UCP_NOTIFICATION_LIST'				=> 'Hallinnoi ilmoituksia',
 	'UCP_NOTIFICATION_LIST_EXPLAIN'		=> 'Tässä voit katsoa kaikki vanhat ilmoitukset.',
 	'UCP_NOTIFICATION_OPTIONS'			=> 'Muokkaa ilmoitusten tietoja',
 	'UCP_NOTIFICATION_OPTIONS_EXPLAIN'	=> 'Tässä voit asettaa palstan ilmoitusten ulkoasun.',
