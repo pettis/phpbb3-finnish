@@ -9,7 +9,7 @@ Validated version is available from [phpBB.com Language pack page](https://www.p
 * If translation files are properly edited, they will be merged into this project.
 * Open source contributing guide by GitHub: https://guides.github.com/activities/contributing-to-open-source/
 
-##Translators
+## Translators
 * Lurttinen
 * harritapio
 * Pettis
