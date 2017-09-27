@@ -33,597 +33,537 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
+// Common installer pages
 $lang = array_merge($lang, array(
-	'ADMIN_CONFIG'				=> 'Ylläpitäjän asetukset',
-	'ADMIN_PASSWORD'			=> 'Ylläpitäjän salasana',
-	'ADMIN_PASSWORD_CONFIRM'	=> 'Varmista ylläpitäjän salasana',
-	'ADMIN_PASSWORD_EXPLAIN'	=> '(Kirjoita haluamasi salasana, joka on 6-30 merkin pituinen)',
-	'ADMIN_TEST'				=> 'Tarkista ylläpitäjän asetukset',
-	'ADMIN_USERNAME'			=> 'Ylläpitäjän käyttäjätunnukset',
-	'ADMIN_USERNAME_EXPLAIN'	=> '(Kirjoita haluamasi käyttäjätunnus, joka on 3-20 merkin pituinen)',
-	'APP_MAGICK'				=> 'ImageMagick-tuki [ Liitetiedostot ]',
-	'AUTHOR_NOTES'				=> 'Kirjoittajan muistiinpanot<br />» %s',
-	'AVAILABLE'					=> 'Käytettävissä',
-	'AVAILABLE_CONVERTORS'		=> 'Käytettävissä olevat muuntajat',
+    'INSTALL_PANEL'	=> 'Installation Panel',
+    'SELECT_LANG'	=> 'Select language',
 
-	'BEGIN_CONVERT'					=> 'Aloita muunnos',
-	'BLANK_PREFIX_FOUND'			=> 'Tietokannan tarkastelu on löytänyt kunnollisen asennuksen, jonka tauluissa ei ole etuliitettä.',
-	'BOARD_NOT_INSTALLED'			=> 'Asennusta ei ole suoritettu',
-	'BOARD_NOT_INSTALLED_EXPLAIN'	=> 'phpBB3:n tulee olla esiasennettuna ennen muunnosta. Huomaa, että muunnosta varten uuden foorumin ja vanhan foorumin tulee sijaita samassa tietokannassa. Voit <a href="%s">suorittaa asennuksen</a> nyt.',
-	'BACKUP_NOTICE'					=> 'Ole hyvä ja ota varmuuskopiot keskustelufoorumisi tiedostoista ja tietokannasta ennen päivitystä, jotta voit korjata päivityksestä mahdollisesti aiheutuneet vahingot.',
+    'STAGE_INSTALL'	=> 'Installing phpBB',
 
-	'CATEGORY'					=> 'Kategoria',
-	'CACHE_STORE'				=> 'Välimuistin tyyppi',
-	'CACHE_STORE_EXPLAIN'		=> 'Välimuistin fyysinen paikka, mieluiten tiedostojärjestelmässä.',
-	'CAT_CONVERT'				=> 'Muunna',
-	'CAT_INSTALL'				=> 'Asenna',
-	'CAT_OVERVIEW'				=> 'Yleiset',
-	'CAT_UPDATE'				=> 'Päivitä',
-	'CHANGE'					=> 'Muuta',
-	'CHECK_TABLE_PREFIX'		=> 'Tarkista taulujen etuliite ja yritä uudelleen.',
-	'CLEAN_VERIFY'				=> 'Siivotaan ja tarkistetaan lopullinen rakenne',
-	'CLEANING_USERNAMES'		=> 'Käyttäjätunnusten siivoaminen',
-	'COLLIDING_CLEAN_USERNAME'	=> '<strong>%s</strong> On puhdas käyttäjätunnus:',
-	'COLLIDING_USERNAMES_FOUND'	=> 'Vanhalta keskustelufoorumiltasi löytyi ristiriitaisia nimimerkkejä. Jotta voisit suorittaa muunnoksen loppuun, ole hyvä ja poista tai muuta näiden käyttäjien tunnusta siten, että foorumiltasi löytyy vain yhdet puhtaat käyttäjätunnukset.',
-	'COLLIDING_USER'			=> '» Käyttäjän tunniste: <strong>%d</strong> käyttäjätunnus: <strong>%s</strong> (%d viestiä)',
-	'CONFIG_CONVERT'			=> 'Asetusten muunnos',
-	'CONFIG_FILE_UNABLE_WRITE'	=> 'Asetustiedoston kirjoittaminen ei ollut mahdollista. Alla on muita vaihtoehtoja tiedoston luomiseksi',
-	'CONFIG_FILE_WRITTEN'		=> 'Asetustiedosto on luotu ja voit siirtyä asennuksessa toiseen vaiheeseen',
-	'CONFIG_PHPBB_EMPTY'		=> 'phpBB3:n konfigurointimuuttuja arvolle “%s” on tyhjä.',
-	'CONFIG_RETRY'				=> 'Yritä uudelleen',
-	'CONTINUE_CONVERT'			=> 'Jatka muunnosta',
-	'CONTINUE_CONVERT_BODY'		=> 'Asennus on havainnut keskeytyneen muunnosyrityksen. Voit valita haluatko jatkaa edellistä muunnosta tai aloittaa alusta.',
-	'CONTINUE_LAST'				=> 'Jatka viimeisistä lausekkeista',
-	'CONTINUE_OLD_CONVERSION'	=> 'Jatka keskeytynyttä muunnosta',
-	'CONVERT'					=> 'Muunna',
-	'CONVERT_COMPLETE'			=> 'Muunnos on valmis',
-	'CONVERT_COMPLETE_EXPLAIN'	=> 'Keskustelufoorumin muuntaminen phpBB3-alustalle on suoritettu onnistuneesti loppuun. Voit kirjautua sisään ja <a href="../">Hallita keskustelufoorumiasi</a>. Ole hyvä ja varmista, että kaikki asetukset ovat siirretty oikein ennen kuin otat foorumin käyttöön poistamalla install-hakemiston. Muista, että saat käyttötukea verkosta lukemalla <a href="https://www.phpbb.com/support/docs/en/3.1/ug/">käyttö-opasta</a> ja <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumilta</a>',
-	'CONVERT_INTRO'				=> 'Tervetuloa phpBB Unified Convertor Frameworkiin',
-	'CONVERT_INTRO_BODY'		=> 'Täällä voit tuoda tiedot muista (asennetuista) keskustelufoorumeista. Alla olevassa listassa on kaikki tämänhetkiset muunnosmoduulit. Mikäli haluamaasi muuntajaa ei löydy listasta, tarkista nettisivuiltamme olisiko siellä muita muuntajia ladattavissa.',
-	'CONVERT_NEW_CONVERSION'	=> 'Uusi muunnos',
-	'CONVERT_NOT_EXIST'			=> 'Valitsemaasi muuntajaa ei ole',
-	'CONVERT_OPTIONS'			=> 'Vaihtoehdot',
-	'CONVERT_SETTINGS_VERIFIED'	=> 'Antamasi tiedot täytyy varmistaa. Paina alapuolella olevaa nappulaa aloittaaksesi muuntamisen.',
-	'CONV_ERR_FATAL'					=> 'Vakava muunnosvirhe',
+    // Introduction page
+    'INTRODUCTION_TITLE'	=> 'Introduction',
+    'INTRODUCTION_BODY'		=> 'Welcome to phpBB3!<br /><br />phpBB® is the most widely used open source bulletin board solution in the world. phpBB3 is the latest installment in a package line started in 2000. Like its predecessors, phpBB3 is feature-rich, user-friendly, and fully supported by the phpBB Team. phpBB3 greatly improves on what made phpBB2 popular, and adds commonly requested features that were not present in previous versions. We hope it exceeds your expectations.<br /><br />This installation system will guide you through installing phpBB3, updating to the latest version of phpBB3 from past releases, as well as converting to phpBB3 from a different discussion board system (including phpBB2). For more information, we encourage you to read <a href="../docs/INSTALL.html">the installation guide</a>.<br /><br />To read the phpBB3 license or learn about obtaining support and our stance on it, please select the respective options from the side menu. To continue, please select the appropriate tab above.',
 
-	'CONV_ERROR_ATTACH_FTP_DIR'			=> 'FTP-siirtotapa liitetiedostoille on käytössä vanhalla keskustelufoorumillasi. Ole hyvä ja kopioi kaikki liitetiedostot pääsyn sallivaan hakemistoon. Poista FTP-siirto käytöstä ja varmista, että annoit oikean hakemiston. Kun olet tehnyt tämän, aloita muuntaminen uudelleen.',
-	'CONV_ERROR_CONFIG_EMPTY'			=> 'Konfiguroinnin informaatiota ei ole saatavilla muunnosta varten.',
-	'CONV_ERROR_FORUM_ACCESS'			=> 'En saanut foorumiin pääsyn informaatiota.',
-	'CONV_ERROR_GET_CATEGORIES'			=> 'En saanut kategorioita.',
-	'CONV_ERROR_GET_CONFIG'				=> 'En voinut hakea keskustelufoorumisi konfiguraatiota.',
-	'CONV_ERROR_COULD_NOT_READ'			=> 'En voinut ottaa yhteyttä/lukea “%s”.',
-	'CONV_ERROR_GROUP_ACCESS'			=> 'En saanut ryhmän tunnistamisen tietoja.',
-	'CONV_ERROR_INCONSISTENT_GROUPS'	=> 'Ristiriitaisuus havaittu groups-taulussa add_bots()-funktiossa - Sinun täytyy lisätä kaikki erikoisryhmät, jos teet sen manuaalisesti.',
-	'CONV_ERROR_INSERT_BOT'				=> 'Botin lisääminen users-tauluun epäonnistui.',
-	'CONV_ERROR_INSERT_BOTGROUP'		=> 'Botin lisääminen bots-tauluun epäonnistui.',
-	'CONV_ERROR_INSERT_USER_GROUP'		=> 'Käyttäjän lisääminen user_group-tauluun epäonnistui.',
-	'CONV_ERROR_MESSAGE_PARSER'			=> 'Viestin jäsentäjän virhe',
-	'CONV_ERROR_NO_AVATAR_PATH'			=> 'Muistutus kehittäjälle: Sinun täytyy määritellä $convertor[\'avatar_path\'] käyttämään %s.',
-	'CONV_ERROR_NO_FORUM_PATH'			=> 'Suhteellista polkua lähdefoorumiin ei ole määritelty.',
-	'CONV_ERROR_NO_GALLERY_PATH'		=> 'Muistutus kehittäjälle: Sinun täytyy määritellä $convertor[\'avatar_gallery_path\'] käyttämään %s.',
-	'CONV_ERROR_NO_GROUP'				=> 'Ryhmää "%1$s" ei löytynyt %2$s:sta.',
-	'CONV_ERROR_NO_RANKS_PATH'			=> 'Muistutus kehittäjälle: Sinun täytyy määritellä $convertor[\'ranks_path\'] käyttämään %s.',
-	'CONV_ERROR_NO_SMILIES_PATH'		=> 'Muistutus kehittäjälle: Sinun täytyy määritellä $convertor[\'smilies_path\'] käyttämään %s.',
-	'CONV_ERROR_NO_UPLOAD_DIR'			=> 'Muistutus kehittäjälle: Sinun täytyy määritellä $convertor[\'upload_dir\'] käyttämään %s.',
-	'CONV_ERROR_PERM_SETTING'			=> 'Oikeuksien asetusten lisääminen/päivittäminen epäonnistui.',
-	'CONV_ERROR_PM_COUNT'				=> 'Kansioissa olevien yksityisviestien laskeminen epäonnistui.',
-	'CONV_ERROR_REPLACE_CATEGORY'		=> 'Vanhan kategorian korvaaminen uudella alueella epäonnistui.',
-	'CONV_ERROR_REPLACE_FORUM'			=> 'Vanhan alueen korvaaminen uudella alueella epäonnistui.',
-	'CONV_ERROR_USER_ACCESS'			=> 'Käyttäjän tunnistautumisen hankkiminen epäonnistui.',
-	'CONV_ERROR_WRONG_GROUP'			=> 'Väärä ryhmä "%1$s" määriteltynä %2$s.',
-	'CONV_OPTIONS_BODY'					=> 'Tällä sivulla kerätään tarvittavat tiedot, joiden avulla otetaan yhteys lähteenä käytettävään foorumiin. Muuntaja ei muuta mitään tietoja tässä antamassasi tietokannassa. Lähdefoorumi tulisi sulkea muunnoksen ajaksi, jotta saat yhdenmukaisen muunnoksen.',
-	'CONV_SAVED_MESSAGES'				=> 'Tallennetut viestit',
+    // Support page
+    'SUPPORT_TITLE'		=> 'Support',
+    'SUPPORT_BODY'		=> 'Full support will be provided for the current stable release of phpBB3, free of charge. This includes:</p><ul><li>installation</li><li>configuration</li><li>technical questions</li><li>problems relating to potential bugs in the software</li><li>updating from Release Candidate (RC) versions to the latest stable version</li><li>converting from phpBB 2.0.x to phpBB3</li><li>converting from other discussion board software to phpBB3 (please see the <a href="https://www.phpbb.com/community/viewforum.php?f=486">Convertors Forum</a>)</li></ul><p>We encourage users still running beta versions of phpBB3 to replace their installation with a fresh copy of the latest version.</p><h2>Extensions / Styles</h2><p>For issues relating to Extensions, please post in the appropriate <a href="https://www.phpbb.com/community/viewforum.php?f=451">Extensions Forum</a>.<br />For issues relating to styles, templates and themes, please post in the appropriate <a href="https://www.phpbb.com/community/viewforum.php?f=471">Styles Forum</a>.<br /><br />If your question relates to a specific package, please post directly in the topic dedicated to the package.</p><h2>Obtaining Support</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">The phpBB Welcome Package</a><br /><a href="https://www.phpbb.com/support/">Support Section</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">Quick Start Guide</a><br /><br />To ensure you stay up to date with the latest news and releases, why not <a href="https://www.phpbb.com/support/">subscribe to our mailing list</a>?<br /><br />',
 
-	'COULD_NOT_COPY'			=> 'En voinut kopioida tiedostoa <strong>%1$s</strong> hakemistoon <strong>%2$s</strong><br /><br />Varmista, että kohdehakemisto on olemassa ja että siihen voidaan kirjoittaa.',
-	'COULD_NOT_FIND_PATH'		=> 'En löytänyt edellisen keskustelufoorumisi polkua. Tarkista asetuksesi ja yritä uudelleen.<br />» Määrittelemäsi polku oli %s',
+    // License
+    'LICENSE_TITLE'		=> 'General Public License',
 
-	'DBMS'						=> 'Tietokannan tyyppi',
-	'DB_CONFIG'					=> 'Tietokannan asetukset',
-	'DB_CONNECTION'				=> 'Tietokannan yhteys',
-	'DB_ERR_INSERT'				=> 'Virhe suorittaessa <code>INSERT</code>-kyselyä.',
-	'DB_ERR_LAST'				=> 'Virhe suorittaessa <var>query_last</var>.',
-	'DB_ERR_QUERY_FIRST'		=> 'Virhe suorittaessa <var>query_first</var>.',
-	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Virhe suorittaessa <var>query_first</var>, %s ("%s").',
-	'DB_ERR_SELECT'				=> 'Virhe suorittaessa <code>SELECT</code>-kyselyä.',
-	'DB_HOST'					=> 'Tietokantapalvelimen osoite tai DSN',
-    'DB_HOST_EXPLAIN'           => 'DSN on lyhenne Data Source Namesta ja sitä tarvitaan vain ODBC-asennuksissa. PostgreSQL-tietokannalle voi käyttää osoitteena localhost ottaaksesi yhteyden paikallisella palvelimella olevaan tietokantaan UNIX domain socketin kautta ja 127.0.0.1 käyttääksesi TCP-protokollaa. Anna koko polku käyttäessäsi SQLiteä',
-	'DB_NAME'					=> 'Tietokannan nimi',
-	'DB_PASSWORD'				=> 'Tietokannan salasana',
-	'DB_PORT'					=> 'Tietokantapalvelimen portti',
-	'DB_PORT_EXPLAIN'			=> 'Jätä tämä tyhjäksi, jos olet varma, että tietokantapalvelin toimii normaalissa portissa.',
-	'DB_UPDATE_NOT_SUPPORTED'	=> 'Pahoittelemme, mutta tämä ohjelma ei osaa päivittää versioita jotka ovat “%1$s” aikaisemmat. Käyttämäsi versio on “%2$s”. Ole hyvä ja päivitä ensiksi uudempaan versioon ja vasta sitten tähän versioon. Saat apua phpbb.com-tukifoorumilta.',
-	'DB_USERNAME'				=> 'Tietokannan käyttäjätunnus',
-	'DB_TEST'					=> 'Testaa yhteys',
-	'DEFAULT_LANG'				=> 'Keskustelufoorumin oletuskieli',
-	'DEFAULT_PREFIX_IS'			=> 'Oletus etuliite %1$s on <strong>%2$s</strong>',
-	'DEV_NO_TEST_FILE'			=> 'Muuntajassa ei ole määritelty arvoa test_file-muuttujalle. Mikäli olet tämän muuntajan käyttäjä, sinun ei pitäisi nähdä tätä ilmoitusta. Ole hyvä ja raportoi tämä virhe muuntajan kehittäjälle. Mikäli olet kehittänyt tämän muuntajan, sinun tulee antaa lähdefoorumin tiedoston nimi, jotta voimme tarkistaa hakemiston polun.',
-	'DIRECTORIES_AND_FILES'		=> 'Hakemiston ja tiedostojen asetukset',
-	'DISABLE_KEYS'				=> 'Avaimien poisto käytöstä',
-	'DLL_FTP'					=> 'Etäisen FTP:n tuki [ Asennus ]',
-	'DLL_GD'					=> 'GD-grafiikan tuki [ Visuaalinen varmennus ]',
-	'DLL_MBSTRING'				=> 'Multi-byte character tuki',
-	'DLL_MSSQL'					=> 'MSSQL Server 2000+',
-	'DLL_MSSQL_ODBC'			=> 'MSSQL Server 2000+, ODBC:n kautta',
-    'DLL_MSSQLNATIVE'           => 'MSSQL Server 2005+ [ Natiivi ]',
-	'DLL_MYSQL'					=> 'MySQL',
-	'DLL_MYSQLI'				=> 'MySQL, MySQLi-laajennuksen tuella',
-	'DLL_ORACLE'				=> 'Oracle',
-	'DLL_POSTGRES'				=> 'PostgreSQL',
-	'DLL_SQLITE'				=> 'SQLite 2',
-	'DLL_SQLITE3'				=> 'SQLite 3',
-	'DLL_XML'					=> 'XML-tuki [ Jabber ]',
-	'DLL_ZLIB'					=> 'zlib-pakkauksen tuki [ gz, .tar.gz, .zip ]',
-	'DL_CONFIG'					=> 'Lataa asetukset omalle koneellesi',
-	'DL_CONFIG_EXPLAIN'			=> 'Voita ladata config.php-tiedoston omalle tietokoneellesi ja sen jälkeen siirtää tiedoston takaisin palvelimelle samalla ylikirjoittaen vanhan tiedoston phpBB 3.1 -juurihakemistossa. Muista siirtää tiedosto ASCII-muodossa (Katso lisätietoja käyttämäsi FTP-ohjelman ohjeista, mikäli et ole varma tästä). Kun olet siirtänyt tiedoston, napsauta "Valmis" jatkaaksesi seuraavaan vaiheeseen.',
-	'DL_DOWNLOAD'				=> 'Lataa koneellesi',
-	'DONE'						=> 'Valmis',
-
-	'ENABLE_KEYS'				=> 'Avaimien palautus. Tämä voi kestää jonkun aikaa',
-
-	'FILES_OPTIONAL'			=> 'Vaihtoehtoiset tiedostot ja hakemistot',
-	'FILES_OPTIONAL_EXPLAIN'	=> '<strong>Vaihtoehtoiset</strong> - Näitä tiedostoja, hakemistoja tai oikeuksia ei tarvita. Asennusohjelma yrittää eri tavoilla saada toiminnot suoritetuksi, mikäli niitä ei ole olemassa tai niihin ei voi kirjoittaa. Kuitenkin, näiden tiedostojen, hakemistojen tai oikeuksien olemassaolo nopeuttaa asennusta.',
-	'FILES_REQUIRED'			=> 'Tiedostot ja hakemistot',
-	'FILES_REQUIRED_EXPLAIN'	=> '<strong>Pakollinen</strong> - Toimiakseen oikein, phpBB:n täytyy voida kirjoittaa tiettyihin hakemistoihin tai tiedostoihin. Mikäli näet "Ei löytynyt" -ilmoituksen, sinun tulee luoda tämä tiedosto tai hakemisto. Jos näet "Ei voi kirjoittaa" -ilmoituksen, sinun tulee muuttaa tämän tiedoston tai hakemiston oikeuksia salliaksesi kirjoittamisen.',
-	'FILLING_TABLE'				=> 'Täytän taulua <strong>%s</strong>',
-	'FILLING_TABLES'			=> 'Täytän tauluja',
-
-	'FINAL_STEP'				=> 'Asennuksen viimeinen vaihe',
-	'FORUM_ADDRESS'				=> 'Keskustelufoorumin osoite',
-	'FORUM_ADDRESS_EXPLAIN'		=> 'Tämä on vanhan foorumin URL, esimerkiksi <samp>http://www.example.com/phpBB2/</samp>. Mikäli tähän laitetaan osoite eikä tätä kenttää jätetä tyhjäksi, kaikki tämän osoitteen esiintymät foorumin viesteissä, yksityisviesteissä ja allekirjoituksissa korvataan uuden foorumisi osoitteella.',
-	'FORUM_PATH'				=> 'Foorumin polku',
-	'FORUM_PATH_EXPLAIN'		=> 'Tämä on <strong>suhteellinen polku</strong> entiselle foorumille <strong>tämän phpBB3-asennuksen pääjuuresta</strong>',
-	'FOUND'						=> 'Löytyi',
-	'FTP_CONFIG'				=> 'Siirrä asetustiedosto käyttäen FTP-yhteyttä',
-	'FTP_CONFIG_EXPLAIN'		=> 'phpBB on löytänyt FTP-moduulin tältä palvelimelta. Voit yrittää siirtää config.php-tiedoston tämän avulla. Sinun tarvitsee antaa alla olevat tiedot. Huomaa, että käyttäjätunnus ja salasana ovat palvelimen tunnuksia! (Ota yhteyttä palveluntarjoajaasi, mikäli et tiedä mitä nämä ovat)',
-	'FTP_PATH'					=> 'FTP-polku',
-	'FTP_PATH_EXPLAIN'			=> 'Tämä on polku pääjuuresta phpBB3:en, esim. <samp>htdocs/phpBB3/</samp>',
-	'FTP_UPLOAD'				=> 'Siirrä palvelimelle',
-
-	'GPL'						=> 'General Public License',
-
-	'INITIAL_CONFIG'			=> 'Perusasetukset',
-	'INITIAL_CONFIG_EXPLAIN'	=> 'Asennusohjelma on todennut, että palvelimella voi ajaa phpBB:tä ja seuraavaksi sinun tulee antaa joitakin perusasetuksia. Mikäli et tiedä kuinka otetaan yhteys tietokantaan, ole hyvä ja kysy nämä tiedot palveluntarjoajaltasi (ensimmäinen vaihtoehto) tai käytä phpBB-tukifoorumia. Kun kirjoitat tietoja, varmista, että ne ovat varmasti oikein.',
-	'INSTALL_CONGRATS'			=> 'Onnea!',
-	'INSTALL_CONGRATS_EXPLAIN'	=> '
-		phpBB %1$s -asennus on onnistunut. Jatka eteenpäin valitsemalla jokin seuraavista vaihtoehdoista:</p>
-		<h2>Muunna vanha foorumi käyttämään phpBB3 alustaa</h2>
-		<p>phpBB Unified Convertor Framework tukee muunnosta phpBB 2.0.x -alustalta ja muilta ohjelmistoilta phpBB3-alustalle. Mikäli sinulla on keskustelufoorumi, jonka haluat muuntaa, voit <a href="%2$s">jatkaa muuntajaan</a>.</p>
-		<h2>Julkaise phpBB3-foorumisi!</h2>
-		<p>Linkki vie ylläpitoon, josta voit lähettää hieman tilastotietoja kehittäjille hallintapaneelistasi. Olisimme iloisia, jos lähetät nämä tiedot. Tämän jälkeen voisit viettää hetken aikaa tutkiaksesi ylläpitoa ja sen eri vaihtoehtoja. Muistathan, että tukea on saatavilla <a href="https://www.phpbb.com/support/docs/en/3.1/ug/">dokumentaatiosta</a>, <a href="%3$s">README-tiedostosta</a> ja <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumilta</a>.</p><p><strong>Ole hyvä ja poista install-hakemisto. Mikäli tämä hakemisto on palvelimella, vain ylläpidon asetukset ovat käytettävissä.</strong>',
-	'INSTALL_INTRO'				=> 'Tervetuloa asennukseen',
-
-	'INSTALL_INTRO_BODY'		=> 'Voit asentaa phpBB3:n palvelimellesi valitsemalla tämän vaihtoehdon.</p><p>Jotta voit jatkaa asentamista, tarvitset käytössäsi olevan tietokannan asetukset. Mikäli et tiedä tietokantasi asetuksia, ole hyvä ja ota yhteyttä palveluntarjoajaasi ja kysy tiedot heiltä. Et voi jatkaa asennusta eteenpäin, mikäli tiedot puuttuvat. Tarvitset:</p>
+    // Install page
+    'INSTALL_INTRO'			=> 'Welcome to Installation',
+    'INSTALL_INTRO_BODY'	=> 'With this option, it is possible to install phpBB3 onto your server.</p><p>In order to proceed, you will need your database settings. If you do not know your database settings, please contact your host and ask for them. You will not be able to continue without them. You need:</p>
 
 	<ul>
-		<li>Tietokannan tyyppi - käytössäsi oleva tietokanta.</li>
-		<li>Tietokantapalvelimen isäntänimi tai DSN - tietokantapalvelimen osoite.</li>
-		<li>Tietokantapalvelimen portti - palvelimen portti tietokannalle (useimmissa tapauksissa tätä ei tarvita).</li>
-		<li>Tietokannan nimi - palvelimella olevan tietokannan nimi.</li>
-		<li>Tietokannan käyttäjätunnus ja salasana - kirjautumistiedot, joita tarvitset ottaessasi yhteyttä tietokantaan.</li>
+		<li>The Database Type - the database you will be using.</li>
+		<li>The Database server hostname or DSN - the address of the database server.</li>
+		<li>The Database server port - the port of the database server (most of the time this is not needed).</li>
+		<li>The Database name - the name of the database on the server.</li>
+		<li>The Database username and Database password - the login data to access the database.</li>
 	</ul>
 
-	<p><strong>Huomaa:</strong> Mikäli asennat käyttäen SQLiteä, sinun tulisi antaa koko polku tietokannan tiedostoon DSN-kentässä ja jättää käyttäjätunnus- ja salasana-kentät tyhjiksi. Tietoturvan vuoksi tietokanta tulisi olla tallennettuna paikkaan, jossa siihen ei pääse käsiksi verkon kautta.</p>
+	<p><strong>Note:</strong> if you are installing using SQLite, you should enter the full path to your database file in the DSN field and leave the username and password fields blank. For security reasons, you should make sure that the database file is not stored in a location accessible from the web.</p>
 
-	<p>phpBB3 tukee seuraavia tietokantoja:</p>
+	<p>phpBB3 supports the following databases:</p>
 	<ul>
-		<li>MySQL 3.23 tai uudempi (MySQLi tuettu)</li>
+		<li>MySQL 3.23 or above (MySQLi supported)</li>
 		<li>PostgreSQL 8.3+</li>
-		<li>SQLite 2.8.2+</li>
 		<li>SQLite 3.6.15+</li>
-		<li>MS SQL Server 2000 or above (suoraan tai ODBC:n kautta)</li>
-		<li>MS SQL Server 2005 or above (natiivi)</li>
+		<li>MS SQL Server 2000 or above (directly or via ODBC)</li>
+		<li>MS SQL Server 2005 or above (native)</li>
 		<li>Oracle</li>
 	</ul>
 
-	<p>Asennusohjelma näyttää palvelimella olevat tietokannat.',
-	'INSTALL_INTRO_NEXT'		=> 'Paina alapuolella olevaa nappulaa aloittaaksesi asennuksen.',
-	'INSTALL_LOGIN'				=> 'kirjaudu sisään',
-	'INSTALL_NEXT'				=> 'Seuraava vaihe',
-	'INSTALL_NEXT_FAIL'			=> 'Osa testistä epäonnistui ja sinun tulisi korjata nämä ennen kuin jatkat eteenpäin. Mikäli et korjaa näitä, tuloksena voi olla epäonnistunut asennus.',
-	'INSTALL_NEXT_PASS'			=> 'Kaikki perustestit ovat läpäisty ja voit siirtyä asennuksen seuraavaan vaiheeseen. Mikäli olet muuttanut oikeuksia, moduuleita, jne, ja haluat suorittaa testit uudelleen, voit tehdä näin.',
-	'INSTALL_PANEL'				=> 'Asennuspaneeli',
-	'INSTALL_SEND_CONFIG'		=> 'phpBB ei valitettavasti pystynyt kirjoittamaan asennustietoja suoraan config.php-tiedostoon. Tämä voi johtua, koska tiedostoa ei ole olemassa tai siihen ei voida kirjoittaa. Saat listan vaihtoehdoista, jotka voit suorittaa asentaaksesi config.php-tiedoston oikein.',
-	'INSTALL_START'				=> 'Aloita asennus',
-	'INSTALL_TEST'				=> 'Testaa uudelleen',
-	'INST_ERR'					=> 'Asennuksen virhe',
-	'INST_ERR_DB_CONNECT'		=> 'En saanut yhteyttä tietokantaan. Katso virheilmoitus alapuolelta',
-	'INST_ERR_DB_FORUM_PATH'	=> 'Tietokantatiedosto on asetettu foorumin hakemistopuuhun. Tämä tiedosto kannattaisi laittaa jonnekin, mihin ei päästä internetin kautta käsiksi.',
-	'INST_ERR_DB_INVALID_PREFIX'=> 'Antamasi etuliite on epäkelpo. Etuliite tulee alkaa kirjaimella ja sisältää lisäksi korkeintaan numeroita ja alaviivoja.',
-	'INST_ERR_DB_NO_ERROR'		=> 'Ei virheilmoitusta',
-	'INST_ERR_DB_NO_MYSQLI'		=> 'Tällä koneella käytössä oleva MySQL-versio ei ole yhteensopiva valitsemasi "MySQL, MySQLi-laajennuksen tuella" -vaihtoehdon kanssa. Ole hyvä ja yritä "MySQL"-vaihtoehtoa.',
-	'INST_ERR_DB_NO_SQLITE'		=> 'Tällä koneella käytössä oleva SQLite-laajennusosa on liian vanha. Se tulee päivittää vähintään versioon 2.8.2.',
-	'INST_ERR_DB_NO_SQLITE3'	=> 'Tällä koneella käytössä oleva SQLite-laajennusosa on liian vanha. Se tulee päivittää vähintään versioon 3.6.15.',
-	'INST_ERR_DB_NO_ORACLE'		=> 'Tällä koneella käytössä oleva Oracle vaatii asettamaan <var>NLS_CHARACTERSET</var>-parametriksi <var>UTF8</var>. Päivitä asennuksesi joko versioon 9.2+ tai vaihda parametriä.',
-	'INST_ERR_DB_NO_POSTGRES'	=> 'Valitsemaasi tietokantaa ei luotu <var>UNICODE</var>- tai <var>UTF8</var>-muotoon. Yritä asentaa tietokanta <var>UNICODE</var>- tai <var>UTF8</var>-muodossa',
-	'INST_ERR_DB_NO_NAME'		=> 'Tietokannan nimi puuttuu',
-	'INST_ERR_EMAIL_INVALID'	=> 'Antamasi sähköpostiosoite on epäkelpo',
-	'INST_ERR_EMAIL_MISMATCH'	=> 'Antamasi sähköpostiosoitteet eivät täsmää.',
-	'INST_ERR_FATAL'			=> 'Kriittinen asennusvirhe',
-	'INST_ERR_FATAL_DB'			=> 'Tietokannassa tapahtui kriittinen ja peruuttamaton virhe. Tämä voi johtua siitä, että määritellyllä käyttäjällä ei ole tarpeeksi oikeuksia, kuten CREATE TABLES- tai INSERT -komentoa, jne. Lisätietoa voi olla alapuolella. Ota ensitilassa yhteyttä palveluntarjoajaasi ja sen jälkeen (jos on tarvetta) käytä phpBB-tukifoorumin palveluita.',
-	'INST_ERR_FTP_PATH'			=> 'En voinut siirtyä annettuun polkuun, ole hyvä ja tarkista asetus.',
-	'INST_ERR_FTP_LOGIN'		=> 'En voinut kirjautua FTP-palvelimelle, ole hyvä ja tarkista käyttäjätunnus ja salasana',
-	'INST_ERR_MISSING_DATA'		=> 'Nämä kaikki tiedot tulee täyttää',
-	'INST_ERR_NO_DB'			=> 'En voinut ladata PHP-moduulia valitulle tietokannalle',
-	'INST_ERR_PASSWORD_MISMATCH'	=> 'Antamasi salasanat eivät täsmää.',
-	'INST_ERR_PASSWORD_TOO_LONG'	=> 'Antamasi salasana on liian pitkä. Enimmäispituus on 30 merkkiä.',
-	'INST_ERR_PASSWORD_TOO_SHORT'	=> 'Antamasi salasana on liian lyhyt. Vähimmäispituus on 6 merkkiä.',
-	'INST_ERR_PREFIX'			=> 'Tietokannassa on tauluja, joissa on käytössä jo antamasi taulun etuliite. Ole hyvä ja käytä toista etuliitettä.',
-	'INST_ERR_PREFIX_INVALID'	=> 'Antamasi taulun etuliite on epäkelpo käytössä olevalle tietokannallesi. Kokeile toista etuliitettä ja poista erikoismerkit, kuten tavuviivat',
-	'INST_ERR_PREFIX_TOO_LONG'	=> 'Antamasi taulun etuliite on liian pitkä. Enimmäispituus saa olla %d merkkiä.',
-	'INST_ERR_USER_TOO_LONG'	=> 'Antamasi käyttäjätunnus on liian pitkä. Enimmäispituus on 20 merkkiä.',
-	'INST_ERR_USER_TOO_SHORT'	=> 'Antamasi käyttäjätunnus on liian lyhyt. Vähimmäispituus on 3 merkkiä.',
-	'INVALID_PRIMARY_KEY'		=> 'Epäkelpo primary key : %s',
+	<p>Only those databases supported on your server will be displayed.',
 
-	'LONG_SCRIPT_EXECUTION'		=> 'Odota tämä saattaa kestää jonkun aikaa... Ole hyvä äläkä pysäytä suorittamista kesken.',
+    'ACP_LINK'	=> 'Take me to <a href="%1$s">the ACP</a>',
 
-	// mbstring
-	'MBSTRING_CHECK'						=> '<samp>mbstring</samp>-laajennuksen tarkistus',
-	'MBSTRING_CHECK_EXPLAIN'				=> '<strong>Vaadittu</strong> - <samp>mbstring</samp> on PHP:n laajennus joka sallii multibyte-merkkijonofunktiot. Jotkut mbstring-funktioista eivät ole yhteensopivia phpBB:n kanssa, joten ne tulisi poistaa käytöstä.',
-	'MBSTRING_FUNC_OVERLOAD'				=> 'Funktioiden ylikuormitus',
-	'MBSTRING_FUNC_OVERLOAD_EXPLAIN'		=> '<var>mbstring.func_overload</var> täytyy asettaa joko 0 tai 4',
-	'MBSTRING_ENCODING_TRANSLATION'			=> 'Transparent character enkoodaus',
-	'MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> täytyy asettaa 0',
-	'MBSTRING_HTTP_INPUT'					=> 'HTTP-syötemerkkien muunnos',
-	'MBSTRING_HTTP_INPUT_EXPLAIN'			=> '<var>mbstring.http_input</var> täytyy asettaa <samp>pass</samp>',
-	'MBSTRING_HTTP_OUTPUT'					=> 'HTTP-tulostemerkkien muunnos',
-	'MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> täytyy asettaa <samp>pass</samp>',
-
-	'MAKE_FOLDER_WRITABLE'		=> 'Varmista, että tämä hakemisto on olemassa palvelimella, ja että siihen voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
-	'MAKE_FOLDERS_WRITABLE'		=> 'Varmista, että nämä hakemistot ovat olemassa palvelimella, ja että niihin voidaan kirjoittaa, yritä sen jälkeen uudelleen:<br />»<strong>%s</strong>',
-
-	'MYSQL_SCHEMA_UPDATE_REQUIRED'	=> 'Käyttämäsi MySQL tietokanta on liian vanha phpBB:lle. phpBB tunnisti version MySQL 3.x/4.x, mutta palvelimessa on MySQL %2$s.<br /><strong>Ennen kuin päivität versiota pitää sinun päivittää tietokantarakenne.</strong><br /><br />Ohjeet MySQL-tietokannan päivittämiseen löytyvät <a href="https://www.phpbb.com/kb/article/doesnt-have-a-default-value-errors/">MySQL:n päivittämiseen liittyvästä tietopankkiartikkelista</a>. Jos tarvitset apua, voit käyttää <a href="https://www.phpbb.com/community/viewforum.php?f=466">tukifoorumia</a>.',
-
-	'NAMING_CONFLICT'			=> 'Nimeämisvirhe: %s ja %s ovat kummatkin aliaksia<br /><br />%s',
-	'NEXT_STEP'					=> 'Jatka seuraavaan vaiheeseen',
-	'NOT_FOUND'					=> 'En löydä',
-	'NOT_UNDERSTAND'			=> 'En ymmärtänyt %s #%d, taulua %s (“%s”)',
-	'NO_CONVERTORS'				=> 'Ei käytettäviä muuntajia',
-	'NO_CONVERT_SPECIFIED'		=> 'Muuntajaa ei ole määritelty',
-	'NO_LOCATION'				=> 'En löytänyt. Mikäli tiedät, että ImageMagick on asennettuna, voit määritellä sen asennuspolun myöhemmin ylläpidon asetuksissa.',
-	'NO_TABLES_FOUND'			=> 'En löytänyt tauluja.',
-	
-	'OVERVIEW_BODY'				=> 'Tervetuloa phpBB3-ohjelmaan<br /><br />phpBB™ on maailman käytetyin avoimen lähdekoodin keskustelufoorumiohjelmisto. phpBB3 on uusin versio seitsemän vuoden olemassaolonsa aikana. Kuten edeltäjänsäkin, phpBB3 on täynnä ominaisuuksia ja erittäin käyttäjäystävällinen. Lisäksi se on phpBB Teamin tukema. phpBB3 parantaa niitä ominaisuuksia, jotka tekivät phpBB2:sta suositun ja siihen on lisätty ominaisuuksia, joita ei ollut aiemmissa versioissa. Toivomme, että ylitämme odotuksesi.<br /><br />Tämä asennusohjelma opastaa sinua asentamaan phpBB3:n, päivittämään aiemmasta phpBB3:n versiosta uusimpaan ja myös siirtymään muista keskustelufoorumiohjelmistoista (mukaan lukien phpBB2) phpBB3:n käyttäjäksi. Saadaksesi lisätietoja ole hyvä ja lue <a href="../docs/INSTALL.html">asennusohje</a>.<br /><br />Lukeaksesi ohjelmistolisenssin tai saadaksesi tietoa käyttötuesta ja meidän roolistamme, ole hyvä ja valitse asiaankuuluva vaihtoehto sivupalkista. Jatkaaksesi eteenpäin valitse haluamasi toiminto yläpuolella olevista välilehdistä.',
-	
-	'PCRE_UTF_SUPPORT'				=> 'PCRE UTF-8 -tuki',
-	'PCRE_UTF_SUPPORT_EXPLAIN'		=> 'phpBB <strong>ei toimi</strong> mikäli palvelimella oleva PHP ei ole käännetty PCRE-laajennusosan UTF-8 -tuen kanssa.',
-	'PHP_GETIMAGESIZE_SUPPORT'			=> 'PHP-funktio getimagesize() on saatavilla',
-	'PHP_GETIMAGESIZE_SUPPORT_EXPLAIN'	=> '<strong>Vaadittu</strong> - Jotta phpBB voisi toimia oikein, getimagesize-funktion tulee olla saatavilla.',
-	'PHP_JSON_SUPPORT'				=> 'PHP JSON tuki',
-	'PHP_JSON_SUPPORT_EXPLAIN'		=> '<strong>Tärkeä tieto</strong> - phpBB ei toimi oikein jos php JSON laajennus ei ole käytettävissä.',
-	'PHP_OPTIONAL_MODULE'			=> 'Valinnaiset moduulit',
-	'PHP_OPTIONAL_MODULE_EXPLAIN'	=> '<strong>Valinnainen</strong> - Nämä moduulit tai sovellukset ovat valinnaisia. Et tarvitse näitä käyttääksesi phpBB 3.0 -ohjelmistoa, mutta mikäli nämä ovat saatavilla, ne antavat enemmän toimintoja keskustelufoorumin käyttämiseen.',
-	'PHP_SUPPORTED_DB'				=> 'Tuetut tietokannat',
-	'PHP_SUPPORTED_DB_EXPLAIN'		=> '<strong>Pakollinen</strong> - Täytyy olla vähintään yksi PHP:n kanssa yhteensopiva tietokanta. Mikäli tässä ei näy yhtään tietokantamoduulia, sinun täytyy ottaa yhteys palveluntarjoajaasi tai tutkia käyttämäsi PHP-version asennusohjeita saadaksesi neuvoja.',
-	'PHP_REGISTER_GLOBALS'			=> 'PHP-asetus "register_globals" on poissa käytöstä',
-	'PHP_REGISTER_GLOBALS_EXPLAIN'	=> 'phpBB toimii vaikka tämä asetus on käytössä, mutta mikäli mahdollista, on suositeltavaa, että register_globals on poissa käytöstä tietoturvasyistä johtuen.',
-	'PHP_SAFE_MODE'					=> 'Safe mode',
-	'PHP_SETTINGS'					=> 'PHP-versio ja asetukset',
-	'PHP_SETTINGS_EXPLAIN'			=> '<strong>Pakollinen</strong> - PHP-version tulee olla vähintään 5.3.3 asentaaksesi phpBB:n. Mikäli <var>safe mode</var> on näkyvissä alapuolella, PHP-asennuksesi on asetettu tähän tilaan. Tämä asettaa rajoituksia etähallintaan ja muihin sen kaltaisiin toimintoihin.',
-	'PHP_URL_FOPEN_SUPPORT'			=> 'PHP-asetus <var>allow_url_fopen</var> on päällä',
-	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>Vaihtoehtoinen</strong> - Tätä asetusta ei ole vaadittu, mutta jotkin phpBB:n toiminnoista, kuten linkitetyt avatar-tiedostot eivät toimi kunnolla ilman tätä. ',
-	'PHP_VERSION_REQD'				=> 'PHP-versio >= 5.3.3',
-	'POST_ID'						=> 'Viestin tunniste',
-	'PREFIX_FOUND'					=> 'Asennus on löytänyt kelvollisen asennuksen tietokannasta, joka käyttää <strong>%s</strong> etuliitettä tauluissa.',
-	'PREPROCESS_STEP'				=> 'Suorittaa pre-processing funktioita/kyselyitä',
-	'PRE_CONVERT_COMPLETE'			=> 'Kaikki alustavat toiminnot ovat suoritettu. Nyt voit aloittaa varsinaisen muuntamisen.',
-	'PROCESS_LAST'					=> 'Suoritan viimeisiä lausekkeita',
-
-	'REFRESH_PAGE'				=> 'Lataa sivu uudelleen jatkaaksesi muuntamista',
-	'REFRESH_PAGE_EXPLAIN'		=> 'Mikäli tämä on asetettu käyttöön, muuntaja lataa sivun uudelleen jatkaakseen muunnosta aina yhden vaiheen suorittamisen jälkeen. Mikäli olet muuntamassa ensimmäistä kertaa ja haluat nähdä mahdolliset virheilmoitukset etukäteen, on suositeltavaa, että otat tämän toiminnon pois käytöstä.',
-	'REQUIREMENTS_TITLE'		=> 'Asennuksen yhteensopivuus',
-	'REQUIREMENTS_EXPLAIN'		=> 'Ennen asennuksen aloittamista phpBB suorittaa tarkistuksia tiedostoihin ja hakemistoihin varmistaen, että voit suorittaa asennuksen oikein. Ole hyvä ja lue tulokset läpi huolella. Älä jatka asennusta ennen kuin kaikki tarvittavat testit ovat läpäisty. Mikäli haluat suorittaa vaihtoehtoisten toimintojen testit, sinun tulisi varmistaa, että myös nämä testit menevät onnistuneesti läpi.',
-	'RETRY_WRITE'				=> 'Yritä kirjoittaa asetustiedosto uudelleen',
-	'RETRY_WRITE_EXPLAIN'		=> 'Jos haluat, voit muuttaa config.php tiedoston oikeuksia salliaksesi phpBB:n kirjoittamisen siihen. Jos haluat, voit yrittää uudelleen valitsemalla vaihtoehdon alapuolelta. Muista palauttaa config.php tiedoston oikeudet alkuperäisiksi, kun phpBB:n asennus on päättynyt.',
-
-	'SCRIPT_PATH'				=> 'Ohjelmiston polku',
-	'SCRIPT_PATH_EXPLAIN'		=> 'Polku phpBB:hen suhteessa toimialueen osoitteeseen, esimerkiksi <samp>/phpBB3</samp>',
-	'SELECT_LANG'				=> 'Valitse kieli',
-	'SERVER_CONFIG'				=> 'Palvelimen asetukset',
-	'SEARCH_INDEX_UNCONVERTED'	=> 'Haun sisällysluetteloa ei ole muunnettu',
-	'SEARCH_INDEX_UNCONVERTED_EXPLAIN'	=> 'Vanhaa sisällysluetteloasi ei ole muunnettu. Mikäli suoritat hakuja nyt, et saa tuloksia. Luodaksesi sisällysluettelon. Mene ylläpidon asetuksiin ja valitse huolto. valitse tämän jälkeen sisällysluettelo listasta.',
-	'SELECT_FORUM_GA'			=> 'Julkiset ilmoitukset on phpBB 3.1:ssä linkitetty johonkin forumiin. Valitse forum julkisille ilmoituksille (voi muuttaa myöhemmin):',
-	'SOFTWARE'					=> 'Keskustelufoorumin ohjelmisto',
-	'SPECIFY_OPTIONS'			=> 'Määrittele muunnoksen vaihtoehdot',
-	'STAGE_ADMINISTRATOR'		=> 'Ylläpitäjän tiedot',
-	'STAGE_ADVANCED'			=> 'Yksityiskohtaiset asetukset',
-	'STAGE_ADVANCED_EXPLAIN'	=> 'Näitä asetuksia tarvitsee muuttaa vain, jos tiedät, että oletusasetukset eivät ole oikein. Jos olet epävarma, jatka suoraan seuraavaan vaiheeseen. Nämä tiedot voi muuttaa myöhemmin ylläpidon asetuksista.',
-	'STAGE_CONFIG_FILE'			=> 'Asetustiedosto',
-	'STAGE_CREATE_TABLE'		=> 'Luo taulut tietokantaan',
-	'STAGE_CREATE_TABLE_EXPLAIN'	=> 'phpBB 3.1:n käyttämät taulut on luotu tietokantaan ja täytetty alustavilla tiedoilla. Jatka seuraavaan vaiheeseen viimeistelläksesi phpBB-asennuksen.',
-	'STAGE_DATABASE'			=> 'Tietokannan asetukset',
-	'STAGE_FINAL'				=> 'Viimeinen vaihe',
-	'STAGE_INTRO'				=> 'Tervetuloa',
-	'STAGE_IN_PROGRESS'			=> 'Muunnos on käynnissä',
-	'STAGE_REQUIREMENTS'		=> 'Tarvittavat',
-	'STAGE_SETTINGS'			=> 'Asetukset',
-	'STARTING_CONVERT'			=> 'Aloitetaan muunnosta',
-	'STEP_PERCENT_COMPLETED'	=> 'Vaihe <strong>%d</strong>, <strong>%d</strong>:sta valmiina',
-	'SUB_INTRO'					=> 'Tervetuloa',
-	'SUB_LICENSE'				=> 'Lisenssi',
-	'SUB_SUPPORT'				=> 'Tuki',
-	'SUCCESSFUL_CONNECT'		=> 'Yhteydenotto onnistui',
-	'SUPPORT_BODY'				=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=486">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=451">laajennosten foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=471">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajan tasalla ja saadaksesi uutiset uusimmista versioista. Mikset liittyisi <a href="https://www.phpbb.com/support/">postituslistallemme</a>?<br /><br />',
-	'SYNC_FORUMS'				=> 'Aloitetaan keskustelualueiden synkronointi',
-	'SYNC_POST_COUNT'			=> 'Synkronoin post_counts',
-	'SYNC_POST_COUNT_ID'		=> 'Synkronoin post_counts <var>entry</var> %1$s, %2$s:sta.',
-	'SYNC_TOPICS'				=> 'Aloitetaan viestiketjujen synkronointi',
-	'SYNC_TOPIC_ID'				=> 'Synkronoidaan viestiketjuja alkaen <var>topic_id</var>:stä $1%s ja jatketaan $2%s asti',
-
-	'TABLES_MISSING'			=> 'En löytänyt näitä tauluja<br />» <strong>%s</strong>.',
-	'TABLE_PREFIX'				=> 'Taulujen etuliite',
-	'TABLE_PREFIX_EXPLAIN'		=> 'Etuliite tulee alkaa kirjaimella ja siinä saa olla lisäksi numeroita ja alaviivoja.',
-	'TABLE_PREFIX_SAME'			=> 'Etuliitteen täytyy olla sama, kuin sen ohjelman, josta olet muuntamassa.<br />» Antamasi etuliite oli %s',
-	'TESTS_PASSED'				=> 'Testit ovat suoritettu onnistuneesti',
-	'TESTS_FAILED'				=> 'Testit epäonnistuivat',
-
-	'UNABLE_WRITE_LOCK'			=> 'En voi kirjoittaa lukkotiedostoa',
-	'UNAVAILABLE'				=> 'Ei saatavilla',
-	'UNWRITABLE'				=> 'Ei voida kirjoittaa',
-	'UPDATE_TOPICS_POSTED'		=> 'Luon kirjoitettujen viestien informaatiota',
-	'UPDATE_TOPICS_POSTED_ERR'	=> 'Tapahtui virhe luotaessa viestien lähetyksen informaatiota. Voit yrittää tätä vaihetta uudelleen ylläpidosta käsin, kun muunnos on päättynyt.',
-	'VERIFY_OPTIONS'			=> 'Varmistan muunnoksen vaihtoehtoja',
-	'VERSION'					=> 'Versio',
-
-	'WELCOME_INSTALL'			=> 'Tervetuloa phpBB 3:n asennukseen',
-	'WRITABLE'					=> 'Voidaan kirjoittaa',
+    'INSTALL_PHPBB_INSTALLED'		=> 'phpBB is already installed.',
+    'INSTALL_PHPBB_NOT_INSTALLED'	=> 'phpBB is not installed yet.'
 ));
 
-// Updater
+// Requirements translation
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Kaikki tiedostot ovat ajan tasalla uusimman phpBB-version kanssa.',
-	'ARCHIVE_FILE'				=> 'Lähdetiedosto arkistotiedostosta',
+    // Filesystem requirements
+    'FILE_NOT_EXISTS'						=> 'File does not exist',
+    'FILE_NOT_EXISTS_EXPLAIN'				=> 'To be able to install phpBB the %1$s file needs to exist.',
+    'FILE_NOT_EXISTS_EXPLAIN_OPTIONAL'		=> 'It is recommended that the %1$s file exist for a better forum user experience.',
+    'FILE_NOT_WRITABLE'						=> 'File is not writable',
+    'FILE_NOT_WRITABLE_EXPLAIN'				=> 'To be able to install phpBB the %1$s file needs to be writable.',
+    'FILE_NOT_WRITABLE_EXPLAIN_OPTIONAL'	=> 'It is recommended that the %1$s file be writable for a better forum user experience.',
 
- 	'BACK'				=> 'Takaisin',
-	'BINARY_FILE'		=> 'Binääritiedosto',
-	'BOT'				=> 'Spider/Robot',
+    'DIRECTORY_NOT_EXISTS'						=> 'Directory does not exist',
+    'DIRECTORY_NOT_EXISTS_EXPLAIN'				=> 'To be able to install phpBB the %1$s directory needs to exist.',
+    'DIRECTORY_NOT_EXISTS_EXPLAIN_OPTIONAL'		=> 'It is recommended that the %1$s directory exist for a better forum user experience.',
+    'DIRECTORY_NOT_WRITABLE'					=> 'Directory is not writable',
+    'DIRECTORY_NOT_WRITABLE_EXPLAIN'			=> 'To be able to install phpBB the %1$s directory needs to be writable.',
+    'DIRECTORY_NOT_WRITABLE_EXPLAIN_OPTIONAL'	=> 'It is recommended that the %1$s directory be writable for a better forum user experience.',
 
-	'CHANGE_CLEAN_NAMES'			=> 'Menetelmä, joka varmistaa, että sama käyttäjätunnus ei ole käytössä useammalla käyttäjällä on muuttunut. Joillain käyttäjillä on sama nimi, kun heidät tarkistetaan uudella menetelmällä. Jatkamista varten nämä käyttäjätunnukset tulee joko poistaa tai nimetä uudelleen, jotta vain yksi tällainen nimi on olemassa.',
-	'CHECK_FILES'					=> 'Tarkista tiedostot',
-	'CHECK_FILES_AGAIN'				=> 'Tarkista tiedostot uudelleen',
-	'CHECK_FILES_EXPLAIN'			=> 'Seuraavassa vaiheessa kaikki tiedostot tarkistetaan päivitysversioita vastaan - Tässä saattaa kestää hetken aikaa, jos tämä on ensimmäinen tarkistuskerta.',
-	'CHECK_FILES_UP_TO_DATE'		=> 'Tietokannan mukaan asennuksesi on ajan tasalla. Voit halutessasi suorittaa tiedostojen tarkistuksen varmistaaksesi, että myös nämä ovat ajan tasalla.',
-	'CHECK_UPDATE_DATABASE'			=> 'Jatka päivitystä',
-	'COLLECTED_INFORMATION'			=> 'Tiedostoista kerätyt tiedot',
-	'COLLECTED_INFORMATION_EXPLAIN'	=> 'Alapuolella näkyy lista tiedostoista, jotka vaativat päivittämistä. Lue tiedot jokaisen tiedoston tilasta nähdäksesi tarpeelliset toimenpiteet tiedoston päivittämiseksi.',
-	'COLLECTING_FILE_DIFFS'			=> 'Kerään tiedostojen eroavaisuuksia',
-	'COMPLETE_LOGIN_TO_BOARD'		=> '<a href="../ucp.php?mode=login">Kirjaudu sisään keskustelufoorumillesi</a> ja tarkista, että kaikki toimii normaalisti. Älä unohda poistaa, siirtää tai uudelleen nimetä /install-hakemistoa!',
-	'CONTINUE_UPDATE_NOW'			=> 'Jatka päivittämistä',
-	'CONTINUE_UPDATE'				=> 'Jatka päivittämistä',					// Shown after file upload to indicate the update process is not yet finished
-	'CURRENT_FILE'					=> 'Konfliktin alku - Alkuperäinen koodi ennen päivitystä',
-	'CURRENT_VERSION'				=> 'Tämänhetkinen versio',
+    // Server requirements
+    'PHP_VERSION_REQD'					=> 'PHP version',
+    'PHP_VERSION_REQD_EXPLAIN'			=> 'phpBB requires PHP version 5.4.0 or higher.',
+    'PHP_GETIMAGESIZE_SUPPORT'			=> 'PHP getimagesize() function is required',
+    'PHP_GETIMAGESIZE_SUPPORT_EXPLAIN'	=> 'In order for phpBB to function correctly, the getimagesize function needs to be available.',
+    'PCRE_UTF_SUPPORT'					=> 'PCRE UTF-8 support',
+    'PCRE_UTF_SUPPORT_EXPLAIN'			=> 'phpBB will not run if your PHP installation is not compiled with UTF-8 support in the PCRE extension.',
+    'PHP_JSON_SUPPORT'					=> 'PHP JSON support',
+    'PHP_JSON_SUPPORT_EXPLAIN'			=> 'In order for phpBB to function correctly, the PHP JSON extension needs to be available.',
+    'PHP_XML_SUPPORT'					=> 'PHP XML/DOM support',
+    'PHP_XML_SUPPORT_EXPLAIN'			=> 'In order for phpBB to function correctly, the PHP XML/DOM extension needs to be available.',
+    'PHP_SUPPORTED_DB'					=> 'Supported databases',
+    'PHP_SUPPORTED_DB_EXPLAIN'			=> 'You must have support for at least one compatible database within PHP. If no database modules are shown as available you should contact your hosting provider or review the relevant PHP installation documentation for advice.',
 
-	'DATABASE_TYPE'						=> 'Tietokannan tyyppi',
-	'DATABASE_UPDATE_COMPLETE'			=> 'Tietokannan päivitys valmis!',
-	'DATABASE_UPDATE_CONTINUE'			=> 'Jatka tietokannan päivitystä',
-	'DATABASE_UPDATE_INFO_OLD'			=> 'install-hakemistossa oleva tietokannan päivitystiedosto ei ole ajan tasalla. Varmista, että olet siirtänyt palvelimelle oikean version tuosta tiedostosta.',
-	'DATABASE_UPDATE_NOT_COMPLETED'		=> 'Tietokannan päivitys käynnissä.',
-	'DELETE_USER_REMOVE'				=> 'Poista käyttäjä ja viestit',
-	'DELETE_USER_RETAIN'				=> 'Poista käyttäjä, mutta säilytä viestit',
-	'DESTINATION'						=> 'Kohdetiedosto',
-	'DIFF_INLINE'						=> 'Välitön',
-	'DIFF_RAW'							=> 'Raaka yhdenmukaistettu vertailu',
-	'DIFF_SEP_EXPLAIN'					=> 'Koodi, jota käytetään päivitetyssä/uudessa tiedostossa',
-	'DIFF_SIDE_BY_SIDE'					=> 'vierekkäin',
-	'DIFF_UNIFIED'						=> 'Yhdenmukaistettu vertailu',
-	'DO_NOT_UPDATE'						=> 'Älä päivitä tätä tiedostoa',
-	'DONE'								=> 'Valmis',
-	'DOWNLOAD'							=> 'Lataa',
-	'DOWNLOAD_AS'						=> 'Lataa muodossa',
-    'DOWNLOAD_UPDATE_METHOD_BUTTON'     => 'Lataa muuttuneet tiedostot koneellesi (suositeltu)',
-	'DOWNLOAD_CONFLICTS'				=> 'Lataa tämän tiedoston konfliktit',
-	'DOWNLOAD_CONFLICTS_EXPLAIN'		=> 'Etsi &lt;&lt;&lt; löytääksesi konflikteja',
-	'DOWNLOAD_UPDATE_METHOD'			=> 'Lataa muuttuneet tiedostot paketoituna',
-	'DOWNLOAD_UPDATE_METHOD_EXPLAIN'	=> 'Latauksen jälkeen sinun tulisi purkaa tiedosto. Tästä tiedostosta löydät muuttuneet tiedostot, jotka tulee siirtää phpBB:n juurihakemistoon. Ole hyvä ja siirrä tiedostot oikeisiin paikkoihin. Kun olet siirtänyt kaikki tiedostot palvelimelle. Ole hyvä ja tarkista tiedostot uudelleen valitsemalla toisen alhaalla olevista napeista.',
+    'RETEST_REQUIREMENTS'	=> 'Retest requirements',
 
-	'EDIT_USERNAME'	=> 'Muokkaa käyttäjätunnusta',
-	'ERROR'			=> 'Virhe',
-	'EVERYTHING_UP_TO_DATE'		=> 'Kaikki kunnossa viimeisimmän phpBB version kanssa. Kirjaudu <a href="%1$s">palstalle</a> ja tarkista että kaikki toimii hyvin. Muista poistaa tai nimetä uudelleen install-hakemisto. Lähetä päivitetty tieto palstan ja palvelimen asetuksista <a href="%2$s">lähetä tila</a> painikkeesta ACP:ssä.',
+    'STAGE_REQUIREMENTS'	=> 'Check requirements'
+));
 
-	'FILE_ALREADY_UP_TO_DATE'		=> 'Tiedosto on jo päivitetty',
-	'FILE_DIFF_NOT_ALLOWED'			=> 'Tiedoston vertailua ei ole sallittu',
-	'FILE_USED'						=> 'Käytin informaatiota',			// Single file
-	'FILES_CONFLICT'				=> 'Ristiriitaiset tiedostot',
-	'FILES_CONFLICT_EXPLAIN'		=> 'Seuraavat tiedostot ovat muokattuja ja ne eivät ole kelvollisia vertailutiedostoja alkuperäisille tiedostoille. phpBB on havainnut, että nämä tiedostot aiheuttavat konflikteja, jos niiden yhdistämistä yritetään. Tutki tiedostoja ja koita ratkaista konflikteja aiheuttavat kohdat tai valitse haluamasi yhdistämistapa. Mikäli ratkaisit konfliktit. Tarkista tiedostot uudelleen sen jälkeen, kun olet muokannut niitä. Voit valita haluamasi yhdistämismenetelmän jokaiselle tiedostolle erikseen. Ensimmäinen antaa tuloksena tiedoston, jossa konfliktin aiheuttavat rivit vanhoista tiedostoista ovat poistettu ja toinen vaihtoehto antaa tiedoston, jossa uuden tiedoston muutokset menetetään.',
-	'FILES_DELETED'					=> 'Poistetut tiedostot',
-	'FILES_DELETED_EXPLAIN'			=> 'Seuraavat tiedostot ovat tarpeettomia uudessa versiossa. Ne on poistettu asennuksen yhteydessä.',
-	'FILES_MODIFIED'				=> 'Muokatut tiedostot',
-	'FILES_MODIFIED_EXPLAIN'		=> 'Nämä tiedostot ovat muokattuja ja eivät ole kelvollisia vertailutiedostoja alkuperäiseen asennukseen. Päivitetty tiedosto on yhdistelmä vanhaa tiedostoa ja uusia tiedostoja.',
-	'FILES_NEW'						=> 'Uudet tiedostot',
-	'FILES_NEW_EXPLAIN'				=> 'Näitä tiedostoja ei ole olemassa tämänhetkisessä asennuksessasi.',
-	'FILES_NEW_CONFLICT'			=> 'Uudet konfliktin aiheuttavat tiedostot',
-	'FILES_NEW_CONFLICT_EXPLAIN'	=> 'Nämä tiedostot ovat uusinta versiota, mutta samanniminen tiedosto on jo olemassa samassa paikassa. Tämä tiedosto ylikirjoittaa vanhan tiedoston.',
-	'FILES_NOT_MODIFIED'			=> 'Muokkaamattomat tiedostot',
-	'FILES_NOT_MODIFIED_EXPLAIN'	=> 'Näitä tiedostoja ei ole muokattu ja ne ovat kelvollisia tiedostoja päivitykseen.',
-	'FILES_UP_TO_DATE'				=> 'Nämä tiedostot ovat jo päivitetty',
-	'FILES_UP_TO_DATE_EXPLAIN'		=> 'Nämä tiedostot ovat viimeisintä versiota ja uusia päivityksiä ei ole saatavilla.',
-	'FTP_SETTINGS'					=> 'FTP-asetukset',
-	'FTP_UPDATE_METHOD'				=> 'FTP-siirto palvelimelle',
+// General error messages
+$lang = array_merge($lang, array(
+    'INST_ERR_MISSING_DATA'		=> 'You must fill out all fields in this block.',
 
-	'INCOMPATIBLE_UPDATE_FILES'		=> 'Löydetyt päivitystiedostot eivät ole yhteensopivia käyttämäsi version kanssa. Käytössäsi oleva versio on %1$s ja käytössäsi oleva tiedosto on tarkoitettu päivittämään %2$s -> %3$s.',
-	'INCOMPLETE_UPDATE_FILES'		=> 'Päivitystiedosto on vajaa',
-	'INLINE_UPDATE_SUCCESSFUL'		=> 'Tietokannan päivittäminen onnistui. Voit jatkaa päivitystä eteenpäin',
+    'TIMEOUT_DETECTED_TITLE'	=> 'The installer detected a timeout',
+    'TIMEOUT_DETECTED_MESSAGE'	=> 'The installer has detected a timeout, you may try to refresh the page, which may lead to data corruption. We suggest that you either increase your timeout settings or try to use the CLI.',
+));
 
-	'KEEP_OLD_NAME'		=> 'Säilytä käyttäjätunnus',
+// Data obtaining translations
+$lang = array_merge($lang, array(
+    'STAGE_OBTAIN_DATA'	=> 'Set installation data',
 
-	'LATEST_VERSION'		=> 'Viimeisin versio',
-	'LINE'					=> 'Rivi',
-	'LINE_ADDED'			=> 'Lisätty',
-	'LINE_MODIFIED'			=> 'Muokattu',
-	'LINE_REMOVED'			=> 'Poistettu',
-	'LINE_UNMODIFIED'		=> 'Muokkaamaton',
-	'LOGIN_UPDATE_EXPLAIN'	=> 'Kirjaudu sisään suorittaaksesi päivityksiä.',
+    //
+    // Admin data
+    //
+    'STAGE_ADMINISTRATOR'	=> 'Administrator details',
 
-	'MAPPING_FILE_STRUCTURE'	=> 'Tässä on tiedostojen sijainnit, jotka auttavat päivittämään phpBB:n.',
+    // Form labels
+    'ADMIN_CONFIG'				=> 'Administrator configuration',
+    'ADMIN_PASSWORD'			=> 'Administrator password',
+    'ADMIN_PASSWORD_CONFIRM'	=> 'Confirm administrator password',
+    'ADMIN_PASSWORD_EXPLAIN'	=> 'Please enter a password between 6 and 30 characters in length.',
+    'ADMIN_USERNAME'			=> 'Administrator username',
+    'ADMIN_USERNAME_EXPLAIN'	=> 'Please enter a username between 3 and 20 characters in length.',
 
-	'MERGE_MODIFICATIONS_OPTION'	=> 'Yhdistä muutokset',
+    // Errors
+    'INST_ERR_EMAIL_INVALID'		=> 'The email address you entered is invalid.',
+    'INST_ERR_PASSWORD_MISMATCH'	=> 'The passwords you entered did not match.',
+    'INST_ERR_PASSWORD_TOO_LONG'	=> 'The password you entered is too long. The maximum length is 30 characters.',
+    'INST_ERR_PASSWORD_TOO_SHORT'	=> 'The password you entered is too short. The minimum length is 6 characters.',
+    'INST_ERR_USER_TOO_LONG'		=> 'The username you entered is too long. The maximum length is 20 characters.',
+    'INST_ERR_USER_TOO_SHORT'		=> 'The username you entered is too short. The minimum length is 3 characters.',
 
-	'MERGE_NO_MERGE_NEW_OPTION'		=> 'Älä yhdistä - käytä uutta tiedostoa',
-	'MERGE_NO_MERGE_MOD_OPTION'		=> 'Älä yhdistä - käytä jo olemassa olevaa tiedostoa',
-	'MERGE_MOD_FILE_OPTION'      	=> 'Yhdistä muutokset (Hävitä uusi phpBB-koodi konfliktista)',
-	'MERGE_NEW_FILE_OPTION'      	=> 'Yhdistä muutokset (Hävitä konfliktin aiheuttava muuttunut koodi)',
-	'MERGE_SELECT_ERROR'      		=> 'Konfliktin yhdistämistapa on valittu väärin.',
-	'MERGING_FILES'            		=> 'Yhdistän eroavaisuudet',
-	'MERGING_FILES_EXPLAIN'     	=> 'Kerään lopullisia muutoksia.<br /><br />Ole hyvä ja odota kunnes phpBB on saanut kerättyä tiedot valmiiksi.',
+    //
+    // Board data
+    //
+    // Form labels
+    'BOARD_CONFIG'		=> 'Bulletin board configuration',
+    'DEFAULT_LANGUAGE'	=> 'Default language',
+    'BOARD_NAME'		=> 'Title of the board',
+    'BOARD_DESCRIPTION'	=> 'Short description of the board',
 
-	'NEW_FILE'              	    => 'Konfliktin loppu',
-	'NEW_USERNAME'					=> 'Uusi käyttäjätunnus',
-	'NO_AUTH_UPDATE'				=> 'Sinulla ei ole oikeuksia päivittämiseen',
-	'NO_ERRORS'						=> 'Ei virheitä',
-	'NO_UPDATE_FILES'				=> 'Näitä tiedostoja ei päivitetä',
-	'NO_UPDATE_FILES_EXPLAIN'		=> 'Nämä tiedostot ovat uusia tai muokattuja, mutta kohdehakemistoa ei löytynyt. Mikäli tässä listassa on muita hakemistoja, kuin language/ tai styles/, hakemistorakenteesi saattaa olla muutettu ja päivitys voi jäädä vaillinaiseksi.',
-	'NO_UPDATE_FILES_OUTDATED'		=> 'En löytänyt kelvollista päivityshakemistoa. Ole hyvä ja tarkista, että olet siirtänyt tarvittavat tiedostot palvelimelle.<br /><br />Käyttämäsi versio <strong>Ei ole</strong> ajan tasalla. Käyttämääsi phpBB %1$s -versioon on saatavilla päivityksiä. Ole hyvä ja vieraile osoitteessa <a href="https://www.phpbb.com/downloads.php" rel="external">https://www.phpbb.com/downloads.php</a> sadaksesi oikean paketin päivittääksesi käytössä olevan %2$s version uudempaan %3$s-versioon.',
-	'NO_UPDATE_FILES_UP_TO_DATE'	=> 'Käyttämäsi versio on ajan tasalla ja päivitystyökalun ajamiseen ei ole tarvetta. Mikäli haluat tarkistaa käyttämiesi tiedostojen eheyden. Ole hyvä ja tarkista, että olet siirtänyt oikeat tiedostot palvelimelle.',
-	'NO_UPDATE_INFO'				=> 'En löytänyt päivitystiedoston tietoja.',
-	'NO_UPDATES_REQUIRED'			=> 'Päivitykset eivät ole tarpeellisia',
-	'NO_VISIBLE_CHANGES'			=> 'Ei näkyviä muutoksia',
-	'NOTICE'						=> 'Huomautus',
-	'NUM_CONFLICTS'					=> 'Konfliktien lukumäärä',
-	'NUMBER_OF_FILES_COLLECTED'		=> 'Tällä hetkellä eroavaisuudet ovat haettu %1$d tiedostosta. Tiedostoja on yhteensä %2$d.<br />Ole hyvä ja odota kunnes tiedostojen kerääminen on valmis.',
+    //
+    // Database data
+    //
+    'STAGE_DATABASE'	=> 'Database settings',
 
-	'OLD_UPDATE_FILES'		=> 'Päivityksen sisältävät tiedostot ovat vanhentuneet. Löytyneet tiedostot ovat tarkoitettu päivittämään versiosta %1$s versioon %2$s, mutta uusin phpBB:n versio on %3$s.',
+    // Form labels
+    'DB_CONFIG'				=> 'Database configuration',
+    'DBMS'					=> 'Database type',
+    'DB_HOST'				=> 'Database server hostname or DSN',
+    'DB_HOST_EXPLAIN'		=> 'DSN stands for Data Source Name and is relevant only for ODBC installs. On PostgreSQL, use localhost to connect to the local server via UNIX domain socket and 127.0.0.1 to connect via TCP. For SQLite, enter the full path to your database file.',
+    'DB_PORT'				=> 'Database server port',
+    'DB_PORT_EXPLAIN'		=> 'Leave this blank unless you know the server operates on a non-standard port.',
+    'DB_PASSWORD'			=> 'Database password',
+    'DB_NAME'				=> 'Database name',
+    'DB_USERNAME'			=> 'Database username',
+    'DATABASE_VERSION'		=> 'Database version',
+    'TABLE_PREFIX'			=> 'Prefix for tables in database',
+    'TABLE_PREFIX_EXPLAIN'	=> 'The prefix must start with a letter and must only contain letters, numbers and underscores.',
 
-	'PACKAGE_UPDATES_TO'				=> 'Tämä paketti päivittää versioon',
-	'PERFORM_DATABASE_UPDATE'			=> 'Suorita tietokannan päivitys',
-	'PERFORM_DATABASE_UPDATE_EXPLAIN'	=> 'Alapuolella on linkki tietokannan päivitykseen. Tietokannan päivitys voi kestää pitkän aikaa, joten älä pysäytä sen suorittamista vaikka sivu näyttäisi jäävän jumiin. Tietokannan päivityksen jälkeen seuraa annettuja ohjeita päivityksen jatkamiseksi',
-	'PREVIOUS_VERSION'					=> 'Edellinen versio',
-	'PROGRESS'							=> 'Edistyminen',
-	
-	'RELEASE_ANNOUNCEMENT'		=> 'Ilmoitus',
-	'RESULT'					=> 'Tulos',
-	'RUN_DATABASE_SCRIPT'		=> 'Päivitä tietokanta',
-	
-	'SELECT_DIFF_MODE'			=> 'Valitse vertailutapa',
-	'SELECT_DOWNLOAD_FORMAT'	=> 'Valitse ladattavan paketin formaatti',
-	'SELECT_FTP_SETTINGS'		=> 'Valitse FTP-asetukset',
-	'SHOW_DIFF_CONFLICT'		=> 'Näytä erot/konfliktit',
-	'SHOW_DIFF_DELETED'			=> 'Näytä tiedoston sisältö',
-	'SHOW_DIFF_FINAL'			=> 'Näytä lopullinen tiedosto',
-	'SHOW_DIFF_MODIFIED'		=> 'Näytä yhdistettyjen erot',
-	'SHOW_DIFF_NEW'				=> 'Näytä tiedostojen sisältö',
-	'SHOW_DIFF_NEW_CONFLICT'	=> 'Näytä erot',
-	'SHOW_DIFF_NOT_MODIFIED'	=> 'Näytä erot',
-	'SOME_QUERIES_FAILED'		=> 'Osa kyselyistä epäonnistui. Tiedot näkyvät alapuolella',
-	'SQL'						=> 'SQL',
-	'SQL_FAILURE_EXPLAIN'		=> 'Tästä ei todennäköisesti tarvitse välittää. Päivittäminen jatkuu edelleen. Mikäli tämän suoritus pysähtyy kokonaan, voit pyytää neuvoa tukifoorumiltamme. Katso <a href="../docs/README.html">README</a> saadaksesi lisätietoa mistä saat apua ongelmiisi.',
-	'STAGE_FILE_CHECK'			=> 'Tarkista tiedostot',
-	'STAGE_UPDATE_DB'			=> 'Päivitä tietokanta',
-	'STAGE_UPDATE_FILES'		=> 'Päivitä tiedostot',
-	'STAGE_VERSION_CHECK'		=> 'Version tarkistus',
-	'STATUS_CONFLICT'			=> 'Muokattu tiedosto, joka aiheuttaa konflikteja',
-	'STATUS_DELETED'			=> 'Poistettu tiedosto',
-	'STATUS_MODIFIED'			=> 'Muokattu tiedosto',
-	'STATUS_NEW'				=> 'Uusi tiedosto',
-	'STATUS_NEW_CONFLICT'		=> 'Uusi tiedosto, joka aiheuttaa konfliktin',
-	'STATUS_NOT_MODIFIED'		=> 'Muokkaamaton tiedosto',
-	'STATUS_UP_TO_DATE'			=> 'Tämä tiedosto on jo päivitetty',
+    // Database options
+    'DB_OPTION_MSSQL_ODBC'	=> 'MSSQL Server 2000+ via ODBC',
+    'DB_OPTION_MSSQLNATIVE'	=> 'MSSQL Server 2005+ [ Native ]',
+    'DB_OPTION_MYSQL'		=> 'MySQL',
+    'DB_OPTION_MYSQLI'		=> 'MySQL with MySQLi Extension',
+    'DB_OPTION_ORACLE'		=> 'Oracle',
+    'DB_OPTION_POSTGRES'	=> 'PostgreSQL',
+    'DB_OPTION_SQLITE3'		=> 'SQLite 3',
 
-	'TOGGLE_DISPLAY'			=> 'Näytä/Piilota tiedostolista',
-	'TRY_DOWNLOAD_METHOD'		=> 'Saatat haluta ladata muuttuneet tiedostot omalle koneellesi.<br />Tämä tapa toimii varmemmin ja on myös suositeltu tapa.',
-	'TRY_DOWNLOAD_METHOD_BUTTON'		=> 'Yritä tätä tapaa',
+    // Errors
+    'INST_ERR_NO_DB'				=> 'Cannot load the PHP module for the selected database type.',
+    'INST_ERR_DB_INVALID_PREFIX'	=> 'The prefix you entered is invalid. It must start with a letter and must only contain letters, numbers and underscores.',
+    'INST_ERR_PREFIX_TOO_LONG'		=> 'The table prefix you have specified is too long. The maximum length is %d characters.',
+    'INST_ERR_DB_NO_NAME'			=> 'No database name specified.',
+    'INST_ERR_DB_FORUM_PATH'		=> 'The database file specified is within your board directory tree. You should put this file in a non web-accessible location.',
+    'INST_ERR_DB_CONNECT'			=> 'Could not connect to the database, see error message below.',
+    'INST_ERR_DB_NO_ERROR'			=> 'No error message given.',
+    'INST_ERR_PREFIX'				=> 'Tables with the specified prefix already exist, please choose an alternative.',
+    'INST_ERR_DB_NO_MYSQLI'			=> 'The version of MySQL installed on this machine is incompatible with the “MySQL with MySQLi Extension” option you have selected. Please try the “MySQL” option instead.',
+    'INST_ERR_DB_NO_SQLITE3'		=> 'The version of the SQLite extension you have installed is too old, it must be upgraded to at least 3.6.15.',
+    'INST_ERR_DB_NO_ORACLE'			=> 'The version of Oracle installed on this machine requires you to set the <var>NLS_CHARACTERSET</var> parameter to <var>UTF8</var>. Either upgrade your installation to 9.2+ or change the parameter.',
+    'INST_ERR_DB_NO_POSTGRES'		=> 'The database you have selected was not created in <var>UNICODE</var> or <var>UTF8</var> encoding. Try installing with a database in <var>UNICODE</var> or <var>UTF8</var> encoding.',
+    'INST_SCHEMA_FILE_NOT_WRITABLE'	=> 'The schema file is not writable',
 
-	'UPDATE_COMPLETED'				=> 'Päivitys on suoritettu',
-	'UPDATE_DATABASE'				=> 'Päivitä tietokanta',
-	'UPDATE_DATABASE_EXPLAIN'		=> 'Seuraava vaihe päivittää tietokannan.',
-	'UPDATE_DATABASE_SCHEMA'		=> 'Päivitän tietokantaa',
-	'UPDATE_FILES'					=> 'Päivitä tiedostot',
-	'UPDATE_FILES_NOTICE'			=> 'Varmista, että olet päivittänyt myös tiedostot. Tämä päivittää vain tietokannan.',
-	'UPDATE_INSTALLATION'			=> 'Päivitä phpBB-asennuksesi',
-	'UPDATE_INSTALLATION_EXPLAIN'	=> 'Tämän vaihtoehdon avulla voit päivittää keskustelufoorumisi uusimpaan versioon.<br />Tämän toiminnon aikana kaikkien tiedostojen eheys tarkistetaan. Voit tarkistaa kaikki muutokset ennen päivitystä.<br /><br />Tiedostojen päivitys voidaan suorittaa kahdella tavalla.</p><h2>Manuaalinen päivitys</h2><p>Tällä päivitysmenetelmällä lataat koneellesi vain muuttuneet tiedostot varmistaen, että et menetä mahdollisesti lähdekoodiin tekemiäsi muokkauksia. Kun olet ladannut tiedoston koneellesi. Sinun tulee manuaalisesti siirtää paketista löytyvät tiedostot palvelimelle phpBB:n juurihakemiston alle. Kun olet suorittanut tämän voit tehdä tiedostojen tarkistuksen uudelleen varmistaaksesi, että tiedostot ovat oikeassa paikassa. Mikäli kaikki on päivitetty oikein, pääset jatkamaan tietokannan päivitystä.</p><h2>Automaattinen päivitys FTP:n avulla</h2><p>Tämä päivitystapa on samankaltainen edellisen kanssa, mutta muuttuneita tiedostoja ei tarvitse ladata omalle koneellesi. tämä tekee sen automaattisesti. Tämän toiminnon suorittamiseen tarvitset FTP  tunnuksesi, sillä päivitysohjelma kysyy niitä. Kun toiminto on suoritettu, pääset jälleen tarkistamaan ovatko tiedostot päivitetty oikein ja siirretty oikeisiin paikkoihin. Mikäli kaikki ovat oikein, pääset suorittamaan tietokannan päivityksen.<br /><br />',
-	'UPDATE_INSTRUCTIONS'			=> '
+    //
+    // Email data
+    //
+    'EMAIL_CONFIG'	=> 'E-mail configuration',
 
-		<h1>Julkaisutiedote</h1>
+    // Package info
+    'PACKAGE_VERSION'					=> 'Package version installed',
+    'UPDATE_INCOMPLETE'				=> 'Your phpBB installation has not been correctly updated.',
+    'UPDATE_INCOMPLETE_MORE'		=> 'Please read the information below in order to fix this error.',
+    'UPDATE_INCOMPLETE_EXPLAIN'		=> '<h1>Incomplete update</h1>
 
-		<p>Ole hyvä ja lue uusimman version julkaisutiedote ennen kuin jatkat päivittämistä, sillä siinä voi olla tärkeää tietoa. Siitä löytyvät myös latauslinkit ja muutosten tiedot.</p>
+		<p>We noticed that the last update of your phpBB installation hasn’t been completed. Visit the <a href="%1$s" title="%1$s">database updater</a>, ensure <em>Update database only</em> is selected and click on <strong>Submit</strong>. Don\'t forget to delete the "install"-directory after you have updated the database sucessfully.</p>',
 
-		<br />
-
-		<h1>Kuinka voit päivittää asennuksesi automaattisella päivityspaketilla?</h1>
-
-		<p>Tässä mainittu suositeltava päivitystapa koskee vain automaattista päivityspakettia. Voit päivittää asennuksesi käyttämällä INSTALL.html-tiedostossa mainittuja tapoja. Automaattisen phpBB3-päivityksen vaiheet ovat</p>
-
-		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li>Mene <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com-lataussivulle</a> ja lataa oikea "phpBB Update Package" -tiedosto.<br /><br /></li>
-			<li>Pura tiedosto.<br /><br /></li>
-			<li>Siirrä puretut "install" ja "vendor" -hakemistot phpBB:n juurihakemistoosi (sama hakemisto, missä config.php-tiedosto sijaitsee).<br /><br /></li>
-		</ul>
-
-		<p>Kun olet siirtänyt tiedostot, keskustelufoorumi sulkeutuu normaaleilta käyttäjiltä, koska asennushakemisto on siirretty palvelimelle.<br /><br />
-		<strong><a href="%1$s" title="%1$s">Nyt voit aloittaa päivityksen osoittamalla selaimesi asennustiedostot sisältävään hakemistoon (install)</a>.</strong><br />
-		<br />
-		Sinut ohjataan päivityksen läpi ja saat tiedon, koska päivitys on suoritettu.
-		</p>
-	',
-	'UPDATE_METHOD'					=> 'Päivitysmenetelmä',
-	'UPDATE_METHOD_EXPLAIN'			=> 'Voit valita haluamasi tavan. FTP:n avulla päivitettäessä ohjelma antaa lomakkeen ja kysyy FTP-tunnuksiasi palvelimelle. Tällä tavalla päivitettynä tiedostot siirretään automaattisesti oikeisiin paikkoihin ja varmuuskopioihin lisätään .bak tiedoston tunnisteeksi. Mikäli haluat ladata muuttuneet tiedostot omalle koneellesi, voit purkaa paketin ja siirtää tiedostot oikeisiin palvelimen hakemistoihin myöhemmin.',
-	'UPDATE_REQUIRES_FILE'			=> 'Päivitysohjelma tarvitsee tämän tiedoston: %s',
-	'UPDATE_SUCCESS'				=> 'Päivittäminen onnistui',
-	'UPDATE_SUCCESS_EXPLAIN'		=> 'Tiedostojen päivittäminen onnistui. Seuraavassa vaiheessa tiedostot tarkistetaan uudelleen, jotta varmistetaan päivityksen tapahtuneen oikein.',
-	'UPDATE_VERSION_OPTIMIZE'		=> 'Päivitän versionumeron ja optimoin taulut',
-	'UPDATING_DATA'					=> 'päivitän dataa',
-	'UPDATING_TO_LATEST_STABLE'		=> 'Päivitän tietokantaa viimeisimpään vakaaseen versioon',
-	'UPDATED_VERSION'				=> 'Päivitetty versio',
-	'UPLOAD_METHOD'					=> 'Siirtotapa',
-
-	'UPDATE_DB_SUCCESS'				=> 'Tietokannan päivittäminen onnistui.',
-	'UPDATE_FILE_SUCCESS'			=> 'Tietojen päivitys onnistui.',
-	'USER_ACTIVE'					=> 'Aktiivinen käyttäjätunnus',
-	'USER_INACTIVE'					=> 'Suljettu käyttäjätunnus',
-
-	'VERSION_CHECK'					=> 'Version tarkistus',
-	'VERSION_CHECK_EXPLAIN'			=> 'Tarkistaa onko keskustelufoorumisi ajan tasalla.',
-	'VERSION_NOT_UP_TO_DATE'		=> 'Keskustelufoorumisi ei ole ajan tasalla. Ole hyvä ja jatka päivitystä.',
-	'VERSION_NOT_UP_TO_DATE_ACP'	=> 'Keskustelufoorumisi ei ole ajan tasalla.<br />Alapuolella on linkki julkaisuteidotteeseen, josta saat lisää tietoa ja ohjeita.',
-	'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'Keskustelufoorumisi ei ole ajan tasalla.',
-	'VERSION_UP_TO_DATE'			=> 'Keskustelufoorumisi on ajan tasalla. Voit jatkaa tiedostojen tarkistusta, vaikka uusia versioita ei ole saatavilla.',
-	'VERSION_UP_TO_DATE_ACP'		=> 'Keskustelufoorumisi on ajan tasalla. Uusia päivityksiä ei ole saatavilla.',
-	'VIEWING_FILE_CONTENTS'			=> 'Katselee tiedoston sisältöä',
-	'VIEWING_FILE_DIFF'				=> 'Katselee tiedoston muutoksia',
-
-	'WRONG_INFO_FILE_FORMAT'		=> 'Info-tiedosto on väärää muotoa',
+    //
+    // Server data
+    //
+    // Form labels
+    'SERVER_CONFIG'				=> 'Server configuration',
+    'SCRIPT_PATH'				=> 'Script path',
+    'SCRIPT_PATH_EXPLAIN'		=> 'The path where phpBB is located relative to the domain name, e.g. <samp>/phpBB3</samp>.',
 ));
 
 // Default database schema entries...
 $lang = array_merge($lang, array(
-	'CONFIG_BOARD_EMAIL_SIG'		=> 'Kiitos, Ylläpito',
-	'CONFIG_SITE_DESC'				=> 'Pieni_kuvaava_teksti keskustelufoorumistasi',
-	'CONFIG_SITENAME'				=> 'sivustosi.com',
+    'CONFIG_BOARD_EMAIL_SIG'		=> 'Thanks, The Management',
+    'CONFIG_SITE_DESC'				=> 'A short text to describe your forum',
+    'CONFIG_SITENAME'				=> 'yourdomain.com',
 
-	'DEFAULT_INSTALL_POST'			=> 'Tämä on malli phpBB3-viestistä. Voit halutessasi poistaa tämän viestin, viestiketjun tai vaikka koko alueen, koska kaikki näyttäisi toimivan oikein! Asennuksen aikana ensimmäiselle ketegorialle ja alueelle annettiin yleisesti toimivat oikeudet. Mikäli poistat nämä alueet, joudut antamaan oikeudet käsin luomillesi alueille. Alue ja kategoria kannattaa vain nimetä uudelleen ja kopioida siitä toimivat oikeudet ja asetukset uusille alueille. Pidä hauskaa!',
+    'DEFAULT_INSTALL_POST'			=> 'This is an example post in your phpBB3 installation. Everything seems to be working. You may delete this post if you like and continue to set up your board. During the installation process your first category and your first forum are assigned an appropriate set of permissions for the predefined usergroups administrators, bots, global moderators, guests, registered users and registered COPPA users. If you also choose to delete your first category and your first forum, do not forget to assign permissions for all these usergroups for all new categories and forums you create. It is recommended to rename your first category and your first forum and copy permissions from these while creating new categories and forums. Have fun!',
 
-	'FORUMS_FIRST_CATEGORY'			=> 'Ensimmäinen kategoriani',
-	'FORUMS_TEST_FORUM_DESC'		=> 'Tämä on testialue.',
-	'FORUMS_TEST_FORUM_TITLE'		=> 'Testialue 1',
+    'FORUMS_FIRST_CATEGORY'			=> 'Your first category',
+    'FORUMS_TEST_FORUM_DESC'		=> 'Description of your first forum.',
+    'FORUMS_TEST_FORUM_TITLE'		=> 'Your first forum',
 
-	'RANKS_SITE_ADMIN_TITLE'		=> 'Ylläpitäjä',
-	'REPORT_WAREZ'					=> 'Viestissä on linkkejä laittomuuksiin- tai piraattituotteisiin.',
-	'REPORT_SPAM'					=> 'Ilmoitetun viestin ainoa tarkoitus on mainostaa nettisivua tai tuotetta.',
-	'REPORT_OFF_TOPIC'				=> 'Viesti on harhautunut alkuperäisestä aiheesta.',
-	'REPORT_OTHER'					=> 'Ilmoitettu viesti ei sovi edellä mainittuihin luokkiin. Anna oma selite.',
+    'RANKS_SITE_ADMIN_TITLE'		=> 'Site Admin',
+    'REPORT_WAREZ'					=> 'The post contains links to illegal or pirated software.',
+    'REPORT_SPAM'					=> 'The reported post has the only purpose to advertise for a website or another product.',
+    'REPORT_OFF_TOPIC'				=> 'The reported post is off topic.',
+    'REPORT_OTHER'					=> 'The reported post does not fit into any other category, please use the further information field.',
 
-	'SMILIES_ARROW'					=> 'Nuoli',
-	'SMILIES_CONFUSED'				=> 'Hämmentynyt',
-	'SMILIES_COOL'					=> 'Siisti',
-	'SMILIES_CRYING'				=> 'Itkee tai erittäin surullinen',
-	'SMILIES_EMARRASSED'			=> 'Nolostunut',
-	'SMILIES_EVIL'					=> 'Ilkeä tai hurjistunut',
-	'SMILIES_EXCLAMATION'			=> 'Huutomerkki',
-	'SMILIES_GEEK'					=> 'Nörtti',
-	'SMILIES_IDEA'					=> 'Idea',
-	'SMILIES_LAUGHING'				=> 'Nauraa',
-	'SMILIES_MAD'					=> 'Suuttunut',
-	'SMILIES_MR_GREEN'				=> 'Hra. Vihreä',
-	'SMILIES_NEUTRAL'				=> 'Neutraali',
-	'SMILIES_QUESTION'				=> 'Kysymysmerkki',
-	'SMILIES_RAZZ'					=> 'Näyttää kieltä',
-	'SMILIES_ROLLING_EYES'			=> 'Pyörittelee silmiä',
-	'SMILIES_SAD'					=> 'Surullinen',
-	'SMILIES_SHOCKED'				=> 'Järkyttynyt',
-	'SMILIES_SMILE'					=> 'Hymy',
-	'SMILIES_SURPRISED'				=> 'Yllättynyt',
-	'SMILIES_TWISTED_EVIL'			=> 'Kieroutunutta ilkeyttä',
-	'SMILIES_UBER_GEEK'				=> 'Tosi nörtti',
-	'SMILIES_VERY_HAPPY'			=> 'Eritäin iloinen',
-	'SMILIES_WINK'					=> 'Silmänisku',
+    'SMILIES_ARROW'					=> 'Arrow',
+    'SMILIES_CONFUSED'				=> 'Confused',
+    'SMILIES_COOL'					=> 'Cool',
+    'SMILIES_CRYING'				=> 'Crying or Very Sad',
+    'SMILIES_EMARRASSED'			=> 'Embarrassed',
+    'SMILIES_EVIL'					=> 'Evil or Very Mad',
+    'SMILIES_EXCLAMATION'			=> 'Exclamation',
+    'SMILIES_GEEK'					=> 'Geek',
+    'SMILIES_IDEA'					=> 'Idea',
+    'SMILIES_LAUGHING'				=> 'Laughing',
+    'SMILIES_MAD'					=> 'Mad',
+    'SMILIES_MR_GREEN'				=> 'Mr. Green',
+    'SMILIES_NEUTRAL'				=> 'Neutral',
+    'SMILIES_QUESTION'				=> 'Question',
+    'SMILIES_RAZZ'					=> 'Razz',
+    'SMILIES_ROLLING_EYES'			=> 'Rolling Eyes',
+    'SMILIES_SAD'					=> 'Sad',
+    'SMILIES_SHOCKED'				=> 'Shocked',
+    'SMILIES_SMILE'					=> 'Smile',
+    'SMILIES_SURPRISED'				=> 'Surprised',
+    'SMILIES_TWISTED_EVIL'			=> 'Twisted Evil',
+    'SMILIES_UBER_GEEK'				=> 'Uber Geek',
+    'SMILIES_VERY_HAPPY'			=> 'Very Happy',
+    'SMILIES_WINK'					=> 'Wink',
 
-	'TOPICS_TOPIC_TITLE'			=> 'Tervetuloa käyttämään phpBB3-ohjelmaa',
+    'TOPICS_TOPIC_TITLE'			=> 'Welcome to phpBB3',
+));
+
+// Common navigation items' translation
+$lang = array_merge($lang, array(
+    'MENU_OVERVIEW'		=> 'Overview',
+    'MENU_INTRO'		=> 'Introduction',
+    'MENU_LICENSE'		=> 'License',
+    'MENU_SUPPORT'		=> 'Support',
+));
+
+// Task names
+$lang = array_merge($lang, array(
+    // Install filesystem
+    'TASK_CREATE_CONFIG_FILE'	=> 'Creating configuration file',
+
+    // Install database
+    'TASK_ADD_CONFIG_SETTINGS'			=> 'Adding configuration settings',
+    'TASK_ADD_DEFAULT_DATA'				=> 'Adding default settings to the database',
+    'TASK_CREATE_DATABASE_SCHEMA_FILE'	=> 'Creating database schema file',
+    'TASK_SETUP_DATABASE'				=> 'Setting up database',
+    'TASK_CREATE_TABLES'				=> 'Creating tables',
+
+    // Install data
+    'TASK_ADD_BOTS'			=> 'Registering bots',
+    'TASK_ADD_LANGUAGES'	=> 'Installing available languages',
+    'TASK_ADD_MODULES'		=> 'Installing modules',
+
+    // Install finish tasks
+    'TASK_INSTALL_EXTENSIONS'	=> 'Installing packaged extensions',
+    'TASK_NOTIFY_USER'			=> 'Sending notification e-mail',
+    'TASK_POPULATE_MIGRATIONS'	=> 'Populating migrations',
+
+    // Installer general progress messages
+    'INSTALLER_FINISHED'	=> 'The installer has finished successfully',
+));
+
+// Installer's general messages
+$lang = array_merge($lang, array(
+    'MODULE_NOT_FOUND'				=> 'Module not found',
+    'MODULE_NOT_FOUND_DESCRIPTION'	=> 'A module could not be found because the service, %s, is undefined.',
+
+    'TASK_NOT_FOUND'				=> 'Task not found',
+    'TASK_NOT_FOUND_DESCRIPTION'	=> 'A task could not be found because the service, %s, is undefined.',
+
+    'SKIP_MODULE'	=> 'Skip “%s” module',
+    'SKIP_TASK'		=> 'Skip “%s” task',
+
+    'TASK_SERVICE_INSTALLER_MISSING'	=> 'All installer task services should start with “installer”',
+    'TASK_CLASS_NOT_FOUND'				=> 'Installer task service definition is invalid. Service name “%1$s” given, the expected class namespace is “%2$s” for that. For more information please see the documentation of task_interface.',
+
+    'INSTALLER_CONFIG_NOT_WRITABLE'	=> 'The installer config file is not writable.',
+));
+
+// CLI messages
+$lang = array_merge($lang, array(
+    'CLI_INSTALL_BOARD'				=> 'Install phpBB',
+    'CLI_UPDATE_BOARD'				=> 'Update phpBB',
+    'CLI_INSTALL_SHOW_CONFIG'		=> 'Show the configuration which will be used',
+    'CLI_INSTALL_VALIDATE_CONFIG'	=> 'Validate a configuration file',
+    'CLI_CONFIG_FILE'				=> 'Config file to use',
+    'MISSING_FILE'					=> 'Unable to access file %1$s',
+    'MISSING_DATA'					=> 'Config file is missing data or might contain invalid settings.',
+    'INVALID_YAML_FILE'				=> 'Could not parse YAML file %1$s',
+    'CONFIGURATION_VALID'			=> 'The configuration file is valid',
+));
+
+// Common updater messages
+$lang = array_merge($lang, array(
+    'UPDATE_INSTALLATION'			=> 'Update phpBB installation',
+    'UPDATE_INSTALLATION_EXPLAIN'	=> 'With this option, it is possible to update your phpBB installation to the latest version.<br />During the process all of your files will be checked for their integrity. You are able to review all differences and files before the update.<br /><br />The file update itself can be done in two different ways.</p><h2>Manual Update</h2><p>With this update you only download your personal set of changed files to make sure you do not lose your file modifications you may have done. After you downloaded this package you need to manually upload the files to their correct position under your phpBB root directory. Once done, you are able to do the file check stage again to see if you moved the files to their correct location.</p><h2>Automatic Update with FTP</h2><p>This method is similar to the first one but without the need to download the changed files and uploading them on your own. This will be done for you. In order to use this method you need to know your FTP login details since you will be asked for them. Once finished you will be redirected to the file check again to make sure everything got updated correctly.<br /><br />',
+    'UPDATE_INSTRUCTIONS'			=> '
+
+		<h1>Release announcement</h1>
+
+		<p>Please read the release announcement for the latest version before you continue your update process, it may contain useful information. It also contains full download links as well as the change log.</p>
+
+		<br />
+
+		<h1>How to update your installation with the Automatic Update Package</h1>
+
+		<p>The recommended way of updating your installation listed here is only valid for the automatic update package. You are also able to update your installation using the methods listed within the INSTALL.html document. The steps for updating phpBB3 automatically are:</p>
+
+		<ul style="margin-left: 20px; font-size: 1.1em;">
+			<li>Go to the <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com downloads page</a> and download the "Automatic Update Package" archive.<br /><br /></li>
+			<li>Unpack the archive.<br /><br /></li>
+			<li>Upload the complete uncompressed "install" and "vendor" folders to your phpBB root directory (where your config.php file is).<br /><br /></li>
+		</ul>
+
+		<p>Once uploaded your board will be offline for normal users due to the install directory you uploaded now present.<br /><br />
+		<strong><a href="%1$s" title="%1$s">Now start the update process by pointing your browser to the install folder</a>.</strong><br />
+		<br />
+		You will then be guided through the update process. You will be notified once the update is complete.
+		</p>
+	',
+));
+
+// Updater forms
+$lang = array_merge($lang, array(
+    // Updater types
+    'UPDATE_TYPE'			=> 'Type of update to run',
+
+    'UPDATE_TYPE_ALL'		=> 'Update filesystem and database',
+    'UPDATE_TYPE_DB_ONLY'	=> 'Update database only',
+
+    // File updater methods
+    'UPDATE_FILE_METHOD_TITLE'		=> 'File updater methods',
+
+    'UPDATE_FILE_METHOD'			=> 'File updater method',
+    'UPDATE_FILE_METHOD_DOWNLOAD'	=> 'Download modified files in an archive',
+    'UPDATE_FILE_METHOD_FTP'		=> 'Update files via FTP (Automatic)',
+    'UPDATE_FILE_METHOD_FILESYSTEM'	=> 'Update files via direct file access (Automatic)',
+
+    // File updater archives
+    'SELECT_DOWNLOAD_FORMAT'	=> 'Select download archive format',
+
+    // FTP settings
+    'FTP_SETTINGS'			=> 'FTP settings',
+));
+
+// Requirements messages
+$lang = array_merge($lang, array(
+    'UPDATE_FILES_NOT_FOUND'	=> 'No valid update directory was found, please make sure you uploaded the relevant files.',
+
+    'NO_UPDATE_FILES_UP_TO_DATE'	=> 'Your version is up to date. There is no need to run the update tool. If you want to make an integrity check on your files make sure you uploaded the correct update files.',
+    'OLD_UPDATE_FILES'				=> 'Update files are out of date. The update files found are for updating from phpBB %1$s to phpBB %2$s but the latest version of phpBB is %3$s.',
+    'INCOMPATIBLE_UPDATE_FILES'		=> 'The update files found are incompatible with your installed version. Your installed version is %1$s and the update file is for updating phpBB %2$s to %3$s.',
+));
+
+// Update files
+$lang = array_merge($lang, array(
+    'STAGE_UPDATE_FILES'		=> 'Update files',
+
+    // Check files
+    'UPDATE_CHECK_FILES'	=> 'Check files to update',
+
+    // Update file differ
+    'FILE_DIFFER_ERROR_FILE_CANNOT_BE_READ'	=> 'The file differ failed to open %s.',
+
+    'UPDATE_FILE_DIFF'		=> 'Diffing changed files',
+    'ALL_FILES_DIFFED'		=> 'All modified files has been diffed.',
+
+    // File status
+    'UPDATE_CONTINUE_FILE_UPDATE'	=> 'Update files',
+
+    'DOWNLOAD'							=> 'Download',
+    'DOWNLOAD_CONFLICTS'				=> 'Download merge conflicts archive',
+    'DOWNLOAD_CONFLICTS_EXPLAIN'		=> 'Search for &lt;&lt;&lt; to spot conflicts',
+    'DOWNLOAD_UPDATE_METHOD'			=> 'Download modified files archive',
+    'DOWNLOAD_UPDATE_METHOD_EXPLAIN'	=> 'Once downloaded you should unpack the archive. You will find the modified files you need to upload to your phpBB root directory within it. Please upload the files to their respective locations then. After you have uploaded all files, you may continue with the update process.',
+
+    'FILE_ALREADY_UP_TO_DATE'		=> 'File is already up to date.',
+    'FILE_DIFF_NOT_ALLOWED'			=> 'File not allowed to be diffed.',
+    'FILE_USED'						=> 'Information used from',			// Single file
+    'FILES_CONFLICT'				=> 'Conflict files',
+    'FILES_CONFLICT_EXPLAIN'		=> 'The following files are modified and do not represent the original files from the old version. phpBB determined that these files create conflicts if they are tried to be merged. Please investigate the conflicts and try to manually resolve them or continue the update choosing the preferred merging method. If you resolve the conflicts manually check the files again after you modified them. You are also able to choose between the preferred merge method for every file. The first one will result in a file where the conflicting lines from your old file will be lost, the other one will result in losing the changes from the newer file.',
+    'FILES_DELETED'					=> 'Deleted files',
+    'FILES_DELETED_EXPLAIN'			=> 'The following files do not exist in the new version. These files have to be deleted from your installation.',
+    'FILES_MODIFIED'				=> 'Modified files',
+    'FILES_MODIFIED_EXPLAIN'		=> 'The following files are modified and do not represent the original files from the old version. The updated file will be a merge between your modifications and the new file.',
+    'FILES_NEW'						=> 'New files',
+    'FILES_NEW_EXPLAIN'				=> 'The following files currently do not exist within your installation. These files will be added to your installation.',
+    'FILES_NEW_CONFLICT'			=> 'New conflicting files',
+    'FILES_NEW_CONFLICT_EXPLAIN'	=> 'The following files are new within the latest version but it has been determined that there is already a file with the same name within the same position. This file will be overwritten by the new file.',
+    'FILES_NOT_MODIFIED'			=> 'Not modified files',
+    'FILES_NOT_MODIFIED_EXPLAIN'	=> 'The following files are not modified and represent the original phpBB files from the version you want to update from.',
+    'FILES_UP_TO_DATE'				=> 'Already updated files',
+    'FILES_UP_TO_DATE_EXPLAIN'		=> 'The following files are already up to date and do not need to be updated.',
+    'FILES_VERSION'					=> 'Files Version',
+    'TOGGLE_DISPLAY'				=> 'View/Hide file list',
+
+    // File updater
+    'UPDATE_UPDATING_FILES'	=> 'Updating files',
+
+    'UPDATE_FILE_UPDATER_HAS_FAILED'	=> 'File updater “%1$s“ has failed. The installer will try to fallback to “%2$s“.',
+    'UPDATE_FILE_UPDATERS_HAVE_FAILED'	=> 'The file updater failed. No further fallback methods are available.',
+
+    'UPDATE_CONTINUE_UPDATE_PROCESS'	=> 'Continue update process',
+    'UPDATE_RECHECK_UPDATE_FILES'		=> 'Check files again',
+));
+
+// Update database
+$lang = array_merge($lang, array(
+    'STAGE_UPDATE_DATABASE'		=> 'Update database',
+
+    'INLINE_UPDATE_SUCCESSFUL'		=> 'The database update was successful.',
+
+    'TASK_UPDATE_EXTENSIONS'	=> 'Updating extensions',
+));
+
+// Converter
+$lang = array_merge($lang, array(
+    // Common converter messages
+    'CONVERT_NOT_EXIST'			=> 'The specified convertor does not exist.',
+    'DEV_NO_TEST_FILE'			=> 'No value has been specified for the test_file variable in the convertor. If you are a user of this convertor, you should not be seeing this error, please report this message to the convertor author. If you are a convertor author, you must specify the name of a file which exists in the source board to allow the path to it to be verified.',
+    'COULD_NOT_FIND_PATH'		=> 'Could not find path to your former board. Please check your settings and try again.<br />» %s was specified as the source path.',
+    'CONFIG_PHPBB_EMPTY'		=> 'The phpBB3 config variable for “%s” is empty.',
+
+    'MAKE_FOLDER_WRITABLE'		=> 'Please make sure that this folder exists and is writable by the webserver then try again:<br />»<strong>%s</strong>.',
+    'MAKE_FOLDERS_WRITABLE'		=> 'Please make sure that these folders exist and are writable by the webserver then try again:<br />»<strong>%s</strong>.',
+
+    'INSTALL_TEST'				=> 'Test again',
+
+    'NO_TABLES_FOUND'			=> 'No tables found.',
+    'TABLES_MISSING'			=> 'Could not find these tables<br />» <strong>%s</strong>.',
+    'CHECK_TABLE_PREFIX'		=> 'Please check your table prefix and try again.',
+
+    // Conversion in progress
+    'CONTINUE_CONVERT'			=> 'Continue conversion',
+    'CONTINUE_CONVERT_BODY'		=> 'A previous conversion attempt has been determined. You are now able to choose between starting a new conversion or continuing the conversion.',
+    'CONVERT_NEW_CONVERSION'	=> 'New conversion',
+    'CONTINUE_OLD_CONVERSION'	=> 'Continue previously started conversion',
+
+    // Start conversion
+    'SUB_INTRO'					=> 'Introduction',
+    'CONVERT_INTRO'				=> 'Welcome to the phpBB Unified Convertor Framework',
+    'CONVERT_INTRO_BODY'		=> 'From here, you are able to import data from other (installed) board systems. The list below shows all the conversion modules currently available. If there is no convertor shown in this list for the board software you wish to convert from, please check our website where further conversion modules may be available for download.',
+    'AVAILABLE_CONVERTORS'		=> 'Available convertors',
+    'NO_CONVERTORS'				=> 'No convertors are available for use.',
+    'CONVERT_OPTIONS'			=> 'Options',
+    'SOFTWARE'					=> 'Board software',
+    'VERSION'					=> 'Version',
+    'CONVERT'					=> 'Convert',
+
+    // Settings
+    'STAGE_SETTINGS'			=> 'Settings',
+    'TABLE_PREFIX_SAME'			=> 'The table prefix needs to be the one used by the software you are converting from.<br />» Specified table prefix was %s.',
+    'DEFAULT_PREFIX_IS'			=> 'The convertor was not able to find tables with the specified prefix. Please make sure you have entered the correct details for the board you are converting from. The default table prefix for %1$s is <strong>%2$s</strong>.',
+    'SPECIFY_OPTIONS'			=> 'Specify conversion options',
+    'FORUM_PATH'				=> 'Board path',
+    'FORUM_PATH_EXPLAIN'		=> 'This is the <strong>relative</strong> path on disk to your former board from the <strong>root of this phpBB3 installation</strong>.',
+    'REFRESH_PAGE'				=> 'Refresh page to continue conversion',
+    'REFRESH_PAGE_EXPLAIN'		=> 'If set to yes, the convertor will refresh the page to continue the conversion after having finished a step. If this is your first conversion for testing purposes and to determine any errors in advance, we suggest to set this to No.',
+
+    // Conversion
+    'STAGE_IN_PROGRESS'			=> 'Conversion in progress',
+
+    'AUTHOR_NOTES'				=> 'Author notes<br />» %s',
+    'STARTING_CONVERT'			=> 'Starting conversion process',
+    'CONFIG_CONVERT'			=> 'Converting the configuration',
+    'DONE'						=> 'Done',
+    'PREPROCESS_STEP'			=> 'Executing pre-processing functions/queries',
+    'FILLING_TABLE'				=> 'Filling table <strong>%s</strong>',
+    'FILLING_TABLES'			=> 'Filling tables',
+    'DB_ERR_INSERT'				=> 'Error while processing <code>INSERT</code> query.',
+    'DB_ERR_LAST'				=> 'Error while processing <var>query_last</var>.',
+    'DB_ERR_QUERY_FIRST'		=> 'Error while executing <var>query_first</var>.',
+    'DB_ERR_QUERY_FIRST_TABLE'	=> 'Error while executing <var>query_first</var>, %s (“%s”).',
+    'DB_ERR_SELECT'				=> 'Error while running <code>SELECT</code> query.',
+    'STEP_PERCENT_COMPLETED'	=> 'Step <strong>%d</strong> of <strong>%d</strong>',
+    'FINAL_STEP'				=> 'Process final step',
+    'SYNC_FORUMS'				=> 'Starting to synchronise forums',
+    'SYNC_POST_COUNT'			=> 'Synchronising post_counts',
+    'SYNC_POST_COUNT_ID'		=> 'Synchronising post_counts from <var>entry</var> %1$s to %2$s.',
+    'SYNC_TOPICS'				=> 'Starting to synchronise topics',
+    'SYNC_TOPIC_ID'				=> 'Synchronising topics from <var>topic_id</var> %1$s to %2$s.',
+    'PROCESS_LAST'					=> 'Processing last statements',
+    'UPDATE_TOPICS_POSTED'		=> 'Generating topics posted information',
+    'UPDATE_TOPICS_POSTED_ERR'	=> 'An error occurred while generating topics posted information. You can retry this step in the ACP after the conversion process is completed.',
+    'CONTINUE_LAST'				=> 'Continue last statements',
+    'CLEAN_VERIFY'				=> 'Cleaning up and verifying the final structure',
+    'NOT_UNDERSTAND'			=> 'Could not understand %s #%d, table %s (“%s”)',
+    'NAMING_CONFLICT'			=> 'Naming conflict: %s and %s are both aliases<br /><br />%s',
+
+    // Finish conversion
+    'CONVERT_COMPLETE'			=> 'Conversion completed',
+    'CONVERT_COMPLETE_EXPLAIN'	=> 'You have now successfully converted your board to phpBB 3.2. You can now login and <a href="../">access your board</a>. Please ensure that the settings were transferred correctly before enabling your board by deleting the install directory. Remember that help on using phpBB is available online via the <a href="https://www.phpbb.com/support/docs/en/3.2/ug/">Documentation</a> and the <a href="https://www.phpbb.com/community/viewforum.php?f=466">support forums</a>.',
+
+    'CONV_ERROR_ATTACH_FTP_DIR'			=> 'FTP upload for attachments is enabled at the old board. Please disable the FTP upload option and make sure a valid upload directory is specified, then copy all attachment files to this new web accessible directory. Once you have done this, restart the convertor.',
+    'CONV_ERROR_CONFIG_EMPTY'			=> 'There is no configuration information available for the conversion.',
+    'CONV_ERROR_FORUM_ACCESS'			=> 'Unable to get forum access information.',
+    'CONV_ERROR_GET_CATEGORIES'			=> 'Unable to get categories.',
+    'CONV_ERROR_GET_CONFIG'				=> 'Could not retrieve your board configuration.',
+    'CONV_ERROR_COULD_NOT_READ'			=> 'Unable to access/read “%s”.',
+    'CONV_ERROR_GROUP_ACCESS'			=> 'Unable to get group authentication information.',
+    'CONV_ERROR_INCONSISTENT_GROUPS'	=> 'Inconsistency in groups table detected in add_bots() - you need to add all special groups if you do it manually.',
+    'CONV_ERROR_INSERT_BOT'				=> 'Unable to insert bot into users table.',
+    'CONV_ERROR_INSERT_BOTGROUP'		=> 'Unable to insert bot into bots table.',
+    'CONV_ERROR_INSERT_USER_GROUP'		=> 'Unable to insert user into user_group table.',
+    'CONV_ERROR_MESSAGE_PARSER'			=> 'Message parser error',
+    'CONV_ERROR_NO_AVATAR_PATH'			=> 'Note to developer: you must specify $convertor[\'avatar_path\'] to use %s.',
+    'CONV_ERROR_NO_FORUM_PATH'			=> 'The relative path to the source board has not been specified.',
+    'CONV_ERROR_NO_GALLERY_PATH'		=> 'Note to developer: you must specify $convertor[\'avatar_gallery_path\'] to use %s.',
+    'CONV_ERROR_NO_GROUP'				=> 'Group “%1$s” could not be found in %2$s.',
+    'CONV_ERROR_NO_RANKS_PATH'			=> 'Note to developer: you must specify $convertor[\'ranks_path\'] to use %s.',
+    'CONV_ERROR_NO_SMILIES_PATH'		=> 'Note to developer: you must specify $convertor[\'smilies_path\'] to use %s.',
+    'CONV_ERROR_NO_UPLOAD_DIR'			=> 'Note to developer: you must specify $convertor[\'upload_path\'] to use %s.',
+    'CONV_ERROR_PERM_SETTING'			=> 'Unable to insert/update permission setting.',
+    'CONV_ERROR_PM_COUNT'				=> 'Unable to select folder pm count.',
+    'CONV_ERROR_REPLACE_CATEGORY'		=> 'Unable to insert new forum replacing old category.',
+    'CONV_ERROR_REPLACE_FORUM'			=> 'Unable to insert new forum replacing old forum.',
+    'CONV_ERROR_USER_ACCESS'			=> 'Unable to get user authentication information.',
+    'CONV_ERROR_WRONG_GROUP'			=> 'Wrong group “%1$s” defined in %2$s.',
+    'CONV_OPTIONS_BODY'					=> 'This page collects the data required to access the source board. Enter the database details of your former board; the converter will not change anything in the database given below. The source board should be disabled to allow a consistent conversion.',
+    'CONV_SAVED_MESSAGES'				=> 'Saved messages',
+
+    'PRE_CONVERT_COMPLETE'			=> 'All pre-conversion steps have successfully been completed. You may now begin the actual conversion process. Please note that you may have to manually do and adjust several things. After conversion, especially check the permissions assigned, rebuild your search index which is not converted and also make sure files got copied correctly, for example avatars and smilies.',
 ));
