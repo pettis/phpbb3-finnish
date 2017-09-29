@@ -504,7 +504,7 @@ $lang = array_merge($lang, array(
 	'BROWSER_VALID'					=> 'Varmenna selain',
 	'BROWSER_VALID_EXPLAIN'			=> 'Ottaa selaimen varmennuksen käyttöön jokaiselle istunnolle varmentaen näin tietoturvaa.',
 	'CHECK_DNSBL'					=> 'Tarkista IP-osoite käyttämällä DNS blackhole -listaa',
-	'CHECK_DNSBL_EXPLAIN'			=> 'Jos tämä on käytössä. IP-osoite tarkistetaan käyttämällä seuraavia DNSBL-palveluita aina rekisteröitymisen ja viestin kirjoittamisen yhteydessä: <a href="http://spamcop.net">spamcop.net</a> ja <a href="http://spamhaus.org">spamhaus.org</a>. Tämä tarkistus saattaa kestää palvelimen konfiguraatiosta riippuen hetken aikaa. Mikäli tässä tarkistuksessa kestää jatkuvasti liian kauan tai se antaa virheellisiä tuloksia, kannattaa ottaa tämä asetus pois käytöstä.',
+	'CHECK_DNSBL_EXPLAIN'			=> 'Jos tämä on käytössä. IP-osoite tarkistetaan käyttämällä seuraavia DNSBL-palveluita aina rekisteröitymisen ja viestin kirjoittamisen yhteydessä: <a href="http://spamcop.net">spamcop.net</a> ja <a href="http://www.spamhaus.org">www.spamhaus.org</a>. Tämä tarkistus saattaa kestää palvelimen konfiguraatiosta riippuen hetken aikaa. Mikäli tässä tarkistuksessa kestää jatkuvasti liian kauan tai se antaa virheellisiä tuloksia, kannattaa ottaa tämä asetus pois käytöstä.',
 	'CLASS_B'						=> 'A.B',
 	'CLASS_C'						=> 'A.B.C',
 	'EMAIL_CHECK_MX'				=> 'Tarkista onko sähköpostipalvelimella kelvollinen MX-tietue',

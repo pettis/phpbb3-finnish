@@ -80,6 +80,7 @@ $lang = array_merge($lang, array(
 	'ALL_POSTS'						=> 'Kaikki viestit',
 	'ALL_TIMES'						=> 'Kaikki ajat ovat <span title="%2$s">%1$s</span>',
 	'ALL_TOPICS'					=> 'Kaikki aiheet',
+    'ALT_TEXT'						=> 'Vaihtoehtoinen teksti',
 	'AND'							=> 'Ja',
 	'ARE_WATCHING_FORUM'			=> 'Sinulle tulee ilmoitus forumin uudesta viestistä.',
 	'ARE_WATCHING_TOPIC'			=> 'Sinulle tulee ilmoitus tämän ketjun uudesta viestistä.',
