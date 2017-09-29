@@ -196,6 +196,7 @@ $lang = array_merge($lang, array(
     'INST_ERR_DB_NO_NAME'			=> 'Tietokannan nimeä ei ole määritelty.',
     'INST_ERR_DB_FORUM_PATH'		=> 'Määrittelemäsi tietokantatiedosto on foorumisi hakemistossa. Sinun tulee sijoittaa tämä tiedosto hakemistoon, joka ei suoraan web-hakemistosta verkkoon näkyvissä.',
     'INST_ERR_DB_CONNECT'			=> 'Tietokantaan yhdistäminen ei onnistunut. Tarkista virheilmoitus alta.',
+    'INST_ERR_DB_NO_WRITABLE'		=> 'Sekä tietokantaan että sen sisältävään hakemistoon tulee voida kirjoittaa.',
     'INST_ERR_DB_NO_ERROR'			=> 'Virheilmoitusta ei annettu.',
     'INST_ERR_PREFIX'				=> 'Tietokantataulut antamallasi etuliitteellä ovat jo olemassa. Anna joku toinen vaihtoehto.',
     'INST_ERR_DB_NO_MYSQLI'			=> 'Tällä koneella käytössä oleva MySQL-versio ei ole yhteensopiva valitsemasi "MySQL, MySQLi-laajennuksen tuella" -vaihtoehdon kanssa. Ole hyvä ja yritä "MySQL"-vaihtoehtoa.',
@@ -221,6 +222,7 @@ $lang = array_merge($lang, array(
     // Server data
     //
     // Form labels
+    'UPGRADE_INSTRUCTIONS'			=> 'Uusi ominaisuuspäivitys <strong>%1$s</strong> on saatavilla. Lue <a href="%2$s" title="%2$s"><strong>julkaisutiedote</strong></a> nähdäksesi mitä on muuttunut ja päivitysohjeita varten.',
     'SERVER_CONFIG'				=> 'Palvelimen määrittely',
     'SCRIPT_PATH'				=> 'Skriptin polku',
     'SCRIPT_PATH_EXPLAIN'		=> 'Polku jossa phpBB sijaitsee suhteessa verkkotunnukseen, esimerkiksi <samp>/phpBB3</samp>.',
@@ -293,9 +295,10 @@ $lang = array_merge($lang, array(
     'TASK_CREATE_TABLES'				=> 'Luodaan tauluja',
 
     // Install data
-    'TASK_ADD_BOTS'			=> 'Rekisteröidään botit',
-    'TASK_ADD_LANGUAGES'	=> 'Asennetaan saatavilla olevat kielet',
-    'TASK_ADD_MODULES'		=> 'Asennetaan moduulit',
+    'TASK_ADD_BOTS'			    => 'Rekisteröidään botit',
+    'TASK_ADD_LANGUAGES'	    => 'Asennetaan saatavilla olevat kielet',
+    'TASK_ADD_MODULES'		    => 'Asennetaan moduulit',
+    'TASK_CREATE_SEARCH_INDEX'	=> 'Luodaan hakuindeksi',
 
     // Install finish tasks
     'TASK_INSTALL_EXTENSIONS'	=> 'Asennetaan pakatut laajennokset',

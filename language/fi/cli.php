@@ -54,6 +54,7 @@ $lang = array_merge($lang, array(
 	'CLI_DESCRIPTION_DISABLE_EXTENSION'			=> 'Pysäytä määrätty laajennus.',
 	'CLI_DESCRIPTION_ENABLE_EXTENSION'			=> 'Salli määrätty laajennus.',
 	'CLI_DESCRIPTION_FIND_MIGRATIONS'			=> 'Etsi muutokset joilla ei ole riippuvuuksia.',
+    'CLI_DESCRIPTION_FIX_LEFT_RIGHT_IDS'		=> 'Korjaa foorumin ja moduulien puurakenteen.',
 	'CLI_DESCRIPTION_GET_CONFIG'				=> 'Hae asetusarvo',
 	'CLI_DESCRIPTION_INCREMENT_CONFIG'			=> 'Kasvata asetuksen kokonaislukuarvoa',
 	'CLI_DESCRIPTION_LIST_EXTENSIONS'			=> 'Näytä kaikki tietokannan ja tiedostojärjestelmän laajennukset.',
@@ -88,7 +89,9 @@ $lang = array_merge($lang, array(
     'CLI_DESCRIPTION_UPDATE_CHECK_OPTION_CACHE'		=> 'Aja tarkistuskomento välimuistin kanssa.',
     'CLI_DESCRIPTION_UPDATE_CHECK_OPTION_STABILITY'	=> 'Aja tämä komento tarkistaaksesi ainoastaan vakaat tai epävakaat versiot.',
 
-    'CLI_ERROR_INVALID_STABILITY' => '"%s" ei ole pätevä vakaustaso.',
+    'CLI_DESCRIPTION_UPDATE_HASH_BCRYPT'		=> 'Päivittää vanhentuneet salasanatiivisteet käyttämään bcryptiä.',
+
+    'CLI_ERROR_INVALID_STABILITY' => '"%s" pitää olla "stable" tai "unstable".',
 
     'CLI_DESCRIPTION_USER_ACTIVATE'				=> 'Aktivoi (tai poista käytöstä) käyttäjätili.',
     'CLI_DESCRIPTION_USER_ACTIVATE_USERNAME'	=> 'Aktivoitavan käyttäjän käyttäjätunnus.',
@@ -107,8 +110,10 @@ $lang = array_merge($lang, array(
 
 	'CLI_EXTENSION_DISABLE_FAILURE'		=> 'Ei voi pysäyttää laajennusta %s',
 	'CLI_EXTENSION_DISABLE_SUCCESS'		=> 'Pysäytetty onnistuneesti laajennus %s',
+    'CLI_EXTENSION_DISABLED'			=> 'Laajennos %s ei ole käytössä',
 	'CLI_EXTENSION_ENABLE_FAILURE'		=> 'Ei voi aktivoida laajennusta %s',
 	'CLI_EXTENSION_ENABLE_SUCCESS'		=> 'Onnistunut aktivointi laajennukselle %s',
+    'CLI_EXTENSION_ENABLED'				=> 'Laajennos %s on jo käytössä',
 	'CLI_EXTENSION_NAME'				=> 'Laajennuksen nimi',
 	'CLI_EXTENSION_PURGE_FAILURE'		=> 'Ei voi poistaa laajennusta %s',
 	'CLI_EXTENSION_PURGE_SUCCESS'		=> 'Onnistuneesti poistettu laajennus %s',
@@ -119,7 +124,9 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_DISABLED'			=> 'Estetty',
 	'CLI_EXTENSIONS_ENABLED'			=> 'Sallittu',
 
+    'CLI_FIXUP_FIX_LEFT_RIGHT_IDS_SUCCESS'		=> 'Foorumien ja moduulien puurakenne on korjattu onnistuneesti.',
 	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Kaikki email-hash kentät laskettu uudestaan.',
+    'CLI_FIXUP_UPDATE_HASH_BCRYPT_SUCCESS'		=> 'Salasanan tiivisteet päivitettiin onnistuneesti bcryptiin.',
 
     'CLI_MIGRATION_NAME'					=> 'Muunnoksen nimi, sisältäen nimiavaruuden (käytä kauttaviivoja kenoviivojen sijaan välttääksesi ongelmat).',
     'CLI_MIGRATIONS_AVAILABLE'				=> 'Saatavilla olevat muunnokset',

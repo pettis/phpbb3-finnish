@@ -392,7 +392,8 @@ $lang = array_merge($lang, array(
 	'NUMBER_USERS'		=> 'Käyttäjät',
 	'NUMBER_ORPHAN'		=> 'Orvot liitetiedostot',
 
-	'PHP_VERSION_OLD'	=> 'Palvelimen käyttämä PHP-versio ei ole tuettu tulevien phpBB-versioiden käyttämiseen. %sLisätietoja%s',
+    'PHP_VERSION'		=> 'PHP-versio',
+	'PHP_VERSION_OLD'	=> 'Palvelimella oleva PHP-versiota (%1$s) ei enää tueta tulevissa phpBB-versioissa. PHP:n vähimmäisvaatimus tulee olemaan PHP %2$s. %3$sLisätietoja%4$s',
 
 	'POSTS_PER_DAY'		=> 'Viestiä päivässä',
 
@@ -436,16 +437,19 @@ $lang = array_merge($lang, array(
 	'UPLOAD_DIR_SIZE'	=> 'Liitetiedostojen hakemiston koko',
 	'USERS_PER_DAY'		=> 'Käyttäjiä päivässä',
 
-	'VALUE'					=> 'Arvo',
-	'VERSIONCHECK_FAIL'			=> 'Versio-informaation haku epäonnistui.',
-	'VERSIONCHECK_FORCE_UPDATE'	=> 'Tarkista versio uudelleen',
-    'VERSION_CHECK'				=> 'Versiotarkistus',
-    'VERSION_CHECK_EXPLAIN'		=> 'Tarkistaa onko phpBB-asennuksesi ajantasalla.',
+	'VALUE'					        => 'Arvo',
+	'VERSIONCHECK_FAIL'			    => 'Versio-informaation haku epäonnistui.',
+	'VERSIONCHECK_FORCE_UPDATE'	    => 'Tarkista versio uudelleen',
+    'VERSION_CHECK'				    => 'Versiotarkistus',
+    'VERSION_CHECK_EXPLAIN'		    => 'Tarkistaa onko phpBB-asennuksesi ajantasalla.',
+    'VERSIONCHECK_INVALID_ENTRY'	=> 'Viimeisimmän version tiedot sisältää kohteen jota ei tueta.',
+    'VERSIONCHECK_INVALID_URL'		=> 'Viimeisimmän version tiedot sisältävät virheellisen URLin.',
+    'VERSIONCHECK_INVALID_VERSION'	=> 'Viimeisimmän version tiedot sisältävät virhellisen version.',
     'VERSION_NOT_UP_TO_DATE_ACP'	=> 'phpBB-asennuksesi ei ole ajantasalla.<br />Alla on linkki julkaisutiedotteeseen, joka sisältää lisätietoja päivityksestä ja päivitysohjeet.',
     'VERSION_NOT_UP_TO_DATE_TITLE'	=> 'phpBB-asennuksesi ei ole ajantasalla.',
-    'VERSION_UP_TO_DATE_ACP'	=> 'phpBB-asennuksesi on ajantasalla. Päivityksiä ei ole tällä hetkellä saatavilla.',
-	'VIEW_ADMIN_LOG'		=> 'Katso ylläpidon lokitietoja',
-	'VIEW_INACTIVE_USERS'	=> 'Näytä vahvistamattomat käyttäjät',
+    'VERSION_UP_TO_DATE_ACP'	    => 'phpBB-asennuksesi on ajantasalla. Päivityksiä ei ole tällä hetkellä saatavilla.',
+	'VIEW_ADMIN_LOG'		        => 'Katso ylläpidon lokitietoja',
+	'VIEW_INACTIVE_USERS'	        => 'Näytä vahvistamattomat käyttäjät',
 
 	'WELCOME_PHPBB'			=> 'Tervetuloa phpBB:hen',
 	'WRITABLE_CONFIG'		=> 'Asetustiedostosi (config.php) on kirjoitettavissa. Suosittelemme, että muutat tiedoston oikeudet muotoon 640 tai ainakin 644 (esimerkiksi: <a href="http://en.wikipedia.org/wiki/Chmod" rel="external">chmod</a> 640 config.php).',

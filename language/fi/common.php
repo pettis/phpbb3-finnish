@@ -177,6 +177,7 @@ $lang = array_merge($lang, array(
     'COOKIE_CONSENT_INFO'	=> 'Lue lisää',
     'COOKIE_CONSENT_MSG'	=> 'Tämä sivusto käyttää evästeitä parhaan käyttäjäkokemuksen varmistamiseksi.',
     'COOKIE_CONSENT_OK'		=> 'Selvä!',
+    'COOKIE_CONSENT_HREF'	=> 'http://cookiesandyou.com',
 	'COOKIES_DELETED'		=> 'Kaikki keskustelufoorumin asettamat evästeet on poistettu.',
 	'CURRENT_TIME'			=> 'Tänään on %s',
 

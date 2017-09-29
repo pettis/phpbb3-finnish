@@ -238,9 +238,9 @@ $lang = array_merge($lang, array(
 	'SMILIES'					=> 'Hymiöt',
 	'SMILIES_ARE_OFF'			=> 'Hymiöt ovat <em>poissa käytöstä</em>',
 	'SMILIES_ARE_ON'			=> 'Hymiöt ovat <em>käytössä</em>',
-	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'Tiedotteen voimassaoloaika',
+	'STICKY_ANNOUNCE_TIME_LIMIT'=> 'Kiinniretyn/Tiedotteen/Globaalin tiedotteen voimassaoloaika',
 	'STICK_TOPIC_FOR'			=> 'Tiedote on voimassa',
-	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Aseta 0 tai jätä tyhjäksi pitääksesi tiedotteen pysyvästi voimassa. Huomaa, että tämä numero on suhteessa viestin päiväykseen.',
+	'STICK_TOPIC_FOR_EXPLAIN'	=> 'Aseta 0 tai jätä tyhjäksi pitääksesi kiinnityksen/tiedotteen/globaalin tiedotteen pysyvästi voimassa. Huomaa, että tämä numero on suhteessa viestin päiväykseen.',
 	'STYLES_TIP'				=> 'Vinkki: Muotoilun voi asettaa nopeasti valitsemalla halutun pätkän tekstistä',
 
 	'TOO_FEW_CHARS'				=> 'Viestissäsi on liian vähän merkkejä.',

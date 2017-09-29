@@ -41,6 +41,7 @@ $lang = array_merge($lang, array(
 	'ACP_VIGLINK_SETTINGS'			=> 'VigLink asetukset',
 	'ACP_VIGLINK_SETTINGS_EXPLAIN'	=> 'VigLink on kolmannen osapuolen palvelu joka huomaamatta monetisoi foorumisi käyttäjien lähettämät linkit ilman että käyttäjäkokemus muuttuu. Kun käyttäjä klikkaa foorumilta pois vievää linkkiä tuotteisiin tai palveluihin ja ostaa jotain, kauppiaat maksavat VigLinkille palkkion josta osa lahjoitetaan phpBB-projektille. Ottamalla VigLinkin käyttöön ja lahjoittamalla tuotot phpBB-projektille, tuet avoimen lähdekoodin organisaatiotamme varmistamalla taloudellista turvaamme.',
 	'ACP_VIGLINK_SETTINGS_CHANGE'	=> 'Voit muuttaa näitä asetuksia milloin vain “<a href="%1$s">VigLink asetukset</a>” -sivulla.',
+    'ACP_VIGLINK_SUPPORT_EXPLAIN'	=> 'Sinua ei enää ohjata tälle sivulle, kun olet tallentanut valitasi alla, klikkaamalla Lähetä-painiketta.',
 	'ACP_VIGLINK_ENABLE'			=> 'Käytä VigLinkiä',
 	'ACP_VIGLINK_ENABLE_EXPLAIN'	=> 'Sallii VigLink-palveluiden käyttämisen.',
 	'ACP_VIGLINK_EARNINGS'			=> 'Vaadi oma osuutesi (vapaaehtoinen)',
