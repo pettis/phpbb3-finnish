@@ -45,10 +45,10 @@ $lang = array_merge($lang, array(
 	'ACP_VIGLINK_ENABLE'			=> 'Käytä VigLinkiä',
 	'ACP_VIGLINK_ENABLE_EXPLAIN'	=> 'Sallii VigLink-palveluiden käyttämisen.',
 	'ACP_VIGLINK_EARNINGS'			=> 'Vaadi oma osuutesi (vapaaehtoinen)',
-	'ACP_VIGLINK_EARNINGS_EXPLAIN'  => 'Voit vaatia omat tuottosi kirjautumalla Viglink Convert -tilille.',
+	'ACP_VIGLINK_EARNINGS_EXPLAIN'	=> 'Voit vaatia omat tuottosi kirjautumalla Viglink Convert -tilille.',
 	'ACP_VIGLINK_DISABLED_PHPBB'	=> 'VigLink-palvelut ovat poissa käytöstä phpBB:n toimesta.',
 	'ACP_VIGLINK_CLAIM'				=> 'Vaadi oma osuutesi',
 	'ACP_VIGLINK_CLAIM_EXPLAIN'		=> 'Voit vaatia foorumisi tuotot VigLinkin monetisoimista linkeistä sen sijaan että lahjoittaisit ne phpBB-projektille. Hallitaksesi tilisi asetuksia, luo “VigLink Convert” -tili valitsemalla “Convert-tili”.',
 	'ACP_VIGLINK_CONVERT_ACCOUNT'	=> 'Convert-tili',
-	'ACP_VIGLINK_NO_CONVERT_LINK'	=> 'VigLink convert -tilin linkkiä ei voitu hakea.'
+	'ACP_VIGLINK_NO_CONVERT_LINK'	=> 'VigLink convert -tilin linkkiä ei voitu hakea.',
 ));

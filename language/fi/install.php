@@ -46,7 +46,7 @@ $lang = array_merge($lang, array(
 
     // Support page
     'SUPPORT_TITLE'		=> 'Tuki',
-    'SUPPORT_BODY'		=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=486">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=451">laajennosten foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=471">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajan tasalla ja saadaksesi uutiset uusimmista versioista. Mikset liittyisi <a href="https://www.phpbb.com/support/">postituslistallemme</a>?<br /><br />',
+    'SUPPORT_BODY'		=> 'phpBB3:lle tarjotaan ilmaiseksi täydellinen tuotetuki viimeisimmälle stabiilille versiolle. Tähän kuuluu:</p><ul><li>asennus</li><li>konfigurointi</li><li>tekniset kysymykset</li><li>mahdolliset ongelmat ohjemistovirheiden kanssa</li><li>päivittäminen julkaisukandidaateista (RC) uusimpaan vakaaseen versioon</li><li>muunnos phpBB 2.0.x -versiosta phpBB3-versioon</li><li>muunnos toisista ohjelmista phpBB3-versioon (ole hyvä ja katso <a href="https://www.phpbb.com/community/viewforum.php?f=486">muuntajien foorumi</a>)</li></ul><p>Suosittelemme käyttäjille, jotka käyttävät phpBB3-betaversioita poistamaan asennuksensa ja korvaamaan sen puhtaalla asennuksella uusimmasta phpBB3-versiosta.</p><h2>MODit / tyylit</h2><p>MODeihin liittyvistä ongelmista olkaa hyvä ja kirjoittakaa viesti <a href="https://www.phpbb.com/community/viewforum.php?f=451">laajennosten foorumille</a>.<br />Tyyleihin liittyvissä ongelmissa, teemoissa, mallineissa ja kuvapaketeissa olkaa hyvä ja kirjoittakaa <a href="https://www.phpbb.com/community/viewforum.php?f=471">tyylien foorumille</a>.<br /><br />Mikäli kysymys koskee jotain tiettyä pakettia, olkaa hyvä ja kirjoittakaa suoraan sen paketin omaan viestiketjuun.</p><h2>Lisätietoa käyttötuesta</h2><p><a href="https://www.phpbb.com/community/viewtopic.php?f=14&amp;t=571070">phpBB:n tervetuloa-paketti</a><br /><a href="https://www.phpbb.com/support/">Tukialue</a><br /><a href="https://www.phpbb.com/support/docs/en/3.2/ug/quickstart/">pikaopas aloitukseen</a><br /><br />Varmistaaksesi, että foorumisi pysyy ajan tasalla ja saadaksesi uutiset uusimmista versioista, seuraa meitä <a href="https://www.twitter.com/phpbb/">Twitterissä</a> ja <a href="https://www.facebook.com/phpbb/">Facebookissa</a><br /><br />',
 
     // License
     'LICENSE_TITLE'		=> 'General Public License',
@@ -145,6 +145,7 @@ $lang = array_merge($lang, array(
     'ADMIN_USERNAME_EXPLAIN'	=> 'Syötä käyttäjätunnus, jonka pituus on 3 ja 20 merkin väliltä.',
 
     // Errors
+    'INST_ERR_DB'					=> 'Tietokannan asennusvirhe',
     'INST_ERR_EMAIL_INVALID'		=> 'Antamasi sähköpostiosoite ei ole toimiva.',
     'INST_ERR_PASSWORD_MISMATCH'	=> 'Antamasi salasanat eivät olleet samat.',
     'INST_ERR_PASSWORD_TOO_LONG'	=> 'Antamasi salasana oli liian pitkä. Siinä saa olla enintään 30 merkkiä.',
@@ -350,16 +351,39 @@ $lang = array_merge($lang, array(
 		<p>Ole hyvä ja lue uusimman version julkaisutiedote ennen kuin jatkat päivittämistä, sillä siinä voi olla tärkeää tietoa. Siitä löytyvät myös latauslinkit ja muutosten tiedot.</p>
 
 		<br />
+		
+		<h1>Kuinka päivittää asennus täydellä paketilla</h1>
 
+		<p>Suositeltu tapa asennuksen päivittämiseen on käyttää täyttä pakettia. Jos phpBB:n ydintiedostoja on muokattu, saatat haluta käyttää automaattista päivityspakettia, jotta et menettäisi näitä muutoksia. Voit myös päivittää asetuksesi muilla tavoilla, jotka on mainittu INSTALL.html dokumentissa. Vaiheet phpBB3:n päivittämiseen täyttä pakettia käyttäen ovat:</p>
+
+		<ol style="margin-left: 20px; font-size: 1.1em;">
+			<li><strong class="error">Varmuuskopioi kaikki foorumin tiedostot ja tietokanta.</strong></li>
+			<li>Mene  <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com lataussivulle</a> ja lataa viimeisin "täysi paketti" -arkisto.</li>
+			<li>Pura pakattu tiedosto.</li>
+			<li>Poista  <code class="inline">config.php</code>-tiedosto ja <code class="inline">/images</code>, <code class="inline">/store</code> ja <code class="inline">/files</code> hakemistot <em>paketista</em> (ei sivustoltasi).</li>
+			<li>Mene hallintapaneeliin, Keskutelufoorumin asetukset ja varmista että prosilver on asetettu oletustyyliksi. Jos se ei ole, aseta oletustyyliksi prosilver.</li>
+			<li>Poista <code class="inline">/vendor</code> ja <code class="inline">/cache</code> -hakemistot foorumisi juurihakemistosta palvelimella.</li>
+			<li>FTP tai SSH -tiedostonsiirron avulla, lataa loput tiedostot ja hakemistot (siis phpBB3-hakemiston loput tiedostot) palvelimella olevan foorumisi juurihakemistoon, ylikirjoittaen olemassa olevat tiedostot. (Huomaa: varo ettet poista yhtään laajennosta <code class="inline">/ext</code>-hakemistossasi, siirtäessäsi uutta phpBB3-sisältöä.)</li>
+			<li><strong><a href="%1$s" title="%1$s">Aloita sitten päivitysprosessi menemällä selaimellasi install-hakemistoon</a>.</strong></li>
+			<li>Seuraa tietokannan päivityksen vaiheita ja odota sen päättymistä.</li>
+			<li>Poista <code class="inline">/install</code>-hakemisto FTP tai SSH-yhteyden avulla, asennetun foorumisi juurihakemistosta.<br><br></li>
+		</ol>
+		
+		<p>Sinulla on uusi päivitetty foorumi sisältäen kaikki käyttäjäsi ja viestisi. Vielä muutama asia:</p>
+		<ul style="margin-left: 20px; font-size: 1.1em;">
+			<li>Päivitä kielipakettisi</li>
+			<li>Päivitä tyylisi<br><br></li>			
+		</ul>
+		
 		<h1>Kuinka voit päivittää asennuksesi automaattisella päivityspaketilla</h1>
 
-		<p>Tässä mainittu suositeltava päivitystapa koskee vain automaattista päivityspakettia. Voit päivittää asennuksesi käyttämällä INSTALL.html-tiedostossa mainittuja tapoja. Automaattisen phpBB3-päivityksen vaiheet ovat:</p>
+		<p>Automaattista päivityspakettia suositellaan vain jos phpBB:n ydintiedostoja on muokattu. Voit myös päivittää asennuksesi INSTALL.html -dokumentissa mainituilla tavoilla. Automaattisen phpBB3-päivityksen vaiheet ovat:</p>
 
-		<ul style="margin-left: 20px; font-size: 1.1em;">
-			<li>Mene <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com-lataussivulle</a> ja lataa "Automatic Update Package" -paketti.<br /><br /></li>
-			<li>Pura paketti.<br /><br /></li>
-			<li>Siirrä puretut "install" ja "vendor" -hakemistot kokonaisuudessaan phpBB:n juurihakemistoon (sama hakemisto missä config.php-tiedosto sijaitsee).<br /><br /></li>
-		</ul>
+		<ol style="margin-left: 20px; font-size: 1.1em;">
+			<li>Mene <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com-lataussivulle</a> ja lataa "Automatic Update Package" -paketti.</li>
+			<liPura paketti.</li>
+			<li>Siirrä puretut "install" ja "vendor" -hakemistot kokonaisuudessaan phpBB:n juurihakemistoon (sama hakemisto missä config.php-tiedosto sijaitsee).<br><br></li>
+		</ol>
 
 		<p>Kun olet siirtänyt tiedostot, keskustelufoorumi sulkeutuu normaaleilta käyttäjiltä, koska asennushakemisto on siirretty palvelimelle.<br /><br />
 		<strong><a href="%1$s" title="%1$s">Nyt voit aloittaa päivityksen osoittamalla selaimesi asennustiedostot sisältävään hakemistoon (install)</a>.</strong><br />

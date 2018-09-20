@@ -104,6 +104,7 @@ $lang = array_merge($lang, array(
 // Forum Permissions
 $lang = array_merge($lang, array(
 	'ACL_F_LIST'		=> 'Näkee alueen',
+    'ACL_F_LIST_TOPICS' => 'Voi katsella aiheita',
 	'ACL_F_READ'		=> 'Voi lukea alueen',
 	'ACL_F_SEARCH'		=> 'Voi etsiä keskustelualueita',
 	'ACL_F_SUBSCRIBE'	=> 'Voi seurata aluetta',

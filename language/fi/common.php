@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'USER_LANG'			=> 'fi',
 
 	// You can define different rules for the determination of plural forms here.
-	// See http://wiki.phpbb.com/Plural_Rules for more information
+	// See https://area51.phpbb.com/docs/dev/32x/language/plurals.html for more information
 	// or ask the translation manager for help.
 	'PLURAL_RULE'		=> 1,
 
@@ -135,8 +135,10 @@ $lang = array_merge($lang, array(
 		1	=> 'Käyttäjiä lukemassa tätä aluetta: %2$s ja %1$d vierailija',
 		2	=> 'Käyttäjiä lukemassa tätä aluetta: %2$s ja %1$d vierailijaa',
 	),
+    'BUTTON_DELETE'         => 'Poista',
 	'BUTTON_EDIT'			=> 'Muokkaa',
-	'BUTTON_FORUM_LOCKED'	=> 'Palsta Lukittu',
+	'BUTTON_FORUM_LOCKED'	=> 'Lukittu',
+    'BUTTON_INFORMATION'    => 'Tiedot',
 	'BUTTON_NEW_TOPIC'		=> 'Uusi Aihe',
 	'BUTTON_PM'				=> 'Yksityisviesti',
 	'BUTTON_PM_FORWARD'		=> 'Välitä Yksityisviesti',
@@ -145,8 +147,10 @@ $lang = array_merge($lang, array(
 	'BUTTON_PM_REPLY_ALL'	=> 'Vastaa Yksityisviesti kaikille',
 	'BUTTON_POST_REPLY'		=> 'Vastaa Viestiin',
 	'BUTTON_QUOTE'			=> 'Lainaa',
-	'BUTTON_TOPIC_LOCKED'	=> 'Viestiketju Lukittu',
-	'BYTES'					=> 'Bittiä',
+    'BUTTON_REPORT'         => 'Raportoi',
+	'BUTTON_TOPIC_LOCKED'	=> 'Lukittu',
+    'BUTTON_WARN'           => 'Varoita',
+	'BYTES'					=> 'Tavua',
 	'BYTES_SHORT'			=> 'B',
 
 	'CANCEL'				=> 'Peruuta',
@@ -553,6 +557,7 @@ $lang = array_merge($lang, array(
 	),
 	'OPTIONS'					=> 'Vaihtoehdot',
 
+    'PAGE_NOT_FOUND'		=> 'Pyydettyä sivua ei löytynyt.',
 	'PAGE_OF'				=> 'Sivu <strong>%1$d</strong>/<strong>%2$d</strong>',
 	'PAGE_TITLE_NUMBER'		=> 'Sivu %s',
 	'PASSWORD'				=> 'Salasana',
@@ -600,6 +605,7 @@ $lang = array_merge($lang, array(
 	'PREVIOUS'				=> 'Edellinen',
 	'PREVIOUS_STEP'			=> 'Edellinen',
 	'PRIVACY'				=> 'Yksityisyyden suoja',
+    'PRIVACY_LINK'			=> 'Yksityisyys',
 	'PRIVATE_MESSAGE'		=> 'Yksityisviesti',
 	'PRIVATE_MESSAGES'		=> 'Yksityisviestejä',
 	'PRIVATE_MESSAGING'		=> 'Yksityisviestin lähetys',
@@ -723,12 +729,13 @@ $lang = array_merge($lang, array(
 	'SUBJECT'					=> 'Otsikko',
 	'SUBMIT'					=> 'Lähetä',
 
-	'TB'							=> 'TB',
-	'TERMS_USE'						=> 'Käyttöehdot',
-	'TEST_CONNECTION'				=> 'Testaa yhteys',
-	'THE_TEAM'						=> 'Ryhmät',
-	'TIB'							=> 'TiB',
-	'TIME'							=> 'Aika',
+	'TB'				=> 'TB',
+    'TERMS_LINK'		=> 'Ehdot',
+	'TERMS_USE'			=> 'Käyttöehdot',
+	'TEST_CONNECTION'	=> 'Testaa yhteys',
+	'THE_TEAM'			=> 'Ryhmät',
+	'TIB'				=> 'TiB',
+	'TIME'				=> 'Aika',
 	'TIMEOUT_PROCESSING_REQ'		=> 'Tehtävän aikakatkaisu.',
 
 	'TOO_LARGE'						=> 'Antamasi arvo on liian suuri.',

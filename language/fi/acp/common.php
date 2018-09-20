@@ -549,6 +549,7 @@ $lang = array_merge($lang, array(
 	'LOG_BBCODE_ADD'		=> '<strong>Lisäsi uuden BBCoden</strong><br />» %s',
 	'LOG_BBCODE_EDIT'		=> '<strong>Muokkasi BBCodea</strong><br />» %s',
 	'LOG_BBCODE_DELETE'		=> '<strong>Poisti BBCoden</strong><br />» %s',
+    'LOG_BBCODE_CONFIGURATION_ERROR'	=> '<strong>Virhe BBCoden asetuksia määritettäessä</strong>: %1$s<br />Â» %2$s',
 
 	'LOG_BOT_ADDED'		=> '<strong>Uusi botti lisätty</strong><br />» %s',
 	'LOG_BOT_DELETE'	=> '<strong>Poisti botin</strong><br />» %s',

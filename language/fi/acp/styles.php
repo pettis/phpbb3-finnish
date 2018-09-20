@@ -77,6 +77,7 @@ $lang = array_merge($lang, array(
 	'STYLE_UNINSTALL'			=> 'Poista',
 	'STYLE_UNINSTALL_DEPENDENT'	=> 'Tyyliä "%s" ei voi poistaa koska sillä on alatyylejä.',
 	'STYLE_UNINSTALLED'			=> 'Tyyli "%s" poistettu.',
+    'STYLE_PHPBB_VERSION'		=> 'phpBB-versio',
 	'STYLE_USED_BY'				=> 'Käyttäjien lkm',
     'STYLE_VERSION'				=> 'Tyylin versio',
 

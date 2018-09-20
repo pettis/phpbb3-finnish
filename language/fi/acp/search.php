@@ -113,8 +113,11 @@ $lang = array_merge($lang, array(
 		2	=> 'Tämänhetkinen sisällysluettelon rakanetamisen nopeus on noin %1$.1f viestiä sekunnissa.<br />Sisällysluettelon rakennus on käynnissä…',
 	),
 	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
-		2	=> 'Kaikki viestit id-arvoon %2$d on poistettu luettelosta.<br />Poisto kesken…',
+		2	=> 'Kaikki viestit id-arvoon %2$d on poistettu luettelosta, joista %1$d viestiä oli mukana tässä vaiheessa <br />',
 	),
+    'SEARCH_INDEX_DELETE_REDIRECT_RATE'		=> array(
+        2	=> 'Tämän hetkinen poistotahti on noin %1$.1f viestiä sekunnissa.<br />Poisto kesken…',
+    ),
 	'SEARCH_INDEX_CREATED'					=> 'Kaikki keskustelufoorumin viesttit ovat sisällysluettelossa',
 	'SEARCH_INDEX_REMOVED'					=> 'Tämän hakukoneen sisällysluettelo on poistettu',
 	'SEARCH_INTERVAL'						=> 'Hakutoiminnon rajoitus rekisteröityneeltä käyttäjältä',

@@ -50,7 +50,8 @@ $lang = array_merge($lang, array(
 	'NEW_POSTS_LOCKED'		=> 'Uusia viestejä [ Lukittu ]', // ei käytössä
 	'NO_NEW_POSTS_HOT'		=> 'Ei uusia viestejä [ Suosittu ]', // ei käytössä
 	'NO_NEW_POSTS_LOCKED'	=> 'Ei uusia viestejä [ Lukittu ]', // ei käytössä
-	'NO_READ_ACCESS'			=> 'Käytössäsi olevat oikeudet eivät salli tämän alueen viestien lukemista.',
+	'NO_READ_ACCESS'			=> 'Käytössäsi olevat oikeudet eivät salli tämän alueen viestien katselemista tai lukemista.',
+    'NO_FORUMS_IN_CATEGORY'	=> 'Tässä kategoriassa ei ole alueita.',
 	'NO_UNREAD_POSTS_HOT'		=> 'Ei lukemattomia viestejä [ Suosittu ]',
 	'NO_UNREAD_POSTS_LOCKED'		=> 'Ei lukemattomia viestejä [ Lukittu ]',
 
