@@ -381,7 +381,7 @@ $lang = array_merge($lang, array(
 
 		<ol style="margin-left: 20px; font-size: 1.1em;">
 			<li>Mene <a href="https://www.phpbb.com/downloads/" title="https://www.phpbb.com/downloads/">phpBB.com-lataussivulle</a> ja lataa "Automatic Update Package" -paketti.</li>
-			<liPura paketti.</li>
+			<li>Pura paketti.</li>
 			<li>Siirrä puretut "install" ja "vendor" -hakemistot kokonaisuudessaan phpBB:n juurihakemistoon (sama hakemisto missä config.php-tiedosto sijaitsee).<br><br></li>
 		</ol>
 
