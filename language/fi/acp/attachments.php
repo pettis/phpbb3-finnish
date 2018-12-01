@@ -108,8 +108,6 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'Kuvalinkin koko',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Näytä kuvatiedosto linkkinä mikäli sen koko ylittää sallitun,  aseta 0px kertaa 0px poistaaksesi toiminnon käytöstä.',
-	'IMAGICK_PATH'				=> 'ImageMagickin polku',
-	'IMAGICK_PATH_EXPLAIN'		=> 'Täysi polku ImageMagick-muokkaussovellukseen. Esim. <samp>/usr/bin/</samp>',
 
 	'MAX_ATTACHMENTS'				=> 'Liitetiedostojen enimmäismäärä viestissä',
 	'MAX_ATTACHMENTS_PM'			=> 'Liitetiedostojen enimmäismäärä yksityisviestissä',
@@ -132,7 +130,6 @@ $lang = array_merge($lang, array(
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Tunnisteryhmää ei ole määritelty',
 	'NO_FILE_CAT'				=> 'Ei mitään',
 	'NO_IMAGE'					=> 'Ei kuvaa',
-	'NO_THUMBNAIL_SUPPORT'		=> 'Kuvien pienennys ei ole käytössä, sillä tarvittavaa GD-kirjastoa ei ole saatavilla ja ImageMagick-sovellusta ei löytynyt.',
 	'NO_UPLOAD_DIR'				=> 'Antamaasi hakemistoa liitetiedostoille ei löytynyt.',
 	'NO_WRITE_UPLOAD'			=> 'Antamaasi liitetiedostojen hakemistoon ei voitu kirjoittaa. Ole hyvä ja muuta hakemiston oikeuksia salliaksesi palvelimen kirjoittamisen.',
 
@@ -144,7 +141,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_DISALLOWED_IPS'		=> 'Poista tai ota huomioon kielletty IP/isäntänimi',
 	'RESYNC_FILES_STATS_CONFIRM'	=> 'Haluatko varmasti synkronoida tiedostojen tilatiedot?',
 
-	'SEARCH_IMAGICK'				=> 'Etsi ImageMagick-ohjelmaa',
 	'SECURE_ALLOW_DENY'				=> 'Sallittu/kielletty lista',
 	'SECURE_ALLOW_DENY_EXPLAIN'		=> 'Sallitut ja kielletyt osoitteet. Tämä toimii vain tiedostojen lataukseen',
 	'SECURE_DOWNLOADS'				=> 'Ota turvalliset lataukset käyttöön',

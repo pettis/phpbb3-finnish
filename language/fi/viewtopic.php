@@ -34,7 +34,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'APPROVE'								=> 'Hyväksy',
+	'APPROVE'							=> 'Hyväksy',
 	'ATTACHMENT'						=> 'Liitteet',
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Liitetiedostot eivät ole käytettävissä.',
 
@@ -80,12 +80,12 @@ $lang = array_merge($lang, array(
 	'MOVE_TOPIC'				=> 'Siirrä viestiketju',
 
 	'NO_ATTACHMENT_SELECTED'=> 'Et ole valinnut yhtäkään liitetiedostoa nähtäväksi tai ladattavaksi.',
-        'NO_AUTH_PRINT_TOPIC'           => 'Sinulla ei ole oikeutta tulostusnäkymään.',
 	'NO_NEWER_TOPICS'		=> 'Tällä alueella ei ole uudempia viestejä',
 	'NO_OLDER_TOPICS'		=> 'Tällä alueella ei ole vanhempia viestejä',
 	'NO_UNREAD_POSTS'		=> 'Tässä viestiketjussa ei ole uusia viestejä.',
 	'NO_VOTE_OPTION'		=> 'Anna äänestykselle vaihtoehto.',
 	'NO_VOTES'				=> 'Ei ääniä',
+    'NO_AUTH_PRINT_TOPIC'   => 'Sinulla ei ole oikeutta tulostusnäkymään.',
 
 	'POLL_ENDED_AT'			=> 'Äänestys päättyi %s',
 	'POLL_RUN_TILL'			=> 'Äänestys on voimassa %s asti',

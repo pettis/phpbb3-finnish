@@ -1,4 +1,5 @@
 Subject: Uusi viestiketju - {FORUM_NAME}
+List-Unsubscribe: <{U_STOP_WATCHING_FORUM}>
 
 Terve {USERNAME},
 
@@ -6,6 +7,10 @@ Sait tämän viestin, koska seuraat keskustelualuetta "{FORUM_NAME}", {SITENAME}
 <!-- IF AUTHOR_NAME != '' --> Käyttäjä {AUTHOR_NAME}<!-- ENDIF -->on lähettänyt tälle alueelle uuden viestiketjun "{TOPIC_TITLE}", edellisen käyntisi jälkeen. Voit käyttää tätä linkkiä lukeaksesi viestin. Uusia ilmoituksia ei lähetetä ennen kuin olet vieraillut keskustelufoorumilla.
 
 {U_FORUM}
+
+Nähdäksesi uuden viestiketjun suoraan, voit avata seuraavan linkin:
+
+{U_TOPIC}
 
 Mikäli et halua seurata alueen vastauksia, voit lopettaa seurannan napsauttamalla "Lopeta seuraaminen" -linkkiä, joka löytyy yllä olevalta alueelta, tai napsauttamalla alapuolella olevaa linkkiä:
 {U_STOP_WATCHING_FORUM}

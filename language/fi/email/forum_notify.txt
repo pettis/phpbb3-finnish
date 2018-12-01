@@ -1,4 +1,5 @@
 Subject: Uusi viesti keskustelualueella - {FORUM_NAME}
+List-Unsubscribe: <{U_STOP_WATCHING_FORUM}>
 
 Terve {USERNAME},
 

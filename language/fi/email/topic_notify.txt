@@ -1,4 +1,5 @@
 Subject: Ilmoitus vastauksesta - {TOPIC_TITLE}
+List-Unsubscribe: <{U_STOP_WATCHING_TOPIC}>
 
 Terve {USERNAME},
 

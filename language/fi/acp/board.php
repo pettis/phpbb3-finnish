@@ -368,7 +368,7 @@ $lang = array_merge($lang, array(
 	'ACP_CONTACT_SETTINGS_EXPLAIN'	=> 'Täällä voit hallita kontakti sivun ominaisuuksia ja muuttaa siellä näkyvi tekstejä.',
 
 	'CONTACT_US_ENABLE'				=> 'Salli yhteydenotto sivu',
-	'CONTACT_US_ENABLE_EXPLAIN'		=> 'Tämä sivun avulla voi lähettää viestin palstan ylläpidolle. Huomaa, että foorumin laajuiset sähköpostit tulee olla käytössä myös. Löydät tämän asetukset seuraavasti: Yleinen > Asiakasohjelman kommunikointi > Sähköpostiasetukset.',
+	'CONTACT_US_ENABLE_EXPLAIN'		=> 'Tämä sivun avulla voi lähettää viestin palstan ylläpidolle. Huomaa, että foorumin laajuiset sähköpostit tulee olla käytössä myös. Löydät tämän asetukset seuraavasti: Yleinen &gt; Asiakasohjelman kommunikointi &gt; Sähköpostiasetukset.',
 
 	'CONTACT_US_INFO'				=> 'Yhteystiedot',
 	'CONTACT_US_INFO_EXPLAIN'		=> 'Tämä viesti näkyy yhteydenotto sivulla',

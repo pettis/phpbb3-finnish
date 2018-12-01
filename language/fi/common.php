@@ -59,7 +59,6 @@ $lang = array_merge($lang, array(
 
 	'ACCOUNT_ALREADY_ACTIVATED'		=> 'Tunnuksesi on jo aktivoitu',
 	'ACCOUNT_DEACTIVATED'			=> 'Käyttäjätunnuksesi on suljettu manuaalisesti ja vain ylläpitäjä voi avata ne uudelleen.',
-	'ACCOUNT_NOT_ACTIVATED'			=> 'Tunnuksiasi ei ole aktivoitu',
 	'ACP'							=> 'Ylläpidon asetukset',
 	'ACP_SHORT'						=> 'Ylläpidon asetukset',
 	'ACTIVE'						=> 'Aktiivinen',
