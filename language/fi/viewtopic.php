@@ -80,8 +80,9 @@ $lang = array_merge($lang, array(
 	'MOVE_TOPIC'				=> 'Siirrä viestiketju',
 
 	'NO_ATTACHMENT_SELECTED'=> 'Et ole valinnut yhtäkään liitetiedostoa nähtäväksi tai ladattavaksi.',
+        'NO_AUTH_PRINT_TOPIC'           => 'Sinulla ei ole oikeutta tulostusnäkymään.',
 	'NO_NEWER_TOPICS'		=> 'Tällä alueella ei ole uudempia viestejä',
-	'NO_OLDER_TOPICS'		=> 'Tällä alueella ei ole vanhempia viestjä',
+	'NO_OLDER_TOPICS'		=> 'Tällä alueella ei ole vanhempia viestejä',
 	'NO_UNREAD_POSTS'		=> 'Tässä viestiketjussa ei ole uusia viestejä.',
 	'NO_VOTE_OPTION'		=> 'Anna äänestykselle vaihtoehto.',
 	'NO_VOTES'				=> 'Ei ääniä',
