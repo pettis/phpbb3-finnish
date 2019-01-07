@@ -51,7 +51,7 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<p>Ole hyvä ja katso <a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/permissions/">kohta oikeuksien asettamisesta</a> pikaoppaassa saadaksesi lisätietoa oikeuksien asettamisesta ja hallinnoimisesta.</p>
+		<p>Ole hyvä ja katso <a href="https://www.phpbb.com/support/docs/en/3.2/ug/quickstart/permissions/">kohta oikeuksien asettamisesta</a> pikaoppaassa saadaksesi lisätietoa oikeuksien asettamisesta ja hallinnoimisesta.</p>
 	',
 
 	'ACL_NEVER'				=> 'Ei koskaan',

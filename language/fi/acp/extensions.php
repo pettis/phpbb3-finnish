@@ -94,7 +94,7 @@ $lang = array_merge($lang, array(
 	'RETURN_TO_EXTENSION_LIST'	=> 'Paluu laajennusten luetteloon',
 
 	'EXT_DETAILS'			=> 'Laajennuksen yksityiskohtia',
-	'DISPLAY_NAME'			=> 'Naytä Nimi',
+	'DISPLAY_NAME'			=> 'Näytä Nimi',
 	'CLEAN_NAME'			=> 'Tyhjennä Nimi',
 	'TYPE'					=> 'Tyyppi',
 	'DESCRIPTION'			=> 'Kuvaus',
@@ -106,8 +106,8 @@ $lang = array_merge($lang, array(
 
 	'REQUIREMENTS'			=> 'Vaatimukset',
 	'PHPBB_VERSION'			=> 'phpBB Versio',
-	'PHP_VERSION'			=> 'PHP Version',
-	'AUTHOR_INFORMATION'	=> 'Julkaisjan Tiedot',
+	'PHP_VERSION'			=> 'PHP Versio',
+	'AUTHOR_INFORMATION'	=> 'Julkaisijan Tiedot',
 	'AUTHOR_NAME'			=> 'Nimi',
 	'AUTHOR_EMAIL'			=> 'Sähköposti',
 	'AUTHOR_HOMEPAGE'		=> 'Kotisivu',
