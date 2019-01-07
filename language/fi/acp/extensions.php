@@ -106,7 +106,7 @@ $lang = array_merge($lang, array(
 
 	'REQUIREMENTS'			=> 'Vaatimukset',
 	'PHPBB_VERSION'			=> 'phpBB Versio',
-	'PHP_VERSION'			=> 'PHP Version',
+	'PHP_VERSION'			=> 'PHP Versio',
 	'AUTHOR_INFORMATION'	=> 'Julkaisijan Tiedot',
 	'AUTHOR_NAME'			=> 'Nimi',
 	'AUTHOR_EMAIL'			=> 'Sähköposti',
