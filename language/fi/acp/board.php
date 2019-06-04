@@ -108,7 +108,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_GRAVATAR'				=> 'Salli gravatar avatarit',
 	'ALLOW_LOCAL'					=> 'Ota avatar-galleria käyttöön',
 	'ALLOW_REMOTE'					=> 'Ota linkitetyt avatarit käyttöön',
-	'ALLOW_REMOTE_EXPLAIN'			=> 'Toiselta sivustolta linkitetyt avatarit',
+	'ALLOW_REMOTE_EXPLAIN'			=> 'Toiselta sivustolta linkitetyt avatarit<br><em><strong class="error">Varoitus:</strong> Sallimalla tämän toiminnon käyttäjät voivat tarkistaa tiedostojen ja palveluiden olemassa olon, jotka ovat saatavilla vain lähiverkossa.</em>',
 	'ALLOW_REMOTE_UPLOAD'			=> 'Salli avatarin lataus linkistä',
 	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Salli avatarin siirto toiselta nettisivulta.',
 	'ALLOW_UPLOAD'					=> 'Salli avatarien siirto palvelimelle',
