@@ -35,11 +35,12 @@ if (empty($lang) || !is_array($lang))
 
 // Database Backup/Restore
 $lang = array_merge($lang, array(
-	'ACP_BACKUP_EXPLAIN'	=> 'Täällä voit ottaa varmuuskopion keskustelufoorumisi tietokannasta. Voit tallentaa syntyvän tiedoston palvelimelle <samp>store/</samp>-hakemistoon tai ladata sen omalle koneellesi. Palvelimen asetuksista riippuen, voit ehkä pakata tiedoston usealla eri tavalla.',
+	'ACP_BACKUP_EXPLAIN'	=> 'Täällä voit ottaa varmuuskopion keskustelufoorumisi tietokannasta. Varmuuskopio tietokanta tallennetaan palvelimelle <samp>store/</samp>-hakemistoon. Palvelimen asetuksista riippuen, voit ehkä pakata tiedoston usealla eri tavalla.',
 	'ACP_RESTORE_EXPLAIN'	=> 'Tämä palauttaa kaiken phpBB-tiedon varmuuskopion sisältävästä tiedostosta. Mikäli palvelin tukee, voit käyttää gzip- tai bzip2-pakattua tekstitiedostoa ja se puretaan automaattisesti. <strong>VAROITUS</strong> Varmuuskopion palautus ylikirjoittaa kaiken datan foorumilta. Palautus saattaa kestää pitkän aikaa. Älä poistu tältä sivulta ennen kuin varmuuskopio on palautettu kokonaan. Varmuuskopiot, jotka ovat tallennettu <samp>store/</samp>-kansioon oletetaan olleen luodun phpBB:n omalla varmuuskopiojärjestelmällä. Muulla tavalla luodut varmuuskopiot eivät välttämättä toimi.',
 
 	'BACKUP_DELETE'		=> 'Varmuuskopion sisältävä tiedosto on poistettu',
 	'BACKUP_INVALID'	=> 'Valitsemasi tiedosto varmuuskopiota varten on epäkelpo',
+	'BACKUP_NOT_SUPPORTED'	=> 'Valittu varmuuskopio ei ole tuettu',
 	'BACKUP_OPTIONS'	=> 'Varmuuskopion vaihtoehdot',
 	'BACKUP_SUCCESS'	=> 'Varmuuskopion sisältävä tiedosto on luotu.',
 	'BACKUP_TYPE'		=> 'varmuuskopion tyyppi',
