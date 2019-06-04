@@ -322,6 +322,7 @@ $lang = array_merge($lang, array(
 	'TOTAL_SIZE'			=> 'koko yhteensä',
 
 	'UCP'					=> 'Käyttäjien hallintapaneeli',
+	'URL_INVALID'			=> 'Syötetty osoite asetukselle “%1$s” on virheellinen.',
 	'USERNAMES_EXPLAIN'		=> 'Laita jokainen käyttäjätunnus omalle rivillensä',
 	'USER_CONTROL_PANEL'	=> 'Käyttäjien hallintapaneeli',
 
