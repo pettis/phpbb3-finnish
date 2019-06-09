@@ -777,6 +777,10 @@ $lang = array_merge($lang, array(
 	'TOPIC_REVIEW'		=> 'Otsikko',
 	'TOPIC_TITLE'		=> 'Viestin otsikko',
 	'TOPIC_UNAPPROVED'	=> 'Tätä aihetta ei ole hyväksytty',
+	'TOPIC_UNAPPROVED_FORUM'	=> array(
+		1	=> 'Viestiketju odottaa hyväksyntää',
+		2	=> 'Viestiketjut odottavat hyväksyntää',
+	),
 	'TOPIC_DELETED'		=> 'Tämä viestiketju on poistettu.',
 	'TOTAL_ATTACHMENTS'	=> 'liitteet',
 	'TOTAL_LOGS'		=> array(

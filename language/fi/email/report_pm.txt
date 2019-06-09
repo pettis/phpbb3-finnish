@@ -1,4 +1,4 @@
-Subject: Yksityis viestin raportti - "{TOPIC_TITLE}"
+Subject: Yksityisviestin raportti - "{SUBJECT}"
 
 Hei {USERNAME},
 

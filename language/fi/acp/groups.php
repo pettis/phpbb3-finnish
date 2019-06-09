@@ -108,6 +108,7 @@ $lang = array_merge($lang, array(
 	'GROUP_USERS_ADDED'				=> 'Uudet käyttäjät ovat lisätty.',
 	'GROUP_USERS_EXIST'				=> 'Valitut käyttäjät ovat jo jäseniä.',
 	'GROUP_USERS_REMOVE'			=> 'Käyttäjät ovat poistettu ryhmästä ja oletukset on asetettu',
+	'GROUP_USERS_INVALID'			=> 'Yhtään käyttäjää ei lisätty ryhmään, koska seuraavia käyttäjänimiä ei ole olemassa: %s',
 
 	'LEGEND_EXPLAIN'				=> 'Nämä ryhmät näkyvät ryhmän luettelossa:',
 	'LEGEND_SETTINGS'				=> 'Luettelon asetukset',

@@ -270,6 +270,7 @@ $lang = array_merge($lang, array(
 	'IMPORTANT_NEWS'			=> 'Tärkeät tiedotteet',
 	'INVALID_USER_BIRTHDAY'			=> 'Antamasi päiväys ei ole kelvollinen syntymäpäivä.',
 	'INVALID_CHARS_USERNAME'	=> 'Käyttäjätunnuksessa on kiellettyjä merkkejä.',
+	'INVALID_EMOJIS_USERNAME'	=> 'Käyttäjätunnuksessa on kiellettyjä merkkejä (Emoji).',
 	'INVALID_CHARS_NEW_PASSWORD'=> 'Salasanassa ei ole vaadittuja merkkejä.',
 	'ITEMS_REQUIRED'			=> 'Tähdellä merkityt kentät ovat pakollisia ja ne täytyy täyttää',
 
@@ -300,6 +301,7 @@ $lang = array_merge($lang, array(
 	'MESSAGE_EDITED'				=> 'Viestin muokkaus onnistui.',
 	'MESSAGE_HISTORY'				=> 'Viestihistoria',
 	'MESSAGE_REMOVED_FROM_OUTBOX'	=> 'Viestin lähettäjä on poistanut tämän viestin.',
+	'MESSAGE_REPORTED_MESSAGE'	=> 'Ilmiannettu viesti',
 	'MESSAGE_SENT_ON'				=> 'päivämäärä:',
 	'MESSAGE_STORED'				=> 'Viestin lähetys onnistui',
 	'MESSAGE_TO'					=> 'Vastaanottaja',
