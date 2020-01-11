@@ -94,6 +94,7 @@ $lang = array_merge($lang, array(
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Kertoo kuinka monta kertaa linkkissä on käyty.',
 	'FORUM_NAME'						=> 'Alueen nimi',
 	'FORUM_NAME_EMPTY'					=> 'Anna alueelle nimi.',
+	'FORUM_NAME_EMOJI'                                      => 'Alueen nimi on virheellinen.<br>Se sisältää ei-tuettuja merkkejä:<br>%s',
 	'FORUM_PARENT'						=> 'Isäntänä toimiva alue',
 	'FORUM_PASSWORD'					=> 'Alueen salasana',
 	'FORUM_PASSWORD_CONFIRM'			=> 'Varmista salasana',
@@ -125,6 +126,8 @@ $lang = array_merge($lang, array(
 	'GENERAL_FORUM_SETTINGS'	=> 'Alueen yleiset asetukset',
 
 	'LINK'					=> 'Linkki',
+	'LIMIT_SUBFORUMS'                       => 'Rajoita näytettävät ensimmäiseen alafoorumiin',
+        'LIMIT_SUBFORUMS_EXPLAIN'       => 'Rajoittaa näytettävät alafoorumit alafoorumeihin, jotka ovat nykyisen foorumin välittömiä jälkeläisiä (lapsia). Tämän poistaminen käytöstä näyttää kaikki alafoorumit, joissa "Lista alafoorumit selityksessä" -vaihtoehto on käytössä, syvyydestä riippumatta.',
 	'LIST_INDEX'			=> 'Näytä alue etusivulla',
 	'LIST_INDEX_EXPLAIN'	=> 'Näyttää linkin tälle alueelle ensimmäisen alueen juuressa.',
 	'LIST_SUBFORUMS'			=> 'Näyttää sisäalueet etusivulla',
