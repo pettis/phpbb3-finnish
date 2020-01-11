@@ -415,8 +415,7 @@ $lang = array_merge($lang, array(
 	'PASSWORD_RESET'                        => 'Salasanasi on palautettu onnistuneesti.',
         'PASSWORD_RESET_LINK_SENT'      => 'Jos tilisi on olemassa, salasanan palautuslinkki lähetettiin rekisteröidylle sähköpostiosoitteellesi. Jos et saa sähköpostia, se voi johtua siitä, että sinua kielletään, tiliäsi ei ole aktivoitu, olet pyytänyt useiden salasanojen palauttamista lyhyessä ajassa tai et voi vaihtaa salasanaasi. Ota yhteys järjestelmänvalvojaan, jos jokin näistä syistä pätee. Tarkista myös roskapostisuodattimesi.',
 	'PASSWORD_ACTIVATED'		=> 'Uusi salasanasi on aktivoitu.',
-    'PASSWORD_UPDATED_IF_EXISTED'	=> 'Jos tunnuksesi on olemassa, uusi salasana on lähetetty tiedoissasi olevaan sähköpostiosoitteeseen. Jos et saanut sähköpostia, osoitteesi on mahdollisesti kielletty, tunnustasi ei ole aktivoitu, tai tunnuksellasi ei ole sallitua vaihtaa salasanaa. Ota yhteyttä ylläpitoon näissä tapauksissa. Tarkasta myös roskapostikansiosi.',
-	'PERMISSIONS_RESTORED'		=> 'Alkuperäiset oikeudet palautettu.',
+    	'PERMISSIONS_RESTORED'		=> 'Alkuperäiset oikeudet palautettu.',
 	'PERMISSIONS_TRANSFERRED'	=> 'Oikeudet on siirretty käyttäjältä <strong>%s</strong> ja voit nyt selata keskustelufoorumia tämän käyttäjän oikeuksilla.<br />Huomaa, että ylläpitäjän oikeuksia ei ole siirretty. Voit vaihtaa omat oikeudet takaisin koska haluat.',
 	'PM_DISABLED'				=> 'Yksityisviestit ovat poissa käytöstä.',
 	'PM_FROM'					=> 'Lähettäjä',
@@ -463,6 +462,9 @@ $lang = array_merge($lang, array(
 	'REPLIED_MESSAGE'					=> 'Vastasit viestiin',
 	'REPLY_TO_ALL'						=> 'Vastaa lähettäjälle ja kaikille vastaanottajille.',
 	'REPORT_PM'							=> 'Ilmoita yksityisviesti',
+        'RESET_PASSWORD'                                        => 'Nollaa salasana',
+        'RESET_TOKEN_EXPIRED_OR_INVALID'        => 'Antamasi salasanan nollaustunnus on virheellinen tai on vanhentunut.',
+
 	'RESIGN_SELECTED'					=> 'Eroa valituista',
 	'RETURN_FOLDER'						=> '%1$sPalaa edelliseen kansioon%2$s',
 	'RETURN_UCP'						=> '%sPalaa omiin asetuksiin%s',
@@ -478,7 +480,6 @@ $lang = array_merge($lang, array(
 
 	'SAME_PASSWORD_ERROR'		=> 'Antamasi uusi salasana on sama, kuin nykyinen salasanasi',
 	'SEARCH_YOUR_POSTS'			=> 'Katso omia viestejäsi',
-	'SEND_PASSWORD'				=> 'Lähetä salasana',
 	'SENT_AT'					=> 'Lähetetty',
 	'SHOW_EMAIL'				=> 'Käyttäjät voivat ottaa minuun yhteyttä sähköpostilla',
 	'SIGNATURE_EXPLAIN'			=> 'Voit lisätä allekirjoituksen kirjoittamasi viestin perään. Allekirjoituksen pituus on rajoitettu %d merkkiin',
@@ -562,7 +563,6 @@ $lang = array_merge($lang, array(
 
 	'UCP_PASSWORD_RESET_DISABLED'	=> 'Salasanan resetointi estetty. Tarvittaessa ota yhteys forumin ylläpitoon %sBoard Administrator%s',
 	'UCP_REGISTER_DISABLE'			=> 'Uuden tunnuksen luominen ei ole tällä hetkellä mahdollista.',
-	'UCP_REMIND'					=> 'Lähetä salasana',
 	'UCP_RESEND'					=> 'Lähetä aktivointiviesti',
 	'UCP_WELCOME'					=> 'Tervetuloa omiin asetuksiin. Täällä voit tarkastella ja muokata omaa profiiliasi, asetuksiasi, seurattuja keskustelualueita ja viestiketjuja. Voit lähettää yksityisviestejä toisille käyttäjille mikäli tämä toiminto on käytössä. Muista lukea tärkeät tiedotteet, ennen kuin jatkat eteenpäin.',
 	'UCP_ZEBRA'						=> 'Ystävät ja vihamiehet',
