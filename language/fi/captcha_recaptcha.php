@@ -45,6 +45,5 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Avoin reCaptcha-avaimesi. Avaimia voi hankkia osoitteesta <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'				=> 'Yksityinen reCaptcha-avain',
 	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Yksityinen reCaptcha-avain. Avaimia voi hankkia osoitteesta <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
-
-	'RECAPTCHA_EXPLAIN'				=> 'Jotta pystyisimme estämään automaattisia lähetyksiä, pyydämme sinua suorittamaan seuraavan varmistushaasteen.',
-));
+        'RECAPTCHA_INVISIBLE'                   => 'Tämä CAPTCHA on näkymätön. Tämä toimii, mikäli näet pienen ikonin sivun oikeassa alakulmassa.',
+	));
