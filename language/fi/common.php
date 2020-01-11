@@ -527,8 +527,9 @@ $lang = array_merge($lang, array(
 	'NO_FEED_ENABLED'			=> 'Syötteet eivät ole käytössä tällä keskustelufoorumilla.',
 	'NO_FEED'					=> 'Pyytämäsi syöte ei ole saatavilla.',
 	'NO_STYLE_DATA'                         => 'Käyttäjätunnuksen %s tyylitietoja ei voitu saada ja käyttäjän tunnuksen %s asetusta ei voitu saada',
-
+        'NO_STYLE_CFG'                          => 'Tyylin määritystiedostoa ei saatu: %s',
 	'NO_SUBJECT'				=> 'Otsikkoa ei ole määritelty',
+	
 	'NO_SUCH_SEARCH_MODULE'		=> 'Antamaasi hakumoottoria ei ole olemassa',
 	'NO_SUPPORTED_AUTH_METHODS'	=> 'Ei tuettuja tunnistautumismenetelmiä',
 	'NO_TOPIC'					=> 'Hakemaasi viestiketjua ei löytynyt.',
@@ -611,6 +612,7 @@ $lang = array_merge($lang, array(
 	'POST_TOPIC'			=> 'Lähetä uusi viesti',
 	'POST_UNAPPROVED_ACTION'	=> 'Hyväksyntää odottava viesti:',
 	'POST_UNAPPROVED'		=> 'Viestiä ei ole hyväksytty',
+        'POST_UNAPPROVED_EXPLAIN'       => 'Tämä viesti ei näy muille käyttäjille, ennen kuin moderaattori on hyväksynyt sen.',
 	'POWERED_BY'			=> 'Keskustelufoorumin ohjelmisto %s',
 	'PREVIEW'				=> 'Esikatselu',
 	'PREVIOUS'				=> 'Edellinen',
