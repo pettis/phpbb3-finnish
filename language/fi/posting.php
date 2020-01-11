@@ -40,6 +40,7 @@ $lang = array_merge($lang, array(
 	'ADD_POLL'					=> 'Luo äänestys',
 	'ADD_POLL_EXPLAIN'			=> 'Jos et halua lisätä äänestystä. Jätä kentät tyhjiksi',
 	'ALREADY_DELETED'			=> 'Pahoittelut, mutta viesti on jo poistettu.',
+        'ATTACH_COMMENT_NO_EMOJIS'      => 'Liitetiedosto sisältää kiellettyjä merkkejä (Emoji).',
 	'ATTACH_DISK_FULL'			=> 'Levyllä ei ole tarpeeksi tilaa tämän liitetiedoston tallentamiseen.',
 	'ATTACH_QUOTA_REACHED'		=> 'Pahoittelut, mutta liitetiedostojen maksimiraja on tullut vstaan.',
 	'ATTACH_SIG'				=> 'Lisää allekirjoitus (allekirjoituksia voi muokata omissa asetuksissa)',
@@ -262,7 +263,6 @@ $lang = array_merge($lang, array(
 	'TOPIC_BUMPED'				=> 'Viestiketju on tönäisty päälimmäiseksi',
 
 	'UNAUTHORISED_BBCODE'		=> 'Et voi käyttää kaikkia BBCode-tageja: %s.',
-	'UNGLOBALISE_EXPLAIN'		=> 'Olet muuttamassa yleistiedotetta normaaliksi viestiksi. Ole hyvä ja määrittele alue, jolle tämä viesti laitetaan.',
 	'UNSUPPORTED_CHARACTERS_MESSAGE'	=> 'Viestissäsi on kiellettyjä merkkejä:<br />%s',
 	'UNSUPPORTED_CHARACTERS_SUBJECT'	=> 'Viestissäsi on kiellettyjä merkkejä:<br />%s',
 	'UPDATE_COMMENT'			=> 'Päivitä kommentti',
