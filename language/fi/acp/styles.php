@@ -80,8 +80,7 @@ $lang = array_merge($lang, array(
     'STYLE_PHPBB_VERSION'		=> 'phpBB-versio',
 	'STYLE_USED_BY'				=> 'Käyttäjien lkm',
     'STYLE_VERSION'				=> 'Tyylin versio',
-
+        'UNINSTALL_PROSILVER'           => 'Et voi poistaa tyyliä "prosilver".',
 	'UNINSTALL_DEFAULT'		=> 'Et voi poistaa oletus tyyliä.',
-
 	'BROWSE_STYLES_DATABASE'	=> 'Selaa tyylien tietokantaa',
 ));
