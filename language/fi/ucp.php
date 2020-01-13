@@ -113,7 +113,7 @@ $lang = array_merge($lang, array(
 	'BIRTHDAY'					=> 'Syntymäpäivä',
 	'BIRTHDAY_EXPLAIN'			=> 'Saat oman ikäsi näkyviin antamalla syntymävuotesi.',
 	'BOARD_DATE_FORMAT'			=> 'Ajan näyttö',
-	'BOARD_DATE_FORMAT_EXPLAIN'	=> 'Ajan esitystapa on samanlainen kuin PHP:n <a href="http://www.php.net/date">date()</a> funktio.',
+	'BOARD_DATE_FORMAT_EXPLAIN'	=> 'Ajan esitystapa on samanlainen kuin PHP:n <a href="https://secure.php.net/manual/function.date.php">date()</a> funktio.',
 	'BOARD_LANGUAGE'			=> 'Käytettävä kieli',
 	'BOARD_STYLE'				=> 'Käytettävä tyyli',
 	'BOARD_TIMEZONE'			=> 'Aikavyöhyke',
