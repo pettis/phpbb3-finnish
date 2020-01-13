@@ -65,7 +65,6 @@ $lang = array_merge($lang, array(
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Maksimi levytila varattuna liitetiedostoille, 0 on rajoittamaton.',
 	'ATTACH_TO_POST'					=> 'Liitä tiedosto viestiin',
 
-	'CAT_FLASH_FILES'			=> 'Flash-tiedostot',
 	'CAT_IMAGES'				=> 'Kuvat',
 	'CHECK_CONTENT'				=> 'Tarkista liitetiedosto',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Joitakin selaimia voi huijata olettamaan tiedoston sisältävän vääränlaisen mime-tyypin. Tämä vaihtoehto varmistaa, että tällaiset tiedostot hylätään.',
@@ -96,7 +95,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_ARCHIVES'		=> 'Arkistot',
 	'EXT_GROUP_DOCUMENTS'		=> 'Dokumentit',
 	'EXT_GROUP_DOWNLOADABLE_FILES'		=> 'Ladattavat tiedostot',
-	'EXT_GROUP_FLASH_FILES'		=> 'Flash-tiedostot',
 	'EXT_GROUP_IMAGES'		=> 'Kuvat',
 	'EXT_GROUP_PLAIN_TEXT'		=> 'Pelkkä teksti',
 
