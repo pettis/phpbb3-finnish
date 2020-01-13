@@ -223,15 +223,6 @@ $lang = array_merge($lang, array(
 
 	'BACK'					=> 'Takaisin',
 
-    'CANNOT_CHANGE_FILE_GROUP'	=> 'Tiedostoryhmää ei voitu vaihtaa',
-    'CANNOT_CHANGE_FILE_PERMISSIONS'	=> 'Tiedosto-oikeuksia ei voitu vaihtaa',
-    'CANNOT_COPY_FILES'		=> 'Tiedostoja ei voitu kopioida',
-    'CANNOT_CREATE_SYMLINK'	=> 'Tiedostolinkkiä ei voitu luoda',
-    'CANNOT_DELETE_FILES'	=> 'Järjestelmästä ei voitu poistaa tiedostoja',
-    'CANNOT_DUMP_FILE'		=> 'Tiedostoa ei voitu vedostaa',
-    'CANNOT_MIRROR_DIRECTORY'	=> 'Hakemiston peilaaminen ei onnistunut',
-    'CANNOT_RENAME_FILE'	=> 'Tiedostoa ei voitu uudelleen nimetä',
-    'CANNOT_TOUCH_FILES'	=> 'Ei voitu määrittää, onko tiedosto olemassa',
 
     'CONTAINER_EXCEPTION' => 'phpBB kohtasi virheen rakentaessaan säiliötä asennetun laajennoksen takia. Tämän vuoksi kaikki laajennokset on väliaikaisesti poistettu käytöstä. Kokeile tyhjentää foorumisi väliaikaistiedostot. Kaikki laajennokset otetaan uudelleen käyttöön, kun säiliön virhe on ratkaistu. Jos tämä virhe jatkuu, vieraile <a href="https://www.phpbb.com/support">phpBB.com</a> saadaksesi tukea.',
     'EXCEPTION' => 'Poikkeus',

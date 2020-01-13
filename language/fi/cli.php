@@ -75,8 +75,6 @@ $lang = array_merge($lang, array(
     'CLI_DESCRIPTION_REPARSER_REPARSE_OPT_RANGE_SIZE'	=> 'Arvioi kerralla käsiteltävien tietueiden määrä',
     'CLI_DESCRIPTION_REPARSER_REPARSE_OPT_RESUME'		=> 'Aloita uudelleenkäsittely siitä mihin edellinen suoritus päättyi',
 
-    'CLI_DESCRIPTION_RECALCULATE_EMAIL_HASH'			=> 'Laskee uudelleen käyttäjän user_email_hash -sarakkeen users -taulussa.',
-
     'CLI_DESCRIPTION_SET_ATOMIC_CONFIG'					=> 'Asettaa asetuksen arvon vain jos vanha vastaa nykyistä arvoa',
     'CLI_DESCRIPTION_SET_CONFIG'						=> 'Asettaa asetuksen arvon',
 
@@ -127,7 +125,6 @@ $lang = array_merge($lang, array(
 	'CLI_EXTENSIONS_ENABLED'			=> 'Sallittu',
 
     'CLI_FIXUP_FIX_LEFT_RIGHT_IDS_SUCCESS'		=> 'Foorumien ja moduulien puurakenne on korjattu onnistuneesti.',
-	'CLI_FIXUP_RECALCULATE_EMAIL_HASH_SUCCESS'	=> 'Kaikki email-hash kentät laskettu uudestaan.',
     'CLI_FIXUP_UPDATE_HASH_BCRYPT_SUCCESS'		=> 'Salasanan tiivisteet päivitettiin onnistuneesti bcryptiin.',
 
     'CLI_MIGRATION_NAME'					=> 'Muunnoksen nimi, sisältäen nimiavaruuden (käytä kauttaviivoja kenoviivojen sijaan välttääksesi ongelmat).',

@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 
 	'BBCODE_INVALID_TAG_NAME'	=> 'Antamasi BBCode-tagin nimi on jo olemassa.',
 	'BBCODE_INVALID'			=> 'Käyttämäsi BBCode-muotoilu on rakenteeltaan epäkelpo.',
-	'BBCODE_OPEN_ENDED_TAG'		=> 'Tekemälläsi BBCodella täytyy olla aloitus- ja lopetustagit.',
+	'BBCODE_INVALID_TEMPLATE'       => 'Käyttämäsi BBCode pohja on virheellinen.',
 	'BBCODE_TAG'				=> 'Tag',
 	'BBCODE_TAG_TOO_LONG'		=> 'Tagille antamasi nimi on liian pitkä. Ole hyvä ja lyhennä sitä.',
 	'BBCODE_TAG_DEF_TOO_LONG'	=> 'Tagille antamasi kuvaus on liian pitkä. Ole hyvä ja lyhennä sitä.',
