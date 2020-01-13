@@ -77,6 +77,7 @@ $lang = array_merge($lang, array(
 	'ACL_U_CHGCENSORS'	=> 'Voi ohittaa sanasensuroinnin',
 	'ACL_U_SIG'			=> 'Voi käyttää allekirjoitusta',
 
+    'ACL_U_EMOJI'       => 'Voit käyttää emojimerkkejä ja muotoilua viestin otsikossa',
 	'ACL_U_SENDPM'		=> 'Voi lähettää yksityisviestejä',
 	'ACL_U_MASSPM'		=> 'Voi lähettää yksityisviestin monelle vastaanottajalle',
 	'ACL_U_MASSPM_GROUP'=> 'Voi lähettää yksityisviestin ryhmälle',

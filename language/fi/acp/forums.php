@@ -94,6 +94,7 @@ $lang = array_merge($lang, array(
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Kertoo kuinka monta kertaa linkkissä on käyty.',
 	'FORUM_NAME'						=> 'Alueen nimi',
 	'FORUM_NAME_EMPTY'					=> 'Anna alueelle nimi.',
+    'FORUM_NAME_EMOJI'                  => 'Alueen nimi on virheellinen.<br>Se sisältää ei-tuettuja merkkejä:<br>%s',
 	'FORUM_PARENT'						=> 'Isäntänä toimiva alue',
 	'FORUM_PASSWORD'					=> 'Alueen salasana',
 	'FORUM_PASSWORD_CONFIRM'			=> 'Varmista salasana',

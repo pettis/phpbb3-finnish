@@ -345,7 +345,7 @@ $lang = array_merge($lang, array(
 
 // Cookie Settings
 $lang = array_merge($lang, array(
-	'ACP_COOKIE_SETTINGS_EXPLAIN'		=> 'Nämä asetukset määrittävät kuinka evästeet lähetetään käyttäjiesi selaimeen. Useimmissa tapauksissa oletusasetusten pitäisi olla riittävät. Mikäli joudut muuttamaan näitä, ole varovainen, sillä väärät asetukset voivat estää käyttäjiä kirjautumasta sisään. Jos jos sinulla on ongelmia käyttäjien kirjautumisten pysymisessä, vieraile <strong><a href="https://www.phpbb.com/support/go/cookie-settings/">phpBB.com Knowledge Base - Virheellisten evästeiden korjaaminen</a></strong>.',
+	'ACP_COOKIE_SETTINGS_EXPLAIN'		=> 'Nämä asetukset määrittävät kuinka evästeet lähetetään käyttäjiesi selaimeen. Useimmissa tapauksissa oletusasetusten pitäisi olla riittävät. Mikäli joudut muuttamaan näitä, ole varovainen, sillä väärät asetukset voivat estää käyttäjiä kirjautumasta sisään. Jos jos sinulla on ongelmia käyttäjien kirjautumisten pysymisessä, vieraile <strong><a href="https://www.phpbb.com/support/go/cookie-settings">phpBB.com Knowledge Base - Virheellisten evästeiden korjaaminen</a></strong>.',
 
 	'COOKIE_DOMAIN'				=> 'Evästeiden palvelin',
     'COOKIE_DOMAIN_EXPLAIN'		=> 'Useimmissa tapauksissa evästeen verkkotunnus on valinnainen. Jätä se tyhjäksi jos olet epävarma. <br><br> Tapauksessa, jossa sinulla on foorumi integroituna muihin sovelluksiin tai useita verkkotunnuksia, evästeen verkkotunnuksen määrittelemiseksi sinun tulee tehdä seuraavat asiat. Jos sinulla on verkkotunnus muotoa <i>example.com</i> ja <i>forums.example.com</i> tai ehkäpä <i>forums.example.com</i> ja <i>blog.example.com</i>. Poista aliverkkotunnuksia, kunnes löydät yhteisen verkkotunnuksen, <i>example.com</i>. Lisää sen jälkeen piste yhteisen verkkotunnuksen eteen ja syöttäisit .example.com (huomaa piste alussa).',
@@ -565,6 +565,8 @@ $lang = array_merge($lang, array(
     'EMAIL_FORCE_SENDER_EXPLAIN'	=> 'Tämä asettaa <samp>Return-Path</samp>-osoitteen samaksi kuin lähettäjän sähköpostiosoitteen paikallisen käyttäjän ja palvelimen nimen sijaan. Tämä osoite ei toimi, kun käytössä on SMTP.<br><em><strong>Varoitus:</strong> Vaatii että käyttäjä jona web-palvelin on ajettu lisätään sendmailin luotettuihin käyttäjiin.</em>',
 	'EMAIL_PACKAGE_SIZE'			=> 'Sähköpostipaketin koko',
 	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'Kuinka monta sähköpostia lähetetään yhdessä paketissa. Tämä asetus määrittelee sisäisen viestijonon. Aseta tämä arvoon 0, jos ilmoitussähköpostien saapumisessa on ongelmia.',
+    'EMAIL_MAX_CHUNK_SIZE'          => 'Suurin sallittu yhtäaikainen vastaanottajamäärä',
+    'EMAIL_MAX_CHUNK_SIZE_EXPLAIN'  => 'Voit asettaa kuinka monta vastaanottajaa yksittäisellä sähköpostilla saa olla. Joissain sähköpostipalvelimissa on roskapostin takia rajoituksia montako vastaanottajaa yhdellä sähköpostiviestillä saa olla.',
 	'EMAIL_SIG'						=> 'Sähköpostin allekirjoitus',
 	'EMAIL_SIG_EXPLAIN'				=> 'Tämä teksti liitetään kaikkiin lähetettyihin sähköpostiviesteihin.',
 	'ENABLE_EMAIL'					=> 'Ota sähköpostitoiminnot käyttöön',
