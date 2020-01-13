@@ -526,7 +526,7 @@ $lang = array_merge($lang, array(
 	'NO_POSTS_TIME_FRAME'		=> 'Tässä viestiketjussa ei ole uusia viestejä valitsemaltasi aikaväliltä.',
 	'NO_FEED_ENABLED'			=> 'Syötteet eivät ole käytössä tällä keskustelufoorumilla.',
 	'NO_FEED'					=> 'Pyytämäsi syöte ei ole saatavilla.',
-	'NO_STYLE_DATA'                         => 'Käyttäjätunnuksen %s tyylitietoja ei voitu saada ja käyttäjän tunnuksen %s asetusta ei voitu saada',
+	'NO_STYLE_DATA'                         => 'Tyylin dataa käyttäjän tyylille %s (user_style) ei voitu saada eikä sitä voitu asettaa käyttäjälle %s (user_id)',
         'NO_STYLE_CFG'                          => 'Tyylin määritystiedostoa ei saatu: %s',
 	'NO_SUBJECT'				=> 'Otsikkoa ei ole määritelty',
 	
