@@ -45,6 +45,8 @@ $lang = array_merge($lang, array(
 	'CONTINUE_INDEXING'						=> 'jatka sisällysluettelon rakentamista',
 	'CONTINUE_INDEXING_EXPLAIN'				=> 'Sisällysluettelon rakentaminen on aloitettu. Et voi siirtyä hakusivulle, ennen kuin se on rakennettu.',
 	'CREATE_INDEX'							=> 'Luo sisällysluettelo',
+    'DEFAULT_SEARCH_RETURN_CHARS'			=> 'Palautettujen merkkien oletuslukumäärä',
+    'DEFAULT_SEARCH_RETURN_CHARS_EXPLAIN'	=> 'Oletusarvo palautettujen merkkien määrälle. Arvo 0 palauttaa koko viestin.',
 
 	'DELETE_INDEX'							=> 'Poista sisällysluettelo',
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Sisällysluettelon poisto on käynnissä',

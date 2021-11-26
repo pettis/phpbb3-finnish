@@ -1,8 +1,8 @@
-Subject: Viestin ilmoitus - "{TOPIC_TITLE}"
+Subject: Ilmoitus viestistä - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 
-Saat tämän ilmoituksen koska viesti "{POST_SUBJECT}" sivulla  "{SITENAME}" on ilmoitettu.
+Viesti "{POST_SUBJECT}" sivustolla  "{SITENAME}" on ilmoitettu.
 
 Jos haluat katsoa ilmoitusta, klikkaa seuraavaa linkkiä:
 {U_VIEW_REPORT}

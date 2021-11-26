@@ -1,13 +1,11 @@
-Subject: Olet saanut uuden yksityisviestin
+Subject: Uusi yksityisviesti
 
 Terve {USERNAME},
 
-Olet saanut uuden yksityisviestin {SITENAME} -sivustolla käyttäjältä {AUTHOR_NAME}. Viestin otsikko:
-
+Yksityisviesti käyttäjältä {AUTHOR_NAME} on saapunut tilillesi sivustolla {SITENAME} otsikolla:
 {SUBJECT}
 
 Voit katsoa viestin napsauttamalla alapuolella olevaa linkkiä:
-
 {U_VIEW_MESSAGE}
 
 Olet pyytänyt ilmoitusta uusista yksityisviesteistä. Muistathan, että voit myös estää viestien ilmoittamisen muuttamalla asetusta omassa profiilissasi.

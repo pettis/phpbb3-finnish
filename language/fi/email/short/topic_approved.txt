@@ -2,7 +2,7 @@ Subject: Viesti on hyväksytty - {TOPIC_TITLE}
 
 Terve {USERNAME},
 
-Sait tämän sähköpostin, koska kirjoittamasi viesti "{TOPIC_TITLE}" {SITENAME} -sivustolla on hyväksytty valvojan tai ylläpitäjän toimesta.
+Viestisi "{TOPIC_TITLE}" sivustolla {SITENAME} on hyväksytty valvojan tai ylläpitäjän toimesta.
 
 Jos haluat nähdä viestisi, napsauta alla olevaa linkkiä:
 {U_VIEW_TOPIC}
