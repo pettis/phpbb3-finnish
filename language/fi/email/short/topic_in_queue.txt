@@ -1,8 +1,8 @@
-Subject: Aiheen valvonnan ilmoitus - "{TOPIC_TITLE}"
+Subject: Aihe odottaa hyväksyntää - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 
-Saat tämän ilmoituksen koska aihe "{TOPIC_TITLE}" sivulla "{SITENAME}" pitää hyväksyä.
+Aihe "{TOPIC_TITLE}" sivustolla "{SITENAME}" odottaa hyväksyntää.
 
 Jos haluat katsoa aihetta, klikkaa seuraavaa linkkiä:
 {U_VIEW_TOPIC}

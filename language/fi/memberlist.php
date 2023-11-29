@@ -147,5 +147,4 @@ $lang = array_merge($lang, array(
 	'VIEW_SKYPE_PROFILE'	=> 'Katso Skype tietoja',
 	'VIEW_TWITTER_PROFILE'	=> 'Katso Twitter tietoja',
 	'VIEW_YOUTUBE_CHANNEL'	=> 'Katso YouTube tietoja',
-	'VIEW_GOOGLEPLUS_PROFILE' => 'Katso Google+ tietoja',
 ));

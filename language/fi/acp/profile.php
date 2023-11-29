@@ -90,7 +90,6 @@ $lang = array_merge($lang, array(
 	'FIELD_DESCRIPTION'			=> 'Kentän kuvaus',
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'Käyttäjälle näytettävä selite kentästä',
 	'FIELD_DROPDOWN'			=> 'Alasveto-laatikko',
-	'FIELD_GOOGLEPLUS'			=> 'Google+',
 	'FIELD_IDENT'				=> 'Kentän tunniste',
 	'FIELD_IDENT_ALREADY_EXIST'	=> 'Tälle kentälle on jo olemassa tämän niminen tunniste. Ole hyvä ja valitse toinen nimi.',
 	'FIELD_IDENT_EXPLAIN'		=> 'Kentän tunniste on nimi, jolla kenttä löytyy tietokannasta ja mallineesta.',

@@ -46,7 +46,6 @@ $lang = array_merge($lang, array(
 	'BUMPED_BY'				=> '%1$s on tönäissyt viestiketjua viimeksi klo %2$s',
 	'BUMP_TOPIC'			=> 'Tönäise viestiä',
 
-	'CODE'					=> 'Koodi',
 
 	'DELETE_TOPIC'			=> 'Poista viestiketju',
 	'DELETED_INFORMATION'	=> '%1$s poistanut %2$s',
@@ -95,7 +94,6 @@ $lang = array_merge($lang, array(
 
 	'QUICK_MOD'				=> 'Valvojan työkalut',
 	'QUICKREPLY'			=> 'Pikavastaus',
-	'QUOTE'					=> 'Lainaa',
 
 	'REPLY_TO_TOPIC'		=> 'Vastaa viestiin',
 	'RESTORE'				=> 'Palauta',

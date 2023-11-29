@@ -223,15 +223,6 @@ $lang = array_merge($lang, array(
 
 	'BACK'					=> 'Takaisin',
 
-    'CANNOT_CHANGE_FILE_GROUP'	=> 'Tiedostoryhmää ei voitu vaihtaa',
-    'CANNOT_CHANGE_FILE_PERMISSIONS'	=> 'Tiedosto-oikeuksia ei voitu vaihtaa',
-    'CANNOT_COPY_FILES'		=> 'Tiedostoja ei voitu kopioida',
-    'CANNOT_CREATE_SYMLINK'	=> 'Tiedostolinkkiä ei voitu luoda',
-    'CANNOT_DELETE_FILES'	=> 'Järjestelmästä ei voitu poistaa tiedostoja',
-    'CANNOT_DUMP_FILE'		=> 'Tiedostoa ei voitu vedostaa',
-    'CANNOT_MIRROR_DIRECTORY'	=> 'Hakemiston peilaaminen ei onnistunut',
-    'CANNOT_RENAME_FILE'	=> 'Tiedostoa ei voitu uudelleen nimetä',
-    'CANNOT_TOUCH_FILES'	=> 'Ei voitu määrittää, onko tiedosto olemassa',
 
     'CONTAINER_EXCEPTION' => 'phpBB kohtasi virheen rakentaessaan säiliötä asennetun laajennoksen takia. Tämän vuoksi kaikki laajennokset on väliaikaisesti poistettu käytöstä. Kokeile tyhjentää foorumisi väliaikaistiedostot. Kaikki laajennokset otetaan uudelleen käyttöön, kun säiliön virhe on ratkaistu. Jos tämä virhe jatkuu, vieraile <a href="https://www.phpbb.com/support">phpBB.com</a> saadaksesi tukea.',
     'EXCEPTION' => 'Poikkeus',
@@ -242,6 +233,7 @@ $lang = array_merge($lang, array(
 	'CRON_NO_SUCH_TASK'		=> 'Ei löydy cron tehtävää “%s”.',
 	'CRON_NO_TASK'			=> 'Ei cron tehtäviä tällä hetkellä.',
 	'CRON_NO_TASKS'			=> 'Ei löydy cron tehtäviä.',
+    'CSV_INVALID'			=> 'Annettu pilkuilla erotettu asetus “%1$s” on virheellinen. Arvot tulee olla eroteltu ainoastaan pilkoilla ja eivät saa sisältää yhtään ylimääräisiä välimerkkejä alussa tai lopussa.',
     'CURRENT_VERSION'		=> 'Nykyinen versio',
 
 	'DEACTIVATE'				=> 'Sulje',
@@ -323,6 +315,7 @@ $lang = array_merge($lang, array(
 
 	'UCP'					=> 'Käyttäjien hallintapaneeli',
 	'URL_INVALID'			=> 'Syötetty osoite asetukselle “%1$s” on virheellinen.',
+    'URL_SCHEME_INVALID'	=> 'Annettu URL-rakenne “%2$s” pilkuilla erotellussa asetuksessa “%1$s” on virheellinen. URL-rakenne tulee alkaa latinalaisella merkillä ja sen jälkeen tulee tulla kirjaimia ja numeroita, välimerkkejä tai pisteitä.',
 	'USERNAMES_EXPLAIN'		=> 'Laita jokainen käyttäjätunnus omalle rivillensä',
 	'USER_CONTROL_PANEL'	=> 'Käyttäjien hallintapaneeli',
 
@@ -376,9 +369,11 @@ $lang = array_merge($lang, array(
 	'ERROR_MBSTRING_ENCODING_TRANSLATION'			=> 'Läpinäkyvä merkistönkoodaus ei ole asetettu oikein',
 	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> arvon tulee olla 0. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
 	'ERROR_MBSTRING_HTTP_INPUT'						=> 'HTTP-input-merkistön muuntaminen ei ole asetettu oikein',
-	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> arvon tulee olla <samp>pass</samp>. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> arvon tulee jättää tyhjäksi. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
 	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'HTTP-output-merkistön muuntaminen ei ole asetettu oikein',
-	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> arvon tulee olla <samp>pass</samp>. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> arvon tulee jättää tyhjäksi. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
+    'ERROR_DEFAULT_CHARSET'							=> 'Oletusmerkistö on virheellisesti määritetty.',
+    'ERROR_DEFAULT_CHARSET_EXPLAIN'					=> '<var>default_charset</var> täytyy olla <samp>UTF-8</samp>. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
 
 	'FILES_PER_DAY'		=> 'Liitetiedostoja päivässä',
 	'FORUM_STATS'		=> 'Keskustelufoorumin tilastot',
@@ -507,13 +502,13 @@ $lang = array_merge($lang, array(
 	'LOG_ACL_ADD_ADMIN_GLOBAL_A_'		=> '<strong>Lisäsi tai muokkasi ylläpitäjiä</strong><br />» %s',
 	'LOG_ACL_ADD_MOD_GLOBAL_M_'			=> '<strong>Lisäsi tai muokkasi valvojia</strong><br />» %s',
 
-	'LOG_ACL_ADD_USER_LOCAL_F_'			=> '<strong>Lisäsi tai muokkasi käyttäjän pääsyä alueelle</strong> mistä %1$s<br />» %2$s',
-	'LOG_ACL_ADD_USER_LOCAL_M_'			=> '<strong>Lisäsi tai muokkasi käyttäjän valvojan oikeutta</strong> mistä %1$s<br />» %2$s',
-	'LOG_ACL_ADD_GROUP_LOCAL_F_'		=> '<strong>Lisäsi tai muokkasi ryhmän pääsyä alueelle</strong> mistä %1$s<br />» %2$s',
-	'LOG_ACL_ADD_GROUP_LOCAL_M_'		=> '<strong>Lisäsi tai muokkasi ryhmän valvojien oikeutta</strong> mistä %1$s<br />» %2$s',
+	'LOG_ACL_ADD_USER_LOCAL_F_'			=> '<strong>Lisäsi tai muokkasi käyttäjän pääsyä alueelle</strong> kohde %1$s<br />» %2$s',
+	'LOG_ACL_ADD_USER_LOCAL_M_'			=> '<strong>Lisäsi tai muokkasi käyttäjän valvojan oikeutta</strong> kohde %1$s<br />» %2$s',
+	'LOG_ACL_ADD_GROUP_LOCAL_F_'		=> '<strong>Lisäsi tai muokkasi ryhmän pääsyä alueelle</strong> kohde %1$s<br />» %2$s',
+	'LOG_ACL_ADD_GROUP_LOCAL_M_'		=> '<strong>Lisäsi tai muokkasi ryhmän valvojien oikeutta</strong> kohde %1$s<br />» %2$s',
 
-	'LOG_ACL_ADD_MOD_LOCAL_M_'			=> '<strong>Lisäsi tai muokkasi valvojia</strong> mistä %1$s<br />» %2$s',
-	'LOG_ACL_ADD_FORUM_LOCAL_F_'		=> '<strong>Lisäsi tai muokkasi keskustelualueen oikeuksia</strong> mistä %1$s<br />» %2$s',
+	'LOG_ACL_ADD_MOD_LOCAL_M_'			=> '<strong>Lisäsi tai muokkasi valvojia</strong> kohteelle %1$s<br />» %2$s',
+	'LOG_ACL_ADD_FORUM_LOCAL_F_'		=> '<strong>Lisäsi tai muokkasi keskustelualueen oikeuksia</strong> kohteelle %1$s<br />» %2$s',
 
 	'LOG_ACL_DEL_ADMIN_GLOBAL_A_'		=> '<strong>Poisti ylläpitäjiä</strong><br />» %s',
 	'LOG_ACL_DEL_MOD_GLOBAL_M_'			=> '<strong>Poisti valvojia</strong><br />» %s',

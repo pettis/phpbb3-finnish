@@ -2,12 +2,11 @@ Subject: Uusi viestiketju - {FORUM_NAME}
 
 Terve {USERNAME},
 
-Sait tämän viestin, koska seuraat keskustelualuetta "{FORUM_NAME}", {SITENAME} -sivustolla. <!-- IF AUTHOR_NAME != '' --> Käyttäjä {AUTHOR_NAME}<!-- ENDIF -->on lähettänyt tälle alueelle uuden viestiketjun "{TOPIC_TITLE}", edellisen käyntisi jälkeen. Voit käyttää tätä linkkiä lukeaksesi viestin. Uusia ilmoituksia ei lähetetä ennen kuin olet vieraillut keskustelufoorumilla.
+Foorumilla "{FORUM_NAME}" on uusi viestiketju "{TOPIC_TITLE}"<!-- IF AUTHOR_NAME != '' --> käyttäjältä {AUTHOR_NAME}<!-- ENDIF --> viimeisimmän vierailusi jälkeen sivustolla "{SITENAME}". Uusia ilmoituksia ei lähetetä ennen kuin vierailet foorumilla.
 
 {U_FORUM}
 
-Mikäli et halua seurata alueen vastauksia, voit lopettaa seurannan napsauttamalla "Lopeta seuraaminen" -linkkiä, joka löytyy yllä olevalta alueelta, tai napsauttamalla alapuolella olevaa linkkiä:
-
+Mikäli et halua seurata alueen vastauksia tai klikkaamalla alapuolella olevaa linkkiä:
 {U_STOP_WATCHING_FORUM}
 
 {EMAIL_SIG}

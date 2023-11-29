@@ -67,7 +67,6 @@ $lang = array_merge($lang, array(
 	'START_RESTORE'			=> 'Aloita palautus',
 	'STORE_AND_DOWNLOAD'	=> 'Tallenna ja lataa',
 	'STORE_LOCAL'			=> 'Tallenna tiedosto palvelimelle',
-	'STRUCTURE_ONLY'		=> 'Vain rakenne',
 
 	'TABLE_SELECT'		=> 'Taulun valinta',
 	'TABLE_SELECT_ERROR'=> 'Valitse ainakin yksi taulu.',

@@ -1,8 +1,8 @@
-Subject: Viestien valvojan ilmoitus - "{TOPIC_TITLE}"
+Subject: Viesti odottaa hyväksyntää - "{TOPIC_TITLE}"
 
 Hei {USERNAME},
 
-Saat tämän ilmoituksen koska viesti "{POST_SUBJECT}" sivulla "{SITENAME}" pitää hyväksyä.
+Viesti "{POST_SUBJECT}" sivustolla "{SITENAME}" odottaa hyväksyntää.
 
 Jos haluat katsoa viestin, klikkaa oheista linkkiä:
 {U_VIEW_POST}

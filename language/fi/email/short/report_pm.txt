@@ -1,8 +1,8 @@
-Subject: Yksityis viestin raportti - "{TOPIC_TITLE}"
+Subject: Ilmoitus yksityisviestistä - "{SUBJECT}"
 
 Hei {USERNAME},
 
-Saat tämän ilmoituksen koska yksityisviesti "{SUBJECT}" tekijä "{AUTHOR_NAME}" sivulla "{SITENAME}" on raportoitu.
+Yksityisviesti "{SUBJECT}" käyttäjältä "{AUTHOR_NAME}" sivustolla "{SITENAME}" on raportoitu.
 
 Jos haluat katsoa raporttia, klikkaa seuraavaa linkkiä:
 {U_VIEW_REPORT}

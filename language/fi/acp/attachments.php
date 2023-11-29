@@ -65,7 +65,6 @@ $lang = array_merge($lang, array(
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Maksimi levytila varattuna liitetiedostoille, 0 on rajoittamaton.',
 	'ATTACH_TO_POST'					=> 'Liitä tiedosto viestiin',
 
-	'CAT_FLASH_FILES'			=> 'Flash-tiedostot',
 	'CAT_IMAGES'				=> 'Kuvat',
 	'CHECK_CONTENT'				=> 'Tarkista liitetiedosto',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Joitakin selaimia voi huijata olettamaan tiedoston sisältävän vääränlaisen mime-tyypin. Tämä vaihtoehto varmistaa, että tällaiset tiedostot hylätään.',
@@ -96,7 +95,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_ARCHIVES'		=> 'Arkistot',
 	'EXT_GROUP_DOCUMENTS'		=> 'Dokumentit',
 	'EXT_GROUP_DOWNLOADABLE_FILES'		=> 'Ladattavat tiedostot',
-	'EXT_GROUP_FLASH_FILES'		=> 'Flash-tiedostot',
 	'EXT_GROUP_IMAGES'		=> 'Kuvat',
 	'EXT_GROUP_PLAIN_TEXT'		=> 'Pelkkä teksti',
 
@@ -108,6 +106,10 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'Kuvalinkin koko',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Näytä kuvatiedosto linkkinä mikäli sen koko ylittää sallitun,  aseta 0px kertaa 0px poistaaksesi toiminnon käytöstä.',
+    'IMAGE_QUALITY'				=> 'Ladattujen kuvaliitteiden laatu (vain JPEG)',
+    'IMAGE_QUALITY_EXPLAIN'		=> 'Anna arvo väliltä 50% (pienempi kuvatiedoston koko) ja 90% (parempi laatu). Yli 90% laatu kasvattaa kuvatiedoston kokoa ja on estetty. Asetus on käytössä vain jos sallitun kuvakoon asetus on jokin muu kuin 0px leveä ja 0px korkea.',
+    'IMAGE_STRIP_METADATA'		=> 'Poista kuvien metatiedot (vain JPEG)',
+    'IMAGE_STRIP_METADATA_EXPLAIN'	=> 'Poista Exif-metatiedot, kuten kuvaajan nimi, GPS-koordinaatit ja kameran tiedot. Asetus on käytössä vain jos sallitun kuvakoon asetus on jokin muu kuin 0px leveä ja 0px korkea.',
 
 	'MAX_ATTACHMENTS'				=> 'Liitetiedostojen enimmäismäärä viestissä',
 	'MAX_ATTACHMENTS_PM'			=> 'Liitetiedostojen enimmäismäärä yksityisviestissä',
@@ -126,6 +128,8 @@ $lang = array_merge($lang, array(
 	'NOT_ASSIGNED'				=> 'Ei määritelty',
 	'NO_ATTACHMENTS'			=> 'Ei löydy liitetiedostoja.',
 	'NO_EXT_GROUP'				=> 'Ei mitään',
+    'NO_EXT_GROUP_ALLOWED_PM'	=> 'Ei sallittuja <a href="%s">laajennosryhmiä</a> yksityisviesteille.',
+    'NO_EXT_GROUP_ALLOWED_POST'	=> 'Ei sallittuja <a href="%s">laajennosryhmiä</a> viesteille.',
 	'NO_EXT_GROUP_NAME'			=> 'Ryhmän nimeä ei ole annettu',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Tunnisteryhmää ei ole määritelty',
 	'NO_FILE_CAT'				=> 'Ei mitään',
