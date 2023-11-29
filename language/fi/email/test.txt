@@ -4,6 +4,10 @@ Hei {USERNAME},
 
 Onnittelut. Jos saat tämän viestin, phpBB on asennettu oikein lähettämään sähköposteja.
 
+<!-- IF MESSAGE -->
+{MESSAGE}
+
+<!-- ENDIF -->
 Jos tarvitset apua, vieraile phpBB tukifoorumilla https://www.phpbb.com/community/
 
 {EMAIL_SIG}

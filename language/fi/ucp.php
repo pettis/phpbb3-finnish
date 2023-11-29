@@ -176,7 +176,6 @@ $lang = array_merge($lang, array(
 	'DEMOTE_SELECTED'			=> 'Alenna valituista',
 	'DISABLE_CENSORS'			=> 'Käytä sanojen sensurointia',
 	'DISPLAY_GALLERY'			=> 'Näytä galleria',
-	'DOMAIN_NO_MX_RECORD_EMAIL'	=> 'Antamallasi sähköpostipalvelimella ei ole kelvollista MX-rekisteriä.',
 	'DOWNLOADS'					=> 'Lataukset',
 	'DRAFTS_DELETED'			=> 'Kaikki valitut luonnokset on poistettu.',
 	'DRAFTS_EXPLAIN'			=> 'Täällä voit katsoa, muokata ja poistaa valitsemiasi luonnoksia.',

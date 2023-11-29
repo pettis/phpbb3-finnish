@@ -32,6 +32,8 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	'CLI_APCU_CACHE_NOTICE'				=> 'APCu välimuisti täytyy tyhjentää Ylläpidon hallintapaneelista.',
+	
 	'CLI_CONFIG_CANNOT_CACHED'			=> 'Valitse tämä asetus jos konfigurointi muuttuu niin nopeasti ettei sitä ole cache muistissa.',
 	'CLI_CONFIG_CURRENT'				=> 'Nykyinen asetusarvo, käytä 0 tai 1 (boolean luku) sen tilalla',
 	'CLI_CONFIG_DELETE_SUCCESS'			=> 'Asetus poistettu onnistuneesti: %s.',

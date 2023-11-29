@@ -372,7 +372,7 @@ $lang = array_merge($lang, array(
 	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> arvon tulee jättää tyhjäksi. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
 	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'HTTP-output-merkistön muuntaminen ei ole asetettu oikein',
 	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> arvon tulee jättää tyhjäksi. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
-    'ERROR_DEFAULT_CHARSET'							=> 'Oletusmerkistkö on virheellisesti määritetty.',
+    'ERROR_DEFAULT_CHARSET'							=> 'Oletusmerkistö on virheellisesti määritetty.',
     'ERROR_DEFAULT_CHARSET_EXPLAIN'					=> '<var>default_charset</var> täytyy olla <samp>UTF-8</samp>. Voit tarkistaa nykyisen arvon <samp>PHP informaatio</samp> -sivulta.',
 
 	'FILES_PER_DAY'		=> 'Liitetiedostoja päivässä',

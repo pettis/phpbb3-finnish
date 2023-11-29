@@ -84,6 +84,7 @@ $lang = array_merge($lang, array(
 	'RESULT_DAYS'			=> 'Rajaa tulokset',
 	'RESULT_SORT'			=> 'Lajittele tulokset',
 	'RETURN_FIRST'			=> 'Palauta ensimmäiset',
+	'RETURN_FIRST_EXPLAIN'	=> 'Valinta 0 näyttää koko viestin.',
 	'GO_TO_SEARCH_ADV'	=> 'Siirry tarkennettuun hakuun',
 
 	'SEARCHED_FOR'				=> 'Käytetyt hakusanat',
